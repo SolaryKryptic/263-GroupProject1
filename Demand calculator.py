@@ -45,6 +45,11 @@ long.loc[long["Demand"] > 20, "Demand"] /= 10
 #Remove king's birthday data
 long = long.loc[long["Date"] != "2026-06-01"]
 
+#Use only first 6 weeks of data
+start_date = "2026-05-04"
+end_date = "2026-05-31"
+long = long[long["Date"].between(start_date,end_date)]
+
 """
 Step 2
 Calculate mean of each locations per weekday
