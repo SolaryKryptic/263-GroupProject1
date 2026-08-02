@@ -3,38 +3,6 @@ compare_estimates.py
 
 Ranks demand-estimation methods by delivered / required % on the held-out
 test weeks (15-28 June 2026, the last 2 of the 8 data weeks).
-
-===================================== INPUT =====================================
-Drop one CSV per method into the estimates/ folder:
-
-    estimates/estimate_<name>.csv
-
-Required columns:
-    Supermarket   store name, must match FoodstuffsDemand2026.csv
-    Monday        estimated pallets for every Monday
-    Tuesday       estimated pallets for every Tuesday
-    Wednesday     estimated pallets for every Wednesday
-    Thursday      estimated pallets for every Thursday
-    Friday        estimated pallets for every Friday
-    Saturday      estimated pallets for every Saturday
-
-A Sunday column is optional and ignored (stores are closed Sundays).
-Missing stores/weekdays are treated as 0 with a warning.
-
-===================================== METRIC ====================================
-For each method:
-
-    delivered% = 100 * sum(min(estimate, actual)) / sum(actual)
-
-summed over every store-day in the test weeks (Sundays excluded).
-
-A method that always delivers exactly the required amount scores 100%.
-Under-estimating (actual > estimate) reduces the score; over-estimating
-does not help because delivery is capped at the actual demand. This is
-purely a measure of unmet demand (100 - delivered%).
-
-===================================== RUN ======================================
-    python compare_estimates.py
 """
 
 import glob
@@ -49,6 +17,12 @@ TEST_START = pd.Timestamp("2026-06-14")
 
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
+# Weighting for the Accuracy% metric: running short is judged worse than
+# having spare capacity, so understock error counts at full weight and
+# overstock error counts at half weight.
+UNDERSTOCK_WEIGHT = 1.0
+OVERSTOCK_WEIGHT = 0.5
+
 
 def load_test_demand():
 	demand = pd.read_csv(DEMAND_FILE)
@@ -61,7 +35,6 @@ def load_test_demand():
 	long_data["Date"] = pd.to_datetime(long_data["Date"], dayfirst=True)
 	long_data["DayOfWeek"] = long_data["Date"].dt.day_name()
 
-	# Test weeks are everything after the 6 training weeks, Sundays excluded.
 	test = long_data[long_data["Date"] > TEST_START]
 	return test[test["DayOfWeek"] != "Sunday"].copy()
 
@@ -70,7 +43,6 @@ def load_estimate(path):
 	df = pd.read_csv(path)
 	est = df[["Supermarket"] + WEEKDAYS[:-1]].set_index("Supermarket")
 
-	# Any weekday column missing from the file is treated as 0 for that store.
 	for day in WEEKDAYS[:-1]:
 		if day not in est.columns:
 			print(f"  WARNING: {os.path.basename(path)} has no '{day}' column -> treated as 0")
@@ -79,16 +51,16 @@ def load_estimate(path):
 
 
 def compare_method(test, est):
-	# Join each test store-day to the matching weekday estimate.
 	per_day = []
 	delivered_total = 0
 	required_total = 0
+	weighted_error_total = 0
+	estimated_total = 0
 
 	for day in WEEKDAYS[:-1]:
 		sub = test[test["DayOfWeek"] == day].copy()
 		sub = sub.merge(est[[day]].reset_index(), on="Supermarket", how="left")
 
-		# Stores missing from the estimate file count as 0 delivered (with warning).
 		missing = sub[sub[day].isna()]
 		if len(missing):
 			stores = ", ".join(sorted(missing["Supermarket"].unique())[:5])
@@ -98,15 +70,26 @@ def compare_method(test, est):
 		sub["Delivered"] = np.minimum(sub["Demand"], sub[day])
 		delivered_total += sub["Delivered"].sum()
 		required_total += sub["Demand"].sum()
+		estimated_total += sub[day].sum()
+
+		# error > 0 -> overstocked that store-day; error < 0 -> understocked
+		error = sub[day] - sub["Demand"]
+		understock = (-error).clip(lower=0)
+		overstock = error.clip(lower=0)
+		weighted_error_total += (UNDERSTOCK_WEIGHT * understock + OVERSTOCK_WEIGHT * overstock).sum()
 
 		day_pct = 100 * sub["Delivered"].sum() / sub["Demand"].sum() if sub["Demand"].sum() else np.nan
 		per_day.append((sub["Date"].iloc[0], day_pct))
 
 	overall_pct = 100 * delivered_total / required_total if required_total else np.nan
+	# Accuracy%: penalizes understock at full weight and overstock at half
+	# weight, so it can't be gamed by just over-ordering (like Delivered% can).
+	accuracy_pct = 100 * (1 - weighted_error_total / required_total) if required_total else np.nan
+	excess_pct = 100 * (estimated_total - delivered_total) / required_total if required_total else np.nan
 
 	per_day_df = pd.DataFrame(per_day, columns=["Date", "Pct"])
 	worst = per_day_df.sort_values("Pct").iloc[0]
-	return overall_pct, worst["Pct"], worst["Date"].strftime("%d/%m"), required_total
+	return overall_pct, accuracy_pct, excess_pct, worst["Pct"], worst["Date"].strftime("%d/%m"), required_total
 
 
 def main():
@@ -117,8 +100,6 @@ def main():
 	files = sorted(glob.glob(os.path.join(ESTIMATES_DIR, "estimate_*.csv")))
 	if not files:
 		print(f"No estimate_*.csv files found in '{ESTIMATES_DIR}'.")
-		print("Add one file per method, e.g. estimates/estimate_<name>.csv")
-		print("(see the file header for the required columns).")
 		return
 
 	rows = []
@@ -126,21 +107,23 @@ def main():
 		name = os.path.basename(path).removeprefix("estimate_").removesuffix(".csv")
 		print(f"Comparing {name} ...")
 		est = load_estimate(path)
-		overall, worst_pct, worst_date, required = compare_method(test, est)
+		overall, accuracy, excess, worst_pct, worst_date, required = compare_method(test, est)
 		rows.append(
 			{
 				"Method": name,
 				"Delivered %": round(overall, 1),
+				"Accuracy %": round(accuracy, 1),
+				"Excess %": round(excess, 1),
 				"Worst day %": round(worst_pct, 1),
 				"Worst day": worst_date,
 				"Test pallets (required)": int(required),
 			}
 		)
 
-	result = pd.DataFrame(rows).sort_values("Delivered %", ascending=False).reset_index(drop=True)
+	result = pd.DataFrame(rows).sort_values("Accuracy %", ascending=False).reset_index(drop=True)
 	result.index += 1
 
-	print("\nRanking by delivered/required % (higher is better):\n")
+	print("\nRanking by Accuracy % (understock penalized 2x more than overstock):\n")
 	print(result.to_string(index=True))
 
 
