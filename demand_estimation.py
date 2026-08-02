@@ -38,7 +38,7 @@ def main():
 
 	stats = train_used.groupby(["Supermarket", "DayOfWeek"])["Demand"]
 	means = stats.mean().unstack(fill_value=0).reindex(columns=WEEKDAYS).fillna(0.0)
-	stds = stats.std().unstack(fill_value=0).reindex(columns=WEEKDAYS).fillna(0.0)
+	stds = (stats.std().unstack(fill_value=0).reindex(columns=WEEKDAYS).fillna(0.0))*0.75
 	est = np.ceil(means + stds).astype(int)
 	est = est.merge(locations, on="Supermarket").set_index("Supermarket")
 	est["Total"] = est[WEEKDAYS[:-1]].sum(axis=1)
