@@ -1,8 +1,18 @@
 """
 compare_estimates.py
 
-Ranks demand-estimation methods by delivered / required % on the held-out
-test weeks (15-28 June 2026, the last 2 of the 8 data weeks).
+Ranks demand-estimation methods on the held-out test weeks (15-28 June 2026,
+the last 2 of the 8 data weeks).
+
+Each method is scored on the DOLLAR cost of its estimation errors, using the
+cost parameters from the problem statement:
+  - over-delivery (estimate > actual): extra unload time at $220/hr
+  - under-delivery (estimate < actual): wet-lease top-up at $1400 / 2h block
+    (a block unloads ~6.7 pallets at 18 min each), or shedding the store if
+    that is cheaper ($1500 Pak 'n Save / $800 other)
+  - feasibility: max % of stores shed on any day vs the 20% cap
+
+Also reports delivered/required %, excess % and the worst test day.
 """
 
 import glob
@@ -12,16 +22,24 @@ import numpy as np
 import pandas as pd
 
 DEMAND_FILE = "FoodstuffsDemand2026.csv"
+LOCATIONS_FILE = "FoodstuffsLocations.csv"
 ESTIMATES_DIR = "estimations"
 TEST_START = pd.Timestamp("2026-06-14")
 
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-# Weighting for the Accuracy% metric: running short is judged worse than
-# having spare capacity, so understock error counts at full weight and
-# overstock error counts at half weight.
-UNDERSTOCK_WEIGHT = 1.0
-OVERSTOCK_WEIGHT = 0.5
+# Cost parameters from the problem statement.
+UNLOAD_MIN_PER_PALLET = 18
+TRUCK_COST_PER_HOUR = 220.0
+OVER_COST_PER_PALLET = UNLOAD_MIN_PER_PALLET / 60 * TRUCK_COST_PER_HOUR  # $66 per over-delivered pallet
+
+WET_LEASE_BLOCK_COST = 1400.0
+WET_LEASE_BLOCK_MIN = 120  # 2 hours on-duty
+WET_LEASE_PALLETS_PER_BLOCK = WET_LEASE_BLOCK_MIN / UNLOAD_MIN_PER_PALLET  # ~6.7 pallets
+UNDER_COST_PER_PALLET = WET_LEASE_BLOCK_COST / WET_LEASE_PALLETS_PER_BLOCK  # $210 per short pallet
+
+SHED_COST_PAKNSAVE = 1500.0
+SHED_COST_OTHER = 800.0
 
 
 def load_test_demand():
@@ -36,7 +54,11 @@ def load_test_demand():
 	long_data["DayOfWeek"] = long_data["Date"].dt.day_name()
 
 	test = long_data[long_data["Date"] > TEST_START]
-	return test[test["DayOfWeek"] != "Sunday"].copy()
+	test = test[test["DayOfWeek"] != "Sunday"].copy()
+
+	# Store type is needed to price shedding (Pak 'n Save vs other).
+	loc = pd.read_csv(LOCATIONS_FILE)[["Supermarket", "Type"]]
+	return test.merge(loc, on="Supermarket")
 
 
 def load_estimate(path):
@@ -69,8 +91,9 @@ def compare_method(test, est):
 	per_day = []
 	delivered_total = 0
 	required_total = 0
-	weighted_error_total = 0
 	estimated_total = 0
+	dollar_cost_total = 0
+	max_shed_pct = 0
 
 	for day in WEEKDAYS[:-1]:
 		sub = test[test["DayOfWeek"] == day].copy()
@@ -89,22 +112,38 @@ def compare_method(test, est):
 
 		# error > 0 -> overstocked that store-day; error < 0 -> understocked
 		error = sub[day] - sub["Demand"]
-		understock = (-error).clip(lower=0)
-		overstock = error.clip(lower=0)
-		weighted_error_total += (UNDERSTOCK_WEIGHT * understock + OVERSTOCK_WEIGHT * overstock).sum()
+		shortfall = (-error).clip(lower=0)
+		excess = error.clip(lower=0)
+
+		# Under-delivery is covered by wet-leasing the short pallets, or by
+		# shedding the store if that is cheaper for that store-day.
+		wet_lease_cost = shortfall * UNDER_COST_PER_PALLET
+		shed_cost = np.where(
+			sub["Type"] == "Pak 'n Save", SHED_COST_PAKNSAVE, SHED_COST_OTHER
+		) * (shortfall > 0)
+		use_shed = (shed_cost < wet_lease_cost) & (shortfall > 0)
+		recourse_cost = np.where(use_shed, shed_cost, wet_lease_cost)
+
+		dollar_cost_total += (excess * OVER_COST_PER_PALLET + recourse_cost).sum()
+		max_shed_pct = max(max_shed_pct, 100 * use_shed.sum() / len(sub))
 
 		day_pct = 100 * sub["Delivered"].sum() / sub["Demand"].sum() if sub["Demand"].sum() else np.nan
 		per_day.append((sub["Date"].iloc[0], day_pct))
 
 	overall_pct = 100 * delivered_total / required_total if required_total else np.nan
-	# Accuracy%: penalizes understock at full weight and overstock at half
-	# weight, so it can't be gamed by just over-ordering (like Delivered% can).
-	accuracy_pct = 100 * (1 - weighted_error_total / required_total) if required_total else np.nan
 	excess_pct = 100 * (estimated_total - delivered_total) / required_total if required_total else np.nan
 
 	per_day_df = pd.DataFrame(per_day, columns=["Date", "Pct"])
 	worst = per_day_df.sort_values("Pct").iloc[0]
-	return overall_pct, accuracy_pct, excess_pct, worst["Pct"], worst["Date"].strftime("%d/%m"), required_total
+	return (
+		overall_pct,
+		excess_pct,
+		dollar_cost_total,
+		max_shed_pct,
+		worst["Pct"],
+		worst["Date"].strftime("%d/%m"),
+		required_total,
+	)
 
 
 def main():
@@ -124,26 +163,27 @@ def main():
 		print(f"Comparing {name} ...")
 		try:
 			est = load_estimate(path)
-			overall, accuracy, excess, worst_pct, worst_date, required = compare_method(test, est)
+			overall, excess, cost, max_shed, worst_pct, worst_date, required = compare_method(test, est)
 		except (ValueError, KeyError) as err:
 			print(f"  SKIPPED: {err}")
 			continue
 		rows.append(
 			{
 				"Method": name,
+				"Error cost ($)": round(cost),
 				"Delivered %": round(overall, 1),
-				"Accuracy %": round(accuracy, 1),
 				"Excess %": round(excess, 1),
+				"Max shed %": round(max_shed, 1),
 				"Worst day %": round(worst_pct, 1),
 				"Worst day": worst_date,
 				"Test pallets (required)": int(required),
 			}
 		)
 
-	result = pd.DataFrame(rows).sort_values("Accuracy %", ascending=False).reset_index(drop=True)
+	result = pd.DataFrame(rows).sort_values("Error cost ($)").reset_index(drop=True)
 	result.index += 1
 
-	print("\nRanking by Accuracy % (understock penalized 2x more than overstock):\n")
+	print("\nRanking by estimated error cost ($) - lowest is best:\n")
 	print(result.to_string(index=True))
 
 
