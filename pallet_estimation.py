@@ -17,13 +17,18 @@ tidy.loc[(tidy['Supermarket'] == 'Four Square Ellerslie') &
 # --- Remove King's Birthday (1 June 2026, Monday) - stores closed, demand = 0 ---
 tidy = tidy[tidy['Date'] != '2026-06-01']
 
+# --- Keep only the TRAINING weeks (first 6 weeks, up to 14 June 2026) ---
+# The last 2 weeks are held out as a test set (matching compare_estimates.py),
+# so they must NOT be used to build the estimate, or the comparison is unfair.
+train = tidy[tidy['Date'] <= '2026-06-14']
+
 # --- Estimate pallets required per store per day-of-week ---
 # 80% service level: estimate covers actual demand on ~80% of days.
 z = norm.ppf(0.8)
 
-stats = (tidy.groupby(['Supermarket', 'DayOfWeek'])['Demand']
-              .agg(mean='mean', std='std')
-              .reset_index())
+stats = (train.groupby(['Supermarket', 'DayOfWeek'])['Demand']
+               .agg(mean='mean', std='std')
+               .reset_index())
 stats['PalletEstimate'] = np.ceil(stats['mean'] + z * stats['std'].fillna(0)).astype(int)
 stats.loc[stats['DayOfWeek'] == 'Sunday', 'PalletEstimate'] = 0
 
@@ -34,3 +39,8 @@ pallet_table = pallet_table[day_order]
 
 print(pallet_table)
 pallet_table.to_csv('pallet_estimates.csv')
+
+# --- Also save in the format compare_estimates.py expects ---
+import os
+os.makedirs('estimates', exist_ok=True)
+pallet_table.reset_index().to_csv('estimates/estimate_tomi.csv', index=False)
