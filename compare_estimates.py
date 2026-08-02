@@ -23,6 +23,20 @@ WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", 
 UNDERSTOCK_WEIGHT = 1.0
 OVERSTOCK_WEIGHT = 0.5
 
+# --- Cost model (from the project brief) ---
+# Understock: a shortfall pallet is assumed to require emergency capacity
+# wet-leased from Linfox at $1400 per 2-hour block. Assuming a similar
+# ~16-pallet capacity per block gives an approximate per-pallet cost.
+TRUCK_CAPACITY = 16
+WETLEASE_COST_PER_BLOCK = 1400
+UNDERSTOCK_COST_PER_PALLET = WETLEASE_COST_PER_BLOCK / TRUCK_CAPACITY  # ~$87.50/pallet
+
+# Overstock: spare pallets on a truck already running the route cost
+# ~nothing, UNLESS they push the route over the 16-pallet truck capacity
+# and force an extra truck/trip - which depends on the (not yet solved)
+# routing plan. Left at 0 as a placeholder; revisit once routes are known.
+OVERSTOCK_COST_PER_PALLET = 0.0
+
 
 def load_test_demand():
 	demand = pd.read_csv(DEMAND_FILE)
@@ -56,6 +70,7 @@ def compare_method(test, est):
 	required_total = 0
 	weighted_error_total = 0
 	estimated_total = 0
+	total_cost = 0
 
 	for day in WEEKDAYS[:-1]:
 		sub = test[test["DayOfWeek"] == day].copy()
@@ -77,6 +92,7 @@ def compare_method(test, est):
 		understock = (-error).clip(lower=0)
 		overstock = error.clip(lower=0)
 		weighted_error_total += (UNDERSTOCK_WEIGHT * understock + OVERSTOCK_WEIGHT * overstock).sum()
+		total_cost += (understock * UNDERSTOCK_COST_PER_PALLET + overstock * OVERSTOCK_COST_PER_PALLET).sum()
 
 		day_pct = 100 * sub["Delivered"].sum() / sub["Demand"].sum() if sub["Demand"].sum() else np.nan
 		per_day.append((sub["Date"].iloc[0], day_pct))
@@ -89,7 +105,8 @@ def compare_method(test, est):
 
 	per_day_df = pd.DataFrame(per_day, columns=["Date", "Pct"])
 	worst = per_day_df.sort_values("Pct").iloc[0]
-	return overall_pct, accuracy_pct, excess_pct, worst["Pct"], worst["Date"].strftime("%d/%m"), required_total
+	return (overall_pct, accuracy_pct, excess_pct, worst["Pct"], worst["Date"].strftime("%d/%m"),
+	        required_total, total_cost)
 
 
 def main():
@@ -107,10 +124,11 @@ def main():
 		name = os.path.basename(path).removeprefix("estimate_").removesuffix(".csv")
 		print(f"Comparing {name} ...")
 		est = load_estimate(path)
-		overall, accuracy, excess, worst_pct, worst_date, required = compare_method(test, est)
+		overall, accuracy, excess, worst_pct, worst_date, required, cost = compare_method(test, est)
 		rows.append(
 			{
 				"Method": name,
+				"Est. Cost ($)": int(round(cost)),
 				"Delivered %": round(overall, 1),
 				"Accuracy %": round(accuracy, 1),
 				"Excess %": round(excess, 1),
@@ -120,10 +138,13 @@ def main():
 			}
 		)
 
-	result = pd.DataFrame(rows).sort_values("Accuracy %", ascending=False).reset_index(drop=True)
+	result = pd.DataFrame(rows).sort_values("Est. Cost ($)", ascending=True).reset_index(drop=True)
 	result.index += 1
 
-	print("\nRanking by Accuracy % (understock penalized 2x more than overstock):\n")
+	print(f"\nCost model: understock ${UNDERSTOCK_COST_PER_PALLET:.2f}/pallet "
+	      f"(Linfox wet-lease, ${WETLEASE_COST_PER_BLOCK}/2hr block / {TRUCK_CAPACITY} pallets), "
+	      f"overstock ${OVERSTOCK_COST_PER_PALLET:.2f}/pallet (placeholder - routing not yet solved)\n")
+	print("Ranking by estimated cost over the test weeks (lower is better):\n")
 	print(result.to_string(index=True))
 
 
