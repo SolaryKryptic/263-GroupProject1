@@ -22,12 +22,19 @@ Modelling rules (from the problem statement):
 
 Generation methods (all produce feasible trips):
   1. single-stop trips (every store with demand > 0)  - guarantees coverage
-  2. nearest-neighbour insertions per seed store
-  3. randomised Clarke-Wright savings restarts
-  4. random spatially-clustered subsets (nearest-K stores)
+  2. exhaustive 2-stop pairs
+  3. nearest-neighbour insertions per seed store
+  4. randomised Clarke-Wright savings restarts
+  5. random spatially-clustered subsets (nearest-K stores)
 
 All trips are de-duplicated on the canonical store set, keeping the cheapest
-ordering found. Trips are written to routes/pool_<Weekday>.csv
+ordering found.
+
+Two pool versions are produced so they can be compared:
+  - v1 (routes/pool_<Weekday>.csv): store order from the generators only
+  - v2 (routes_2opt/pool_<Weekday>.csv): same candidate store-sets, but each
+    trip's order is tightened with 2-opt + relocate local search (same seed,
+    so the store-sets are identical and the only difference is the ordering)
 """
 
 import os
@@ -37,7 +44,6 @@ import pandas as pd
 
 DEMAND_FILE = "estimations/0.5ayush6week-estimated_demand.csv"
 DURATIONS_FILE = "FoodstuffsDurations2026.csv"
-OUTPUT_DIR = "routes"
 WAREHOUSE = "Warehouse"
 
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -57,6 +63,8 @@ SAVINGS_RESTARTS = 150
 RANDOM_SUBSETS = 6000
 RANDOM_K = 10  # candidate neighbours when building random subsets
 MAX_POOL_PER_DAY = 40000
+
+USE_2OPT = False  # set per pass: tighten trip ordering with 2-opt + relocate
 
 
 def build_cost(drive_sec, pallets):
@@ -93,6 +101,39 @@ def nearest_neighbour_order(nodes, d_sec, wh_idx):
     return order[1:]
 
 
+def improve_order(order, d_sec, wh_idx):
+    """Tighten a trip's store ordering with 2-opt (segment reversals) and
+    relocate (Or-opt) moves until no single move shortens the drive time."""
+    order = list(order)
+    n = len(order)
+    if n < 2:
+        return order
+    changed = True
+    while changed:
+        changed = False
+        best_order, best_t = None, route_time(order, d_sec, wh_idx)
+        for i in range(n):
+            for j in range(i + 1, n):
+                cand = order[:i] + order[i : j + 1][::-1] + order[j + 1 :]
+                t = route_time(cand, d_sec, wh_idx)
+                if t < best_t:
+                    best_t, best_order = t, cand
+        for i in range(n):
+            for j in range(n):
+                if i == j:
+                    continue
+                cand = list(order)
+                node = cand.pop(i)
+                cand.insert(j, node)
+                t = route_time(cand, d_sec, wh_idx)
+                if t < best_t:
+                    best_t, best_order = t, cand
+        if best_order is not None:
+            order = best_order
+            changed = True
+    return order
+
+
 def is_feasible(order, pallets, d_sec, wh_idx, single_ok=True):
     total = sum(pallets[n] for n in order)
     if total > TRUCK_CAPACITY:
@@ -108,6 +149,8 @@ def is_feasible(order, pallets, d_sec, wh_idx, single_ok=True):
 def add_trip(pool, stores, order, pallets, d_sec, wh_idx, name_of, weekday):
     """Insert a trip keyed on its canonical store set, keeping the cheapest one."""
     key = tuple(sorted(stores))
+    if USE_2OPT:
+        order = improve_order(order, d_sec, wh_idx)
     drive_sec = route_time(order, d_sec, wh_idx)
     total_p = sum(pallets[n] for n in stores)
     total_min, base, ot_min, ot_cost, total_cost = build_cost(drive_sec, total_p)
@@ -188,8 +231,11 @@ def savings_cw_restart(active, pallets, d_sec, wh_idx, name_of, pool, rng, weekd
         used.discard(j)
 
 
-def main():
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+def generate_all(out_dir, use_2opt, rng, tag):
+    """Build the pool for every weekday into `out_dir`; returns {Weekday: DataFrame}."""
+    global USE_2OPT
+    USE_2OPT = use_2opt
+    os.makedirs(out_dir, exist_ok=True)
 
     est = pd.read_csv(DEMAND_FILE)
     est = est.set_index("Supermarket")
@@ -204,7 +250,7 @@ def main():
     name_of = {i: name for name, i in idx_map.items()}
     d_sec = dur.to_numpy(dtype=float)
 
-    rng = np.random.default_rng(263)
+    pools = {}
 
     for weekday in WEEKDAYS:
         pallets = est[weekday].to_numpy(dtype=int)
@@ -223,7 +269,6 @@ def main():
                 order = nearest_neighbour_order(nodes, d_sec, wh_idx)
                 add_trip(pool, nodes, order, pallets, d_sec, wh_idx, name_of, weekday)
 
-        dist_from_wh = d_sec[wh_idx]
         for seed in active:
             others = sorted(active, key=lambda j: d_sec[seed, j])
             for k in range(2, min(MAX_STOPS, len(active)) + 1):
@@ -258,17 +303,34 @@ def main():
 
         df = pd.DataFrame(rows)
         df.insert(0, "RouteID", [f"{weekday[:3]}_{i:05d}" for i in range(1, len(df) + 1)])
-        df.to_csv(os.path.join(OUTPUT_DIR, f"pool_{weekday}.csv"), index=False)
+        df.to_csv(os.path.join(out_dir, f"pool_{weekday}.csv"), index=False)
 
         hist = df["NStops"].value_counts().sort_index()
         ot_count = (df["OvertimeMin"] > 0).sum()
-        print(f"{weekday}: {len(df)} unique trips | coverage {100 * (len(active) - len(uncovered)) / len(active):.0f}% "
-              f"({len(active)} stores)" + (f" | UNCOVERED: {uncovered}" if uncovered else ""))
+        print(f"[{tag}] {weekday}: {len(df)} unique trips | coverage "
+              f"{100 * (len(active) - len(uncovered)) / len(active):.0f}% ({len(active)} stores)"
+              + (f" | UNCOVERED: {uncovered}" if uncovered else ""))
         print(f"   stop histogram: " + ", ".join(f"{k}stop={int(v)}" for k, v in hist.items()))
         print(f"   overtime trips: {ot_count} | min trip cost ${df['TotalCost'].min():.2f}, "
               f"max ${df['TotalCost'].max():.2f}")
 
-    print("\nDone. Pools written to", OUTPUT_DIR)
+        pools[weekday] = df
+
+    return pools
+
+
+def main():
+    v1 = generate_all("routes", False, np.random.default_rng(263), "v1")
+    v2 = generate_all("routes_2opt", True, np.random.default_rng(263), "v2")
+
+    print("\n2-opt improvement (same candidate store-sets, tightened ordering):")
+    for weekday in WEEKDAYS:
+        d1 = v1[weekday]["DriveMin"].sum()
+        d2 = v2[weekday]["DriveMin"].sum()
+        c1 = v1[weekday]["TotalCost"].sum()
+        c2 = v2[weekday]["TotalCost"].sum()
+        print(f"  {weekday:10s} drive {d1:8.0f} -> {d2:8.0f} min ({(1 - d2 / d1) * 100:5.1f}%)  "
+              f"pool cost ${c1:10.0f} -> ${c2:10.0f} ({(1 - c2 / c1) * 100:4.1f}%)")
 
 
 if __name__ == "__main__":
