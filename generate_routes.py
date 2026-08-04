@@ -124,9 +124,9 @@ from pathlib import Path
 
 # ----------------------------- CONFIG ---------------------------------- #
 
-DURATIONS_CSV = "/mnt/user-data/uploads/FoodstuffsDurations2026.csv"
-DEMAND_CSV = "/mnt/user-data/uploads/0_5ayush6week-estimated_demand.csv"
-OUTPUT_DIR = "/mnt/user-data/outputs"
+DURATIONS_CSV = "FoodstuffsDurations2026.csv"
+DEMAND_CSV = "0_5ayush6week-estimated_demand.csv"
+OUTPUT_DIR = "routes"
 
 WAREHOUSE = "Warehouse"
 CAPACITY_PALLETS = 16
