@@ -1,0 +1,7 @@
+day,num_stores_with_demand,total_pallets,min_trucks_by_capacity,unique_candidate_routes,min_store_appearances,max_store_appearances
+Monday,55,387,25,2795,20,495
+Tuesday,55,403,26,2345,22,375
+Wednesday,55,415,26,2306,2,347
+Thursday,55,414,26,2417,9,674
+Friday,55,408,26,2338,10,565
+Saturday,53,176,11,3176,145,957
