@@ -1,0 +1,834 @@
+RouteID,Weekday,Stores,Pallets,DriveMin,UnloadMin,TotalMin,BaseCost,OvertimeMin,OvertimeCost,TotalCost,NStops
+Wed_00001,Wednesday,Four Square Glen Eden,3,42.8,54,96.8,354.77,0.0,0.0,354.77,1
+Wed_00002,Wednesday,Four Square Onehunga,4,25.9,72,97.9,358.99,0.0,0.0,358.99,1
+Wed_00003,Wednesday,New World Metro Queen St,3,47.6,54,101.6,372.37,0.0,0.0,372.37,1
+Wed_00004,Wednesday,Four Square Ellerslie,3,56.7,54,110.7,405.8,0.0,0.0,405.8,1
+Wed_00005,Wednesday,Four Square Eden Terrace,4,39.5,72,111.5,408.99,0.0,0.0,408.99,1
+Wed_00006,Wednesday,Four Square Hobsonville,3,61.9,54,115.9,424.94,0.0,0.0,424.94,1
+Wed_00007,Wednesday,Four Square Britomart,4,48.7,72,120.7,442.72,0.0,0.0,442.72,1
+Wed_00008,Wednesday,New World Metro Shore City,3,68.9,54,122.9,450.71,0.0,0.0,450.71,1
+Wed_00009,Wednesday,Four Square Pakuranga Heights,3,71.4,54,125.4,459.68,0.0,0.0,459.68,1
+Wed_00010,Wednesday,Four Square Fair Price Henderson,4,54.2,72,126.2,462.8,0.0,0.0,462.8,1
+Wed_00011,Wednesday,Four Square Cockle Bay,2,91.8,36,127.8,468.43,0.0,0.0,468.43,1
+Wed_00012,Wednesday,Four Square Remuera,4,56.8,72,128.8,472.32,0.0,0.0,472.32,1
+Wed_00013,Wednesday,Four Square St Heliers,3,80.0,54,134.0,491.2,0.0,0.0,491.2,1
+Wed_00014,Wednesday,Four Square Botany Junction,4,67.3,72,139.3,510.95,0.0,0.0,510.95,1
+Wed_00015,Wednesday,Four Square Lancaster,4,80.8,72,152.8,560.13,0.0,0.0,560.13,1
+Wed_00016,Wednesday,New World Victoria Park,6,46.5,108,154.5,566.58,0.0,0.0,566.58,1
+Wed_00017,Wednesday,New World Point Chevalier,7,34.7,126,160.7,589.37,0.0,0.0,589.37,1
+Wed_00018,Wednesday,New World Mt Albert,8,24.2,144,168.2,616.84,0.0,0.0,616.84,1
+Wed_00019,Wednesday,New World Mt Roskill,9,6.5,162,168.5,618.0,0.0,0.0,618.0,1
+Wed_00020,Wednesday,New World New Lynn,8,27.7,144,171.7,629.55,0.0,0.0,629.55,1
+Wed_00021,Wednesday,New World Green Bay,8,28.8,144,172.8,633.45,0.0,0.0,633.45,1
+Wed_00022,Wednesday,"New World Metro Queen St,Four Square Ellerslie",6,67.7,108,175.7,644.35,0.0,0.0,644.35,2
+Wed_00023,Wednesday,Four Square Torbay,4,104.3,72,176.3,646.34,0.0,0.0,646.34,1
+Wed_00024,Wednesday,"New World Metro Queen St,Four Square Britomart",7,50.3,126,176.3,646.55,0.0,0.0,646.55,2
+Wed_00025,Wednesday,"Four Square Eden Terrace,New World Metro Queen St",7,51.3,126,177.3,649.93,0.0,0.0,649.93,2
+Wed_00026,Wednesday,"Four Square Onehunga,Four Square Ellerslie",7,51.4,126,177.4,650.49,0.0,0.0,650.49,2
+Wed_00027,Wednesday,New World Birkenhead,6,70.4,108,178.4,654.24,0.0,0.0,654.24,1
+Wed_00028,Wednesday,"Four Square Onehunga,New World Metro Queen St",7,54.4,126,180.4,661.5,0.0,0.0,661.5,2
+Wed_00029,Wednesday,"Four Square Glen Eden,New World Metro Queen St",6,77.4,108,185.4,679.98,0.0,0.0,679.98,2
+Wed_00030,Wednesday,"Four Square Pakuranga Heights,Four Square Cockle Bay",5,95.6,90,185.6,680.71,0.0,0.0,680.71,2
+Wed_00031,Wednesday,"New World Metro Queen St,New World Metro Shore City",6,77.9,108,185.9,681.68,0.0,0.0,681.68,2
+Wed_00032,Wednesday,"Four Square Ellerslie,Four Square Remuera",7,60.3,126,186.3,683.02,0.0,0.0,683.02,2
+Wed_00033,Wednesday,"Four Square Eden Terrace,Four Square Ellerslie",7,61.2,126,187.2,686.43,0.0,0.0,686.43,2
+Wed_00034,Wednesday,New World Hobsonville,7,61.5,126,187.5,687.49,0.0,0.0,687.49,1
+Wed_00035,Wednesday,"Four Square Onehunga,Four Square Glen Eden",7,62.0,126,188.0,689.46,0.0,0.0,689.46,2
+Wed_00036,Wednesday,New World Papakura,6,80.6,108,188.6,691.63,0.0,0.0,691.63,1
+Wed_00037,Wednesday,New World Southmall,7,63.2,126,189.2,693.85,0.0,0.0,693.85,1
+Wed_00038,Wednesday,"Four Square Ellerslie,Four Square St Heliers",6,81.4,108,189.4,694.55,0.0,0.0,694.55,2
+Wed_00039,Wednesday,New World Newmarket,8,45.6,144,189.6,695.13,0.0,0.0,695.13,1
+Wed_00040,Wednesday,"Four Square Glen Eden,Four Square Hobsonville",6,82.4,108,190.4,698.18,0.0,0.0,698.18,2
+Wed_00041,Wednesday,"Four Square Onehunga,Four Square Eden Terrace",8,47.2,144,191.2,701.04,0.0,0.0,701.04,2
+Wed_00042,Wednesday,"New World Metro Queen St,Four Square St Heliers",6,83.5,108,191.5,702.32,0.0,0.0,702.32,2
+Wed_00043,Wednesday,"Four Square Glen Eden,Four Square Fair Price Henderson",7,66.4,126,192.4,705.32,0.0,0.0,705.32,2
+Wed_00044,Wednesday,"Four Square Ellerslie,Four Square Pakuranga Heights",6,84.8,108,192.8,707.07,0.0,0.0,707.07,2
+Wed_00045,Wednesday,"New World Metro Queen St,Four Square Remuera",7,67.9,126,193.9,710.86,0.0,0.0,710.86,2
+Wed_00046,Wednesday,"Four Square Glen Eden,Four Square Ellerslie",6,86.6,108,194.6,713.41,0.0,0.0,713.41,2
+Wed_00047,Wednesday,"New World Metro Queen St,Four Square Hobsonville",6,86.8,108,194.8,714.33,0.0,0.0,714.33,2
+Wed_00048,Wednesday,"Four Square Britomart,Four Square Ellerslie",7,68.9,126,194.9,714.69,0.0,0.0,714.69,2
+Wed_00049,Wednesday,"Four Square Ellerslie,Four Square Cockle Bay",5,105.2,90,195.2,715.82,0.0,0.0,715.82,2
+Wed_00050,Wednesday,New World Eastridge,7,69.3,126,195.3,715.94,0.0,0.0,715.94,1
+Wed_00051,Wednesday,"Four Square Eden Terrace,Four Square Glen Eden",7,69.3,126,195.3,715.97,0.0,0.0,715.97,2
+Wed_00052,Wednesday,"Four Square Onehunga,Four Square Remuera",8,53.2,144,197.2,723.02,0.0,0.0,723.02,2
+Wed_00053,Wednesday,New World Remuera,8,53.8,144,197.8,725.41,0.0,0.0,725.41,1
+Wed_00054,Wednesday,"Four Square Eden Terrace,Four Square Britomart",8,54.0,144,198.0,726.1,0.0,0.0,726.1,2
+Wed_00055,Wednesday,New World Ormiston,7,72.3,126,198.3,727.02,0.0,0.0,727.02,1
+Wed_00056,Wednesday,"Four Square Ellerslie,New World Metro Shore City",6,90.7,108,198.7,728.4,0.0,0.0,728.4,2
+Wed_00057,Wednesday,"Four Square Hobsonville,New World Metro Shore City",6,91.4,108,199.4,731.29,0.0,0.0,731.29,2
+Wed_00058,Wednesday,"New World Metro Queen St,Four Square Pakuranga Heights",6,91.9,108,199.9,732.99,0.0,0.0,732.99,2
+Wed_00059,Wednesday,"Four Square Pakuranga Heights,Four Square St Heliers",6,92.0,108,200.0,733.2,0.0,0.0,733.2,2
+Wed_00060,Wednesday,"Four Square Onehunga,Four Square Pakuranga Heights",7,74.0,126,200.0,733.32,0.0,0.0,733.32,2
+Wed_00061,Wednesday,"Four Square Onehunga,Four Square Britomart",8,56.3,144,200.3,734.28,0.0,0.0,734.28,2
+Wed_00062,Wednesday,"Four Square Onehunga,Four Square St Heliers",7,75.2,126,201.2,737.57,0.0,0.0,737.57,2
+Wed_00063,Wednesday,"Four Square Fair Price Henderson,Four Square Hobsonville",7,75.2,126,201.2,737.74,0.0,0.0,737.74,2
+Wed_00064,Wednesday,"Four Square Cockle Bay,Four Square St Heliers",5,112.2,90,202.2,741.4,0.0,0.0,741.4,2
+Wed_00065,Wednesday,"New World Metro Queen St,Four Square Cockle Bay",5,112.3,90,202.3,741.74,0.0,0.0,741.74,2
+Wed_00066,Wednesday,"Four Square Onehunga,Four Square Cockle Bay",6,94.4,108,202.4,742.08,0.0,0.0,742.08,2
+Wed_00067,Wednesday,"Four Square Onehunga,Four Square Hobsonville",7,76.9,126,202.9,743.81,0.0,0.0,743.81,2
+Wed_00068,Wednesday,"Four Square Onehunga,New World Metro Shore City",7,77.6,126,203.6,746.36,0.0,0.0,746.36,2
+Wed_00069,Wednesday,"Four Square Ellerslie,Four Square Hobsonville",6,95.9,108,203.9,747.76,0.0,0.0,747.76,2
+Wed_00070,Wednesday,"Four Square Britomart,New World Metro Shore City",7,78.4,126,204.4,749.62,0.0,0.0,749.62,2
+Wed_00071,Wednesday,"Four Square Glen Eden,Four Square Britomart",7,78.6,126,204.6,750.32,0.0,0.0,750.32,2
+Wed_00072,Wednesday,"Four Square Eden Terrace,Four Square Hobsonville",7,78.8,126,204.8,750.95,0.0,0.0,750.95,2
+Wed_00073,Wednesday,"Four Square Pakuranga Heights,Four Square Botany Junction",7,78.8,126,204.8,750.97,0.0,0.0,750.97,2
+Wed_00074,Wednesday,"New World Metro Queen St,Four Square Fair Price Henderson",7,79.1,126,205.1,752.19,0.0,0.0,752.19,2
+Wed_00075,Wednesday,"Four Square Eden Terrace,Four Square Remuera",8,61.3,144,205.3,752.94,0.0,0.0,752.94,2
+Wed_00076,Wednesday,"Four Square Remuera,Four Square St Heliers",7,80.6,126,206.6,757.35,0.0,0.0,757.35,2
+Wed_00077,Wednesday,"Four Square Eden Terrace,New World Metro Shore City",7,80.6,126,206.6,757.43,0.0,0.0,757.43,2
+Wed_00078,Wednesday,"Four Square Glen Eden,New World Metro Shore City",6,98.8,108,206.8,758.32,0.0,0.0,758.32,2
+Wed_00079,Wednesday,"Four Square Britomart,Four Square St Heliers",7,82.7,126,208.7,765.17,0.0,0.0,765.17,2
+Wed_00080,Wednesday,"Four Square Botany Junction,Four Square Cockle Bay",6,101.2,108,209.2,767.17,0.0,0.0,767.17,2
+Wed_00081,Wednesday,Pak 'n Save Lincoln Road,9,47.4,162,209.4,767.67,0.0,0.0,767.67,1
+Wed_00082,Wednesday,"Four Square Ellerslie,Four Square Botany Junction",7,83.5,126,209.5,768.04,0.0,0.0,768.04,2
+Wed_00083,Wednesday,New World Stonefields,8,65.5,144,209.5,768.25,0.0,0.0,768.25,1
+Wed_00084,Wednesday,"Four Square Eden Terrace,Four Square St Heliers",7,84.5,126,210.5,770.0,0.5,2.57,772.57,2
+Wed_00085,Wednesday,"Four Square Eden Terrace,Four Square Pakuranga Heights",7,85.4,126,211.4,770.0,1.4,7.15,777.15,2
+Wed_00086,Wednesday,"Four Square Glen Eden,Four Square Remuera",7,86.7,126,212.7,770.0,2.7,13.98,783.98,2
+Wed_00087,Wednesday,New World Papatoetoe,9,50.8,162,212.8,770.0,2.8,14.28,784.28,1
+Wed_00088,Wednesday,"Four Square Britomart,Four Square Remuera",8,69.1,144,213.1,770.0,3.1,15.78,785.78,2
+Wed_00089,Wednesday,"Four Square Onehunga,Four Square Fair Price Henderson",8,69.2,144,213.2,770.0,3.2,16.46,786.46,2
+Wed_00090,Wednesday,"Four Square Pakuranga Heights,New World Metro Shore City",6,105.3,108,213.3,770.0,3.3,17.3,787.3,2
+Wed_00091,Wednesday,"Four Square Fair Price Henderson,Four Square Ellerslie",7,87.4,126,213.4,770.0,3.4,17.73,787.73,2
+Wed_00092,Wednesday,"Four Square Eden Terrace,Four Square Cockle Bay",6,105.8,108,213.8,770.0,3.8,19.48,789.48,2
+Wed_00093,Wednesday,"Four Square Britomart,Four Square Hobsonville",7,88.0,126,214.0,770.0,4.0,20.67,790.67,2
+Wed_00094,Wednesday,"New World Victoria Park,New World Metro Queen St",9,52.1,162,214.1,770.0,4.1,21.29,791.29,2
+Wed_00095,Wednesday,"Four Square Eden Terrace,Four Square Fair Price Henderson",8,71.1,144,215.1,770.0,5.1,26.5,796.5,2
+Wed_00096,Wednesday,"New World Metro Queen St,Four Square Lancaster",7,89.8,126,215.8,770.0,5.8,29.74,799.74,2
+Wed_00097,Wednesday,"Four Square Remuera,Four Square Pakuranga Heights",7,89.8,126,215.8,770.0,5.8,30.2,800.2,2
+Wed_00098,Wednesday,"New World Metro Queen St,Four Square Botany Junction",7,90.5,126,216.5,770.0,6.5,33.75,803.75,2
+Wed_00099,Wednesday,"Four Square Remuera,New World Metro Shore City",7,90.8,126,216.8,770.0,6.8,35.1,805.1,2
+Wed_00100,Wednesday,"Four Square Glen Eden,Four Square St Heliers",6,109.9,108,217.9,770.0,7.9,40.59,810.59,2
+Wed_00101,Wednesday,"Four Square Remuera,Four Square Cockle Bay",6,110.2,108,218.2,770.0,8.2,42.53,812.53,2
+Wed_00102,Wednesday,"Four Square Onehunga,Four Square Botany Junction",8,74.5,144,218.5,770.0,8.5,44.03,814.03,2
+Wed_00103,Wednesday,"Four Square Glen Eden,Four Square Pakuranga Heights",6,110.7,108,218.7,770.0,8.7,45.17,815.17,2
+Wed_00104,Wednesday,"Four Square Britomart,Four Square Pakuranga Heights",7,93.1,126,219.1,770.0,9.1,46.96,816.96,2
+Wed_00105,Wednesday,New World Milford,8,75.5,144,219.5,770.0,9.5,48.84,818.84,1
+Wed_00106,Wednesday,"New World Metro Shore City,Four Square St Heliers",6,112.9,108,220.9,770.0,10.9,56.32,826.32,2
+Wed_00107,Wednesday,"Four Square Glen Eden,Four Square Cockle Bay",5,131.1,90,221.1,770.0,11.1,57.5,827.5,2
+Wed_00108,Wednesday,"New World Metro Shore City,Four Square Lancaster",7,95.5,126,221.5,770.0,11.5,59.28,829.28,2
+Wed_00109,Wednesday,"Four Square Britomart,Four Square Cockle Bay",6,113.5,108,221.5,770.0,11.5,59.3,829.3,2
+Wed_00110,Wednesday,New World Browns Bay,7,95.5,126,221.5,770.0,11.5,59.63,829.63,1
+Wed_00111,Wednesday,"Four Square Remuera,Four Square Hobsonville",7,96.1,126,222.1,770.0,12.1,62.38,832.38,2
+Wed_00112,Wednesday,"Four Square Hobsonville,Four Square Lancaster",7,97.6,126,223.6,770.0,13.6,70.27,840.27,2
+Wed_00113,Wednesday,New World Botany,8,79.9,144,223.9,770.0,13.9,71.62,841.62,1
+Wed_00114,Wednesday,"New World Metro Shore City,Four Square Cockle Bay",5,134.2,90,224.2,770.0,14.2,73.23,843.23,2
+Wed_00115,Wednesday,"Four Square Britomart,Four Square Fair Price Henderson",8,80.3,144,224.3,770.0,14.3,74.03,844.03,2
+Wed_00116,Wednesday,"Four Square Fair Price Henderson,New World Metro Shore City",7,98.4,126,224.4,770.0,14.4,74.23,844.23,2
+Wed_00117,Wednesday,Pak 'n Save Royal Oak,11,26.9,198,224.9,770.0,14.9,76.94,846.94,1
+Wed_00118,Wednesday,"Four Square Hobsonville,Four Square St Heliers",6,118.4,108,226.4,770.0,16.4,84.71,854.71,2
+Wed_00119,Wednesday,"Four Square Hobsonville,Four Square Pakuranga Heights",6,119.3,108,227.3,770.0,17.3,89.28,859.28,2
+Wed_00120,Wednesday,"Four Square Eden Terrace,Four Square Botany Junction",8,84.0,144,228.0,770.0,18.0,93.05,863.05,2
+Wed_00121,Wednesday,"Four Square Ellerslie,Four Square Lancaster",7,102.5,126,228.5,770.0,18.5,95.57,865.57,2
+Wed_00122,Wednesday,"Four Square Hobsonville,Four Square Cockle Bay",5,139.7,90,229.7,770.0,19.7,101.61,871.61,2
+Wed_00123,Wednesday,New World Howick,8,85.8,144,229.8,770.0,19.8,102.46,872.46,1
+Wed_00124,Wednesday,"Four Square Glen Eden,Four Square Botany Junction",7,104.3,126,230.3,770.0,20.3,104.74,874.74,2
+Wed_00125,Wednesday,"Four Square Fair Price Henderson,Four Square Remuera",8,87.6,144,231.6,770.0,21.6,111.45,881.45,2
+Wed_00126,Wednesday,"Four Square Eden Terrace,New World Victoria Park",10,52.3,180,232.3,770.0,22.3,115.1,885.1,2
+Wed_00127,Wednesday,"Four Square Remuera,Four Square Botany Junction",8,88.5,144,232.5,770.0,22.5,116.1,886.1,2
+Wed_00128,Wednesday,"New World Victoria Park,Four Square Ellerslie",9,71.1,162,233.1,770.0,23.1,119.19,889.19,2
+Wed_00129,Wednesday,"Four Square Botany Junction,Four Square St Heliers",7,107.1,126,233.1,770.0,23.1,119.42,889.42,2
+Wed_00130,Wednesday,"Four Square Onehunga,Four Square Lancaster",8,89.4,144,233.4,770.0,23.4,120.88,890.88,2
+Wed_00131,Wednesday,"New World Victoria Park,Four Square Britomart",10,53.8,180,233.8,770.0,23.8,123.2,893.2,2
+Wed_00132,Wednesday,Pak 'n Save Westgate,10,54.0,180,234.0,770.0,24.0,123.91,893.91,1
+Wed_00133,Wednesday,"Four Square Britomart,Four Square Lancaster",8,90.3,144,234.3,770.0,24.3,125.47,895.47,2
+Wed_00134,Wednesday,"Four Square Onehunga,New World Victoria Park",10,55.4,180,235.4,770.0,25.4,131.24,901.24,2
+Wed_00135,Wednesday,"New World Point Chevalier,New World Metro Queen St",10,55.5,180,235.5,770.0,25.5,131.76,901.76,2
+Wed_00136,Wednesday,"Four Square Britomart,Four Square Botany Junction",8,91.7,144,235.7,770.0,25.7,132.87,902.87,2
+Wed_00137,Wednesday,"New World Victoria Park,New World Metro Shore City",9,74.2,162,236.2,770.0,26.2,135.46,905.46,2
+Wed_00138,Wednesday,"Four Square Eden Terrace,Four Square Lancaster",8,92.4,144,236.4,770.0,26.4,136.48,906.48,2
+Wed_00139,Wednesday,"Four Square Hobsonville,Four Square Torbay",7,110.7,126,236.7,770.0,26.7,137.75,907.75,2
+Wed_00140,Wednesday,"Four Square Fair Price Henderson,Four Square St Heliers",7,110.7,126,236.7,770.0,26.7,138.06,908.06,2
+Wed_00141,Wednesday,"Four Square Fair Price Henderson,Four Square Pakuranga Heights",7,111.6,126,237.6,770.0,27.6,142.64,912.64,2
+Wed_00142,Wednesday,Pak 'n Save Mt Albert,12,21.7,216,237.7,770.0,27.7,142.88,912.88,1
+Wed_00143,Wednesday,"Four Square Glen Eden,Four Square Lancaster",7,111.7,126,237.7,770.0,27.7,143.3,913.3,2
+Wed_00144,Wednesday,"New World Metro Queen St,Four Square Torbay",7,111.9,126,237.9,770.0,27.9,144.13,914.13,2
+Wed_00145,Wednesday,"Four Square Glen Eden,New World Victoria Park",9,76.4,162,238.4,770.0,28.4,146.82,916.82,2
+Wed_00146,Wednesday,"Four Square Botany Junction,New World Metro Shore City",7,113.0,126,239.0,770.0,29.0,149.84,919.84,2
+Wed_00147,Wednesday,"Four Square Fair Price Henderson,Four Square Cockle Bay",6,132.0,108,240.0,770.0,30.0,154.97,924.97,2
+Wed_00148,Wednesday,"New World Metro Queen St,New World Birkenhead",9,79.4,162,241.4,770.0,31.4,162.35,932.35,2
+Wed_00149,Wednesday,"New World Point Chevalier,Four Square Glen Eden",10,61.9,180,241.9,770.0,31.9,164.56,934.56,2
+Wed_00150,Wednesday,"New World Metro Shore City,Four Square Torbay",7,116.0,126,242.0,770.0,32.0,165.32,935.32,2
+Wed_00151,Wednesday,"New World Hobsonville,Four Square Hobsonville",10,62.9,180,242.9,770.0,32.9,169.81,939.81,2
+Wed_00152,Wednesday,"Four Square Pakuranga Heights,Four Square Lancaster",7,117.2,126,243.2,770.0,33.2,171.49,941.49,2
+Wed_00153,Wednesday,"Four Square Hobsonville,Four Square Botany Junction",7,117.9,126,243.9,770.0,33.9,175.19,945.19,2
+Wed_00154,Wednesday,"New World New Lynn,Four Square Glen Eden",11,46.0,198,244.0,770.0,34.0,175.71,945.71,2
+Wed_00155,Wednesday,"New World Green Bay,Four Square Glen Eden",11,46.1,198,244.1,770.0,34.1,176.02,946.02,2
+Wed_00156,Wednesday,"New World Point Chevalier,Four Square Ellerslie",10,64.6,180,244.6,770.0,34.6,178.87,948.87,2
+Wed_00157,Wednesday,"New World Point Chevalier,Four Square Eden Terrace",11,47.5,198,245.5,770.0,35.5,183.36,953.36,2
+Wed_00158,Wednesday,New World Long Bay,8,102.6,144,246.6,770.0,36.6,189.18,959.18,1
+Wed_00159,Wednesday,"Four Square Remuera,Four Square Lancaster",8,102.6,144,246.6,770.0,36.6,189.3,959.3,2
+Wed_00160,Wednesday,"New World Victoria Park,Four Square Hobsonville",9,85.1,162,247.1,770.0,37.1,191.47,961.47,2
+Wed_00161,Wednesday,"New World Birkenhead,New World Metro Shore City",9,85.3,162,247.3,770.0,37.3,192.66,962.66,2
+Wed_00162,Wednesday,"Four Square Onehunga,New World Point Chevalier",11,49.7,198,247.7,770.0,37.7,194.8,964.8,2
+Wed_00163,Wednesday,"Four Square Fair Price Henderson,Four Square Lancaster",8,104.5,144,248.5,770.0,38.5,199.04,969.04,2
+Wed_00164,Wednesday,"New World Mt Albert,New World Metro Queen St",11,51.3,198,249.3,770.0,39.3,203.01,973.01,2
+Wed_00165,Wednesday,"New World Metro Queen St,Four Square Britomart,Four Square Ellerslie",10,70.5,180,250.5,770.0,40.5,209.27,979.27,3
+Wed_00166,Wednesday,"Four Square Ellerslie,Four Square Torbay",7,124.6,126,250.6,770.0,40.6,209.96,979.96,2
+Wed_00167,Wednesday,"Four Square Lancaster,Four Square St Heliers",7,124.7,126,250.7,770.0,40.7,210.51,980.51,2
+Wed_00168,Wednesday,"Four Square Glen Eden,Four Square Torbay",7,124.8,126,250.8,770.0,40.8,210.78,980.78,2
+Wed_00169,Wednesday,"New World Victoria Park,Four Square Remuera",10,71.2,180,251.2,770.0,41.2,212.91,982.91,2
+Wed_00170,Wednesday,New World Albany,9,89.3,162,251.3,770.0,41.3,213.24,983.24,1
+Wed_00171,Wednesday,"New World Metro Queen St,Four Square Ellerslie,Four Square Remuera",10,71.3,180,251.3,770.0,41.3,213.57,983.57,3
+Wed_00172,Wednesday,"New World Point Chevalier,Four Square Hobsonville",10,72.1,180,252.1,770.0,42.1,217.57,987.57,2
+Wed_00173,Wednesday,"Four Square Onehunga,Four Square Ellerslie,Four Square Eden Terrace",11,55.0,198,253.0,770.0,43.0,222.3,992.3,3
+Wed_00174,Wednesday,New World Devonport,9,91.8,162,253.8,770.0,43.8,226.3,996.3,1
+Wed_00175,Wednesday,Pak 'n Save Manukau,11,55.9,198,253.9,770.0,43.9,227.05,997.05,1
+Wed_00176,Wednesday,"Four Square Lancaster,Four Square Cockle Bay",6,146.0,108,254.0,770.0,44.0,227.42,997.42,2
+Wed_00177,Wednesday,"Four Square Ellerslie,New World Birkenhead",9,92.2,162,254.2,770.0,44.2,228.18,998.18,2
+Wed_00178,Wednesday,"Four Square Fair Price Henderson,Four Square Botany Junction",8,110.2,144,254.2,770.0,44.2,228.54,998.54,2
+Wed_00179,Wednesday,"New World Mt Albert,Four Square Glen Eden",11,56.3,198,254.3,770.0,44.3,228.91,998.91,2
+Wed_00180,Wednesday,"New World Newmarket,New World Metro Queen St",11,56.4,198,254.4,770.0,44.4,229.5,999.5,2
+Wed_00181,Wednesday,Pak 'n Save Mangere,12,38.7,216,254.7,770.0,44.7,230.74,1000.74,1
+Wed_00182,Wednesday,"New World Point Chevalier,Four Square Britomart",11,56.7,198,254.7,770.0,44.7,230.88,1000.88,2
+Wed_00183,Wednesday,"New World Metro Queen St,New World Eastridge",10,74.8,180,254.8,770.0,44.8,231.6,1001.6,2
+Wed_00184,Wednesday,"Four Square Onehunga,Four Square Torbay",8,111.5,144,255.5,770.0,45.5,235.27,1005.27,2
+Wed_00185,Wednesday,"Four Square Ellerslie,New World Eastridge",10,75.6,180,255.6,770.0,45.6,235.38,1005.38,2
+Wed_00186,Wednesday,"New World Victoria Park,Four Square St Heliers",9,94.4,162,256.4,770.0,46.4,239.52,1009.52,2
+Wed_00187,Wednesday,"Four Square Britomart,Four Square Torbay",8,112.4,144,256.4,770.0,46.4,239.86,1009.86,2
+Wed_00188,Wednesday,"New World Mt Albert,Four Square Eden Terrace",12,40.6,216,256.6,770.0,46.6,240.74,1010.74,2
+Wed_00189,Wednesday,"New World Point Chevalier,New World Metro Shore City",10,76.9,180,256.9,770.0,46.9,242.14,1012.14,2
+Wed_00190,Wednesday,"New World Victoria Park,Four Square Pakuranga Heights",9,95.2,162,257.2,770.0,47.2,244.09,1014.09,2
+Wed_00191,Wednesday,"New World Victoria Park,Four Square Fair Price Henderson",10,78.1,180,258.1,770.0,48.1,248.57,1018.57,2
+Wed_00192,Wednesday,"New World Newmarket,Four Square Ellerslie",11,60.4,198,258.4,770.0,48.4,249.84,1019.84,2
+Wed_00193,Wednesday,"New World Mt Albert,Four Square Ellerslie",11,60.4,198,258.4,770.0,48.4,250.12,1020.12,2
+Wed_00194,Wednesday,"Four Square Eden Terrace,Four Square Torbay",8,114.6,144,258.6,770.0,48.6,250.87,1020.87,2
+Wed_00195,Wednesday,"Four Square Onehunga,New World Birkenhead",10,79.1,180,259.1,770.0,49.1,253.48,1023.48,2
+Wed_00196,Wednesday,Pak 'n Save Highland Park,10,79.3,180,259.3,770.0,49.3,254.75,1024.75,1
+Wed_00197,Wednesday,"New World Victoria Park,Four Square Cockle Bay",8,115.6,144,259.6,770.0,49.6,256.42,1026.42,2
+Wed_00198,Wednesday,"Four Square Britomart,New World Birkenhead",10,80.0,180,260.0,770.0,50.0,258.08,1028.08,2
+Wed_00199,Wednesday,"New World Metro Queen St,Four Square Britomart,New World Metro Shore City",10,80.0,180,260.0,770.0,50.0,258.5,1028.5,3
+Wed_00200,Wednesday,"Four Square Hobsonville,New World Birkenhead",9,98.3,162,260.3,770.0,50.3,259.97,1029.97,2
+Wed_00201,Wednesday,"New World Mt Roskill,Four Square Onehunga",13,26.6,234,260.6,770.0,50.6,261.42,1031.42,2
+Wed_00202,Wednesday,"New World Remuera,Four Square Ellerslie",11,62.7,198,260.7,770.0,50.7,261.92,1031.92,2
+Wed_00203,Wednesday,"New World Mt Roskill,Four Square Glen Eden",12,44.9,216,260.9,770.0,50.9,262.9,1032.9,2
+Wed_00204,Wednesday,"New World Mt Albert,Four Square Onehunga",12,45.2,216,261.2,770.0,51.2,264.42,1034.42,2
+Wed_00205,Wednesday,Pak 'n Save Clendon,11,63.5,198,261.5,770.0,51.5,265.85,1035.85,1
+Wed_00206,Wednesday,"Four Square Fair Price Henderson,Four Square Torbay",8,117.6,144,261.6,770.0,51.6,266.52,1036.52,2
+Wed_00207,Wednesday,"New World New Lynn,New World Metro Queen St",11,64.0,198,262.0,770.0,52.0,268.59,1038.59,2
+Wed_00208,Wednesday,"Four Square Glen Eden,New World Hobsonville",10,82.0,180,262.0,770.0,52.0,268.75,1038.75,2
+Wed_00209,Wednesday,"Four Square Eden Terrace,New World Birkenhead",10,82.1,180,262.1,770.0,52.1,269.08,1039.08,2
+Wed_00210,Wednesday,"Four Square Onehunga,New World New Lynn",12,46.2,216,262.2,770.0,52.2,269.48,1039.48,2
+Wed_00211,Wednesday,"Four Square Glen Eden,New World Birkenhead",9,100.3,162,262.3,770.0,52.3,270.33,1040.33,2
+Wed_00212,Wednesday,"Four Square Ellerslie,New World Papakura",9,100.4,162,262.4,770.0,52.4,270.85,1040.85,2
+Wed_00213,Wednesday,"New World Point Chevalier,Four Square Fair Price Henderson",11,64.4,198,262.4,770.0,52.4,270.92,1040.92,2
+Wed_00214,Wednesday,"New World Eastridge,Four Square St Heliers",10,82.7,180,262.7,770.0,52.7,272.24,1042.24,2
+Wed_00215,Wednesday,"New World Birkenhead,Four Square Lancaster",10,82.8,180,262.8,770.0,52.8,272.55,1042.55,2
+Wed_00216,Wednesday,"New World Point Chevalier,Four Square Remuera",11,64.8,198,262.8,770.0,52.8,272.59,1042.59,2
+Wed_00217,Wednesday,"Four Square Eden Terrace,Four Square Ellerslie,Four Square Remuera",11,64.8,198,262.8,770.0,52.8,272.87,1042.87,3
+Wed_00218,Wednesday,"New World Metro Queen St,New World Remuera",11,64.9,198,262.9,770.0,52.9,273.3,1043.3,2
+Wed_00219,Wednesday,"Four Square Ellerslie,New World Southmall",10,83.0,180,263.0,770.0,53.0,273.98,1043.98,2
+Wed_00220,Wednesday,"Four Square Pakuranga Heights,New World Ormiston",10,83.5,180,263.5,770.0,53.5,276.42,1046.42,2
+Wed_00221,Wednesday,"Four Square Onehunga,New World Green Bay",12,48.0,216,264.0,770.0,54.0,279.19,1049.19,2
+Wed_00222,Wednesday,"New World Green Bay,New World Metro Queen St",11,66.1,198,264.1,770.0,54.1,279.39,1049.39,2
+Wed_00223,Wednesday,"Four Square Onehunga,New World Eastridge",11,66.2,198,264.2,770.0,54.2,280.17,1050.17,2
+Wed_00224,Wednesday,"New World Mt Roskill,New World Metro Queen St",12,48.2,216,264.2,770.0,54.2,280.28,1050.28,2
+Wed_00225,Wednesday,"Four Square Onehunga,New World Newmarket",12,48.6,216,264.6,770.0,54.6,282.34,1052.34,2
+Wed_00226,Wednesday,"Four Square Ellerslie,New World Stonefields",11,67.0,198,265.0,770.0,55.0,284.07,1054.07,2
+Wed_00227,Wednesday,"Four Square Pakuranga Heights,Four Square Torbay",7,139.3,126,265.3,770.0,55.3,285.88,1055.88,2
+Wed_00228,Wednesday,"Four Square Lancaster,Four Square Torbay",8,122.0,144,266.0,770.0,56.0,289.14,1059.14,2
+Wed_00229,Wednesday,"New World Victoria Park,Four Square Lancaster",10,86.1,180,266.1,770.0,56.1,289.65,1059.65,2
+Wed_00230,Wednesday,"Four Square Eden Terrace,New World Newmarket",12,50.1,216,266.1,770.0,56.1,289.92,1059.92,2
+Wed_00231,Wednesday,"New World Metro Queen St,New World Hobsonville",10,86.4,180,266.4,770.0,56.4,291.51,1061.51,2
+Wed_00232,Wednesday,"New World Mt Albert,Four Square Hobsonville",11,68.5,198,266.5,770.0,56.5,291.8,1061.8,2
+Wed_00233,Wednesday,"New World Ormiston,Four Square Cockle Bay",9,104.9,162,266.9,770.0,56.9,293.76,1063.76,2
+Wed_00234,Wednesday,"Four Square Onehunga,New World Remuera",12,51.3,216,267.3,770.0,57.3,296.27,1066.27,2
+Wed_00235,Wednesday,"Four Square Glen Eden,Four Square Fair Price Henderson,Four Square Hobsonville",10,87.3,180,267.3,770.0,57.3,296.27,1066.27,3
+Wed_00236,Wednesday,"Four Square Cockle Bay,Four Square Torbay",6,159.7,108,267.7,770.0,57.7,298.21,1068.21,2
+Wed_00237,Wednesday,"Four Square Onehunga,New World Papakura",10,87.8,180,267.8,770.0,57.8,298.62,1068.62,2
+Wed_00238,Wednesday,"New World Point Chevalier,Four Square St Heliers",10,87.9,180,267.9,770.0,57.9,299.2,1069.2,2
+Wed_00239,Wednesday,"Four Square Pakuranga Heights,New World Eastridge",10,88.3,180,268.3,770.0,58.3,301.01,1071.01,2
+Wed_00240,Wednesday,"Four Square Ellerslie,New World Ormiston",10,88.4,180,268.4,770.0,58.4,301.69,1071.69,2
+Wed_00241,Wednesday,"Four Square Onehunga,New World Southmall",11,70.4,198,268.4,770.0,58.4,301.76,1071.76,2
+Wed_00242,Wednesday,"New World Mt Albert,Four Square Britomart",12,52.5,216,268.5,770.0,58.5,302.13,1072.13,2
+Wed_00243,Wednesday,"Four Square Remuera,Four Square Torbay",8,124.8,144,268.8,770.0,58.8,303.69,1073.69,2
+Wed_00244,Wednesday,"New World Point Chevalier,Four Square Pakuranga Heights",10,88.8,180,268.8,770.0,58.8,303.77,1073.77,2
+Wed_00245,Wednesday,"Four Square Botany Junction,Four Square Lancaster",8,124.8,144,268.8,770.0,58.8,304.03,1074.03,2
+Wed_00246,Wednesday,"Four Square Pakuranga Heights,New World Birkenhead",9,106.9,162,268.9,770.0,58.9,304.1,1074.1,2
+Wed_00247,Wednesday,Pak 'n Save Wairau Road,11,71.3,198,269.3,770.0,59.3,306.64,1076.64,1
+Wed_00248,Wednesday,"New World Metro Queen St,New World Papakura",9,107.5,162,269.5,770.0,59.5,307.37,1077.37,2
+Wed_00249,Wednesday,"Four Square Pakuranga Heights,New World Papakura",9,107.5,162,269.5,770.0,59.5,307.41,1077.41,2
+Wed_00250,Wednesday,"Four Square Eden Terrace,New World Metro Queen St,Four Square Remuera",11,71.6,198,269.6,770.0,59.6,307.77,1077.77,3
+Wed_00251,Wednesday,"Four Square Remuera,New World Eastridge",11,72.1,198,270.1,770.0,60.1,310.47,1080.47,2
+Wed_00252,Wednesday,"New World Metro Queen St,New World Southmall",10,90.1,180,270.1,770.0,60.1,310.51,1080.51,2
+Wed_00253,Wednesday,"New World Mt Albert,New World Metro Shore City",11,72.7,198,270.7,770.0,60.7,313.4,1083.4,2
+Wed_00254,Wednesday,"New World New Lynn,Four Square Ellerslie",11,73.1,198,271.1,770.0,61.1,315.69,1085.69,2
+Wed_00255,Wednesday,"New World Point Chevalier,Four Square Cockle Bay",9,109.2,162,271.2,770.0,61.2,316.1,1086.1,2
+Wed_00256,Wednesday,"New World New Lynn,Four Square Hobsonville",11,73.5,198,271.5,770.0,61.5,317.88,1087.88,2
+Wed_00257,Wednesday,"Four Square Botany Junction,New World Ormiston",11,73.6,198,271.6,770.0,61.6,318.19,1088.19,2
+Wed_00258,Wednesday,"Four Square Eden Terrace,New World Eastridge",11,73.8,198,271.8,770.0,61.8,319.26,1089.26,2
+Wed_00259,Wednesday,Pak 'n Save Henderson,12,55.9,216,271.9,770.0,61.9,319.57,1089.57,1
+Wed_00260,Wednesday,"Four Square Britomart,New World Eastridge",11,74.0,198,272.0,770.0,62.0,320.16,1090.16,2
+Wed_00261,Wednesday,"New World New Lynn,Four Square Eden Terrace",12,56.0,216,272.0,770.0,62.0,320.18,1090.18,2
+Wed_00262,Wednesday,"Four Square Eden Terrace,Four Square Britomart,Four Square Ellerslie",11,74.2,198,272.2,770.0,62.2,321.37,1091.37,3
+Wed_00263,Wednesday,"New World Hobsonville,New World Metro Shore City",10,92.2,180,272.2,770.0,62.2,321.56,1091.56,2
+Wed_00264,Wednesday,"Four Square Remuera,New World Birkenhead",10,92.3,180,272.3,770.0,62.3,321.9,1091.9,2
+Wed_00265,Wednesday,"New World Howick,Four Square Cockle Bay",10,92.6,180,272.6,770.0,62.6,323.18,1093.18,2
+Wed_00266,Wednesday,"New World Southmall,Four Square Cockle Bay",9,110.6,162,272.6,770.0,62.6,323.26,1093.26,2
+Wed_00267,Wednesday,"Four Square Fair Price Henderson,New World Hobsonville",11,74.8,198,272.8,770.0,62.8,324.49,1094.49,2
+Wed_00268,Wednesday,"New World Green Bay,Four Square Ellerslie",11,75.2,198,273.2,770.0,63.2,326.49,1096.49,2
+Wed_00269,Wednesday,"New World Mt Roskill,Four Square Ellerslie",12,57.4,216,273.4,770.0,63.4,327.38,1097.38,2
+Wed_00270,Wednesday,"Four Square Glen Eden,New World Newmarket",11,75.5,198,273.5,770.0,63.5,327.95,1097.95,2
+Wed_00271,Wednesday,"New World Victoria Park,Four Square Botany Junction",10,93.9,180,273.9,770.0,63.9,330.0,1100.0,2
+Wed_00272,Wednesday,"New World Green Bay,Four Square Eden Terrace",12,58.1,216,274.1,770.0,64.1,330.98,1100.98,2
+Wed_00273,Wednesday,"New World Mt Roskill,Four Square Eden Terrace",13,40.2,234,274.2,770.0,64.2,331.87,1101.87,2
+Wed_00274,Wednesday,"New World Newmarket,Four Square Britomart",12,58.3,216,274.3,770.0,64.3,332.05,1102.05,2
+Wed_00275,Wednesday,"Four Square Eden Terrace,New World Remuera",12,58.4,216,274.4,770.0,64.4,332.59,1102.59,2
+Wed_00276,Wednesday,"Four Square Onehunga,New World Hobsonville",11,76.5,198,274.5,770.0,64.5,333.05,1103.05,2
+Wed_00277,Wednesday,"New World Remuera,Four Square Remuera",12,58.5,216,274.5,770.0,64.5,333.24,1103.24,2
+Wed_00278,Wednesday,"New World Metro Queen St,New World Stonefields",11,76.6,198,274.6,770.0,64.6,333.66,1103.66,2
+Wed_00279,Wednesday,"Four Square Pakuranga Heights,Four Square Botany Junction,Four Square Cockle Bay",9,112.7,162,274.7,770.0,64.7,334.22,1104.22,3
+Wed_00280,Wednesday,"New World Metro Queen St,New World Ormiston",10,95.5,180,275.5,770.0,65.5,338.21,1108.21,2
+Wed_00281,Wednesday,"Four Square Ellerslie,New World Hobsonville",10,95.5,180,275.5,770.0,65.5,338.61,1108.61,2
+Wed_00282,Wednesday,"Four Square Eden Terrace,New World Hobsonville",11,78.4,198,276.4,770.0,66.4,343.1,1113.1,2
+Wed_00283,Wednesday,"New World Birkenhead,Four Square St Heliers",9,114.4,162,276.4,770.0,66.4,343.11,1113.11,2
+Wed_00284,Wednesday,"New World Southmall,Four Square Pakuranga Heights",10,96.5,180,276.5,770.0,66.5,343.37,1113.37,2
+Wed_00285,Wednesday,"New World Metro Shore City,New World Milford",11,78.5,198,276.5,770.0,66.5,343.5,1113.5,2
+Wed_00286,Wednesday,"New World Newmarket,Four Square Remuera",12,60.5,216,276.5,770.0,66.5,343.56,1113.56,2
+Wed_00287,Wednesday,"New World Mt Albert,Four Square Remuera",12,60.6,216,276.6,770.0,66.6,343.85,1113.85,2
+Wed_00288,Wednesday,"Four Square Onehunga,New World Stonefields",12,60.7,216,276.7,770.0,66.7,344.69,1114.69,2
+Wed_00289,Wednesday,"New World Southmall,Four Square Botany Junction",11,78.7,198,276.7,770.0,66.7,344.71,1114.71,2
+Wed_00290,Wednesday,"New World Mt Albert,Four Square Fair Price Henderson",12,60.8,216,276.8,770.0,66.8,345.15,1115.15,2
+Wed_00291,Wednesday,"New World Papakura,Four Square Cockle Bay",8,133.0,144,277.0,770.0,67.0,346.11,1116.11,2
+Wed_00292,Wednesday,"Four Square St Heliers,Four Square Torbay",7,151.2,126,277.2,770.0,67.2,347.13,1117.13,2
+Wed_00293,Wednesday,"Four Square Onehunga,New World Ormiston",11,79.4,198,277.4,770.0,67.4,348.49,1118.49,2
+Wed_00294,Wednesday,"New World Newmarket,New World Metro Shore City",11,79.6,198,277.6,770.0,67.6,349.07,1119.07,2
+Wed_00295,Wednesday,"Four Square Pakuranga Heights,New World Botany",11,79.6,198,277.6,770.0,67.6,349.28,1119.28,2
+Wed_00296,Wednesday,"Four Square Botany Junction,New World Papakura",10,98.0,180,278.0,770.0,68.0,351.12,1121.12,2
+Wed_00297,Wednesday,"Four Square Pakuranga Heights,New World Stonefields",11,80.2,198,278.2,770.0,68.2,352.21,1122.21,2
+Wed_00298,Wednesday,"New World Green Bay,Four Square Hobsonville",11,80.4,198,278.4,770.0,68.4,353.46,1123.46,2
+Wed_00299,Wednesday,"New World Newmarket,Four Square St Heliers",11,80.5,198,278.5,770.0,68.5,354.05,1124.05,2
+Wed_00300,Wednesday,"New World Mt Roskill,Four Square Hobsonville",12,62.6,216,278.6,770.0,68.6,354.35,1124.35,2
+Wed_00301,Wednesday,"Four Square Glen Eden,New World Eastridge",10,99.2,180,279.2,770.0,69.2,357.28,1127.28,2
+Wed_00302,Wednesday,"New World Remuera,Four Square St Heliers",11,81.5,198,279.5,770.0,69.5,359.31,1129.31,2
+Wed_00303,Wednesday,"Four Square Glen Eden,New World Papakura",9,117.5,162,279.5,770.0,69.5,359.33,1129.33,2
+Wed_00304,Wednesday,"New World Birkenhead,Four Square Cockle Bay",8,135.7,144,279.7,770.0,69.7,360.02,1130.02,2
+Wed_00305,Wednesday,"Four Square Glen Eden,Pak 'n Save Lincoln Road",12,63.9,216,279.9,770.0,69.9,361.16,1131.16,2
+Wed_00306,Wednesday,"Four Square Glen Eden,New World Southmall",10,100.2,180,280.2,770.0,70.2,362.47,1132.47,2
+Wed_00307,Wednesday,"New World Botany,Four Square Cockle Bay",10,100.2,180,280.2,770.0,70.2,362.7,1132.7,2
+Wed_00308,Wednesday,"Four Square Eden Terrace,New World Papakura",10,101.0,180,281.0,770.0,71.0,366.67,1136.67,2
+Wed_00309,Wednesday,"New World New Lynn,Four Square Britomart",12,65.2,216,281.2,770.0,71.2,367.7,1137.7,2
+Wed_00310,Wednesday,"Four Square Fair Price Henderson,New World Birkenhead",10,101.2,180,281.2,770.0,71.2,367.8,1137.8,2
+Wed_00311,Wednesday,"New World Stonefields,Four Square St Heliers",11,83.4,198,281.4,770.0,71.4,368.98,1138.98,2
+Wed_00312,Wednesday,Pak 'n Save Sylvia Park,12,65.5,216,281.5,770.0,71.5,369.38,1139.38,1
+Wed_00313,Wednesday,"Four Square Eden Terrace,New World Southmall",11,83.6,198,281.6,770.0,71.6,369.8,1139.8,2
+Wed_00314,Wednesday,"New World Mt Albert,Four Square St Heliers",11,83.7,198,281.7,770.0,71.7,370.45,1140.45,2
+Wed_00315,Wednesday,"Four Square Glen Eden,New World Remuera",11,83.7,198,281.7,770.0,71.7,370.62,1140.62,2
+Wed_00316,Wednesday,"New World New Lynn,Four Square Fair Price Henderson",12,65.9,216,281.9,770.0,71.9,371.23,1141.23,2
+Wed_00317,Wednesday,"Four Square Hobsonville,New World Browns Bay",10,101.9,180,281.9,770.0,71.9,371.62,1141.62,2
+Wed_00318,Wednesday,"Four Square Britomart,New World Remuera",12,66.1,216,282.1,770.0,72.1,372.41,1142.41,2
+Wed_00319,Wednesday,"New World Metro Shore City,New World Eastridge",10,102.2,180,282.2,770.0,72.2,373.01,1143.01,2
+Wed_00320,Wednesday,"New World Metro Queen St,New World Milford",11,84.4,198,282.4,770.0,72.4,374.3,1144.3,2
+Wed_00321,Wednesday,"New World Newmarket,Four Square Pakuranga Heights",11,84.5,198,282.5,770.0,72.5,374.74,1144.74,2
+Wed_00322,Wednesday,"New World Mt Albert,Four Square Pakuranga Heights",11,84.6,198,282.6,770.0,72.6,375.03,1145.03,2
+Wed_00323,Wednesday,"New World Newmarket,Four Square Hobsonville",11,84.8,198,282.8,770.0,72.8,376.35,1146.35,2
+Wed_00324,Wednesday,"New World Eastridge,Four Square Cockle Bay",9,121.1,162,283.1,770.0,73.1,377.76,1147.76,2
+Wed_00325,Wednesday,"New World Metro Queen St,New World Browns Bay",10,103.2,180,283.2,770.0,73.2,378.0,1148.0,2
+Wed_00326,Wednesday,"New World Green Bay,Four Square Britomart",12,67.3,216,283.3,770.0,73.3,378.51,1148.51,2
+Wed_00327,Wednesday,"New World New Lynn,New World Metro Shore City",11,85.3,198,283.3,770.0,73.3,378.97,1148.97,2
+Wed_00328,Wednesday,"New World Mt Roskill,Four Square Britomart",13,49.4,234,283.4,770.0,73.4,379.39,1149.39,2
+Wed_00329,Wednesday,"New World Green Bay,Four Square Fair Price Henderson",12,67.9,216,283.9,770.0,73.9,382.03,1152.03,2
+Wed_00330,Wednesday,"Four Square Remuera,New World Stonefields",12,68.1,216,284.1,770.0,74.1,382.94,1152.94,2
+Wed_00331,Wednesday,"Pak 'n Save Lincoln Road,Four Square Hobsonville",12,68.3,216,284.3,770.0,74.3,384.13,1154.13,2
+Wed_00332,Wednesday,"New World Papakura,Four Square St Heliers",9,122.6,162,284.6,770.0,74.6,385.45,1155.45,2
+Wed_00333,Wednesday,"New World Remuera,Four Square Pakuranga Heights",11,86.9,198,284.9,770.0,74.9,386.83,1156.83,2
+Wed_00334,Wednesday,"New World Newmarket,Four Square Cockle Bay",10,104.9,180,284.9,770.0,74.9,387.07,1157.07,2
+Wed_00335,Wednesday,"New World Mt Albert,Four Square Cockle Bay",10,105.0,180,285.0,770.0,75.0,387.36,1157.36,2
+Wed_00336,Wednesday,"New World Southmall,Four Square St Heliers",10,105.2,180,285.2,770.0,75.2,388.59,1158.59,2
+Wed_00337,Wednesday,"New World Point Chevalier,Four Square Botany Junction",11,87.4,198,285.4,770.0,75.4,389.68,1159.68,2
+Wed_00338,Wednesday,"Four Square Remuera,New World Papakura",10,105.4,180,285.4,770.0,75.4,389.72,1159.72,2
+Wed_00339,Wednesday,"New World Green Bay,New World Metro Shore City",11,87.4,198,285.4,770.0,75.4,389.77,1159.77,2
+Wed_00340,Wednesday,"Four Square Britomart,New World Hobsonville",11,87.6,198,285.6,770.0,75.6,390.63,1160.63,2
+Wed_00341,Wednesday,"New World Mt Roskill,New World Metro Shore City",12,69.6,216,285.6,770.0,75.6,390.66,1160.66,2
+Wed_00342,Wednesday,"New World Remuera,New World Metro Shore City",11,87.8,198,285.8,770.0,75.8,391.74,1161.74,2
+Wed_00343,Wednesday,"Four Square Remuera,New World Southmall",11,88.0,198,286.0,770.0,76.0,392.86,1162.86,2
+Wed_00344,Wednesday,"Four Square Eden Terrace,New World Stonefields",12,70.1,216,286.1,770.0,76.1,392.96,1162.96,2
+Wed_00345,Wednesday,"New World Point Chevalier,Four Square Lancaster",11,88.7,198,286.7,770.0,76.7,396.33,1166.33,2
+Wed_00346,Wednesday,"Four Square Eden Terrace,New World Ormiston",11,88.9,198,286.9,770.0,76.9,397.51,1167.51,2
+Wed_00347,Wednesday,"New World Remuera,Four Square Cockle Bay",10,107.3,180,287.3,770.0,77.3,399.16,1169.16,2
+Wed_00348,Wednesday,"New World Metro Shore City,New World Browns Bay",10,107.3,180,287.3,770.0,77.3,399.2,1169.2,2
+Wed_00349,Wednesday,"Pak 'n Save Lincoln Road,New World Metro Queen St",12,71.5,216,287.5,770.0,77.5,400.21,1170.21,2
+Wed_00350,Wednesday,"Four Square Ellerslie,New World Botany",11,89.5,198,287.5,770.0,77.5,400.29,1170.29,2
+Wed_00351,Wednesday,"Four Square Hobsonville,New World Eastridge",10,107.7,180,287.7,770.0,77.7,401.39,1171.39,2
+Wed_00352,Wednesday,"Four Square Pakuranga Heights,New World Howick",11,89.7,198,287.7,770.0,77.7,401.59,1171.59,2
+Wed_00353,Wednesday,"New World Mt Roskill,Four Square Pakuranga Heights",12,72.1,216,288.1,770.0,78.1,403.3,1173.3,2
+Wed_00354,Wednesday,"New World Papatoetoe,Four Square Ellerslie",12,72.2,216,288.2,770.0,78.2,404.03,1174.03,2
+Wed_00355,Wednesday,"New World Victoria Park,Four Square Torbay",10,108.2,180,288.2,770.0,78.2,404.04,1174.04,2
+Wed_00356,Wednesday,"Four Square Hobsonville,New World Milford",11,90.2,198,288.2,770.0,78.2,404.25,1174.25,2
+Wed_00357,Wednesday,"New World Point Chevalier,New World Victoria Park",13,54.5,234,288.5,770.0,78.5,405.42,1175.42,2
+Wed_00358,Wednesday,"Four Square Britomart,New World Papakura",10,108.7,180,288.7,770.0,78.7,406.49,1176.49,2
+Wed_00359,Wednesday,"Pak 'n Save Lincoln Road,Four Square Fair Price Henderson",13,54.8,234,288.8,770.0,78.8,407.01,1177.01,2
+Wed_00360,Wednesday,"New World Victoria Park,New World Metro Queen St,Four Square Britomart",13,54.9,234,288.9,770.0,78.9,407.62,1177.62,3
+Wed_00361,Wednesday,"New World Mt Roskill,Four Square Fair Price Henderson",13,54.9,234,288.9,770.0,78.9,407.7,1177.7,2
+Wed_00362,Wednesday,"Four Square Glen Eden,New World Ormiston",10,109.2,180,289.2,770.0,79.2,409.2,1179.2,2
+Wed_00363,Wednesday,"New World New Lynn,Four Square Remuera",12,73.2,216,289.2,770.0,79.2,409.42,1179.42,2
+Wed_00364,Wednesday,"Four Square Britomart,New World Southmall",11,91.3,198,289.3,770.0,79.3,409.62,1179.62,2
+Wed_00365,Wednesday,"New World Stonefields,Four Square Cockle Bay",10,109.5,180,289.5,770.0,79.5,410.57,1180.57,2
+Wed_00366,Wednesday,Pak 'n Save Ormiston,12,73.6,216,289.6,770.0,79.6,411.37,1181.37,1
+Wed_00367,Wednesday,"Four Square Eden Terrace,New World Metro Queen St,New World Victoria Park",13,56.2,234,290.2,770.0,80.2,414.11,1184.11,3
+Wed_00368,Wednesday,"New World Mt Roskill,Four Square Cockle Bay",11,92.4,198,290.4,770.0,80.4,415.63,1185.63,2
+Wed_00369,Wednesday,"Four Square Britomart,Four Square Remuera,Four Square St Heliers",11,92.8,198,290.8,770.0,80.8,417.43,1187.43,3
+Wed_00370,Wednesday,"Four Square Botany Junction,Four Square Torbay",8,147.0,144,291.0,770.0,81.0,418.42,1188.42,2
+Wed_00371,Wednesday,"New World Southmall,New World Metro Shore City",10,111.1,180,291.1,770.0,81.1,419.01,1189.01,2
+Wed_00372,Wednesday,"New World Remuera,Four Square Hobsonville",11,93.1,198,291.1,770.0,81.1,419.02,1189.02,2
+Wed_00373,Wednesday,"New World Green Bay,Four Square Remuera",12,75.3,216,291.3,770.0,81.3,420.22,1190.22,2
+Wed_00374,Wednesday,"New World Metro Shore City,New World Papakura",9,129.4,162,291.4,770.0,81.4,420.42,1190.42,2
+Wed_00375,Wednesday,"Four Square Remuera,New World Ormiston",11,93.4,198,291.4,770.0,81.4,420.56,1190.56,2
+Wed_00376,Wednesday,"New World Mt Roskill,Four Square Remuera",13,57.5,234,291.5,770.0,81.5,421.11,1191.11,2
+Wed_00377,Wednesday,"New World Victoria Park,New World Birkenhead",12,75.7,216,291.7,770.0,81.7,422.26,1192.26,2
+Wed_00378,Wednesday,"Four Square Onehunga,New World Papatoetoe",13,57.9,234,291.9,770.0,81.9,423.34,1193.34,2
+Wed_00379,Wednesday,"New World Ormiston,Four Square St Heliers",10,112.0,180,292.0,770.0,82.0,423.88,1193.88,2
+Wed_00380,Wednesday,"New World Newmarket,Four Square Fair Price Henderson",12,77.2,216,293.2,770.0,83.2,429.7,1199.7,2
+Wed_00381,Wednesday,"Four Square Glen Eden,New World Stonefields",11,95.4,198,293.4,770.0,83.4,430.98,1200.98,2
+Wed_00382,Wednesday,"Four Square Remuera,New World Hobsonville",11,95.7,198,293.7,770.0,83.7,432.34,1202.34,2
+Wed_00383,Wednesday,"Four Square Britomart,New World Stonefields",12,77.8,216,293.8,770.0,83.8,432.78,1202.78,2
+Wed_00384,Wednesday,Pak 'n Save Papakura,12,77.9,216,293.9,770.0,83.9,433.28,1203.28,1
+Wed_00385,Wednesday,"New World New Lynn,Four Square St Heliers",11,96.4,198,294.4,770.0,84.4,436.02,1206.02,2
+Wed_00386,Wednesday,"Four Square Botany Junction,New World Birkenhead",10,114.5,180,294.5,770.0,84.5,436.64,1206.64,2
+Wed_00387,Wednesday,"New World Metro Queen St,New World Botany",11,96.5,198,294.5,770.0,84.5,436.81,1206.81,2
+Wed_00388,Wednesday,"Four Square Onehunga,New World Botany",12,78.6,216,294.6,770.0,84.6,437.29,1207.29,2
+Wed_00389,Wednesday,"Four Square Britomart,New World Ormiston",11,96.6,198,294.6,770.0,84.6,437.33,1207.33,2
+Wed_00390,Wednesday,"Four Square Ellerslie,New World Milford",11,97.2,198,295.2,770.0,85.2,440.14,1210.14,2
+Wed_00391,Wednesday,"New World New Lynn,Four Square Pakuranga Heights",11,97.3,198,295.3,770.0,85.3,440.6,1210.6,2
+Wed_00392,Wednesday,"New World Metro Queen St,New World Papatoetoe",12,79.4,216,295.4,770.0,85.4,441.2,1211.2,2
+Wed_00393,Wednesday,"Four Square Ellerslie,New World Browns Bay",10,115.9,180,295.9,770.0,85.9,443.84,1213.84,2
+Wed_00394,Wednesday,"Four Square Glen Eden,New World Browns Bay",10,116.1,180,296.1,770.0,86.1,444.65,1214.65,2
+Wed_00395,Wednesday,"Four Square Onehunga,Pak 'n Save Lincoln Road",13,62.3,234,296.3,770.0,86.3,446.04,1216.04,2
+Wed_00396,Wednesday,"New World Hobsonville,Four Square Lancaster",11,98.4,198,296.4,770.0,86.4,446.37,1216.37,2
+Wed_00397,Wednesday,"New World Green Bay,Four Square St Heliers",11,98.5,198,296.5,770.0,86.5,446.82,1216.82,2
+Wed_00398,Wednesday,"Pak 'n Save Lincoln Road,Four Square Ellerslie",12,80.6,216,296.6,770.0,86.6,447.32,1217.32,2
+Wed_00399,Wednesday,"New World Mt Roskill,Four Square St Heliers",12,80.7,216,296.7,770.0,86.7,447.71,1217.71,2
+Wed_00400,Wednesday,"Four Square Hobsonville,New World Papakura",9,134.9,162,296.9,770.0,86.9,448.81,1218.81,2
+Wed_00401,Wednesday,"Four Square Ellerslie,New World Howick",11,99.3,198,297.3,770.0,87.3,451.06,1221.06,2
+Wed_00402,Wednesday,"New World Metro Shore City,New World Ormiston",10,117.3,180,297.3,770.0,87.3,451.26,1221.26,2
+Wed_00403,Wednesday,"New World Green Bay,Four Square Pakuranga Heights",11,99.4,198,297.4,770.0,87.4,451.4,1221.4,2
+Wed_00404,Wednesday,"Four Square Hobsonville,New World Southmall",10,117.5,180,297.5,770.0,87.5,451.94,1221.94,2
+Wed_00405,Wednesday,"New World Stonefields,New World Metro Shore City",11,99.5,198,297.5,770.0,87.5,452.1,1222.1,2
+Wed_00406,Wednesday,"New World New Lynn,Four Square Cockle Bay",10,117.7,180,297.7,770.0,87.7,452.93,1222.93,2
+Wed_00407,Wednesday,"Four Square Botany Junction,New World Botany",12,81.9,216,297.9,770.0,87.9,454.1,1224.1,2
+Wed_00408,Wednesday,"New World Hobsonville,Four Square St Heliers",10,118.0,180,298.0,770.0,88.0,454.66,1224.66,2
+Wed_00409,Wednesday,"Four Square Fair Price Henderson,New World Eastridge",11,100.0,198,298.0,770.0,88.0,454.75,1224.75,2
+Wed_00410,Wednesday,"Four Square Eden Terrace,Pak 'n Save Lincoln Road",13,64.3,234,298.3,770.0,88.3,456.09,1226.09,2
+Wed_00411,Wednesday,Pak 'n Save Botany,12,82.3,216,298.3,770.0,88.3,456.17,1226.17,1
+Wed_00412,Wednesday,"New World Victoria Park,New World Metro Queen St,New World Metro Shore City",12,82.5,216,298.5,770.0,88.5,457.13,1227.13,3
+Wed_00413,Wednesday,"New World Hobsonville,Four Square Pakuranga Heights",10,118.9,180,298.9,770.0,88.9,459.24,1229.24,2
+Wed_00414,Wednesday,"Four Square Hobsonville,Four Square Torbay,New World Metro Shore City",10,118.9,180,298.9,770.0,88.9,459.44,1229.44,3
+Wed_00415,Wednesday,"New World Newmarket,Four Square Botany Junction",12,83.2,216,299.2,770.0,89.2,460.65,1230.65,2
+Wed_00416,Wednesday,"New World Mt Albert,Four Square Botany Junction",12,83.2,216,299.2,770.0,89.2,460.93,1230.93,2
+Wed_00417,Wednesday,"New World Birkenhead,Four Square Torbay",10,119.3,180,299.3,770.0,89.3,461.24,1231.24,2
+Wed_00418,Wednesday,"New World Green Bay,Four Square Cockle Bay",10,119.8,180,299.8,770.0,89.8,463.73,1233.73,2
+Wed_00419,Wednesday,"New World Mt Albert,New World Victoria Park",14,47.8,252,299.8,770.0,89.8,464.02,1234.02,2
+Wed_00420,Wednesday,"Four Square Onehunga,New World Milford",12,84.1,216,300.1,770.0,90.1,465.44,1235.44,2
+Wed_00421,Wednesday,"Four Square Botany Junction,New World Eastridge",11,102.1,198,300.1,770.0,90.1,465.76,1235.76,2
+Wed_00422,Wednesday,"Four Square Onehunga,Pak 'n Save Royal Oak",15,30.3,270,300.3,770.0,90.3,466.64,1236.64,2
+Wed_00423,Wednesday,"New World Papatoetoe,Four Square Cockle Bay",11,102.5,198,300.5,770.0,90.5,467.53,1237.53,2
+Wed_00424,Wednesday,"New World Mt Albert,Four Square Lancaster",12,84.5,216,300.5,770.0,90.5,467.59,1237.59,2
+Wed_00425,Wednesday,"Four Square Fair Price Henderson,New World Remuera",12,84.6,216,300.6,770.0,90.6,468.09,1238.09,2
+Wed_00426,Wednesday,"Pak 'n Save Westgate,Four Square Hobsonville",13,66.7,234,300.7,770.0,90.7,468.83,1238.83,2
+Wed_00427,Wednesday,"Four Square Onehunga,New World Browns Bay",11,102.8,198,300.8,770.0,90.8,469.14,1239.14,2
+Wed_00428,Wednesday,"Four Square Britomart,New World Milford",12,85.0,216,301.0,770.0,91.0,470.04,1240.04,2
+Wed_00429,Wednesday,"New World Hobsonville,Four Square Cockle Bay",9,139.3,162,301.3,770.0,91.3,471.57,1241.57,2
+Wed_00430,Wednesday,"New World Remuera,Four Square Botany Junction",12,85.5,216,301.5,770.0,91.5,472.73,1242.73,2
+Wed_00431,Wednesday,"Four Square Britomart,New World Browns Bay",11,103.7,198,301.7,770.0,91.7,473.74,1243.74,2
+Wed_00432,Wednesday,"New World Papatoetoe,Four Square Pakuranga Heights",12,85.7,216,301.7,770.0,91.7,473.87,1243.87,2
+Wed_00433,Wednesday,"Four Square Hobsonville,New World Stonefields",11,104.0,198,302.0,770.0,92.0,475.1,1245.1,2
+Wed_00434,Wednesday,"New World Mt Roskill,Four Square Botany Junction",13,68.0,234,302.0,770.0,92.0,475.54,1245.54,2
+Wed_00435,Wednesday,"Four Square Glen Eden,New World Milford",11,104.4,198,302.4,770.0,92.4,477.28,1247.28,2
+Wed_00436,Wednesday,"New World Botany,Four Square St Heliers",11,104.8,198,302.8,770.0,92.8,479.62,1249.62,2
+Wed_00437,Wednesday,"Four Square Hobsonville,New World Ormiston",10,122.8,180,302.8,770.0,92.8,479.65,1249.65,2
+Wed_00438,Wednesday,"Four Square Britomart,New World Metro Shore City,Four Square Lancaster",11,105.0,198,303.0,770.0,93.0,480.47,1250.47,3
+Wed_00439,Wednesday,"Four Square Eden Terrace,New World Milford",12,87.1,216,303.1,770.0,93.1,481.04,1251.04,2
+Wed_00440,Wednesday,"Four Square Glen Eden,New World Papatoetoe",12,87.7,216,303.7,770.0,93.7,484.05,1254.05,2
+Wed_00441,Wednesday,"Four Square Eden Terrace,New World Browns Bay",11,105.8,198,303.8,770.0,93.8,484.74,1254.74,2
+Wed_00442,Wednesday,"Pak 'n Save Royal Oak,Four Square Ellerslie",14,51.9,252,303.9,770.0,93.9,484.91,1254.91,2
+Wed_00443,Wednesday,"New World New Lynn,Four Square Botany Junction",12,88.2,216,304.2,770.0,94.2,486.63,1256.63,2
+Wed_00444,Wednesday,"New World Howick,Four Square St Heliers",11,106.3,198,304.3,770.0,94.3,487.09,1257.09,2
+Wed_00445,Wednesday,"New World Metro Queen St,New World Howick",11,106.4,198,304.4,770.0,94.4,487.58,1257.58,2
+Wed_00446,Wednesday,"New World Papatoetoe,Four Square Botany Junction",13,70.4,234,304.4,770.0,94.4,487.96,1257.96,2
+Wed_00447,Wednesday,"Four Square Onehunga,New World Howick",12,88.5,216,304.5,770.0,94.5,488.05,1258.05,2
+Wed_00448,Wednesday,"New World Mt Albert,New World Point Chevalier",15,35.1,270,305.1,770.0,95.1,491.58,1261.58,2
+Wed_00449,Wednesday,"Pak 'n Save Royal Oak,New World Metro Queen St",14,53.4,252,305.4,770.0,95.4,492.95,1262.95,2
+Wed_00450,Wednesday,"New World Browns Bay,Four Square Torbay",11,107.5,198,305.5,770.0,95.5,493.19,1263.19,2
+Wed_00451,Wednesday,"Four Square Eden Terrace,New World Botany",12,90.0,216,306.0,770.0,96.0,496.11,1266.11,2
+Wed_00452,Wednesday,"New World Green Bay,Four Square Botany Junction",12,90.3,216,306.3,770.0,96.3,497.43,1267.43,2
+Wed_00453,Wednesday,"New World Victoria Park,New World Metro Queen St,Four Square Remuera",13,72.4,234,306.4,770.0,96.4,498.25,1268.25,3
+Wed_00454,Wednesday,"Pak 'n Save Lincoln Road,Four Square Britomart",13,72.6,234,306.6,770.0,96.6,499.33,1269.33,2
+Wed_00455,Wednesday,"Four Square Fair Price Henderson,New World Browns Bay",11,108.8,198,306.8,770.0,96.8,500.39,1270.39,2
+Wed_00456,Wednesday,"Four Square Eden Terrace,New World Papatoetoe",13,72.9,234,306.9,770.0,96.9,500.5,1270.49,2
+Wed_00457,Wednesday,"Four Square Hobsonville,New World Long Bay",11,109.0,198,307.0,770.0,97.0,501.17,1271.17,2
+Wed_00458,Wednesday,"Four Square Fair Price Henderson,New World Papakura",10,127.2,180,307.2,770.0,97.2,502.16,1272.16,2
+Wed_00459,Wednesday,"New World Newmarket,Four Square Lancaster",12,91.4,216,307.4,770.0,97.4,503.26,1273.26,2
+Wed_00460,Wednesday,"Pak 'n Save Lincoln Road,New World Metro Shore City",12,91.5,216,307.5,770.0,97.5,503.81,1273.81,2
+Wed_00461,Wednesday,"Four Square Fair Price Henderson,New World Southmall",11,109.8,198,307.8,770.0,97.8,505.3,1275.3,2
+Wed_00462,Wednesday,"New World Stonefields,Four Square Botany Junction",12,92.0,216,308.0,770.0,98.0,506.15,1276.15,2
+Wed_00463,Wednesday,"New World Metro Queen St,New World Long Bay",11,110.2,198,308.2,770.0,98.2,507.55,1277.55,2
+Wed_00464,Wednesday,"Four Square Glen Eden,Pak 'n Save Westgate",13,74.5,234,308.5,770.0,98.5,508.94,1278.94,2
+Wed_00465,Wednesday,"Pak 'n Save Highland Park,Four Square Cockle Bay",12,92.7,216,308.7,770.0,98.7,509.78,1279.78,2
+Wed_00466,Wednesday,"New World Papatoetoe,Four Square Remuera",13,75.4,234,309.4,770.0,99.4,513.6,1283.6,2
+Wed_00467,Wednesday,"New World Papatoetoe,Four Square St Heliers",12,93.4,216,309.4,770.0,99.4,513.63,1283.63,2
+Wed_00468,Wednesday,"New World Newmarket,New World Victoria Park",14,57.4,252,309.4,770.0,99.4,513.63,1283.63,2
+Wed_00469,Wednesday,"New World Hobsonville,Four Square Torbay",11,111.5,198,309.5,770.0,99.5,513.85,1283.85,2
+Wed_00470,Wednesday,"New World Point Chevalier,New World Metro Queen St,Four Square Ellerslie",13,75.7,234,309.7,770.0,99.7,515.0,1285.0,3
+Wed_00471,Wednesday,"Four Square Pakuranga Heights,New World Milford",11,111.9,198,309.9,770.0,99.9,516.05,1286.05,2
+Wed_00472,Wednesday,"New World Point Chevalier,New World Metro Queen St,Four Square Britomart",14,58.3,252,310.3,770.0,100.3,518.1,1288.1,3
+Wed_00473,Wednesday,"New World Metro Queen St,New World Birkenhead,New World Metro Shore City",12,94.3,216,310.3,770.0,100.3,518.12,1288.12,3
+Wed_00474,Wednesday,"Four Square Remuera,New World Botany",12,94.5,216,310.5,770.0,100.5,519.16,1289.16,2
+Wed_00475,Wednesday,"Four Square Pakuranga Heights,New World Browns Bay",10,130.6,180,310.6,770.0,100.6,519.75,1289.75,2
+Wed_00476,Wednesday,"New World Point Chevalier,Four Square Eden Terrace,New World Metro Queen St",14,59.2,252,311.2,770.0,101.2,522.86,1292.86,3
+Wed_00477,Wednesday,"Four Square Lancaster,New World Browns Bay",11,113.2,198,311.2,770.0,101.2,523.02,1293.02,2
+Wed_00478,Wednesday,"Four Square Eden Terrace,New World Victoria Park,Four Square Britomart",14,59.6,252,311.6,770.0,101.6,524.93,1294.93,3
+Wed_00479,Wednesday,"Four Square Hobsonville,New World Albany",12,95.7,216,311.7,770.0,101.7,525.24,1295.24,2
+Wed_00480,Wednesday,"New World Papatoetoe,Four Square Britomart",13,78.0,234,312.0,770.0,102.0,527.03,1297.03,2
+Wed_00481,Wednesday,"Four Square Fair Price Henderson,New World Stonefields",12,96.3,216,312.3,770.0,102.3,528.45,1298.45,2
+Wed_00482,Wednesday,"New World Metro Shore City,New World Long Bay",11,114.3,198,312.3,770.0,102.3,528.75,1298.75,2
+Wed_00483,Wednesday,"New World Metro Shore City,New World Devonport",12,96.3,216,312.3,770.0,102.3,528.79,1298.79,2
+Wed_00484,Wednesday,"New World Point Chevalier,New World Birkenhead",13,78.4,234,312.4,770.0,102.4,528.94,1298.94,2
+Wed_00485,Wednesday,"New World Point Chevalier,Four Square Torbay",11,114.5,198,312.5,770.0,102.5,529.55,1299.55,2
+Wed_00486,Wednesday,"New World Metro Queen St,New World Albany",12,96.9,216,312.9,770.0,102.9,531.62,1301.62,2
+Wed_00487,Wednesday,"New World Metro Queen St,Pak 'n Save Westgate",13,78.9,234,312.9,770.0,102.9,531.69,1301.69,2
+Wed_00488,Wednesday,"New World Milford,Four Square Lancaster",12,97.0,216,313.0,770.0,103.0,531.99,1301.99,2
+Wed_00489,Wednesday,"Four Square Cockle Bay,New World Browns Bay",9,151.0,162,313.0,770.0,103.0,532.08,1302.08,2
+Wed_00490,Wednesday,"Four Square Fair Price Henderson,New World Ormiston",11,115.2,198,313.2,770.0,103.2,533.0,1303.0,2
+Wed_00491,Wednesday,"Four Square Fair Price Henderson,New World Milford",12,97.2,216,313.2,770.0,103.2,533.02,1303.02,2
+Wed_00492,Wednesday,"New World New Lynn,Four Square Lancaster",12,97.2,216,313.2,770.0,103.2,533.16,1303.16,2
+Wed_00493,Wednesday,"Four Square Remuera,New World Milford",12,97.3,216,313.3,770.0,103.3,533.86,1303.86,2
+Wed_00494,Wednesday,"Four Square Glen Eden,New World Botany",11,115.4,198,313.4,770.0,103.4,534.13,1304.13,2
+Wed_00495,Wednesday,"Four Square Britomart,New World Botany",12,97.7,216,313.7,770.0,103.7,535.93,1305.93,2
+Wed_00496,Wednesday,"Four Square Botany Junction,New World Howick",12,97.9,216,313.9,770.0,103.9,537.06,1307.06,2
+Wed_00497,Wednesday,"Four Square Eden Terrace,New World Victoria Park,New World Metro Shore City",13,80.0,234,314.0,770.0,104.0,537.19,1307.19,3
+Wed_00498,Wednesday,"Four Square Remuera,New World Browns Bay",11,116.0,198,314.0,770.0,104.0,537.56,1307.56,2
+Wed_00499,Wednesday,"Pak 'n Save Lincoln Road,Four Square Remuera",13,80.7,234,314.7,770.0,104.7,541.04,1311.04,2
+Wed_00500,Wednesday,Pak 'n Save Glen Innes,13,80.7,234,314.7,770.0,104.7,541.06,1311.06,1
+Wed_00501,Wednesday,"New World New Lynn,New World Victoria Park",14,63.0,252,315.0,770.0,105.0,542.25,1312.25,2
+Wed_00502,Wednesday,"Pak 'n Save Royal Oak,Four Square Glen Eden",14,63.0,252,315.0,770.0,105.0,542.6,1312.6,2
+Wed_00503,Wednesday,"New World Green Bay,Four Square Lancaster",12,99.3,216,315.3,770.0,105.3,543.96,1313.96,2
+Wed_00504,Wednesday,"New World Papatoetoe,New World Metro Shore City",12,99.3,216,315.3,770.0,105.3,544.05,1314.05,2
+Wed_00505,Wednesday,"New World New Lynn,New World Point Chevalier",15,45.3,270,315.3,770.0,105.3,544.12,1314.12,2
+Wed_00506,Wednesday,"New World Eastridge,Four Square Lancaster",11,117.3,198,315.3,770.0,105.3,544.21,1314.21,2
+Wed_00507,Wednesday,"New World Mt Roskill,Four Square Lancaster",13,81.5,234,315.5,770.0,105.5,544.85,1314.85,2
+Wed_00508,Wednesday,"New World Hobsonville,Four Square Botany Junction",11,117.5,198,315.5,770.0,105.5,545.14,1315.14,2
+Wed_00509,Wednesday,"Four Square Pakuranga Heights,Four Square Cockle Bay,New World Ormiston",12,99.6,216,315.6,770.0,105.6,545.54,1315.54,3
+Wed_00510,Wednesday,"New World Remuera,Four Square Lancaster",12,99.7,216,315.7,770.0,105.7,545.93,1315.93,2
+Wed_00511,Wednesday,"Four Square Eden Terrace,New World Howick",12,99.8,216,315.8,770.0,105.8,546.88,1316.88,2
+Wed_00512,Wednesday,"Pak 'n Save Royal Oak,Four Square Eden Terrace",15,46.2,270,316.2,770.0,106.2,548.66,1318.66,2
+Wed_00513,Wednesday,"New World Metro Shore City,New World Botany",11,118.4,198,316.4,770.0,106.4,549.86,1319.86,2
+Wed_00514,Wednesday,"New World Metro Queen St,New World Devonport",12,100.8,216,316.8,770.0,106.8,551.76,1321.76,2
+Wed_00515,Wednesday,"New World Metro Shore City,New World Albany",12,101.0,216,317.0,770.0,107.0,552.81,1322.81,2
+Wed_00516,Wednesday,"New World Green Bay,New World Victoria Park",14,65.0,252,317.0,770.0,107.0,553.05,1323.05,2
+Wed_00517,Wednesday,"Four Square Pakuranga Heights,Pak 'n Save Highland Park",13,83.2,234,317.2,770.0,107.2,553.87,1323.87,2
+Wed_00518,Wednesday,"New World Mt Roskill,New World Victoria Park",15,47.2,270,317.2,770.0,107.2,553.94,1323.94,2
+Wed_00519,Wednesday,"New World Milford,Four Square St Heliers",11,119.4,198,317.4,770.0,107.4,555.07,1325.07,2
+Wed_00520,Wednesday,"New World Victoria Park,Four Square Britomart,New World Metro Shore City",13,83.5,234,317.5,770.0,107.5,555.66,1325.66,3
+Wed_00521,Wednesday,"New World Victoria Park,New World Eastridge",13,83.7,234,317.7,770.0,107.7,556.2,1326.2,2
+Wed_00522,Wednesday,"New World Papatoetoe,Four Square Hobsonville",12,101.7,216,317.7,770.0,107.7,556.53,1326.53,2
+Wed_00523,Wednesday,"New World Victoria Park,New World Hobsonville",13,84.7,234,318.7,770.0,108.7,561.43,1331.43,2
+Wed_00524,Wednesday,"New World Green Bay,New World Point Chevalier",15,48.9,270,318.9,770.0,108.9,562.54,1332.54,2
+Wed_00525,Wednesday,"Pak 'n Save Mt Albert,Four Square Glen Eden",15,49.2,270,319.2,770.0,109.2,564.44,1334.44,2
+Wed_00526,Wednesday,"Four Square Fair Price Henderson,Pak 'n Save Westgate",14,67.3,252,319.3,770.0,109.3,564.68,1334.68,2
+Wed_00527,Wednesday,"Pak 'n Save Lincoln Road,Four Square St Heliers",12,103.9,216,319.9,770.0,109.9,567.65,1337.65,2
+Wed_00528,Wednesday,"New World Victoria Park,New World Remuera",14,68.2,252,320.2,770.0,110.2,569.54,1339.54,2
+Wed_00529,Wednesday,"Four Square Remuera,New World Howick",12,104.3,216,320.3,770.0,110.3,569.93,1339.93,2
+Wed_00530,Wednesday,"New World Papakura,Four Square Lancaster",10,140.3,180,320.3,770.0,110.3,570.07,1340.07,2
+Wed_00531,Wednesday,"New World Metro Queen St,Four Square Ellerslie,New World Eastridge",13,86.6,234,320.6,770.0,110.6,571.5,1341.5,3
+Wed_00532,Wednesday,"New World Milford,Four Square Cockle Bay",10,140.7,180,320.7,770.0,110.7,571.98,1341.98,2
+Wed_00533,Wednesday,"Pak 'n Save Lincoln Road,Four Square Pakuranga Heights",12,104.8,216,320.8,770.0,110.8,572.22,1342.22,2
+Wed_00534,Wednesday,"New World Southmall,Four Square Lancaster",11,122.9,198,320.9,770.0,110.9,573.2,1343.2,2
+Wed_00535,Wednesday,"Four Square Onehunga,Pak 'n Save Westgate",14,68.9,252,320.9,770.0,110.9,573.24,1343.24,2
+Wed_00536,Wednesday,"Four Square Ellerslie,New World Long Bay",11,123.0,198,321.0,770.0,111.0,573.39,1343.39,2
+Wed_00537,Wednesday,"Four Square Glen Eden,New World Long Bay",11,123.1,198,321.1,770.0,111.1,574.2,1344.2,2
+Wed_00538,Wednesday,"Pak 'n Save Westgate,Four Square Ellerslie",13,87.2,234,321.2,770.0,111.2,574.51,1344.51,2
+Wed_00539,Wednesday,"Four Square Hobsonville,New World Botany",11,123.9,198,321.9,770.0,111.9,578.25,1348.25,2
+Wed_00540,Wednesday,"New World Southmall,New World Papakura",13,88.0,234,322.0,770.0,112.0,578.45,1348.45,2
+Wed_00541,Wednesday,"New World Metro Queen St,New World Eastridge,Four Square St Heliers",13,88.3,234,322.3,770.0,112.3,580.01,1350.01,3
+Wed_00542,Wednesday,"Four Square St Heliers,New World Browns Bay",10,142.5,180,322.5,770.0,112.5,581.01,1351.01,2
+Wed_00543,Wednesday,"Four Square Eden Terrace,Pak 'n Save Westgate",14,70.9,252,322.9,770.0,112.9,583.29,1353.29,2
+Wed_00544,Wednesday,"Four Square Ellerslie,New World Eastridge,Four Square St Heliers",13,89.0,234,323.0,770.0,113.0,583.78,1353.78,3
+Wed_00545,Wednesday,"New World Long Bay,Four Square Torbay",12,107.0,216,323.0,770.0,113.0,583.95,1353.95,2
+Wed_00546,Wednesday,"Pak 'n Save Lincoln Road,Four Square Cockle Bay",11,125.1,198,323.1,770.0,113.1,584.56,1354.56,2
+Wed_00547,Wednesday,"New World Newmarket,Four Square Ellerslie,New World Metro Queen St",14,71.2,252,323.2,770.0,113.2,584.83,1354.83,3
+Wed_00548,Wednesday,"Four Square Glen Eden,New World Howick",11,125.2,198,323.2,770.0,113.2,584.9,1354.9,2
+Wed_00549,Wednesday,"Pak 'n Save Mt Albert,New World Metro Queen St",15,53.3,270,323.3,770.0,113.3,585.28,1355.28,2
+Wed_00550,Wednesday,"New World Mt Roskill,New World Point Chevalier",16,35.4,288,323.4,770.0,113.4,586.04,1356.04,2
+Wed_00551,Wednesday,"New World Point Chevalier,New World Newmarket",15,53.5,270,323.5,770.0,113.5,586.55,1356.55,2
+Wed_00552,Wednesday,"Four Square Britomart,New World Howick",12,107.6,216,323.6,770.0,113.6,586.7,1356.7,2
+Wed_00553,Wednesday,"Pak 'n Save Royal Oak,Four Square Remuera",15,53.6,270,323.6,770.0,113.6,587.12,1357.12,2
+Wed_00554,Wednesday,"New World Point Chevalier,New World Hobsonville",14,71.7,252,323.7,770.0,113.7,587.52,1357.52,2
+Wed_00555,Wednesday,"Pak 'n Save Westgate,New World Metro Shore City",13,89.9,234,323.9,770.0,113.9,588.52,1358.52,2
+Wed_00556,Wednesday,"New World New Lynn,New World Green Bay",16,36.0,288,324.0,770.0,114.0,588.75,1358.75,2
+Wed_00557,Wednesday,"New World Mt Albert,New World Metro Queen St,Four Square Britomart",15,54.1,270,324.1,770.0,114.1,589.35,1359.35,3
+Wed_00558,Wednesday,"Pak 'n Save Royal Oak,Four Square Britomart",15,55.3,270,325.3,770.0,115.3,595.5,1365.5,2
+Wed_00559,Wednesday,"Four Square Ellerslie,New World Albany",12,109.6,216,325.6,770.0,115.6,597.45,1367.45,2
+Wed_00560,Wednesday,"New World Metro Queen St,New World Birkenhead,Four Square Lancaster",13,91.7,234,325.7,770.0,115.7,598.01,1368.01,3
+Wed_00561,Wednesday,"Four Square Glen Eden,New World Albany",12,109.8,216,325.8,770.0,115.8,598.27,1368.27,2
+Wed_00562,Wednesday,"Four Square Onehunga,New World Long Bay",12,109.9,216,325.9,770.0,115.9,598.69,1368.69,2
+Wed_00563,Wednesday,"New World Mt Albert,New World Birkenhead",14,74.2,252,326.2,770.0,116.2,600.19,1370.19,2
+Wed_00564,Wednesday,"New World Metro Shore City,New World Howick",11,128.3,198,326.3,770.0,116.3,600.63,1370.63,2
+Wed_00565,Wednesday,"Pak 'n Save Manukau,Four Square Ellerslie",14,74.4,252,326.4,770.0,116.4,601.33,1371.33,2
+Wed_00566,Wednesday,"Four Square Onehunga,Four Square Ellerslie,New World Remuera",15,56.7,270,326.7,770.0,116.7,603.0,1373.0,3
+Wed_00567,Wednesday,"Four Square Britomart,New World Long Bay",12,110.8,216,326.8,770.0,116.8,603.29,1373.29,2
+Wed_00568,Wednesday,"Four Square Ellerslie,Pak 'n Save Highland Park",13,92.8,234,326.8,770.0,116.8,603.34,1373.34,2
+Wed_00569,Wednesday,"New World Victoria Park,New World Papakura",12,110.8,216,326.8,770.0,116.8,603.61,1373.61,2
+Wed_00570,Wednesday,"New World Mt Albert,Four Square Torbay",12,110.9,216,326.9,770.0,116.9,603.78,1373.78,2
+Wed_00571,Wednesday,"Pak 'n Save Mt Albert,Four Square Onehunga",16,39.0,288,327.0,770.0,117.0,604.61,1374.61,2
+Wed_00572,Wednesday,"Four Square Onehunga,Four Square Ellerslie,New World Newmarket",15,57.2,270,327.2,770.0,117.2,605.66,1375.66,3
+Wed_00573,Wednesday,"New World Stonefields,Four Square Lancaster",12,111.3,216,327.3,770.0,117.3,606.29,1376.29,2
+Wed_00574,Wednesday,"New World Victoria Park,New World Southmall",13,93.4,234,327.4,770.0,117.4,606.75,1376.75,2
+Wed_00575,Wednesday,"Four Square Ellerslie,Four Square Remuera,New World Eastridge",14,75.6,252,327.6,770.0,117.6,607.38,1377.38,3
+Wed_00576,Wednesday,"New World Metro Queen St,Four Square Britomart,New World Eastridge",14,75.6,252,327.6,770.0,117.6,607.38,1377.38,3
+Wed_00577,Wednesday,"Pak 'n Save Royal Oak,Four Square St Heliers",14,75.6,252,327.6,770.0,117.6,607.62,1377.62,2
+Wed_00578,Wednesday,"New World Ormiston,Four Square Lancaster",11,129.8,198,327.8,770.0,117.8,608.49,1378.49,2
+Wed_00579,Wednesday,"New World Papatoetoe,Four Square Fair Price Henderson",13,94.0,234,328.0,770.0,118.0,609.89,1379.89,2
+Wed_00580,Wednesday,"New World Mt Albert,New World New Lynn",16,40.3,288,328.3,770.0,118.3,611.02,1381.02,2
+Wed_00581,Wednesday,"Pak 'n Save Royal Oak,Four Square Pakuranga Heights",14,76.5,252,328.5,770.0,118.5,612.35,1382.35,2
+Wed_00582,Wednesday,"Pak 'n Save Royal Oak,New World Metro Shore City",14,76.6,252,328.6,770.0,118.6,612.52,1382.52,2
+Wed_00583,Wednesday,"New World Point Chevalier,Four Square Britomart,Four Square Ellerslie",14,76.9,252,328.9,770.0,118.9,614.11,1384.11,3
+Wed_00584,Wednesday,"Four Square Eden Terrace,New World Long Bay",12,112.9,216,328.9,770.0,118.9,614.29,1384.29,2
+Wed_00585,Wednesday,"New World Newmarket,New World Metro Queen St,Four Square Britomart",15,59.2,270,329.2,770.0,119.2,615.83,1385.83,3
+Wed_00586,Wednesday,"New World Point Chevalier,New World Eastridge",14,77.2,252,329.2,770.0,119.2,615.88,1385.88,2
+Wed_00587,Wednesday,"Four Square Ellerslie,New World Devonport",12,113.5,216,329.5,770.0,119.5,617.6,1387.6,2
+Wed_00588,Wednesday,"New World Newmarket,Four Square Torbay",12,113.5,216,329.5,770.0,119.5,617.65,1387.65,2
+Wed_00589,Wednesday,"Pak 'n Save Royal Oak,Four Square Hobsonville",14,77.8,252,329.8,770.0,119.8,619.19,1389.19,2
+Wed_00590,Wednesday,"Four Square Hobsonville,New World Devonport",12,114.3,216,330.3,770.0,120.3,621.67,1391.67,2
+Wed_00591,Wednesday,"Four Square Onehunga,New World Albany",13,96.5,234,330.5,770.0,120.5,622.76,1392.76,2
+Wed_00592,Wednesday,"New World Milford,Four Square Torbay",12,114.8,216,330.8,770.0,120.8,624.19,1394.19,2
+Wed_00593,Wednesday,"Pak 'n Save Royal Oak,Four Square Cockle Bay",13,96.9,234,330.9,770.0,120.9,624.68,1394.68,2
+Wed_00594,Wednesday,"Four Square Eden Terrace,New World Newmarket,New World Metro Queen St",15,61.0,270,331.0,770.0,121.0,624.92,1394.92,3
+Wed_00595,Wednesday,"Four Square Britomart,New World Albany",13,97.4,234,331.4,770.0,121.4,627.35,1397.35,2
+Wed_00596,Wednesday,"New World Metro Shore City,Pak 'n Save Wairau Road",14,79.6,252,331.6,770.0,121.6,628.1,1398.1,2
+Wed_00597,Wednesday,"Pak 'n Save Lincoln Road,Four Square Lancaster",13,97.7,234,331.7,770.0,121.7,628.62,1398.62,2
+Wed_00598,Wednesday,"Four Square Onehunga,Four Square Ellerslie,New World Stonefields",15,61.7,270,331.7,770.0,121.7,628.85,1398.85,3
+Wed_00599,Wednesday,"Four Square Hobsonville,New World Howick",11,133.7,198,331.7,770.0,121.7,629.02,1399.02,2
+Wed_00600,Wednesday,"New World Point Chevalier,New World Remuera",15,61.8,270,331.8,770.0,121.8,629.22,1399.22,2
+Wed_00601,Wednesday,"Four Square Glen Eden,Pak 'n Save Henderson",15,61.8,270,331.8,770.0,121.8,629.38,1399.38,2
+Wed_00602,Wednesday,"New World New Lynn,Four Square Torbay",12,115.9,216,331.9,770.0,121.9,629.86,1399.86,2
+Wed_00603,Wednesday,"New World Victoria Park,New World Stonefields",14,79.9,252,331.9,770.0,121.9,629.91,1399.91,2
+Wed_00604,Wednesday,"Four Square Fair Price Henderson,New World Long Bay",12,115.9,216,331.9,770.0,121.9,629.94,1399.94,2
+Wed_00605,Wednesday,"New World Point Chevalier,Four Square Eden Terrace,Four Square Britomart",15,62.0,270,332.0,770.0,122.0,630.19,1400.19,3
+Wed_00606,Wednesday,"New World Mt Albert,New World Green Bay",16,44.0,288,332.0,770.0,122.0,630.31,1400.31,2
+Wed_00607,Wednesday,"Four Square Britomart,Pak 'n Save Westgate",14,80.1,252,332.1,770.0,122.1,630.81,1400.81,2
+Wed_00608,Wednesday,"Pak 'n Save Mt Albert,Four Square Eden Terrace",16,44.1,288,332.1,770.0,122.1,631.01,1401.01,2
+Wed_00609,Wednesday,"Four Square Fair Price Henderson,New World Botany",12,116.2,216,332.2,770.0,122.2,631.6,1401.6,2
+Wed_00610,Wednesday,"New World Mt Albert,Four Square Eden Terrace,Four Square Ellerslie",15,62.3,270,332.3,770.0,122.3,631.68,1401.68,3
+Wed_00611,Wednesday,"New World Metro Queen St,Pak 'n Save Wairau Road",14,80.3,252,332.3,770.0,122.3,632.1,1402.1,2
+Wed_00612,Wednesday,"Pak 'n Save Mt Albert,Four Square Ellerslie",15,62.4,270,332.4,770.0,122.4,632.39,1402.39,2
+Wed_00613,Wednesday,"New World Victoria Park,New World Milford",14,80.8,252,332.8,770.0,122.8,634.21,1404.21,2
+Wed_00614,Wednesday,"New World Victoria Park,New World Ormiston",13,98.8,234,332.8,770.0,122.8,634.46,1404.46,2
+Wed_00615,Wednesday,"New World Newmarket,New World Birkenhead",14,81.1,252,333.1,770.0,123.1,635.86,1405.86,2
+Wed_00616,Wednesday,"New World Hobsonville,New World Birkenhead",13,99.1,234,333.1,770.0,123.1,636.08,1406.08,2
+Wed_00617,Wednesday,"Four Square Onehunga,Pak 'n Save Manukau",15,63.1,270,333.1,770.0,123.1,636.1,1406.1,2
+Wed_00618,Wednesday,"New World Metro Queen St,Pak 'n Save Manukau",14,81.1,252,333.1,770.0,123.1,636.15,1406.15,2
+Wed_00619,Wednesday,"New World Victoria Park,New World Browns Bay",13,99.5,234,333.5,770.0,123.5,637.91,1407.91,2
+Wed_00620,Wednesday,"Four Square Eden Terrace,New World Albany",13,99.6,234,333.6,770.0,123.6,638.35,1408.35,2
+Wed_00621,Wednesday,"Pak 'n Save Highland Park,Four Square St Heliers",13,99.8,234,333.8,770.0,123.8,639.38,1409.38,2
+Wed_00622,Wednesday,"Four Square Onehunga,Pak 'n Save Mangere",16,45.8,288,333.8,770.0,123.8,639.79,1409.79,2
+Wed_00623,Wednesday,"New World Metro Queen St,Pak 'n Save Highland Park",13,99.8,234,333.8,770.0,123.8,639.87,1409.87,2
+Wed_00624,Wednesday,"Four Square Onehunga,Pak 'n Save Highland Park",14,81.9,252,333.9,770.0,123.9,640.34,1410.34,2
+Wed_00625,Wednesday,"Four Square Pakuranga Heights,New World Botany,Four Square Cockle Bay",13,99.9,234,333.9,770.0,123.9,640.37,1410.37,3
+Wed_00626,Wednesday,"New World Newmarket,Four Square Ellerslie,Four Square Remuera",15,64.0,270,334.0,770.0,124.0,640.46,1410.46,3
+Wed_00627,Wednesday,"Four Square Onehunga,New World Devonport",13,100.4,234,334.4,770.0,124.4,642.9,1412.9,2
+Wed_00628,Wednesday,"New World Remuera,Four Square Remuera,Four Square Ellerslie",15,64.6,270,334.6,770.0,124.6,643.82,1413.82,3
+Wed_00629,Wednesday,"New World Victoria Park,New World Metro Shore City,Four Square Lancaster",13,100.8,234,334.8,770.0,124.8,644.65,1414.65,3
+Wed_00630,Wednesday,"Pak 'n Save Manukau,Four Square Cockle Bay",13,100.8,234,334.8,770.0,124.8,645.0,1415.0,2
+Wed_00631,Wednesday,"Four Square Eden Terrace,New World Newmarket,Four Square Ellerslie",15,64.9,270,334.9,770.0,124.9,645.26,1415.26,3
+Wed_00632,Wednesday,"New World Southmall,New World Ormiston",14,83.1,252,335.1,770.0,125.1,646.51,1416.51,2
+Wed_00633,Wednesday,"New World Metro Queen St,Four Square Remuera,New World Eastridge",14,83.1,252,335.1,770.0,125.1,646.6,1416.6,3
+Wed_00634,Wednesday,"New World Victoria Park,Four Square Lancaster,Four Square Hobsonville",13,101.3,234,335.3,770.0,125.3,647.15,1417.15,3
+Wed_00635,Wednesday,"Four Square Britomart,New World Devonport",13,101.3,234,335.3,770.0,125.3,647.5,1417.5,2
+Wed_00636,Wednesday,"Four Square Onehunga,New World Green Bay,Four Square Glen Eden",15,65.3,270,335.3,770.0,125.3,647.62,1417.62,3
+Wed_00637,Wednesday,"Four Square Botany Junction,New World Milford",12,119.5,216,335.5,770.0,125.5,648.6,1418.6,2
+Wed_00638,Wednesday,"Four Square Pakuranga Heights,New World Long Bay",11,137.7,198,335.7,770.0,125.7,649.3,1419.3,2
+Wed_00639,Wednesday,"Four Square Botany Junction,New World Browns Bay",11,138.3,198,336.3,770.0,126.3,652.3,1422.3,2
+Wed_00640,Wednesday,"Four Square Lancaster,New World Long Bay",12,120.3,216,336.3,770.0,126.3,652.57,1422.57,2
+Wed_00641,Wednesday,"Four Square Fair Price Henderson,New World Albany",13,102.6,234,336.6,770.0,126.6,654.0,1424.0,2
+Wed_00642,Wednesday,"Four Square Ellerslie,New World Stonefields,Four Square St Heliers",14,84.9,252,336.9,770.0,126.9,655.52,1425.52,3
+Wed_00643,Wednesday,"New World Ormiston,New World Papakura",13,102.9,234,336.9,770.0,126.9,655.58,1425.58,2
+Wed_00644,Wednesday,"Four Square Pakuranga Heights,Four Square Botany Junction,New World Ormiston",14,85.0,252,337.0,770.0,127.0,656.4,1426.4,3
+Wed_00645,Wednesday,"Four Square Eden Terrace,New World Remuera,Four Square Ellerslie",15,67.2,270,337.2,770.0,127.2,657.35,1427.35,3
+Wed_00646,Wednesday,"New World Mt Albert,New World Newmarket",16,49.3,288,337.3,770.0,127.3,657.81,1427.81,2
+Wed_00647,Wednesday,"Pak 'n Save Lincoln Road,Four Square Botany Junction",13,103.4,234,337.4,770.0,127.4,658.13,1428.13,2
+Wed_00648,Wednesday,"New World Point Chevalier,Four Square Fair Price Henderson,Four Square Hobsonville",14,85.4,252,337.4,770.0,127.4,658.33,1428.33,3
+Wed_00649,Wednesday,"Four Square Eden Terrace,New World Devonport",13,103.5,234,337.5,770.0,127.5,658.5,1428.5,2
+Wed_00650,Wednesday,"New World Eastridge,Four Square Torbay",11,139.5,198,337.5,770.0,127.5,658.6,1428.6,2
+Wed_00651,Wednesday,"Four Square Remuera,New World Eastridge,Four Square St Heliers",14,85.5,252,337.5,770.0,127.5,658.88,1428.88,3
+Wed_00652,Wednesday,"New World Metro Queen St,Four Square Britomart,New World Remuera",15,67.7,270,337.7,770.0,127.7,659.63,1429.63,3
+Wed_00653,Wednesday,"Four Square Glen Eden,New World Devonport",12,121.7,216,337.7,770.0,127.7,659.75,1429.75,2
+Wed_00654,Wednesday,"New World Birkenhead,New World Eastridge",13,103.7,234,337.7,770.0,127.7,659.8,1429.8,2
+Wed_00655,Wednesday,"New World Remuera,Four Square Torbay",12,121.8,216,337.8,770.0,127.8,660.32,1430.32,2
+Wed_00656,Wednesday,"Four Square Cockle Bay,New World Long Bay",10,158.1,180,338.1,770.0,128.1,661.64,1431.64,2
+Wed_00657,Wednesday,"New World Mt Albert,New World Hobsonville",15,68.1,270,338.1,770.0,128.1,661.75,1431.75,2
+Wed_00658,Wednesday,"Four Square Pakuranga Heights,Four Square Cockle Bay,New World Stonefields",13,104.3,234,338.3,770.0,128.3,662.88,1432.88,3
+Wed_00659,Wednesday,"New World Point Chevalier,New World Papakura",13,104.4,234,338.4,770.0,128.4,663.29,1433.29,2
+Wed_00660,Wednesday,"Four Square Onehunga,Four Square Remuera,New World Eastridge",15,68.5,270,338.5,770.0,128.5,663.73,1433.73,3
+Wed_00661,Wednesday,"Four Square Eden Terrace,New World Metro Queen St,New World Remuera",15,68.6,270,338.6,770.0,128.6,664.4,1434.4,3
+Wed_00662,Wednesday,"New World Green Bay,Four Square Torbay",12,122.8,216,338.8,770.0,128.8,665.44,1435.44,2
+Wed_00663,Wednesday,"Pak 'n Save Manukau,Four Square Pakuranga Heights",14,86.8,252,338.8,770.0,128.8,665.71,1435.71,2
+Wed_00664,Wednesday,"New World New Lynn,New World Birkenhead",14,86.9,252,338.9,770.0,128.9,665.76,1435.76,2
+Wed_00665,Wednesday,"Four Square Hobsonville,Pak 'n Save Wairau Road",14,86.9,252,338.9,770.0,128.9,666.08,1436.08,2
+Wed_00666,Wednesday,"New World Mt Roskill,Four Square Torbay",13,105.0,234,339.0,770.0,129.0,666.32,1436.32,2
+Wed_00667,Wednesday,"New World Point Chevalier,New World Southmall",14,87.0,252,339.0,770.0,129.0,666.43,1436.43,2
+Wed_00668,Wednesday,"Pak 'n Save Manukau,Four Square Botany Junction",15,69.0,270,339.0,770.0,129.0,666.45,1436.45,2
+Wed_00669,Wednesday,"Four Square Remuera,New World Long Bay",12,123.1,216,339.1,770.0,129.1,667.11,1437.11,2
+Wed_00670,Wednesday,"Pak 'n Save Mt Albert,Four Square Hobsonville",15,69.1,270,339.1,770.0,129.1,667.12,1437.12,2
+Wed_00671,Wednesday,"Pak 'n Save Westgate,Four Square Remuera",14,87.3,252,339.3,770.0,129.3,668.24,1438.24,2
+Wed_00672,Wednesday,"Four Square Ellerslie,Pak 'n Save Sylvia Park",15,69.5,270,339.5,770.0,129.5,668.98,1438.98,2
+Wed_00673,Wednesday,"New World New Lynn,Four Square Glen Eden,Four Square Fair Price Henderson",15,69.6,270,339.6,770.0,129.6,669.67,1439.67,3
+Wed_00674,Wednesday,Pak 'n Save Albany,14,87.7,252,339.7,770.0,129.7,669.94,1439.94,1
+Wed_00675,Wednesday,"Four Square Britomart,Four Square Ellerslie,New World Eastridge",14,87.8,252,339.8,770.0,129.8,670.62,1440.62,3
+Wed_00676,Wednesday,"Four Square Botany Junction,New World Ormiston,Four Square Cockle Bay",13,106.2,234,340.2,770.0,130.2,672.52,1442.52,3
+Wed_00677,Wednesday,"Pak 'n Save Royal Oak,Four Square Fair Price Henderson",15,70.2,270,340.2,770.0,130.2,672.55,1442.55,2
+Wed_00678,Wednesday,"New World Newmarket,New World Eastridge",15,70.2,270,340.2,770.0,130.2,672.88,1442.88,2
+Wed_00679,Wednesday,"Four Square Pakuranga Heights,New World Albany",12,124.3,216,340.3,770.0,130.3,673.37,1443.37,2
+Wed_00680,Wednesday,"Pak 'n Save Lincoln Road,New World Victoria Park",15,70.4,270,340.4,770.0,130.4,673.87,1443.87,2
+Wed_00681,Wednesday,"Four Square Onehunga,Pak 'n Save Clendon",15,70.6,270,340.6,770.0,130.6,674.91,1444.91,2
+Wed_00682,Wednesday,"New World Birkenhead,New World Milford",14,88.8,252,340.8,770.0,130.8,675.78,1445.78,2
+Wed_00683,Wednesday,"New World Green Bay,New World Birkenhead",14,88.9,252,340.9,770.0,130.9,676.57,1446.57,2
+Wed_00684,Wednesday,"Four Square Lancaster,New World Albany",13,107.0,234,341.0,770.0,131.0,676.63,1446.63,2
+Wed_00685,Wednesday,"New World Mt Roskill,New World Birkenhead",15,71.1,270,341.1,770.0,131.1,677.45,1447.45,2
+Wed_00686,Wednesday,"New World Remuera,New World Eastridge",15,71.3,270,341.3,770.0,131.3,678.14,1448.14,2
+Wed_00687,Wednesday,"New World Remuera,New World Birkenhead",14,89.3,252,341.3,770.0,131.3,678.53,1448.53,2
+Wed_00688,Wednesday,"New World Newmarket,Four Square Remuera,New World Metro Queen St",15,71.3,270,341.3,770.0,131.3,678.56,1448.56,3
+Wed_00689,Wednesday,"Four Square Ellerslie,Four Square Remuera,New World Stonefields",15,71.6,270,341.6,770.0,131.6,679.85,1449.85,3
+Wed_00690,Wednesday,"Four Square Fair Price Henderson,New World Howick",12,126.1,216,342.1,770.0,132.1,682.37,1452.37,2
+Wed_00691,Wednesday,"Pak 'n Save Mt Albert,Four Square Britomart",16,54.5,288,342.5,770.0,132.5,684.4,1454.4,2
+Wed_00692,Wednesday,"New World Papakura,Four Square Torbay",10,162.5,180,342.5,770.0,132.5,684.46,1454.46,2
+Wed_00693,Wednesday,"New World Mt Albert,Four Square Britomart,Four Square Ellerslie",15,72.7,270,342.7,770.0,132.7,685.37,1455.37,3
+Wed_00694,Wednesday,"Four Square Cockle Bay,New World Albany",11,144.7,198,342.7,770.0,132.7,685.7,1455.7,2
+Wed_00695,Wednesday,"Four Square Ellerslie,Pak 'n Save Clendon",14,90.8,252,342.8,770.0,132.8,686.16,1456.16,2
+Wed_00696,Wednesday,"New World Mt Albert,New World Eastridge",15,73.0,270,343.0,770.0,133.0,687.14,1457.14,2
+Wed_00697,Wednesday,"New World Mt Albert,Four Square Eden Terrace,Four Square Britomart",16,55.1,288,343.1,770.0,133.1,687.58,1457.58,3
+Wed_00698,Wednesday,"New World Southmall,Four Square Torbay",11,145.1,198,343.1,770.0,133.1,687.59,1457.59,2
+Wed_00699,Wednesday,"New World New Lynn,New World Hobsonville",15,73.1,270,343.1,770.0,133.1,687.83,1457.83,2
+Wed_00700,Wednesday,"New World Mt Albert,Four Square Fair Price Henderson,Four Square Glen Eden",15,73.1,270,343.1,770.0,133.1,687.94,1457.94,3
+Wed_00701,Wednesday,"New World Point Chevalier,New World Stonefields",15,73.5,270,343.5,770.0,133.5,689.59,1459.59,2
+Wed_00702,Wednesday,"Four Square Remuera,New World Albany",13,109.8,234,343.8,770.0,133.8,691.17,1461.17,2
+Wed_00703,Wednesday,"Four Square Onehunga,New World Remuera,Four Square Remuera",16,56.0,288,344.0,770.0,134.0,692.34,1462.34,3
+Wed_00704,Wednesday,"Four Square Pakuranga Heights,New World Devonport",12,128.2,216,344.2,770.0,134.2,693.51,1463.51,2
+Wed_00705,Wednesday,"New World Point Chevalier,New World Ormiston",14,92.3,252,344.3,770.0,134.3,694.14,1464.14,2
+Wed_00706,Wednesday,"Pak 'n Save Westgate,Four Square St Heliers",13,110.5,234,344.5,770.0,134.5,694.84,1464.84,2
+Wed_00707,Wednesday,"New World Birkenhead,New World Browns Bay",13,110.5,234,344.5,770.0,134.5,695.11,1465.11,2
+Wed_00708,Wednesday,"Four Square Eden Terrace,Pak 'n Save Manukau",15,74.6,270,344.6,770.0,134.6,695.45,1465.45,2
+Wed_00709,Wednesday,"Pak 'n Save Mt Albert,New World Metro Shore City",15,74.6,270,344.6,770.0,134.6,695.67,1465.67,2
+Wed_00710,Wednesday,"Pak 'n Save Lincoln Road,Four Square Torbay",13,110.7,234,344.7,770.0,134.7,696.11,1466.1,2
+Wed_00711,Wednesday,"New World Albany,Four Square Torbay",13,110.8,234,344.8,770.0,134.8,696.23,1466.23,2
+Wed_00712,Wednesday,"Pak 'n Save Mangere,Four Square Glen Eden",15,74.8,270,344.8,770.0,134.8,696.39,1466.39,2
+Wed_00713,Wednesday,"New World Newmarket,New World Remuera",16,56.8,288,344.8,770.0,134.8,696.59,1466.59,2
+Wed_00714,Wednesday,"Four Square Glen Eden,Pak 'n Save Manukau",14,92.9,252,344.9,770.0,134.9,696.82,1466.82,2
+Wed_00715,Wednesday,"Four Square Ellerslie,Pak 'n Save Wairau Road",14,93.1,252,345.1,770.0,135.1,697.93,1467.93,2
+Wed_00716,Wednesday,"New World Papatoetoe,Four Square Lancaster",13,111.1,234,345.1,770.0,135.1,698.24,1468.24,2
+Wed_00717,Wednesday,"Pak 'n Save Royal Oak,Four Square Botany Junction",15,75.1,270,345.1,770.0,135.1,698.25,1468.25,2
+Wed_00718,Wednesday,"Pak 'n Save Mangere,New World Metro Queen St",15,75.3,270,345.3,770.0,135.3,698.92,1468.92,2
+Wed_00719,Wednesday,"Four Square Eden Terrace,Pak 'n Save Highland Park",14,93.3,252,345.3,770.0,135.3,699.16,1469.16,2
+Wed_00720,Wednesday,"Pak 'n Save Westgate,Four Square Pakuranga Heights",13,111.4,234,345.4,770.0,135.4,699.42,1469.42,2
+Wed_00721,Wednesday,"New World Mt Albert,New World Remuera",16,57.6,288,345.6,770.0,135.6,700.48,1470.48,2
+Wed_00722,Wednesday,"New World Point Chevalier,Pak 'n Save Lincoln Road",16,57.6,288,345.6,770.0,135.6,700.51,1470.51,2
+Wed_00723,Wednesday,"Four Square Onehunga,Four Square Remuera,New World Newmarket",16,57.6,288,345.6,770.0,135.6,700.84,1470.84,3
+Wed_00724,Wednesday,"Four Square Lancaster,New World Botany",12,130.3,216,346.3,770.0,136.3,704.05,1474.05,2
+Wed_00725,Wednesday,"New World Metro Queen St,Pak 'n Save Sylvia Park",15,76.5,270,346.5,770.0,136.5,705.51,1475.51,2
+Wed_00726,Wednesday,"New World Southmall,New World Birkenhead",13,112.6,234,346.6,770.0,136.6,705.81,1475.81,2
+Wed_00727,Wednesday,"Four Square Cockle Bay,New World Devonport",11,148.6,198,346.6,770.0,136.6,705.85,1475.85,2
+Wed_00728,Wednesday,"New World Birkenhead,New World Papakura",12,130.9,216,346.9,770.0,136.9,707.21,1477.21,2
+Wed_00729,Wednesday,"Four Square Botany Junction,Pak 'n Save Highland Park",14,95.1,252,347.1,770.0,137.1,708.52,1478.52,2
+Wed_00730,Wednesday,"Pak 'n Save Highland Park,New World Metro Shore City",13,113.3,234,347.3,770.0,137.3,709.32,1479.32,2
+Wed_00731,Wednesday,"Four Square St Heliers,New World Long Bay",11,149.5,198,347.5,770.0,137.5,710.56,1480.56,2
+Wed_00732,Wednesday,"Four Square Pakuranga Heights,Pak 'n Save Sylvia Park",15,77.5,270,347.5,770.0,137.5,710.65,1480.65,2
+Wed_00733,Wednesday,"Pak 'n Save Manukau,Four Square Remuera",15,77.6,270,347.6,770.0,137.6,710.9,1480.9,2
+Wed_00734,Wednesday,"Pak 'n Save Manukau,Four Square St Heliers",14,95.6,252,347.6,770.0,137.6,710.92,1480.92,2
+Wed_00735,Wednesday,"New World Howick,Four Square Lancaster",12,131.7,216,347.7,770.0,137.7,711.22,1481.22,2
+Wed_00736,Wednesday,"Four Square Remuera,New World Devonport",13,113.7,234,347.7,770.0,137.7,711.32,1481.32,2
+Wed_00737,Wednesday,"Pak 'n Save Westgate,Four Square Cockle Bay",12,131.8,216,347.8,770.0,137.8,711.75,1481.75,2
+Wed_00738,Wednesday,"Pak 'n Save Westgate,Four Square Lancaster",14,96.1,252,348.1,770.0,138.1,713.33,1483.33,2
+Wed_00739,Wednesday,"New World Point Chevalier,New World Victoria Park,New World Metro Queen St",16,60.1,288,348.1,770.0,138.1,713.34,1483.34,3
+Wed_00740,Wednesday,"Four Square Onehunga,Pak 'n Save Sylvia Park",16,60.2,288,348.2,770.0,138.2,713.83,1483.83,2
+Wed_00741,Wednesday,"New World Stonefields,New World Eastridge",15,78.9,270,348.9,770.0,138.9,717.58,1487.58,2
+Wed_00742,Wednesday,"Four Square Eden Terrace,Four Square Britomart,New World Eastridge",15,79.3,270,349.3,770.0,139.3,719.48,1489.48,3
+Wed_00743,Wednesday,"Pak 'n Save Mt Albert,Four Square Fair Price Henderson",16,61.4,288,349.4,770.0,139.4,720.48,1490.48,2
+Wed_00744,Wednesday,"Four Square Fair Price Henderson,Pak 'n Save Henderson",16,61.5,288,349.5,770.0,139.5,720.5,1490.5,2
+Wed_00745,Wednesday,"New World Stonefields,Four Square Torbay",12,133.5,216,349.5,770.0,139.5,720.68,1490.68,2
+Wed_00746,Wednesday,"Four Square Remuera,Pak 'n Save Highland Park",14,97.8,252,349.8,770.0,139.8,722.21,1492.21,2
+Wed_00747,Wednesday,"Pak 'n Save Henderson,Four Square Hobsonville",15,79.8,270,349.8,770.0,139.8,722.3,1492.3,2
+Wed_00748,Wednesday,"Pak 'n Save Mangere,Four Square Ellerslie",15,79.8,270,349.8,770.0,139.8,722.4,1492.4,2
+Wed_00749,Wednesday,"New World Metro Queen St,Pak 'n Save Clendon",14,97.9,252,349.9,770.0,139.9,722.68,1492.68,2
+Wed_00750,Wednesday,"Four Square Pakuranga Heights,Pak 'n Save Clendon",14,97.9,252,349.9,770.0,139.9,722.72,1492.72,2
+Wed_00751,Wednesday,"New World Ormiston,Four Square Torbay",11,151.9,198,349.9,770.0,139.9,722.88,1492.88,2
+Wed_00752,Wednesday,"Four Square Onehunga,Pak 'n Save Wairau Road",15,80.0,270,350.0,770.0,140.0,723.23,1493.23,2
+Wed_00753,Wednesday,"New World New Lynn,New World Newmarket",16,62.0,288,350.0,770.0,140.0,723.38,1493.38,2
+Wed_00754,Wednesday,"New World Green Bay,New World Hobsonville",15,80.0,270,350.0,770.0,140.0,723.41,1493.41,2
+Wed_00755,Wednesday,"Four Square Pakuranga Heights,New World Stonefields,Four Square St Heliers",14,98.1,252,350.1,770.0,140.1,723.66,1493.66,3
+Wed_00756,Wednesday,"Pak 'n Save Clendon,Four Square Cockle Bay",13,116.2,234,350.2,770.0,140.2,724.26,1494.26,2
+Wed_00757,Wednesday,"New World Mt Roskill,New World Hobsonville",16,62.2,288,350.2,770.0,140.2,724.3,1494.3,2
+Wed_00758,Wednesday,"Four Square Lancaster,New World Devonport",13,116.4,234,350.4,770.0,140.4,725.24,1495.24,2
+Wed_00759,Wednesday,"Pak 'n Save Mt Albert,Four Square Remuera",16,62.5,288,350.5,770.0,140.5,726.11,1496.11,2
+Wed_00760,Wednesday,"New World Metro Queen St,Pak 'n Save Henderson",15,80.8,270,350.8,770.0,140.8,727.34,1497.34,2
+Wed_00761,Wednesday,"Four Square Britomart,Pak 'n Save Wairau Road",15,80.9,270,350.9,770.0,140.9,727.83,1497.83,2
+Wed_00762,Wednesday,"Four Square Pakuranga Heights,Pak 'n Save Botany",15,80.9,270,350.9,770.0,140.9,728.14,1498.14,2
+Wed_00763,Wednesday,"New World Mt Roskill,New World Papakura",15,81.3,270,351.3,770.0,141.3,730.14,1500.14,2
+Wed_00764,Wednesday,"New World Mt Albert,Four Square Fair Price Henderson,Four Square Hobsonville",15,81.8,270,351.8,770.0,141.8,732.56,1502.56,3
+Wed_00765,Wednesday,"New World Victoria Park,New World Botany",14,99.9,252,351.9,770.0,141.9,733.06,1503.06,2
+Wed_00766,Wednesday,"New World Mt Albert,New World Papakura",14,99.9,252,351.9,770.0,141.9,733.13,1503.13,2
+Wed_00767,Wednesday,"New World Mt Roskill,New World Southmall",16,63.9,288,351.9,770.0,141.9,733.27,1503.27,2
+Wed_00768,Wednesday,"New World Green Bay,New World Newmarket",16,64.1,288,352.1,770.0,142.1,734.18,1504.18,2
+Wed_00769,Wednesday,"New World Newmarket,New World Papakura",14,100.1,252,352.1,770.0,142.1,734.26,1504.26,2
+Wed_00770,Wednesday,"Four Square St Heliers,New World Albany",12,136.2,216,352.2,770.0,142.2,734.62,1504.62,2
+Wed_00771,Wednesday,"New World Southmall,New World Eastridge",14,100.2,252,352.2,770.0,142.2,734.93,1504.93,2
+Wed_00772,Wednesday,"Four Square Britomart,Pak 'n Save Manukau",15,82.3,270,352.3,770.0,142.3,735.26,1505.26,2
+Wed_00773,Wednesday,"Four Square Glen Eden,Pak 'n Save Clendon",14,100.4,252,352.4,770.0,142.4,735.62,1505.62,2
+Wed_00774,Wednesday,"New World Mt Albert,New World Southmall",15,82.5,270,352.5,770.0,142.5,736.26,1506.26,2
+Wed_00775,Wednesday,"Pak 'n Save Botany,Four Square Cockle Bay",14,100.6,252,352.6,770.0,142.6,736.71,1506.71,2
+Wed_00776,Wednesday,"Four Square Glen Eden,Pak 'n Save Highland Park",13,118.7,234,352.7,770.0,142.7,737.18,1507.18,2
+Wed_00777,Wednesday,"New World Newmarket,New World Southmall",15,82.7,270,352.7,770.0,142.7,737.4,1507.4,2
+Wed_00778,Wednesday,"New World Victoria Park,New World Papatoetoe",15,82.7,270,352.7,770.0,142.7,737.44,1507.44,2
+Wed_00779,Wednesday,"New World Birkenhead,New World Ormiston",13,118.8,234,352.8,770.0,142.8,738.06,1508.06,2
+Wed_00780,Wednesday,"Four Square Eden Terrace,Pak 'n Save Wairau Road",15,83.0,270,353.0,770.0,143.0,738.83,1508.83,2
+Wed_00781,Wednesday,"New World Stonefields,New World Birkenhead",14,101.0,252,353.0,770.0,143.0,738.9,1508.9,2
+Wed_00782,Wednesday,"Four Square Britomart,Pak 'n Save Highland Park",14,101.0,252,353.0,770.0,143.0,738.98,1508.98,2
+Wed_00783,Wednesday,"Four Square Eden Terrace,New World Newmarket,Four Square Remuera",16,65.0,288,353.0,770.0,143.0,738.98,1508.98,3
+Wed_00784,Wednesday,"Four Square Glen Eden,Pak 'n Save Wairau Road",14,101.1,252,353.1,770.0,143.1,739.11,1509.11,2
+Wed_00785,Wednesday,"New World Point Chevalier,New World Milford",15,83.4,270,353.4,770.0,143.4,740.9,1510.9,2
+Wed_00786,Wednesday,"New World New Lynn,New World Papakura",14,101.5,252,353.5,770.0,143.5,741.22,1511.22,2
+Wed_00787,Wednesday,"Pak 'n Save Manukau,New World Metro Shore City",14,101.5,252,353.5,770.0,143.5,741.35,1511.35,2
+Wed_00788,Wednesday,"New World Victoria Park,New World Metro Queen St,New World Birkenhead",15,84.0,270,354.0,770.0,144.0,743.93,1513.93,3
+Wed_00789,Wednesday,"New World New Lynn,New World Southmall",15,84.1,270,354.1,770.0,144.1,744.36,1514.36,2
+Wed_00790,Wednesday,"New World Eastridge,New World Papakura",13,120.1,234,354.1,770.0,144.1,744.63,1514.63,2
+Wed_00791,Wednesday,"Pak 'n Save Clendon,Four Square Botany Junction",15,84.3,270,354.3,770.0,144.3,745.71,1515.71,2
+Wed_00792,Wednesday,"New World Newmarket,New World Hobsonville",15,84.4,270,354.4,770.0,144.4,746.3,1516.3,2
+Wed_00793,Wednesday,"New World Remuera,New World Papakura",14,102.5,252,354.5,770.0,144.5,746.35,1516.35,2
+Wed_00794,Wednesday,"New World Hobsonville,New World Browns Bay",14,102.7,252,354.7,770.0,144.7,747.73,1517.73,2
+Wed_00795,Wednesday,"Four Square Pakuranga Heights,Pak 'n Save Ormiston",15,84.8,270,354.8,770.0,144.8,748.36,1518.36,2
+Wed_00796,Wednesday,"New World Remuera,New World Southmall",15,85.1,270,355.1,770.0,145.1,749.49,1519.49,2
+Wed_00797,Wednesday,"Four Square Fair Price Henderson,New World Devonport",13,121.2,234,355.2,770.0,145.2,750.44,1520.44,2
+Wed_00798,Wednesday,"Pak 'n Save Mangere,Four Square Eden Terrace",16,67.3,288,355.3,770.0,145.3,750.52,1520.52,2
+Wed_00799,Wednesday,"New World Ormiston,New World Botany",15,85.5,270,355.5,770.0,145.5,751.85,1521.85,2
+Wed_00800,Wednesday,"New World Green Bay,New World Papakura",14,103.6,252,355.6,770.0,145.6,752.02,1522.02,2
+Wed_00801,Wednesday,"New World New Lynn,New World Eastridge",15,85.7,270,355.7,770.0,145.7,752.71,1522.71,2
+Wed_00802,Wednesday,"Pak 'n Save Mt Albert,Four Square St Heliers",15,85.7,270,355.7,770.0,145.7,752.72,1522.72,2
+Wed_00803,Wednesday,"Pak 'n Save Lincoln Road,New World Hobsonville",16,68.0,288,356.0,770.0,146.0,754.08,1524.08,2
+Wed_00804,Wednesday,"Four Square St Heliers,New World Devonport",12,140.1,216,356.1,770.0,146.1,754.77,1524.77,2
+Wed_00805,Wednesday,"New World Green Bay,New World Southmall",15,86.2,270,356.2,770.0,146.2,755.16,1525.16,2
+Wed_00806,Wednesday,"New World Mt Roskill,Four Square Glen Eden,Four Square Fair Price Henderson",16,68.5,288,356.5,770.0,146.5,756.85,1526.85,3
+Wed_00807,Wednesday,"New World Remuera,New World Stonefields",16,68.5,288,356.5,770.0,146.5,757.06,1527.06,2
+Wed_00808,Wednesday,"Pak 'n Save Mt Albert,Four Square Pakuranga Heights",15,86.6,270,356.6,770.0,146.6,757.3,1527.3,2
+Wed_00809,Wednesday,"Four Square Botany Junction,New World Howick,Four Square Cockle Bay",14,104.7,252,356.7,770.0,146.7,757.77,1527.77,3
+Wed_00810,Wednesday,"New World Newmarket,New World Stonefields",16,69.2,288,357.2,770.0,147.2,760.55,1530.55,2
+Wed_00811,Wednesday,"New World Mt Albert,New World Stonefields",16,69.3,288,357.3,770.0,147.3,760.84,1530.84,2
+Wed_00812,Wednesday,"New World Papatoetoe,New World Southmall",16,69.6,288,357.6,770.0,147.6,762.69,1532.69,2
+Wed_00813,Wednesday,"New World Point Chevalier,New World Browns Bay",14,105.8,252,357.8,770.0,147.8,763.42,1533.42,2
+Wed_00814,Wednesday,"New World Green Bay,New World Eastridge",15,87.8,270,357.8,770.0,147.8,763.51,1533.51,2
+Wed_00815,Wednesday,"New World Mt Roskill,New World Eastridge",16,69.9,288,357.9,770.0,147.9,764.4,1534.4,2
+Wed_00816,Wednesday,"Four Square Eden Terrace,Pak 'n Save Sylvia Park",16,70.0,288,358.0,770.0,148.0,764.8,1534.8,2
+Wed_00817,Wednesday,"New World Newmarket,New World Ormiston",15,88.1,270,358.1,770.0,148.1,765.11,1535.11,2
+Wed_00818,Wednesday,"New World Mt Albert,New World Ormiston",15,88.1,270,358.1,770.0,148.1,765.39,1535.39,2
+Wed_00819,Wednesday,"Pak 'n Save Ormiston,Four Square Cockle Bay",14,106.2,252,358.2,770.0,148.2,765.7,1535.7,2
+Wed_00820,Wednesday,"New World New Lynn,New World Remuera",16,70.3,288,358.3,770.0,148.3,766.05,1536.05,2
+Wed_00821,Wednesday,"New World Victoria Park,New World Long Bay",14,106.5,252,358.5,770.0,148.5,767.46,1537.46,2
+Wed_00822,Wednesday,"Four Square Onehunga,Pak 'n Save Henderson",16,70.8,288,358.8,770.0,148.8,768.89,1538.89,2
+Wed_00823,Wednesday,"Pak 'n Save Wairau Road,Four Square Lancaster",15,88.9,270,358.9,770.0,148.9,769.41,1539.41,2
+Wed_00824,Wednesday,"Pak 'n Save Mt Albert,Four Square Cockle Bay",14,107.0,252,359.0,770.0,149.0,769.63,1539.63,2
+Wed_00825,Wednesday,"Pak 'n Save Henderson,Four Square Ellerslie",15,89.1,270,359.1,770.0,149.1,770.17,1540.17,2
+Wed_00826,Wednesday,"Pak 'n Save Sylvia Park,Four Square Cockle Bay",14,107.1,252,359.1,770.0,149.1,770.56,1540.56,2
+Wed_00827,Wednesday,"Four Square Ellerslie,Pak 'n Save Ormiston",15,89.7,270,359.7,770.0,149.7,773.63,1543.63,2
+Wed_00828,Wednesday,"Four Square Pakuranga Heights,Pak 'n Save Wairau Road",14,107.8,252,359.8,770.0,149.8,773.85,1543.85,2
+Wed_00829,Wednesday,"Pak 'n Save Mangere,Four Square Cockle Bay",14,108.7,252,360.7,770.0,150.7,778.38,1548.38,2
+Wed_00830,Wednesday,"New World Stonefields,New World Papakura",14,108.9,252,360.9,770.0,150.9,779.77,1549.77,2
+Wed_00831,Wednesday,"New World Victoria Park,New World Howick",14,109.7,252,361.7,770.0,151.7,783.82,1553.82,2
+Wed_00832,Wednesday,"Pak 'n Save Mangere,Four Square Pakuranga Heights",15,92.3,270,362.3,770.0,152.3,786.78,1556.78,2
+Wed_00833,Wednesday,"New World Point Chevalier,New World Papatoetoe",16,75.6,288,363.6,770.0,153.6,793.36,1563.36,2
