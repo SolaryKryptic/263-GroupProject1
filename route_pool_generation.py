@@ -21,20 +21,30 @@ Modelling rules (from the problem statement):
   - fleet: 20 trucks x 2 shifts = 40 trip slots per day (checked later, not here)
 
 Generation methods (all produce feasible trips):
-  1. single-stop trips (every store with demand > 0)  - guarantees coverage
-  2. exhaustive 2-stop pairs
-  3. nearest-neighbour insertions per seed store
-  4. randomised Clarke-Wright savings restarts
-  5. random spatially-clustered subsets (nearest-K stores)
+  v1 / v2 (heuristic):
+    1. single-stop trips (every store with demand > 0)  - guarantees coverage
+    2. exhaustive 2-stop pairs
+    3. nearest-neighbour insertions per seed store
+    4. randomised Clarke-Wright savings restarts
+    5. random spatially-clustered subsets (nearest-K stores)
+  v3 (exhaustive):
+    - single-stop trips, plus EVERY feasible 2/3/4-stop trip (capacity + time
+      checked on the best ordering found by 2-opt), so the pool is complete up
+      to 4 stops - the MILP can then find a provably optimal solution
+    - randomised savings + random subsets still add 5-6 stop trips
+    - routes that cost more than serving their stores separately are pruned
+      (they can never be in an optimal partition)
 
 All trips are de-duplicated on the canonical store set, keeping the cheapest
 ordering found.
 
-Two pool versions are produced so they can be compared:
-  - v1 (routes/pool_<Weekday>.csv): store order from the generators only
-  - v2 (routes_2opt/pool_<Weekday>.csv): same candidate store-sets, but each
-    trip's order is tightened with 2-opt + relocate local search (same seed,
-    so the store-sets are identical and the only difference is the ordering)
+Three pool versions are produced so they can be compared:
+  - v1 (routes/pool_<Weekday>.csv): heuristic store-sets, generator ordering
+  - v2 (routes_2opt/pool_<Weekday>.csv): same store-sets as v1, but each trip's
+    order is tightened with 2-opt + relocate (same seed, ordering is the only
+    difference)
+  - v3 (v3/pool_<Weekday>.csv): exhaustive store-sets up to 4 stops, 2-opt
+    ordering, dominated routes pruned
 """
 
 import os
@@ -231,7 +241,66 @@ def savings_cw_restart(active, pallets, d_sec, wh_idx, name_of, pool, rng, weekd
         used.discard(j)
 
 
-def generate_all(out_dir, use_2opt, rng, tag):
+def _feasible_trip(nodes, pallets, d_sec, wh_idx):
+    """True if `nodes` can be ordered into a trip within capacity and time."""
+    if sum(pallets[n] for n in nodes) > TRUCK_CAPACITY:
+        return False
+    order = improve_order(nodes, d_sec, wh_idx)
+    tmin = route_time(order, d_sec, wh_idx) / 60.0 + UNLOAD_MIN_PER_PALLET * sum(pallets[n] for n in nodes)
+    return tmin <= MAX_TRIP_MIN
+
+
+def generate_exhaustive(active, pallets, d_sec, wh_idx, name_of, pool, weekday):
+    """Add EVERY feasible trip with 1-4 stores (checked on the best ordering
+    found by 2-opt), making the pool complete up to 4 stops."""
+    n = len(active)
+    for i in active:
+        add_trip(pool, [i], [i], pallets, d_sec, wh_idx, name_of, weekday)
+
+    for x in range(n):
+        a = active[x]
+        for y in range(x + 1, n):
+            b = active[y]
+            if not _feasible_trip([a, b], pallets, d_sec, wh_idx):
+                continue
+            order = improve_order([a, b], d_sec, wh_idx)
+            add_trip(pool, [a, b], order, pallets, d_sec, wh_idx, name_of, weekday)
+
+    for x in range(n):
+        a = active[x]
+        for y in range(x + 1, n):
+            b = active[y]
+            for z in range(y + 1, n):
+                c = active[z]
+                if not _feasible_trip([a, b, c], pallets, d_sec, wh_idx):
+                    continue
+                order = improve_order([a, b, c], d_sec, wh_idx)
+                add_trip(pool, [a, b, c], order, pallets, d_sec, wh_idx, name_of, weekday)
+
+    for x in range(n):
+        a = active[x]
+        for y in range(x + 1, n):
+            b = active[y]
+            for z in range(y + 1, n):
+                c = active[z]
+                for w in range(z + 1, n):
+                    e = active[w]
+                    if not _feasible_trip([a, b, c, e], pallets, d_sec, wh_idx):
+                        continue
+                    order = improve_order([a, b, c, e], d_sec, wh_idx)
+                    add_trip(pool, [a, b, c, e], order, pallets, d_sec, wh_idx, name_of, weekday)
+
+
+def prune_dominated(pool):
+    """Drop trips that cost more than serving their stores on separate trips.
+    Such a trip can never appear in an optimal partition (the single-store
+    trips are always available and cover the same stores more cheaply)."""
+    single = {k[0]: v["TotalCost"] for k, v in pool.items() if len(k) == 1}
+    return {k: v for k, v in pool.items()
+            if v["TotalCost"] <= sum(single[s] for s in k) + 1e-6}
+
+
+def generate_all(out_dir, use_2opt, rng, tag, exhaustive=False, prune=False):
     """Build the pool for every weekday into `out_dir`; returns {Weekday: DataFrame}."""
     global USE_2OPT
     USE_2OPT = use_2opt
@@ -257,26 +326,29 @@ def generate_all(out_dir, use_2opt, rng, tag):
         active = [i for i, p in enumerate(pallets) if p > 0]
         pool = {}
 
-        for i in active:
-            order = [i]
-            add_trip(pool, order, order, pallets, d_sec, wh_idx, name_of, weekday)
+        if exhaustive:
+            generate_exhaustive(active, pallets, d_sec, wh_idx, name_of, pool, weekday)
+        else:
+            for i in active:
+                order = [i]
+                add_trip(pool, order, order, pallets, d_sec, wh_idx, name_of, weekday)
 
-        for a in range(len(active)):
-            for b in range(a + 1, len(active)):
-                nodes = [active[a], active[b]]
-                if not is_feasible(nodes, pallets, d_sec, wh_idx):
-                    continue
-                order = nearest_neighbour_order(nodes, d_sec, wh_idx)
-                add_trip(pool, nodes, order, pallets, d_sec, wh_idx, name_of, weekday)
+            for a in range(len(active)):
+                for b in range(a + 1, len(active)):
+                    nodes = [active[a], active[b]]
+                    if not is_feasible(nodes, pallets, d_sec, wh_idx):
+                        continue
+                    order = nearest_neighbour_order(nodes, d_sec, wh_idx)
+                    add_trip(pool, nodes, order, pallets, d_sec, wh_idx, name_of, weekday)
 
-        for seed in active:
-            others = sorted(active, key=lambda j: d_sec[seed, j])
-            for k in range(2, min(MAX_STOPS, len(active)) + 1):
-                nodes = [seed] + [j for j in others if j != seed][: k - 1]
-                if not is_feasible(nodes, pallets, d_sec, wh_idx):
-                    continue
-                order = nearest_neighbour_order(nodes, d_sec, wh_idx)
-                add_trip(pool, nodes, order, pallets, d_sec, wh_idx, name_of, weekday)
+            for seed in active:
+                others = sorted(active, key=lambda j: d_sec[seed, j])
+                for k in range(2, min(MAX_STOPS, len(active)) + 1):
+                    nodes = [seed] + [j for j in others if j != seed][: k - 1]
+                    if not is_feasible(nodes, pallets, d_sec, wh_idx):
+                        continue
+                    order = nearest_neighbour_order(nodes, d_sec, wh_idx)
+                    add_trip(pool, nodes, order, pallets, d_sec, wh_idx, name_of, weekday)
 
         for restart in range(SAVINGS_RESTARTS):
             savings_cw_restart(active, pallets, d_sec, wh_idx, name_of, pool, rng, weekday)
@@ -293,6 +365,9 @@ def generate_all(out_dir, use_2opt, rng, tag):
                 continue
             order = nearest_neighbour_order(nodes, d_sec, wh_idx)
             add_trip(pool, nodes, order, pallets, d_sec, wh_idx, name_of, weekday)
+
+        if prune:
+            pool = prune_dominated(pool)
 
         rows = sorted(pool.values(), key=lambda r: r["TotalCost"])[:MAX_POOL_PER_DAY]
 
@@ -322,15 +397,17 @@ def generate_all(out_dir, use_2opt, rng, tag):
 def main():
     v1 = generate_all("routes", False, np.random.default_rng(263), "v1")
     v2 = generate_all("routes_2opt", True, np.random.default_rng(263), "v2")
+    v3 = generate_all("v3", True, np.random.default_rng(263), "v3", exhaustive=True, prune=True)
 
-    print("\n2-opt improvement (same candidate store-sets, tightened ordering):")
+    print("\nPool comparison (drive min / pool cost $ / trips):")
+    print(f"  {'weekday':10s} {'v1':>30s} {'v2':>30s} {'v3':>30s}")
     for weekday in WEEKDAYS:
-        d1 = v1[weekday]["DriveMin"].sum()
-        d2 = v2[weekday]["DriveMin"].sum()
-        c1 = v1[weekday]["TotalCost"].sum()
-        c2 = v2[weekday]["TotalCost"].sum()
-        print(f"  {weekday:10s} drive {d1:8.0f} -> {d2:8.0f} min ({(1 - d2 / d1) * 100:5.1f}%)  "
-              f"pool cost ${c1:10.0f} -> ${c2:10.0f} ({(1 - c2 / c1) * 100:4.1f}%)")
+        cells = []
+        for v in (v1, v2, v3):
+            drive = int(v[weekday]["DriveMin"].sum())
+            cost = int(v[weekday]["TotalCost"].sum())
+            cells.append(f"{drive}min / ${cost} / {len(v[weekday])}")
+        print(f"  {weekday:10s} " + "  ".join(f"{c:>30s}" for c in cells))
 
 
 if __name__ == "__main__":
