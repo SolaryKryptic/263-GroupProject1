@@ -11,7 +11,7 @@ from scipy.optimize import milp, LinearConstraint, Bounds
 from scipy.sparse import csr_matrix
 
 DEMAND_FILE = "estimations/0.5ayush6week-estimated_demand.csv"
-POOL_FILE = "v3/pool_Monday.csv"
+POOL_FILE = "v3-routes/pool_Monday.csv"
 LOCATIONS_FILE = "FoodstuffsLocations.csv"
 
 # Problem constants

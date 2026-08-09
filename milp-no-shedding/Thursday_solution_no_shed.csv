@@ -1,0 +1,41 @@
+RouteID,Weekday,Stores,Pallets,DriveMin,UnloadMin,TotalMin,BaseCost,OvertimeMin,OvertimeCost,TotalCost,NStops,Mode
+Thu_00014,Thursday,New World Mt Roskill,8,6.5,144,150.5,552.0,0.0,0.0,552.0,1,Owned
+Thu_00021,Thursday,New World Point Chevalier,7,34.7,126,160.7,589.37,0.0,0.0,589.37,1,Owned
+Thu_00028,Thursday,New World New Lynn,8,27.7,144,171.7,629.55,0.0,0.0,629.55,1,Owned
+Thu_00029,Thursday,New World Green Bay,8,28.8,144,172.8,633.45,0.0,0.0,633.45,1,Owned
+Thu_00032,Thursday,New World Papatoetoe,7,50.8,126,176.8,648.14,0.0,0.0,648.14,1,Owned
+Thu_00035,Thursday,New World Mt Albert,9,24.2,162,186.2,682.84,0.0,0.0,682.84,1,Owned
+Thu_00039,Thursday,"Four Square Britomart,New World Metro Queen St",8,49.8,144,193.8,710.72,0.0,0.0,710.72,2,Owned
+Thu_00048,Thursday,Pak 'n Save Mt Albert,10,21.7,180,201.7,739.4,0.0,0.0,739.4,1,Owned
+Thu_00063,Thursday,Pak 'n Save Royal Oak,10,26.9,180,206.9,758.61,0.0,0.0,758.61,1,Owned
+Thu_00066,Thursday,New World Victoria Park,9,46.5,162,208.5,764.58,0.0,0.0,764.58,1,Owned
+Thu_00071,Thursday,"Four Square Glen Eden,Four Square Fair Price Henderson",8,66.4,144,210.4,770.0,0.4,1.86,771.86,2,Owned
+Thu_00086,Thursday,New World Ormiston,8,72.3,144,216.3,770.0,6.3,32.43,802.43,1,Owned
+Thu_00089,Thursday,Pak 'n Save Manukau,9,55.9,162,217.9,770.0,7.9,41.05,811.05,1,Owned
+Thu_00092,Thursday,Pak 'n Save Mangere,10,38.7,180,218.7,770.0,8.7,44.74,814.74,1,Owned
+Thu_00115,Thursday,New World Eastridge,9,69.3,162,231.3,770.0,21.3,109.83,879.83,1,Owned
+Thu_00130,Thursday,Pak 'n Save Henderson,10,55.9,180,235.9,770.0,25.9,133.57,903.57,1,Owned
+Thu_00143,Thursday,New World Browns Bay,8,95.5,144,239.5,770.0,29.5,152.63,922.63,1,Owned
+Thu_00153,Thursday,New World Botany,9,79.9,162,241.9,770.0,31.9,164.62,934.62,1,Owned
+Thu_00173,Thursday,"New World Newmarket,Four Square Eden Terrace",11,49.2,198,247.2,770.0,37.2,192.21,962.21,2,Owned
+Thu_00184,Thursday,New World Albany,9,89.3,162,251.3,770.0,41.3,213.24,983.24,1,Owned
+Thu_00191,Thursday,Pak 'n Save Ormiston,10,73.6,180,253.6,770.0,43.6,225.37,995.37,1,Owned
+Thu_00193,Thursday,New World Devonport,9,91.8,162,253.8,770.0,43.8,226.3,996.3,1,Owned
+Thu_00215,Thursday,Pak 'n Save Highland Park,10,79.3,180,259.3,770.0,49.3,254.75,1024.75,1,Owned
+Thu_00225,Thursday,Pak 'n Save Clendon,11,63.5,198,261.5,770.0,51.5,265.85,1035.85,1,Owned
+Thu_00252,Thursday,Pak 'n Save Wairau Road,11,71.3,198,269.3,770.0,59.3,306.64,1076.64,1,Owned
+Thu_00268,Thursday,"New World Remuera,Four Square Remuera",12,58.5,216,274.5,770.0,64.5,333.24,1103.24,2,Owned
+Thu_00275,Thursday,Pak 'n Save Papakura,11,77.9,198,275.9,770.0,65.9,340.28,1110.28,1,Owned
+Thu_00277,Thursday,"New World Metro Shore City,New World Milford",11,78.5,198,276.5,770.0,66.5,343.5,1113.5,2,Owned
+Thu_00294,Thursday,"New World Hobsonville,Four Square Hobsonville",12,62.9,216,278.9,770.0,68.9,355.81,1125.81,2,Owned
+Thu_00309,Thursday,Pak 'n Save Lincoln Road,13,47.4,234,281.4,770.0,71.4,368.72,1138.72,1,Owned
+Thu_00320,Thursday,"Four Square Ellerslie,New World Stonefields",12,67.0,216,283.0,770.0,73.0,377.07,1147.07,2,Owned
+Thu_00361,Thursday,Pak 'n Save Westgate,13,54.0,234,288.0,770.0,78.0,402.91,1172.91,1,Owned
+Thu_00416,Thursday,"Four Square Onehunga,Pak 'n Save Sylvia Park",13,60.2,234,294.2,770.0,84.2,434.83,1204.83,2,Owned
+Thu_00454,Thursday,"Four Square Pakuranga Heights,Pak 'n Save Botany",12,80.9,216,296.9,770.0,86.9,449.14,1219.14,2,Owned
+Thu_00520,Thursday,Pak 'n Save Albany,12,87.7,216,303.7,770.0,93.7,483.94,1253.94,1,Owned
+Thu_00659,Thursday,"New World Birkenhead,Four Square Lancaster",13,82.8,234,316.8,770.0,106.8,551.55,1321.55,2,Owned
+Thu_00743,Thursday,"New World Long Bay,Four Square Torbay",12,107.0,216,323.0,770.0,113.0,583.95,1353.95,2,Owned
+Thu_00995,Thursday,"Pak 'n Save Glen Innes,Four Square St Heliers",14,86.0,252,338.0,770.0,128.0,661.09,1431.09,2,Owned
+Thu_01004,Thursday,"New World Papakura,New World Southmall",14,86.3,252,338.3,770.0,128.3,662.75,1432.75,2,Owned
+Thu_01116,Thursday,"New World Howick,Four Square Cockle Bay,Four Square Botany Junction",14,91.9,252,343.9,770.0,133.9,691.8,1461.8,3,Owned
