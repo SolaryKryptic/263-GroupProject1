@@ -1,0 +1,34 @@
+RouteID,Weekday,Stores,Pallets,DriveMin,UnloadMin,TotalMin,BaseCost,OvertimeMin,OvertimeCost,TotalCost,NStops,Mode
+Mon_00012,Monday,New World Mt Roskill,7,6.5,126,132.5,486.0,0.0,0.0,486.0,1,Owned
+Mon_00015,Monday,New World New Lynn,6,27.7,108,135.7,497.55,0.0,0.0,497.55,1,Owned
+Mon_00024,Monday,New World Mt Albert,8,24.2,144,168.2,616.84,0.0,0.0,616.84,1,Owned
+Mon_00040,Monday,New World Point Chevalier,8,34.7,144,178.7,655.37,0.0,0.0,655.37,1,Owned
+Mon_00048,Monday,Pak 'n Save Mt Albert,9,21.7,162,183.7,673.4,0.0,0.0,673.4,1,Owned
+Mon_00058,Monday,New World Southmall,7,63.2,126,189.2,693.85,0.0,0.0,693.85,1,Owned
+Mon_00059,Monday,New World Newmarket,8,45.6,144,189.6,695.13,0.0,0.0,695.13,1,Owned
+Mon_00071,Monday,New World Papatoetoe,8,50.8,144,194.8,714.14,0.0,0.0,714.14,1,Owned
+Mon_00097,Monday,Pak 'n Save Royal Oak,10,26.9,180,206.9,758.61,0.0,0.0,758.61,1,Owned
+Mon_00100,Monday,"Four Square Glen Eden,New World Green Bay",9,45.4,162,207.4,760.59,0.0,0.0,760.59,2,Owned
+Mon_00104,Monday,New World Victoria Park,9,46.5,162,208.5,764.58,0.0,0.0,764.58,1,Owned
+Mon_00116,Monday,New World Eastridge,8,69.3,144,213.3,770.0,3.3,16.83,786.83,1,Owned
+Mon_00126,Monday,Pak 'n Save Manukau,9,55.9,162,217.9,770.0,7.9,41.05,811.05,1,Owned
+Mon_00129,Monday,Pak 'n Save Mangere,10,38.7,180,218.7,770.0,8.7,44.74,814.74,1,Owned
+Mon_00165,Monday,Pak 'n Save Westgate,10,54.0,180,234.0,770.0,24.0,123.91,893.91,1,Owned
+Mon_00184,Monday,"New World Devonport,New World Metro Shore City",8,95.4,144,239.4,770.0,29.4,151.76,921.76,2,Owned
+Mon_00188,Monday,Pak 'n Save Papakura,9,77.9,162,239.9,770.0,29.9,154.28,924.28,1,Owned
+Mon_00237,Monday,Pak 'n Save Albany,9,87.7,162,249.7,770.0,39.7,204.94,974.94,1,Owned
+Mon_00252,Monday,"Four Square Britomart,New World Metro Queen St,Four Square Eden Terrace",11,53.6,198,251.6,770.0,41.6,214.71,984.71,3,Owned
+Mon_00263,Monday,"Pak 'n Save Lincoln Road,Four Square Fair Price Henderson",11,54.8,198,252.8,770.0,42.8,221.01,991.01,2,Owned
+Mon_00270,Monday,Pak 'n Save Henderson,11,55.9,198,253.9,770.0,43.9,226.57,996.57,1,Owned
+Mon_00351,Monday,"New World Birkenhead,Four Square Lancaster",10,82.8,180,262.8,770.0,52.8,272.55,1042.55,2,Owned
+Mon_00429,Monday,Pak 'n Save Ormiston,11,73.6,198,271.6,770.0,61.6,318.37,1088.37,1,Owned
+Mon_00508,Monday,"New World Hobsonville,Four Square Hobsonville",12,62.9,216,278.9,770.0,68.9,355.81,1125.81,2,Owned
+Mon_00513,Monday,Pak 'n Save Clendon,12,63.5,216,279.5,770.0,69.5,358.85,1128.85,1,Owned
+Mon_00709,Monday,Pak 'n Save Highland Park,12,79.3,216,295.3,770.0,85.3,440.75,1210.75,1,Owned
+Mon_00823,Monday,"Four Square Ellerslie,New World Stonefields,Four Square Remuera",13,69.5,234,303.5,770.0,93.5,483.05,1253.05,3,Owned
+Mon_00846,Monday,"New World Long Bay,Four Square Torbay",11,107.0,198,305.0,770.0,95.0,490.95,1260.95,2,Owned
+Mon_00985,Monday,"Four Square Onehunga,Pak 'n Save Sylvia Park",14,60.2,252,312.2,770.0,102.2,527.83,1297.83,2,Owned
+Mon_01032,Monday,"Four Square Pakuranga Heights,Pak 'n Save Botany",13,80.9,234,314.9,770.0,104.9,542.14,1312.14,2,Owned
+Mon_01335,Monday,"New World Howick,Four Square Cockle Bay,Four Square Botany Junction",13,91.9,234,325.9,770.0,115.9,598.8,1368.8,3,Owned
+Mon_01759,Monday,"Pak 'n Save Glen Innes,Four Square St Heliers",14,86.0,252,338.0,770.0,128.0,661.09,1431.09,2,Owned
+Mon_02217,Monday,"Pak 'n Save Wairau Road,New World Milford",15,78.5,270,348.5,770.0,138.5,715.46,1485.46,2,Owned
