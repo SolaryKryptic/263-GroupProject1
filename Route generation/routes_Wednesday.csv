@@ -1,0 +1,1416 @@
+route_id,stops,num_stops,total_pallets,total_duration_sec,total_duration_hms
+Wed_00001,Four Square Glen Eden,1,3,5805.3,01:36:45
+Wed_00002,Four Square Onehunga,1,4,5874.43,01:37:54
+Wed_00003,New World Metro Queen St,1,3,6093.37,01:41:33
+Wed_00004,Four Square Ellerslie,1,3,6640.42,01:50:40
+Wed_00005,Four Square Eden Terrace,1,4,6692.55,01:51:32
+Wed_00006,Four Square Hobsonville,1,3,6953.54,01:55:53
+Wed_00007,Four Square Britomart,1,4,7244.43,02:00:44
+Wed_00008,New World Metro Shore City,1,3,7375.23,02:02:55
+Wed_00009,Four Square Pakuranga Heights,1,3,7522.04,02:05:22
+Wed_00010,Four Square Fair Price Henderson,1,4,7573.13,02:06:13
+Wed_00011,Four Square Cockle Bay,1,2,7665.24,02:07:45
+Wed_00012,Four Square Remuera,1,4,7728.82,02:08:48
+Wed_00013,Four Square St Heliers,1,3,8037.79,02:13:57
+Wed_00014,Four Square Botany Junction,1,4,8360.98,02:19:20
+Wed_00015,Four Square Lancaster,1,4,9165.84,02:32:45
+Wed_00016,New World Victoria Park,1,6,9271.39,02:34:31
+Wed_00017,New World Point Chevalier,1,7,9644.17,02:40:44
+Wed_00018,New World Mt Albert,1,8,10093.78,02:48:13
+Wed_00019,New World Mt Roskill,1,9,10112.66,02:48:32
+Wed_00020,New World New Lynn,1,8,10301.69,02:51:41
+Wed_00021,New World Green Bay,1,8,10365.54,02:52:45
+Wed_00022,Four Square Britomart;New World Metro Queen St,2,7,10549.9,02:55:49
+Wed_00023,Four Square Torbay,1,4,10576.52,02:56:16
+Wed_00024,New World Metro Queen St;Four Square Britomart,2,7,10579.84,02:56:19
+Wed_00025,New World Birkenhead,1,6,10705.77,02:58:25
+Wed_00026,New World Hobsonville,1,7,11249.76,03:07:29
+Wed_00027,New World Papakura,1,6,11317.54,03:08:37
+Wed_00028,Four Square Remuera;Four Square Ellerslie,2,7,11335.64,03:08:55
+Wed_00029,New World Southmall,1,7,11353.98,03:09:13
+Wed_00030,New World Newmarket,1,8,11374.83,03:09:34
+Wed_00031,Four Square Pakuranga Heights;New World Metro Queen St,2,6,11412.34,03:10:12
+Wed_00032,New World Metro Queen St;Four Square Remuera,2,7,11632.26,03:13:52
+Wed_00033,Four Square Ellerslie;Four Square Cockle Bay,2,5,11713.44,03:15:13
+Wed_00034,New World Eastridge,1,7,11715.46,03:15:15
+Wed_00035,New World Remuera,1,8,11870.35,03:17:50
+Wed_00036,Four Square Eden Terrace;Four Square Britomart,2,8,11881.64,03:18:01
+Wed_00037,New World Ormiston,1,7,11896.64,03:18:16
+Wed_00038,Four Square Pakuranga Heights;Four Square Eden Terrace,2,7,12059.3,03:20:59
+Wed_00039,Four Square Remuera;Four Square St Heliers,2,7,12393.06,03:26:33
+Wed_00040,Four Square Britomart;Four Square St Heliers,2,7,12520.89,03:28:40
+Wed_00041,Pak 'n Save Lincoln Road,1,9,12561.89,03:29:21
+Wed_00042,New World Stonefields,1,8,12571.35,03:29:31
+Wed_00043,New World Papatoetoe,1,9,12765.88,03:32:45
+Wed_00044,Four Square Britomart;Four Square Remuera,2,8,12783.28,03:33:03
+Wed_00045,Four Square Pakuranga Heights;New World Metro Shore City,2,6,12800.9,03:33:20
+Wed_00046,New World Victoria Park;New World Metro Queen St,2,9,12847.22,03:34:07
+Wed_00047,New World Metro Queen St;New World Victoria Park,2,9,12867.26,03:34:27
+Wed_00048,New World Milford,1,8,13167.21,03:39:27
+Wed_00049,New World Browns Bay,1,7,13292.45,03:41:32
+Wed_00050,New World Botany,1,8,13431.66,03:43:51
+Wed_00051,Pak 'n Save Royal Oak,1,11,13493.54,03:44:53
+Wed_00052,New World Howick,1,8,13789.9,03:49:49
+Wed_00053,New World Victoria Park;Four Square Britomart,2,10,14030.73,03:53:50
+Wed_00054,Pak 'n Save Westgate,1,10,14039.0,03:53:59
+Wed_00055,Four Square Lancaster;Four Square Onehunga,2,8,14094.3,03:54:54
+Wed_00056,New World Point Chevalier;New World Metro Queen St,2,10,14130.12,03:55:30
+Wed_00057,Pak 'n Save Mt Albert,1,12,14259.27,03:57:39
+Wed_00058,New World Metro Queen St;New World Birkenhead,2,9,14485.3,04:01:25
+Wed_00059,New World Hobsonville;Four Square Hobsonville,2,10,14572.02,04:02:52
+Wed_00060,Four Square Hobsonville;New World Hobsonville,2,10,14586.28,04:03:06
+Wed_00061,Four Square Glen Eden;New World Green Bay,2,11,14606.09,04:03:26
+Wed_00062,New World New Lynn;Four Square Glen Eden,2,11,14640.56,04:04:00
+Wed_00063,Four Square Eden Terrace;New World Point Chevalier,2,11,14643.44,04:04:03
+Wed_00064,New World Green Bay;Four Square Glen Eden,2,11,14644.07,04:04:04
+Wed_00065,New World Long Bay,1,8,14796.92,04:06:36
+Wed_00066,New World Point Chevalier;Four Square Onehunga,2,11,14921.82,04:08:41
+Wed_00067,New World Mt Albert;New World Metro Queen St,2,11,14957.59,04:09:17
+Wed_00068,New World Metro Queen St;Four Square Britomart;Four Square Ellerslie,3,10,15030.28,04:10:30
+Wed_00069,New World Albany,1,9,15076.37,04:11:16
+Wed_00070,Four Square Onehunga;Four Square Ellerslie;Four Square Remuera,3,11,15180.65,04:13:00
+Wed_00071,Four Square Eden Terrace;Four Square Britomart;New World Metro Queen St,3,11,15187.11,04:13:07
+Wed_00072,New World Devonport,1,9,15228.05,04:13:48
+Wed_00073,Pak 'n Save Manukau,1,11,15236.7,04:13:56
+Wed_00074,New World Mt Albert;Four Square Glen Eden,2,11,15258.27,04:14:18
+Wed_00075,Pak 'n Save Mangere,1,12,15279.57,04:14:39
+Wed_00076,New World Point Chevalier;Four Square Britomart,2,11,15281.17,04:14:41
+Wed_00077,Four Square St Heliers;Four Square Lancaster,2,7,15302.82,04:15:02
+Wed_00078,Four Square Onehunga;New World Metro Queen St;Four Square Britomart,3,11,15311.04,04:15:11
+Wed_00079,New World Mt Albert;Four Square Eden Terrace,2,12,15395.73,04:16:35
+Wed_00080,Four Square Ellerslie;New World Mt Albert,2,11,15441.76,04:17:21
+Wed_00081,Four Square Eden Terrace;New World Mt Albert,2,12,15493.89,04:18:13
+Wed_00082,New World Newmarket;Four Square Ellerslie,2,11,15501.32,04:18:21
+Wed_00083,Four Square Onehunga;New World Birkenhead,2,10,15543.67,04:19:03
+Wed_00084,Pak 'n Save Highland Park,1,10,15558.37,04:19:18
+Wed_00085,New World Mt Roskill;Four Square Onehunga,2,13,15635.87,04:20:35
+Wed_00086,New World Mt Roskill;Four Square Glen Eden,2,12,15652.98,04:20:52
+Wed_00087,Four Square Glen Eden;New World Mt Roskill,2,12,15652.98,04:20:52
+Wed_00088,Four Square Remuera;New World Point Chevalier,2,11,15679.71,04:21:19
+Wed_00089,Pak 'n Save Clendon,1,11,15687.34,04:21:27
+Wed_00090,New World New Lynn;New World Metro Queen St,2,11,15719.06,04:21:59
+Wed_00091,New World Birkenhead;Four Square Lancaster,2,10,15765.15,04:22:45
+Wed_00092,New World Papakura;Four Square Ellerslie,2,9,15803.44,04:23:23
+Wed_00093,New World Southmall;Four Square Ellerslie,2,10,15839.88,04:23:59
+Wed_00094,New World Mt Roskill;New World Metro Queen St,2,12,15854.81,04:24:14
+Wed_00095,Four Square Onehunga;New World Newmarket,2,12,15878.76,04:24:38
+Wed_00096,New World Newmarket;Four Square Eden Terrace,2,12,15912.09,04:25:12
+Wed_00097,Four Square Eden Terrace;New World Newmarket,2,12,15966.87,04:26:06
+Wed_00098,Four Square Onehunga;New World Remuera,2,12,16040.52,04:27:20
+Wed_00099,New World Eastridge;Four Square Onehunga,2,11,16043.68,04:27:23
+Wed_00100,New World Mt Albert;Four Square Britomart,2,12,16108.64,04:28:28
+Wed_00101,Four Square Pakuranga Heights;New World Birkenhead,2,9,16131.43,04:28:51
+Wed_00102,Pak 'n Save Wairau Road,1,11,16160.95,04:29:20
+Wed_00103,New World Ormiston;Four Square Botany Junction,2,11,16247.96,04:30:47
+Wed_00104,Four Square Botany Junction;New World Ormiston,2,11,16295.12,04:31:35
+Wed_00105,Pak 'n Save Henderson,1,12,16311.09,04:31:51
+Wed_00106,Four Square Pakuranga Heights;New World Mt Albert,2,11,16323.38,04:32:03
+Wed_00107,New World Howick;Four Square Cockle Bay,2,10,16353.01,04:32:33
+Wed_00108,New World Mt Roskill;Four Square Ellerslie,2,12,16401.86,04:33:21
+Wed_00109,New World Mt Roskill;Four Square Eden Terrace,2,13,16453.99,04:34:13
+Wed_00110,New World Stonefields;New World Metro Queen St,2,11,16461.64,04:34:21
+Wed_00111,Four Square Eden Terrace;New World Remuera,2,12,16462.39,04:34:22
+Wed_00112,Four Square Cockle Bay;New World Mt Albert,2,10,16466.58,04:34:26
+Wed_00113,Four Square Onehunga;New World Hobsonville,2,11,16467.73,04:34:27
+Wed_00114,Four Square Eden Terrace;New World Green Bay,2,12,16503.36,04:35:03
+Wed_00115,New World Hobsonville;Four Square Onehunga,2,11,16527.42,04:35:27
+Wed_00116,Four Square Britomart;New World Metro Queen St;Four Square Cockle Bay,3,9,16594.11,04:36:34
+Wed_00117,Four Square Onehunga;New World Stonefields,2,12,16602.87,04:36:42
+Wed_00118,New World Southmall;Four Square Botany Junction,2,11,16603.11,04:36:43
+Wed_00119,New World Milford;New World Metro Shore City,2,11,16603.79,04:36:43
+Wed_00120,New World Newmarket;New World Metro Shore City,2,11,16653.69,04:37:33
+Wed_00121,New World Mt Roskill;Four Square Hobsonville,2,12,16714.98,04:38:34
+Wed_00122,Four Square Glen Eden;New World Southmall,2,10,16809.33,04:40:09
+Wed_00123,Four Square Cockle Bay;New World Stonefields,2,10,16824.33,04:40:24
+Wed_00124,New World New Lynn;Four Square Britomart,2,12,16870.12,04:41:10
+Wed_00125,Pak 'n Save Sylvia Park,1,12,16889.55,04:41:29
+Wed_00126,New World New Lynn;Four Square Fair Price Henderson,2,12,16911.07,04:41:51
+Wed_00127,New World Remuera;Four Square Britomart,2,12,16951.59,04:42:31
+Wed_00128,New World Mt Roskill;Four Square Britomart,2,13,17005.87,04:43:25
+Wed_00129,Four Square Remuera;New World Stonefields,2,12,17047.1,04:44:07
+Wed_00130,Four Square St Heliers;New World Remuera,2,11,17067.47,04:44:27
+Wed_00131,New World Mt Roskill;New World Metro Shore City,2,12,17136.68,04:45:36
+Wed_00132,New World Howick;Four Square Pakuranga Heights,2,11,17202.44,04:46:42
+Wed_00133,New World Papakura;Four Square Britomart,2,10,17231.9,04:47:11
+Wed_00134,New World Mt Roskill;Four Square Pakuranga Heights,2,12,17283.48,04:48:03
+Wed_00135,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson,2,13,17326.51,04:48:46
+Wed_00136,New World Mt Roskill;Four Square Fair Price Henderson,2,13,17334.57,04:48:54
+Wed_00137,Pak 'n Save Ormiston,1,12,17377.23,04:49:37
+Wed_00138,Four Square Remuera;New World Ormiston,2,11,17483.95,04:51:23
+Wed_00139,New World Mt Roskill;Four Square Remuera,2,13,17490.26,04:51:30
+Wed_00140,Four Square Glen Eden;New World Stonefields,2,11,17604.94,04:53:24
+Wed_00141,Four Square Britomart;New World Victoria Park;New World Metro Queen St,3,13,17625.26,04:53:45
+Wed_00142,New World Metro Queen St;New World Victoria Park;Four Square Britomart,3,13,17626.6,04:53:46
+Wed_00143,Pak 'n Save Papakura,1,12,17631.63,04:53:51
+Wed_00144,Four Square Eden Terrace;Four Square Onehunga;Four Square Remuera,3,12,17636.29,04:53:56
+Wed_00145,Four Square Pakuranga Heights;New World Papatoetoe,2,12,17683.41,04:54:43
+Wed_00146,Four Square Glen Eden;New World Browns Bay,2,10,17763.71,04:56:03
+Wed_00147,New World Mt Roskill;Four Square St Heliers,2,12,17799.23,04:56:39
+Wed_00148,Pak 'n Save Lincoln Road;Four Square Onehunga,2,13,17839.54,04:57:19
+Wed_00149,New World Browns Bay;Four Square Glen Eden,2,10,17858.2,04:57:38
+Wed_00150,Four Square Glen Eden;Four Square Pakuranga Heights;Four Square Botany Junction,3,10,17891.07,04:58:11
+Wed_00151,Four Square Eden Terrace;Pak 'n Save Lincoln Road,2,13,17896.56,04:58:16
+Wed_00152,Pak 'n Save Botany,1,12,17897.42,04:58:17
+Wed_00153,New World Mt Albert;Four Square Botany Junction,2,12,17952.76,04:59:12
+Wed_00154,Pak 'n Save Royal Oak;Four Square Onehunga,2,15,17975.49,04:59:35
+Wed_00155,New World Metro Shore City;New World Metro Queen St;Four Square Lancaster,3,10,17978.35,04:59:38
+Wed_00156,Four Square Onehunga;Pak 'n Save Royal Oak,2,15,18019.0,05:00:19
+Wed_00157,Pak 'n Save Westgate;Four Square Hobsonville,2,13,18044.47,05:00:44
+Wed_00158,Four Square Fair Price Henderson;Four Square Eden Terrace;Four Square Britomart,3,12,18047.13,05:00:47
+Wed_00159,New World Milford;Four Square Eden Terrace,2,12,18068.85,05:01:08
+Wed_00160,New World Mt Roskill;Four Square Botany Junction,2,13,18122.42,05:02:02
+Wed_00161,New World Papatoetoe;Four Square Eden Terrace,2,13,18176.42,05:02:56
+Wed_00162,Four Square Torbay;New World Browns Bay,2,11,18293.24,05:04:53
+Wed_00163,New World Mt Albert;New World Point Chevalier,2,15,18308.72,05:05:08
+Wed_00164,Pak 'n Save Royal Oak;New World Metro Queen St,2,14,18324.59,05:05:24
+Wed_00165,Four Square Eden Terrace;New World Botany,2,12,18361.28,05:06:01
+Wed_00166,New World Point Chevalier;New World Mt Albert,2,15,18408.52,05:06:48
+Wed_00167,Four Square St Heliers;New World Botany,2,11,18420.2,05:07:00
+Wed_00168,Four Square Britomart;New World Metro Queen St;New World Point Chevalier,3,14,18500.79,05:08:20
+Wed_00169,New World Metro Queen St;Pak 'n Save Royal Oak,2,14,18511.07,05:08:31
+Wed_00170,Pak 'n Save Highland Park;Four Square Cockle Bay,2,12,18520.01,05:08:40
+Wed_00171,New World Albany;New World Metro Queen St,2,12,18648.08,05:10:48
+Wed_00172,New World Point Chevalier;Four Square Eden Terrace;New World Metro Queen St,3,14,18671.91,05:11:11
+Wed_00173,Four Square Lancaster;New World Browns Bay,2,11,18673.73,05:11:13
+Wed_00174,New World Devonport;New World Metro Shore City,2,12,18682.41,05:11:22
+Wed_00175,New World Point Chevalier;Four Square Torbay,2,11,18749.61,05:12:29
+Wed_00176,New World Howick;Four Square Britomart,2,12,18871.13,05:14:31
+Wed_00177,Pak 'n Save Glen Innes,1,13,18883.24,05:14:43
+Wed_00178,New World New Lynn;New World Point Chevalier,2,15,18918.85,05:15:18
+Wed_00179,Pak 'n Save Highland Park;Four Square Pakuranga Heights,2,13,18970.91,05:16:10
+Wed_00180,Pak 'n Save Royal Oak;Four Square Eden Terrace,2,15,18971.55,05:16:11
+Wed_00181,New World Point Chevalier;New World New Lynn,2,15,19029.11,05:17:09
+Wed_00182,New World Mt Roskill;New World Victoria Park,2,15,19032.83,05:17:12
+Wed_00183,Four Square Eden Terrace;Pak 'n Save Royal Oak,2,15,19080.87,05:18:00
+Wed_00184,Four Square Glen Eden;Pak 'n Save Mt Albert,2,15,19115.84,05:18:35
+Wed_00185,New World Green Bay;New World Point Chevalier,2,15,19132.76,05:18:52
+Wed_00186,Pak 'n Save Mt Albert;Four Square Glen Eden,2,15,19154.75,05:19:14
+Wed_00187,New World Papakura;New World Southmall,2,13,19216.43,05:20:16
+Wed_00188,New World Southmall;Four Square Lancaster,2,11,19256.56,05:20:56
+Wed_00189,Pak 'n Save Westgate;Four Square Ellerslie,2,13,19271.78,05:21:11
+Wed_00190,New World Hobsonville;New World Point Chevalier,2,14,19282.68,05:21:22
+Wed_00191,New World Southmall;New World Papakura,2,13,19317.52,05:21:57
+Wed_00192,Pak 'n Save Westgate;Four Square Eden Terrace,2,14,19323.9,05:22:03
+Wed_00193,New World Mt Albert;Four Square Eden Terrace;New World Metro Queen St,3,15,19338.35,05:22:18
+Wed_00194,New World Metro Queen St;Four Square Britomart;New World Mt Albert,3,15,19381.18,05:23:01
+Wed_00195,Four Square Glen Eden;New World Howick,2,11,19392.38,05:23:12
+Wed_00196,Pak 'n Save Mt Albert;New World Metro Queen St,2,15,19396.85,05:23:16
+Wed_00197,New World Mt Roskill;New World Point Chevalier,2,16,19405.61,05:23:25
+Wed_00198,New World Point Chevalier;New World Newmarket,2,15,19411.57,05:23:31
+Wed_00199,New World Mt Albert;Four Square Britomart;New World Metro Queen St,3,15,19414.11,05:23:34
+Wed_00200,Pak 'n Save Royal Oak;Four Square Remuera,2,15,19418.12,05:23:38
+Wed_00201,New World Ormiston;Four Square Cockle Bay;Four Square Pakuranga Heights,3,12,19423.93,05:23:43
+Wed_00202,New World Point Chevalier;New World Mt Roskill,2,16,19431.74,05:23:51
+Wed_00203,New World New Lynn;New World Green Bay,2,16,19437.12,05:23:57
+Wed_00204,New World Green Bay;New World New Lynn,2,16,19438.1,05:23:58
+Wed_00205,New World Mt Albert;New World Metro Queen St;Four Square Britomart,3,15,19444.06,05:24:04
+Wed_00206,Pak 'n Save Royal Oak;Four Square Britomart,2,15,19515.53,05:25:15
+Wed_00207,New World Birkenhead;Four Square Lancaster;New World Metro Queen St,3,13,19516.28,05:25:16
+Wed_00208,Four Square Ellerslie;New World Newmarket;New World Metro Queen St,3,14,19519.84,05:25:19
+Wed_00209,Four Square Britomart;New World Metro Queen St;Four Square Ellerslie;Four Square Remuera,4,14,19536.71,05:25:36
+Wed_00210,Four Square Ellerslie;Four Square Remuera;New World Metro Queen St;Four Square Britomart,4,14,19553.5,05:25:53
+Wed_00211,Pak 'n Save Highland Park;Four Square Onehunga,2,14,19564.93,05:26:04
+Wed_00212,Four Square Remuera;Pak 'n Save Royal Oak,2,15,19565.68,05:26:05
+Wed_00213,Pak 'n Save Manukau;Four Square Ellerslie,2,14,19583.13,05:26:23
+Wed_00214,New World Hobsonville;Four Square Hobsonville;New World Metro Shore City,3,13,19585.08,05:26:25
+Wed_00215,Four Square Onehunga;Pak 'n Save Mt Albert,2,16,19615.71,05:26:55
+Wed_00216,Pak 'n Save Mt Albert;Four Square Onehunga,2,16,19621.31,05:27:01
+Wed_00217,Pak 'n Save Royal Oak;Four Square St Heliers,2,14,19656.2,05:27:36
+Wed_00218,New World New Lynn;New World Mt Albert,2,16,19682.3,05:28:02
+Wed_00219,New World Mt Albert;New World New Lynn,2,16,19695.76,05:28:15
+Wed_00220,New World Eastridge;Four Square Britomart;New World Metro Queen St,3,14,19710.55,05:28:30
+Wed_00221,Four Square Britomart;New World Metro Queen St;New World Newmarket,3,15,19734.79,05:28:54
+Wed_00222,New World Newmarket;New World Metro Queen St;Four Square Britomart,3,15,19751.6,05:29:11
+Wed_00223,New World Newmarket;Four Square Britomart;New World Metro Queen St,3,15,19761.54,05:29:21
+Wed_00224,New World Metro Queen St;Four Square Britomart;New World Newmarket,3,15,19764.69,05:29:24
+Wed_00225,Four Square Cockle Bay;New World Howick;Four Square Pakuranga Heights,3,13,19765.54,05:29:25
+Wed_00226,Four Square Ellerslie;New World Remuera;Four Square Onehunga,3,15,19783.91,05:29:43
+Wed_00227,Pak 'n Save Royal Oak;Four Square Hobsonville,2,14,19790.62,05:29:50
+Wed_00228,Four Square Onehunga;Four Square Hobsonville;New World Hobsonville,3,14,19804.25,05:30:04
+Wed_00229,New World Newmarket;New World Metro Queen St;Four Square Eden Terrace,3,15,19808.61,05:30:08
+Wed_00230,New World Metro Queen St;New World Newmarket;Four Square Eden Terrace,3,15,19815.52,05:30:15
+Wed_00231,New World Eastridge;New World Metro Queen St;Four Square Britomart,3,14,19831.83,05:30:31
+Wed_00232,Four Square Glen Eden;New World Point Chevalier;Four Square Hobsonville,3,13,19836.59,05:30:36
+Wed_00233,Pak 'n Save Wairau Road;New World Metro Shore City,2,14,19847.47,05:30:47
+Wed_00234,Four Square Hobsonville;New World Hobsonville;Four Square Onehunga,3,14,19863.94,05:31:03
+Wed_00235,New World Eastridge;Four Square Remuera;Four Square Ellerslie,3,14,19880.09,05:31:20
+Wed_00236,New World Green Bay;New World Mt Albert,2,16,19896.21,05:31:36
+Wed_00237,Four Square Glen Eden;Pak 'n Save Henderson,2,15,19908.98,05:31:48
+Wed_00238,New World Metro Queen St;Four Square Eden Terrace;New World Newmarket,3,15,19911.17,05:31:51
+Wed_00239,Pak 'n Save Wairau Road;New World Metro Queen St,2,14,19912.08,05:31:52
+Wed_00240,New World Mt Albert;New World Green Bay,2,16,19919.78,05:31:59
+Wed_00241,Pak 'n Save Mt Albert;Four Square Eden Terrace,2,16,19927.85,05:32:07
+Wed_00242,New World Mt Albert;Four Square Eden Terrace;Four Square Ellerslie,3,15,19935.64,05:32:15
+Wed_00243,Four Square Eden Terrace;Pak 'n Save Mt Albert,2,16,19938.57,05:32:18
+Wed_00244,Pak 'n Save Mt Albert;Four Square Ellerslie,2,15,19943.89,05:32:23
+Wed_00245,Pak 'n Save Henderson;Four Square Glen Eden,2,15,19956.36,05:32:36
+Wed_00246,Four Square Lancaster;Pak 'n Save Lincoln Road,2,13,19958.71,05:32:38
+Wed_00247,Four Square Onehunga;Four Square Eden Terrace;Four Square Britomart;New World Metro Queen St,4,15,19966.1,05:32:46
+Wed_00248,New World Newmarket;New World Birkenhead,2,14,19984.22,05:33:04
+Wed_00249,New World Milford;New World Victoria Park,2,14,19988.78,05:33:08
+Wed_00250,Four Square Onehunga;New World Newmarket;Four Square Ellerslie,3,15,20005.25,05:33:25
+Wed_00251,Four Square Cockle Bay;New World Howick;Four Square Ellerslie,3,13,20005.77,05:33:25
+Wed_00252,Pak 'n Save Manukau;Four Square Onehunga,2,15,20015.45,05:33:35
+Wed_00253,Four Square Ellerslie;Four Square Remuera;New World Remuera,3,15,20026.52,05:33:46
+Wed_00254,Four Square Onehunga;Pak 'n Save Mangere,2,16,20029.87,05:33:49
+Wed_00255,New World Mt Albert;Four Square Ellerslie;Four Square Remuera,3,15,20040.95,05:34:00
+Wed_00256,Four Square Onehunga;New World New Lynn;Four Square Glen Eden,3,15,20068.29,05:34:28
+Wed_00257,New World Remuera;Four Square Remuera;Four Square Ellerslie,3,15,20076.67,05:34:36
+Wed_00258,Four Square Onehunga;Four Square Glen Eden;New World Green Bay,3,15,20082.8,05:34:42
+Wed_00259,Four Square Ellerslie;Four Square Remuera;New World Newmarket,3,15,20084.26,05:34:44
+Wed_00260,Four Square Onehunga;New World Stonefields;Four Square Ellerslie,3,15,20089.29,05:34:49
+Wed_00261,Pak 'n Save Manukau;Four Square Cockle Bay,2,13,20090.3,05:34:50
+Wed_00262,Four Square Eden Terrace;New World Newmarket;Four Square Ellerslie,3,15,20093.36,05:34:53
+Wed_00263,Four Square Onehunga;Four Square Ellerslie;New World Ormiston,3,14,20107.42,05:35:07
+Wed_00264,Pak 'n Save Mangere;Four Square Onehunga,2,16,20108.31,05:35:08
+Wed_00265,New World Devonport;Four Square Eden Terrace,2,13,20129.69,05:35:29
+Wed_00266,Four Square Glen Eden;New World Green Bay;Four Square Onehunga,3,15,20130.57,05:35:30
+Wed_00267,Four Square Pakuranga Heights;New World Ormiston;Four Square Botany Junction,3,14,20161.36,05:36:01
+Wed_00268,New World New Lynn;Four Square Glen Eden;Four Square Onehunga,3,15,20165.05,05:36:05
+Wed_00269,Four Square Ellerslie;New World Newmarket;Four Square Eden Terrace,3,15,20166.8,05:36:06
+Wed_00270,New World Newmarket;New World Mt Albert,2,16,20176.17,05:36:16
+Wed_00271,New World Remuera;Four Square Ellerslie;Four Square Remuera,3,15,20178.01,05:36:18
+Wed_00272,New World Newmarket;Four Square Remuera;Four Square Ellerslie,3,15,20196.54,05:36:36
+Wed_00273,Four Square Ellerslie;New World Remuera;Four Square Remuera,3,15,20198.16,05:36:38
+Wed_00274,New World New Lynn;New World Metro Queen St;Four Square Britomart,3,15,20205.53,05:36:45
+Wed_00275,Four Square Britomart;New World Metro Queen St;New World Remuera,3,15,20230.32,05:37:10
+Wed_00276,New World Mt Albert;New World Newmarket,2,16,20239.04,05:37:19
+Wed_00277,New World Remuera;Four Square Britomart;New World Metro Queen St,3,15,20257.06,05:37:37
+Wed_00278,New World New Lynn;Four Square Glen Eden;Four Square Hobsonville,3,14,20260.06,05:37:40
+Wed_00279,New World Mt Roskill;Four Square Ellerslie;New World Metro Queen St,3,15,20292.15,05:38:12
+Wed_00280,New World Green Bay;Four Square Britomart;New World Metro Queen St,3,15,20301.02,05:38:21
+Wed_00281,New World Mt Roskill;New World Metro Queen St;Four Square Ellerslie,3,15,20305.3,05:38:25
+Wed_00282,Four Square Onehunga;Four Square Remuera;New World Eastridge,3,15,20307.88,05:38:27
+Wed_00283,New World Mt Roskill;Four Square Britomart;New World Metro Queen St,3,16,20311.34,05:38:31
+Wed_00284,New World Green Bay;New World Metro Queen St;Four Square Britomart,3,15,20330.97,05:38:50
+Wed_00285,New World Mt Roskill;Four Square Torbay,2,13,20337.96,05:38:57
+Wed_00286,Pak 'n Save Manukau;Four Square Botany Junction,2,15,20339.39,05:38:59
+Wed_00287,New World Mt Roskill;New World Metro Queen St;Four Square Britomart,3,16,20341.28,05:39:01
+Wed_00288,Pak 'n Save Mt Albert;Four Square Hobsonville,2,15,20347.24,05:39:07
+Wed_00289,Four Square Remuera;New World Remuera;Four Square Ellerslie,3,15,20349.94,05:39:09
+Wed_00290,New World Point Chevalier;Four Square Eden Terrace;Four Square Remuera,3,15,20357.6,05:39:17
+Wed_00291,New World Remuera;Four Square Remuera;New World Metro Queen St,3,15,20360.14,05:39:20
+Wed_00292,New World Mt Roskill;Four Square Ellerslie;Four Square Onehunga,3,16,20364.46,05:39:24
+Wed_00293,Four Square Ellerslie;Pak 'n Save Sylvia Park,2,15,20368.85,05:39:28
+Wed_00294,Pak 'n Save Sylvia Park;Four Square Ellerslie,2,15,20379.65,05:39:39
+Wed_00295,Pak 'n Save Albany,1,14,20379.99,05:39:39
+Wed_00296,New World Hobsonville;New World Mt Albert,2,15,20380.19,05:39:40
+Wed_00297,New World Green Bay;Four Square Glen Eden;Four Square Fair Price Henderson,3,15,20380.36,05:39:40
+Wed_00298,New World Mt Roskill;Four Square Eden Terrace;New World Metro Queen St,3,16,20396.61,05:39:56
+Wed_00299,New World Mt Roskill;New World Metro Queen St;Four Square Eden Terrace,3,16,20398.29,05:39:58
+Wed_00300,New World Mt Roskill;Four Square Onehunga;Four Square Ellerslie,3,16,20405.77,05:40:05
+Wed_00301,Four Square Botany Junction;Pak 'n Save Manukau,2,15,20414.66,05:40:14
+Wed_00302,Four Square Onehunga;New World Newmarket;Four Square Eden Terrace,3,16,20416.02,05:40:16
+Wed_00303,Pak 'n Save Lincoln Road;New World Victoria Park,2,15,20425.64,05:40:25
+Wed_00304,Four Square Onehunga;Pak 'n Save Clendon,2,15,20437.65,05:40:37
+Wed_00305,Four Square Ellerslie;Four Square Onehunga;New World New Lynn,3,15,20458.01,05:40:58
+Wed_00306,New World Mt Roskill;New World Birkenhead,2,15,20467.21,05:41:07
+Wed_00307,Pak 'n Save Manukau;Four Square Eden Terrace,2,15,20467.61,05:41:07
+Wed_00308,New World Birkenhead;Four Square Remuera;Four Square Onehunga,3,14,20468.87,05:41:08
+Wed_00309,Four Square Remuera;New World Remuera;New World Metro Queen St,3,15,20468.9,05:41:08
+Wed_00310,Four Square Fair Price Henderson;Pak 'n Save Royal Oak,2,15,20469.89,05:41:09
+Wed_00311,New World Remuera;New World Eastridge,2,15,20475.15,05:41:15
+Wed_00312,New World Mt Albert;Four Square Remuera;New World Metro Queen St,3,15,20483.33,05:41:23
+Wed_00313,Pak 'n Save Clendon;Four Square Onehunga,2,15,20516.08,05:41:56
+Wed_00314,New World Eastridge;New World Mt Albert,2,15,20516.8,05:41:56
+Wed_00315,New World Stonefields;New World Point Chevalier,2,15,20522.24,05:42:02
+Wed_00316,Four Square Remuera;New World Stonefields;Four Square Ellerslie,3,15,20533.52,05:42:13
+Wed_00317,New World New Lynn;Four Square Onehunga;Four Square Ellerslie,3,15,20534.49,05:42:14
+Wed_00318,Four Square Eden Terrace;New World Newmarket;Four Square Onehunga,3,16,20540.39,05:42:20
+Wed_00319,Pak 'n Save Mt Albert;Four Square Britomart,2,16,20547.9,05:42:27
+Wed_00320,New World New Lynn;Four Square Glen Eden;Four Square Eden Terrace,3,15,20561.39,05:42:41
+Wed_00321,New World Southmall;New World Metro Queen St;Four Square Britomart,3,14,20563.87,05:42:43
+Wed_00322,New World Green Bay;Four Square Glen Eden;Four Square Eden Terrace,3,15,20564.9,05:42:44
+Wed_00323,New World Eastridge;New World Newmarket,2,15,20568.07,05:42:48
+Wed_00324,New World Mt Albert;New World Eastridge,2,15,20579.67,05:42:59
+Wed_00325,New World Newmarket;Four Square Ellerslie;Four Square Britomart,3,15,20582.55,05:43:02
+Wed_00326,New World Mt Roskill;Four Square Onehunga;New World Metro Queen St,3,16,20586.01,05:43:06
+Wed_00327,New World New Lynn;New World Hobsonville,2,15,20587.7,05:43:07
+Wed_00328,New World Mt Albert;Four Square Fair Price Henderson;Four Square Glen Eden,3,15,20588.99,05:43:08
+Wed_00329,Four Square Remuera;Four Square Ellerslie;New World Stonefields,3,15,20594.09,05:43:14
+Wed_00330,Pak 'n Save Lincoln Road;New World Point Chevalier,2,16,20594.81,05:43:14
+Wed_00331,Four Square Cockle Bay;Pak 'n Save Botany,2,14,20596.61,05:43:16
+Wed_00332,Four Square Onehunga;Four Square Remuera;New World Mt Albert,3,16,20632.57,05:43:52
+Wed_00333,New World Howick;Four Square Cockle Bay;Four Square Botany Junction,3,14,20633.84,05:43:53
+Wed_00334,Four Square Onehunga;New World Remuera;Four Square Remuera,3,16,20640.02,05:44:00
+Wed_00335,New World Remuera;New World Newmarket,2,16,20648.33,05:44:08
+Wed_00336,New World Stonefields;Four Square Remuera;Four Square Ellerslie,3,15,20648.95,05:44:08
+Wed_00337,Four Square Eden Terrace;New World Mt Albert;Four Square Glen Eden,3,15,20658.38,05:44:18
+Wed_00338,Four Square Remuera;Four Square Britomart;New World Metro Queen St;Four Square Eden Terrace,4,15,20659.0,05:44:19
+Wed_00339,Four Square Eden Terrace;New World Metro Queen St;Four Square Britomart;Four Square Remuera,4,15,20660.49,05:44:20
+Wed_00340,New World Eastridge;New World Remuera,2,15,20663.68,05:44:23
+Wed_00341,Four Square Eden Terrace;Pak 'n Save Manukau,2,15,20676.15,05:44:36
+Wed_00342,Pak 'n Save Mt Albert;New World Metro Shore City,2,15,20678.71,05:44:38
+Wed_00343,Four Square Onehunga;Four Square Remuera;New World Remuera,3,16,20681.01,05:44:41
+Wed_00344,Four Square Glen Eden;New World Green Bay;Four Square Eden Terrace,3,15,20684.22,05:44:44
+Wed_00345,Pak 'n Save Mangere;Four Square Glen Eden,2,15,20687.15,05:44:47
+Wed_00346,New World Newmarket;New World Remuera,2,16,20689.43,05:44:49
+Wed_00347,Four Square Fair Price Henderson;New World Point Chevalier;Four Square Eden Terrace,3,15,20691.16,05:44:51
+Wed_00348,Four Square Britomart;New World Remuera;Four Square Ellerslie,3,15,20696.15,05:44:56
+Wed_00349,Pak 'n Save Royal Oak;Four Square Botany Junction,2,15,20708.76,05:45:08
+Wed_00350,New World New Lynn;Four Square Onehunga;New World Metro Queen St,3,15,20714.73,05:45:14
+Wed_00351,Pak 'n Save Mangere;New World Metro Queen St,2,15,20716.48,05:45:16
+Wed_00352,Four Square Eden Terrace;Four Square Britomart;New World Metro Queen St;Four Square Remuera,4,15,20726.0,05:45:26
+Wed_00353,New World Mt Albert;New World Remuera,2,16,20734.57,05:45:34
+Wed_00354,New World Milford;New World Birkenhead,2,14,20734.74,05:45:34
+Wed_00355,Four Square Glen Eden;Pak 'n Save Mangere,2,15,20734.93,05:45:34
+Wed_00356,New World Point Chevalier;Pak 'n Save Lincoln Road,2,16,20734.99,05:45:34
+Wed_00357,Four Square Onehunga;Four Square Remuera;New World Newmarket,3,16,20738.75,05:45:38
+Wed_00358,Four Square Remuera;New World Remuera;Four Square Onehunga,3,16,20763.85,05:46:03
+Wed_00359,New World Newmarket;Four Square Remuera;Four Square Onehunga,3,16,20783.0,05:46:23
+Wed_00360,Four Square Glen Eden;New World Mt Albert;Four Square Onehunga,3,15,20791.14,05:46:31
+Wed_00361,New World Devonport;Four Square Remuera,2,13,20797.87,05:46:37
+Wed_00362,New World Eastridge;Four Square Remuera;Four Square Eden Terrace,3,15,20810.52,05:46:50
+Wed_00363,New World Papatoetoe;New World Victoria Park,2,15,20829.01,05:47:09
+Wed_00364,New World Mt Roskill;Four Square Cockle Bay;Four Square Pakuranga Heights,3,14,20839.23,05:47:19
+Wed_00365,Pak 'n Save Manukau;Four Square Remuera,2,15,20855.56,05:47:35
+Wed_00366,New World New Lynn;Four Square Eden Terrace;Four Square Ellerslie,3,15,20858.15,05:47:38
+Wed_00367,Four Square Onehunga;Four Square Britomart;New World Metro Queen St;Four Square Remuera,4,15,20859.87,05:47:39
+Wed_00368,Four Square Onehunga;Four Square St Heliers;New World Mt Albert,3,15,20870.65,05:47:50
+Wed_00369,Four Square Remuera;New World Eastridge;Four Square Eden Terrace,3,15,20877.66,05:47:57
+Wed_00370,New World Point Chevalier;New World Victoria Park;New World Metro Queen St,3,16,20883.96,05:48:03
+Wed_00371,New World Mt Roskill;New World Metro Shore City;New World Metro Queen St,3,15,20887.8,05:48:07
+Wed_00372,Four Square Onehunga;Pak 'n Save Sylvia Park,2,16,20889.66,05:48:09
+Wed_00373,New World Newmarket;Four Square Eden Terrace;Four Square Onehunga,3,16,20899.03,05:48:19
+Wed_00374,New World Mt Roskill;Four Square Pakuranga Heights;Four Square Cockle Bay,3,14,20900.36,05:48:20
+Wed_00375,New World Point Chevalier;New World Metro Queen St;New World Victoria Park,3,16,20904.01,05:48:24
+Wed_00376,New World Mt Roskill;New World Metro Queen St;New World Metro Shore City,3,15,20916.2,05:48:36
+Wed_00377,New World Green Bay;Four Square Ellerslie;Four Square Remuera,3,15,20927.87,05:48:47
+Wed_00378,New World Green Bay;Four Square Ellerslie;Four Square Eden Terrace,3,15,20928.8,05:48:48
+Wed_00379,New World Stonefields;Four Square Remuera;New World Metro Queen St,3,15,20932.42,05:48:52
+Wed_00380,New World Stonefields;New World Eastridge,2,15,20933.24,05:48:53
+Wed_00381,New World Mt Roskill;Four Square Pakuranga Heights;Four Square Ellerslie,3,15,20936.26,05:48:56
+Wed_00382,New World Mt Roskill;Four Square Ellerslie;Four Square Remuera,3,16,20938.18,05:48:58
+Wed_00383,New World Mt Roskill;Four Square Ellerslie;Four Square Eden Terrace,3,16,20939.11,05:48:59
+Wed_00384,New World Newmarket;New World New Lynn,2,16,20939.18,05:48:59
+Wed_00385,Four Square Remuera;Pak 'n Save Manukau,2,15,20943.84,05:49:03
+Wed_00386,New World Stonefields;New World Metro Queen St;Four Square Britomart,3,15,20948.11,05:49:08
+Wed_00387,Four Square Fair Price Henderson;Pak 'n Save Mt Albert,2,16,20955.74,05:49:15
+Wed_00388,Pak 'n Save Mt Albert;Four Square Fair Price Henderson,2,16,20966.83,05:49:26
+Wed_00389,Four Square Fair Price Henderson;Pak 'n Save Henderson,2,16,20967.13,05:49:27
+Wed_00390,New World Mt Roskill;Four Square Glen Eden;New World Metro Queen St,3,15,20974.63,05:49:34
+Wed_00391,Pak 'n Save Sylvia Park;Four Square Onehunga,2,16,20974.65,05:49:34
+Wed_00392,New World Point Chevalier;Four Square Remuera;Four Square Pakuranga Heights,3,14,20987.41,05:49:47
+Wed_00393,Pak 'n Save Henderson;Four Square Hobsonville,2,15,20987.99,05:49:47
+Wed_00394,Pak 'n Save Mangere;Four Square Ellerslie,2,15,20989.11,05:49:49
+Wed_00395,Four Square Pakuranga Heights;Pak 'n Save Clendon,2,14,20992.93,05:49:52
+Wed_00396,New World Mt Roskill;Four Square Eden Terrace;Four Square Ellerslie,3,16,20993.9,05:49:53
+Wed_00397,Four Square Cockle Bay;Pak 'n Save Sylvia Park,2,14,20995.86,05:49:55
+Wed_00398,Pak 'n Save Henderson;New World Metro Queen St,2,15,20996.82,05:49:56
+Wed_00399,New World New Lynn;New World Newmarket,2,16,21000.52,05:50:00
+Wed_00400,New World Green Bay;New World Hobsonville,2,15,21000.89,05:50:00
+Wed_00401,Pak 'n Save Clendon;Four Square Cockle Bay,2,13,21010.75,05:50:10
+Wed_00402,New World Mt Roskill;New World Hobsonville,2,16,21011.2,05:50:11
+Wed_00403,Pak 'n Save Manukau;Four Square Britomart,2,15,21011.58,05:50:11
+Wed_00404,Four Square Lancaster;New World Devonport,2,13,21022.13,05:50:22
+Wed_00405,Pak 'n Save Henderson;Four Square Fair Price Henderson,2,16,21027.35,05:50:27
+Wed_00406,Pak 'n Save Mt Albert;Four Square Remuera,2,16,21032.29,05:50:32
+Wed_00407,New World Ormiston;Four Square Botany Junction;Four Square Onehunga,3,15,21033.33,05:50:33
+Wed_00408,New World Mt Roskill;Four Square Onehunga;Four Square Glen Eden,3,16,21043.45,05:50:43
+Wed_00409,Four Square Eden Terrace;New World Newmarket;Four Square Britomart,3,16,21048.11,05:50:48
+Wed_00410,Pak 'n Save Wairau Road;Four Square Britomart,2,15,21052.84,05:50:52
+Wed_00411,Four Square Pakuranga Heights;Pak 'n Save Botany,2,15,21055.81,05:50:55
+Wed_00412,Four Square Onehunga;New World Botany;Four Square Cockle Bay,3,14,21058.54,05:50:58
+Wed_00413,Four Square Eden Terrace;New World Remuera;Four Square Remuera,3,16,21061.89,05:51:01
+Wed_00414,Pak 'n Save Wairau Road;Four Square Eden Terrace,2,15,21062.6,05:51:02
+Wed_00415,Four Square Eden Terrace;Four Square Britomart;New World Newmarket,3,16,21066.49,05:51:06
+Wed_00416,Four Square Eden Terrace;New World Mt Albert;Four Square Onehunga,3,16,21070.74,05:51:10
+Wed_00417,Four Square Onehunga;New World Stonefields;Four Square Remuera,3,16,21073.65,05:51:13
+Wed_00418,New World Mt Roskill;New World Papakura,2,15,21078.99,05:51:18
+Wed_00419,New World Mt Roskill;Four Square Cockle Bay;Four Square Ellerslie,3,14,21079.46,05:51:19
+Wed_00420,Four Square St Heliers;Four Square Botany Junction;Four Square Fair Price Henderson,3,11,21085.6,05:51:25
+Wed_00421,Pak 'n Save Wairau Road;Four Square Onehunga,2,15,21089.41,05:51:29
+Wed_00422,New World Botany;Four Square Cockle Bay;Four Square Botany Junction,3,14,21092.87,05:51:32
+Wed_00423,Pak 'n Save Clendon;Four Square Glen Eden,2,14,21094.92,05:51:34
+Wed_00424,New World Mt Roskill;Four Square Remuera;Four Square Ellerslie,3,16,21097.08,05:51:37
+Wed_00425,New World Metro Queen St;New World Victoria Park;New World Birkenhead,3,15,21099.49,05:51:39
+Wed_00426,New World Newmarket;Four Square Eden Terrace;Four Square Britomart,3,16,21101.18,05:51:41
+Wed_00427,New World Papakura;New World Mt Roskill,2,15,21105.11,05:51:45
+Wed_00428,New World Mt Albert;Four Square Fair Price Henderson;Four Square Hobsonville,3,15,21107.13,05:51:47
+Wed_00429,New World Victoria Park;New World Botany,2,14,21112.92,05:51:52
+Wed_00430,New World Eastridge;New World Stonefields,2,15,21114.65,05:51:54
+Wed_00431,New World Mt Roskill;New World Southmall,2,16,21115.42,05:51:55
+Wed_00432,Four Square Remuera;New World Remuera;Four Square Eden Terrace,3,16,21115.86,05:51:55
+Wed_00433,New World Green Bay;Four Square Glen Eden;Four Square Britomart,3,15,21116.78,05:51:56
+Wed_00434,New World Milford;New World Point Chevalier,2,15,21118.1,05:51:58
+Wed_00435,New World Metro Queen St;New World New Lynn;Four Square Onehunga,3,15,21120.62,05:52:00
+Wed_00436,New World Mt Roskill;Four Square Ellerslie;Four Square St Heliers,3,15,21126.75,05:52:06
+Wed_00437,Four Square Britomart;Four Square Eden Terrace;New World Newmarket,3,16,21127.7,05:52:07
+Wed_00438,New World Remuera;Four Square Remuera;Four Square St Heliers,3,15,21134.09,05:52:14
+Wed_00439,New World Southmall;New World Mt Roskill,2,16,21141.55,05:52:21
+Wed_00440,New World Mt Albert;New World Southmall,2,15,21150.17,05:52:30
+Wed_00441,Pak 'n Save Botany;Four Square Cockle Bay,2,14,21155.37,05:52:35
+Wed_00442,Four Square Botany Junction;Four Square Cockle Bay;New World Botany,3,14,21156.77,05:52:36
+Wed_00443,New World Newmarket;New World Southmall,2,15,21163.36,05:52:43
+Wed_00444,Four Square St Heliers;Pak 'n Save Manukau,2,14,21165.64,05:52:45
+Wed_00445,New World Mt Roskill;Four Square Pakuranga Heights;New World Metro Queen St,3,15,21173.78,05:52:53
+Wed_00446,New World Southmall;New World Newmarket,2,15,21176.23,05:52:56
+Wed_00447,New World Mt Roskill;Four Square Glen Eden;Four Square Onehunga,3,16,21177.47,05:52:57
+Wed_00448,Four Square Eden Terrace;Pak 'n Save Wairau Road,2,15,21179.99,05:52:59
+Wed_00449,New World Papatoetoe;Four Square Ellerslie;New World Metro Queen St,3,15,21182.23,05:53:02
+Wed_00450,New World Newmarket;New World Green Bay,2,16,21185.64,05:53:05
+Wed_00451,Four Square Glen Eden;New World New Lynn;Four Square Britomart,3,15,21192.66,05:53:12
+Wed_00452,Four Square Onehunga;New World Mt Roskill;Four Square Glen Eden,3,16,21202.32,05:53:22
+Wed_00453,New World Southmall;New World New Lynn,2,15,21208.97,05:53:28
+Wed_00454,Four Square Cockle Bay;New World Newmarket;Four Square Onehunga,3,14,21227.88,05:53:47
+Wed_00455,Four Square Glen Eden;New World Mt Albert;Four Square Britomart,3,15,21229.15,05:53:49
+Wed_00456,Four Square Glen Eden;New World New Lynn;Four Square Fair Price Henderson,3,15,21233.61,05:53:53
+Wed_00457,New World New Lynn;New World Southmall,2,15,21244.13,05:54:04
+Wed_00458,New World New Lynn;Four Square Remuera;New World Metro Queen St,3,15,21244.8,05:54:04
+Wed_00459,New World Mt Albert;Four Square Remuera;Four Square St Heliers,3,15,21257.28,05:54:17
+Wed_00460,Pak 'n Save Clendon;Four Square Botany Junction,2,15,21259.85,05:54:19
+Wed_00461,New World Mt Roskill;Four Square Glen Eden;Four Square Hobsonville,3,15,21272.48,05:54:32
+Wed_00462,Four Square Glen Eden;New World Green Bay;Four Square Fair Price Henderson,3,15,21277.08,05:54:37
+Wed_00463,New World Eastridge;New World New Lynn,2,15,21279.8,05:54:39
+Wed_00464,New World Mt Roskill;Four Square Pakuranga Heights;Four Square Onehunga,3,16,21290.04,05:54:50
+Wed_00465,Four Square Glen Eden;Four Square Fair Price Henderson;Pak 'n Save Lincoln Road,3,16,21294.97,05:54:54
+Wed_00466,New World Green Bay;Four Square Onehunga;Four Square Glen Eden,3,15,21297.6,05:54:57
+Wed_00467,New World Botany;New World Ormiston,2,15,21298.55,05:54:58
+Wed_00468,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson;Four Square Glen Eden,3,16,21307.29,05:55:07
+Wed_00469,New World Mt Roskill;Four Square Fair Price Henderson;Four Square Glen Eden,3,16,21315.35,05:55:15
+Wed_00470,Pak 'n Save Mangere;Four Square Eden Terrace,2,16,21315.66,05:55:15
+Wed_00471,Four Square Pakuranga Heights;Four Square Onehunga;New World Mt Roskill,3,16,21316.17,05:55:16
+Wed_00472,New World Mt Roskill;Four Square Cockle Bay;New World Metro Queen St,3,14,21316.98,05:55:16
+Wed_00473,New World Southmall;New World Green Bay,2,15,21321.8,05:55:21
+Wed_00474,New World Ormiston;New World Botany,2,15,21331.17,05:55:31
+Wed_00475,New World Mt Roskill;Four Square Ellerslie;Four Square Pakuranga Heights,3,15,21331.68,05:55:31
+Wed_00476,New World Green Bay;New World Papakura,2,14,21333.14,05:55:33
+Wed_00477,Pak 'n Save Mt Albert;Four Square St Heliers,2,15,21341.26,05:55:41
+Wed_00478,Pak 'n Save Lincoln Road;New World Hobsonville,2,16,21357.04,05:55:57
+Wed_00479,Four Square Remuera;New World Stonefields;Four Square St Heliers,3,15,21360.71,05:56:00
+Wed_00480,New World New Lynn;Four Square Onehunga;Four Square Eden Terrace,3,16,21361.7,05:56:01
+Wed_00481,New World Milford;Four Square Britomart;New World Metro Queen St,3,15,21364.57,05:56:04
+Wed_00482,Four Square Eden Terrace;Pak 'n Save Mangere,2,16,21375.34,05:56:15
+Wed_00483,Four Square Pakuranga Heights;Four Square Onehunga;Four Square Remuera;New World Metro Queen St,4,14,21375.69,05:56:15
+Wed_00484,New World Mt Roskill;Four Square Remuera;New World Metro Queen St,3,16,21380.55,05:56:20
+Wed_00485,Four Square Eden Terrace;New World Mt Albert;Four Square Hobsonville,3,15,21388.73,05:56:28
+Wed_00486,New World Mt Roskill;Four Square Glen Eden;Four Square Fair Price Henderson,3,16,21389.27,05:56:29
+Wed_00487,New World Remuera;New World Stonefields,2,16,21391.67,05:56:31
+Wed_00488,New World Metro Queen St;Four Square Britomart;New World Milford,3,15,21393.9,05:56:33
+Wed_00489,Pak 'n Save Mt Albert;Four Square Pakuranga Heights,2,15,21394.41,05:56:34
+Wed_00490,New World Southmall;New World Remuera,2,15,21395.03,05:56:35
+Wed_00491,New World Ormiston;New World Mt Albert,2,15,21398.26,05:56:38
+Wed_00492,New World Mt Roskill;Four Square Hobsonville;New World Metro Queen St,3,15,21400.71,05:56:40
+Wed_00493,Four Square Britomart;New World Metro Queen St;Four Square Onehunga;Four Square Remuera,4,15,21404.22,05:56:44
+Wed_00494,Pak 'n Save Sylvia Park;Four Square Pakuranga Heights,2,15,21405.27,05:56:45
+Wed_00495,Four Square Lancaster;Pak 'n Save Wairau Road,2,15,21419.9,05:56:59
+Wed_00496,Pak 'n Save Sylvia Park;Four Square Eden Terrace,2,16,21426.81,05:57:06
+Wed_00497,New World Mt Roskill;Four Square St Heliers;New World Metro Queen St,3,15,21429.13,05:57:09
+Wed_00498,New World Mt Roskill;Four Square Cockle Bay;Four Square Onehunga,3,15,21433.25,05:57:13
+Wed_00499,New World Howick;Four Square Cockle Bay;Four Square Britomart,3,14,21434.24,05:57:14
+Wed_00500,New World Remuera;New World New Lynn,2,16,21434.7,05:57:14
+Wed_00501,New World Mt Albert;New World Stonefields,2,16,21435.57,05:57:15
+Wed_00502,New World Mt Roskill;Four Square Britomart;Four Square Ellerslie,3,16,21456.31,05:57:36
+Wed_00503,New World Papatoetoe;New World Southmall,2,16,21457.05,05:57:37
+Wed_00504,New World Hobsonville;Pak 'n Save Lincoln Road,2,16,21458.25,05:57:38
+Wed_00505,Four Square Onehunga;Four Square Botany Junction;New World Southmall,3,15,21464.24,05:57:44
+Wed_00506,New World Mt Roskill;New World Eastridge,2,16,21476.9,05:57:56
+Wed_00507,New World Mt Roskill;Four Square Eden Terrace;Four Square Glen Eden,3,16,21477.29,05:57:57
+Wed_00508,New World Metro Shore City;New World Milford;Four Square Britomart,3,15,21480.87,05:58:00
+Wed_00509,New World Mt Roskill;Four Square St Heliers;Four Square Ellerslie,3,15,21481.22,05:58:01
+Wed_00510,Four Square Eden Terrace;Pak 'n Save Sylvia Park,2,16,21481.59,05:58:01
+Wed_00511,New World Mt Roskill;Four Square Ellerslie;Four Square Britomart,3,16,21483.09,05:58:03
+Wed_00512,New World Mt Albert;New World Ormiston,2,15,21488.43,05:58:08
+Wed_00513,New World Stonefields;New World Remuera,2,16,21491.55,05:58:11
+Wed_00514,Pak 'n Save Ormiston;Four Square Cockle Bay,2,14,21491.98,05:58:11
+Wed_00515,New World Metro Queen St;New World Newmarket;Four Square Fair Price Henderson,3,15,21493.5,05:58:13
+Wed_00516,New World Milford;New World Metro Shore City;Four Square Britomart,3,15,21495.68,05:58:15
+Wed_00517,Four Square Glen Eden;Four Square Eden Terrace;New World Remuera,3,15,21495.97,05:58:15
+Wed_00518,New World New Lynn;New World Remuera,2,16,21496.04,05:58:16
+Wed_00519,Pak 'n Save Royal Oak;Four Square Lancaster,2,15,21503.76,05:58:23
+Wed_00520,Four Square Eden Terrace;New World Mt Albert;Four Square Britomart,3,16,21508.75,05:58:28
+Wed_00521,New World New Lynn;Four Square Hobsonville;Four Square Fair Price Henderson,3,15,21511.2,05:58:31
+Wed_00522,Four Square Onehunga;New World Papakura;Four Square Botany Junction,3,14,21515.49,05:58:35
+Wed_00523,New World Mt Roskill;Four Square Glen Eden;Four Square Ellerslie,3,15,21521.68,05:58:41
+Wed_00524,Pak 'n Save Sylvia Park;Four Square St Heliers,2,15,21526.84,05:58:46
+Wed_00525,Four Square Onehunga;Pak 'n Save Henderson,2,16,21529.07,05:58:49
+Wed_00526,New World Mt Albert;Four Square Eden Terrace;Four Square Cockle Bay,3,14,21529.36,05:58:49
+Wed_00527,Pak 'n Save Wairau Road;Four Square Lancaster,2,15,21535.04,05:58:55
+Wed_00528,Pak 'n Save Mt Albert;Four Square Cockle Bay,2,14,21537.62,05:58:57
+Wed_00529,Pak 'n Save Henderson;Four Square Ellerslie,2,15,21543.87,05:59:03
+Wed_00530,Four Square St Heliers;New World Stonefields;Four Square Remuera,3,15,21544.93,05:59:04
+Wed_00531,New World Newmarket;Four Square Onehunga;Four Square Eden Terrace,3,16,21545.46,05:59:05
+Wed_00532,Pak 'n Save Botany;Four Square Pakuranga Heights,2,15,21545.78,05:59:05
+Wed_00533,Pak 'n Save Sylvia Park;Four Square Cockle Bay,2,14,21548.47,05:59:08
+Wed_00534,Four Square Glen Eden;Pak 'n Save Lincoln Road;Four Square Fair Price Henderson,3,16,21558.7,05:59:18
+Wed_00535,Pak 'n Save Clendon;Four Square Eden Terrace,2,15,21560.31,05:59:20
+Wed_00536,Four Square Eden Terrace;New World Ormiston;Four Square Botany Junction,3,15,21567.58,05:59:27
+Wed_00537,New World Mt Roskill;Four Square Glen Eden;Four Square Eden Terrace,3,16,21573.81,05:59:33
+Wed_00538,New World Eastridge;Four Square Eden Terrace;Four Square Britomart,3,15,21576.74,05:59:36
+Wed_00539,Four Square Fair Price Henderson;Pak 'n Save Lincoln Road;Four Square Glen Eden,3,16,21579.6,05:59:39
+Wed_00540,Pak 'n Save Henderson;Four Square Eden Terrace,2,16,21596.0,05:59:56
+Wed_00541,New World New Lynn;Four Square Glen Eden;Four Square Remuera,3,15,21597.66,05:59:57
+Wed_00542,New World Papatoetoe;New World Papakura,2,15,21602.69,06:00:02
+Wed_00543,New World Eastridge;New World Hobsonville,2,14,21607.33,06:00:07
+Wed_00544,Four Square Botany Junction;New World Botany;Four Square Pakuranga Heights,3,15,21610.2,06:00:10
+Wed_00545,Four Square Lancaster;Pak 'n Save Royal Oak,2,15,21614.48,06:00:14
+Wed_00546,Four Square Eden Terrace;Four Square Botany Junction;New World Ormiston,3,15,21614.73,06:00:14
+Wed_00547,New World Green Bay;New World Remuera,2,16,21621.48,06:00:21
+Wed_00548,New World Southmall;New World Stonefields,2,15,21624.63,06:00:24
+Wed_00549,New World Remuera;New World Ormiston,2,15,21625.48,06:00:25
+Wed_00550,Pak 'n Save Lincoln Road;Four Square Hobsonville;Four Square Glen Eden,3,15,21626.57,06:00:26
+Wed_00551,New World Mt Albert;Four Square St Heliers;Four Square Eden Terrace,3,15,21634.83,06:00:34
+Wed_00552,Pak 'n Save Mangere;Four Square Cockle Bay,2,14,21639.24,06:00:39
+Wed_00553,New World Papakura;New World Papatoetoe,2,15,21650.92,06:00:50
+Wed_00554,New World Mt Roskill;New World Ormiston,2,16,21658.09,06:00:58
+Wed_00555,Four Square Remuera;New World Remuera;Four Square Britomart,3,16,21659.84,06:00:59
+Wed_00556,Four Square Eden Terrace;Four Square St Heliers;New World Stonefields,3,15,21666.19,06:01:06
+Wed_00557,New World Green Bay;Four Square Remuera;Four Square Onehunga,3,16,21673.23,06:01:13
+Wed_00558,New World Southmall;New World Papatoetoe,2,16,21687.36,06:01:27
+Wed_00559,New World Remuera;Four Square Remuera;Four Square Pakuranga Heights,3,15,21691.7,06:01:31
+Wed_00560,New World Albany;New World Victoria Park,2,15,21718.52,06:01:58
+Wed_00561,New World New Lynn;Four Square Onehunga;Four Square Remuera,3,16,21721.39,06:02:01
+Wed_00562,Pak 'n Save Botany;Four Square Ellerslie,2,15,21724.23,06:02:04
+Wed_00563,New World Mt Roskill;Four Square Hobsonville;New World Metro Shore City,3,15,21728.04,06:02:08
+Wed_00564,Pak 'n Save Ormiston;Four Square Botany Junction,2,16,21728.55,06:02:08
+Wed_00565,Pak 'n Save Ormiston;Four Square Ellerslie,2,15,21730.28,06:02:10
+Wed_00566,Pak 'n Save Wairau Road;Four Square Remuera,2,15,21730.78,06:02:10
+Wed_00567,New World Mt Albert;Four Square Glen Eden;Four Square Britomart,3,15,21730.98,06:02:10
+Wed_00568,New World Newmarket;Four Square Britomart;Four Square St Heliers,3,15,21732.53,06:02:12
+Wed_00569,Pak 'n Save Mangere;Four Square Pakuranga Heights,2,15,21736.78,06:02:16
+Wed_00570,New World Howick;New World Point Chevalier,2,15,21740.78,06:02:20
+Wed_00571,New World Remuera;Four Square Remuera;New World Metro Shore City,3,15,21748.7,06:02:28
+Wed_00572,Four Square Remuera;Pak 'n Save Sylvia Park,2,16,21749.29,06:02:29
+Wed_00573,New World Mt Roskill;Four Square Pakuranga Heights;Four Square St Heliers,3,15,21759.21,06:02:39
+Wed_00574,New World Mt Roskill;Four Square Onehunga;Four Square Pakuranga Heights,3,16,21761.3,06:02:41
+Wed_00575,Four Square Eden Terrace;Four Square Britomart;New World Hobsonville,3,15,21773.52,06:02:53
+Wed_00576,Four Square Botany Junction;Pak 'n Save Ormiston,2,16,21775.7,06:02:55
+Wed_00577,New World Victoria Park;New World Metro Queen St;Four Square Britomart;Four Square Ellerslie,4,16,21784.13,06:03:04
+Wed_00578,New World Botany;New World Southmall,2,15,21784.63,06:03:04
+Wed_00579,New World Victoria Park;Four Square Britomart;New World Metro Queen St;Four Square Ellerslie,4,16,21786.69,06:03:06
+Wed_00580,New World New Lynn;New World Ormiston,2,15,21786.8,06:03:06
+Wed_00581,New World Victoria Park;New World Albany,2,15,21791.95,06:03:11
+Wed_00582,New World Howick;New World Ormiston,2,15,21797.17,06:03:17
+Wed_00583,New World Papatoetoe;New World Ormiston,2,16,21802.26,06:03:22
+Wed_00584,New World Ormiston;New World Remuera,2,15,21804.84,06:03:24
+Wed_00585,New World Point Chevalier;New World Papatoetoe,2,16,21813.27,06:03:33
+Wed_00586,Pak 'n Save Sylvia Park;Four Square Remuera,2,16,21814.76,06:03:34
+Wed_00587,New World Mt Roskill;Four Square Pakuranga Heights;Four Square Eden Terrace,3,16,21820.74,06:03:40
+Wed_00588,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson;Four Square Hobsonville,3,16,21825.43,06:03:45
+Wed_00589,Four Square Fair Price Henderson;Pak 'n Save Lincoln Road;Four Square Hobsonville,3,16,21825.44,06:03:45
+Wed_00590,Four Square Britomart;New World Remuera;Four Square St Heliers,3,15,21827.05,06:03:47
+Wed_00591,New World Mt Roskill;Four Square Onehunga;Four Square St Heliers,3,16,21830.75,06:03:50
+Wed_00592,New World Mt Roskill;Four Square Fair Price Henderson;Four Square Hobsonville,3,16,21833.49,06:03:53
+Wed_00593,Pak 'n Save Ormiston;Four Square Pakuranga Heights,2,15,21848.35,06:04:08
+Wed_00594,Four Square Remuera;New World Remuera;New World Metro Shore City,3,15,21857.46,06:04:17
+Wed_00595,Pak 'n Save Lincoln Road;New World Birkenhead,2,15,21860.02,06:04:20
+Wed_00596,Four Square Fair Price Henderson;New World Mt Albert;Four Square Glen Eden,3,15,21868.05,06:04:28
+Wed_00597,New World Newmarket;Four Square Pakuranga Heights;Four Square Remuera,3,15,21877.05,06:04:37
+Wed_00598,New World Mt Albert;Four Square Fair Price Henderson;Four Square Onehunga,3,16,21885.86,06:04:45
+Wed_00599,Pak 'n Save Mangere;Four Square Botany Junction,2,16,21888.34,06:04:48
+Wed_00600,New World Mt Albert;Four Square Fair Price Henderson;Four Square Eden Terrace,3,16,21893.12,06:04:53
+Wed_00601,New World Mt Roskill;Four Square Cockle Bay;Four Square St Heliers,3,14,21893.37,06:04:53
+Wed_00602,New World Browns Bay;Four Square Torbay;New World Metro Queen St,3,14,21899.08,06:04:59
+Wed_00603,New World Mt Roskill;Four Square Onehunga;Four Square Cockle Bay,3,15,21904.51,06:05:04
+Wed_00604,New World New Lynn;Four Square Onehunga;Four Square Britomart,3,16,21905.67,06:05:05
+Wed_00605,New World Birkenhead;Pak 'n Save Lincoln Road,2,15,21909.77,06:05:09
+Wed_00606,New World Green Bay;New World Ormiston,2,15,21912.24,06:05:12
+Wed_00607,Pak 'n Save Sylvia Park;Four Square Glen Eden,2,15,21912.85,06:05:12
+Wed_00608,New World Ormiston;New World Papatoetoe,2,16,21918.59,06:05:18
+Wed_00609,Pak 'n Save Wairau Road;Four Square Fair Price Henderson,2,15,21925.67,06:05:25
+Wed_00610,Four Square Hobsonville;Pak 'n Save Lincoln Road;Four Square Fair Price Henderson,3,16,21926.65,06:05:26
+Wed_00611,New World Victoria Park;New World Metro Queen St;Four Square Eden Terrace;Four Square Ellerslie,4,16,21930.61,06:05:30
+Wed_00612,Pak 'n Save Highland Park;Four Square Cockle Bay;Four Square Pakuranga Heights,3,15,21932.55,06:05:32
+Wed_00613,New World Mt Roskill;Four Square Onehunga;Four Square Hobsonville,3,16,21932.95,06:05:32
+Wed_00614,New World Mt Roskill;Four Square Hobsonville;Four Square Fair Price Henderson,3,16,21934.7,06:05:34
+Wed_00615,Four Square Britomart;Pak 'n Save Sylvia Park,2,16,21944.01,06:05:44
+Wed_00616,Four Square Torbay;Four Square Ellerslie;Four Square Lancaster,3,11,21947.99,06:05:47
+Wed_00617,Pak 'n Save Clendon;Four Square Remuera,2,15,21948.27,06:05:48
+Wed_00618,Four Square Cockle Bay;Pak 'n Save Highland Park;Four Square Pakuranga Heights,3,15,21953.16,06:05:53
+Wed_00619,Four Square Cockle Bay;New World Remuera;Four Square Britomart,3,14,21954.4,06:05:54
+Wed_00620,Pak 'n Save Botany;New World Metro Queen St,2,15,21961.75,06:06:01
+Wed_00621,Pak 'n Save Ormiston;New World Metro Queen St,2,15,21967.8,06:06:07
+Wed_00622,New World Milford;New World Mt Albert,2,16,21968.55,06:06:08
+Wed_00623,New World Howick;Four Square Pakuranga Heights;Four Square Botany Junction,3,15,21968.99,06:06:08
+Wed_00624,Pak 'n Save Sylvia Park;Four Square Britomart,2,16,21970.79,06:06:10
+Wed_00625,New World Mt Roskill;Four Square Onehunga;New World Metro Shore City,3,16,21974.57,06:06:14
+Wed_00626,Four Square Britomart;Four Square Cockle Bay;New World Howick,3,14,21976.36,06:06:16
+Wed_00627,New World Mt Roskill;Four Square Hobsonville;Four Square Onehunga,3,16,21992.64,06:06:32
+Wed_00628,New World Victoria Park;New World Metro Queen St;Four Square Remuera;Four Square Ellerslie,4,16,21992.93,06:06:32
+Wed_00629,Four Square Pakuranga Heights;Pak 'n Save Highland Park;Four Square Cockle Bay,3,15,21993.69,06:06:33
+Wed_00630,New World Mt Roskill;Four Square Hobsonville;Four Square Eden Terrace,3,16,21999.89,06:06:39
+Wed_00631,Four Square Fair Price Henderson;New World Mt Albert;Four Square Eden Terrace,3,16,22005.51,06:06:45
+Wed_00632,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson;New World Metro Queen St,3,16,22012.24,06:06:52
+Wed_00633,Four Square Fair Price Henderson;Pak 'n Save Lincoln Road;New World Metro Queen St,3,16,22012.24,06:06:52
+Wed_00634,New World Stonefields;New World Ormiston,2,15,22013.55,06:06:53
+Wed_00635,New World Papatoetoe;New World Metro Queen St;Four Square Britomart,3,16,22015.93,06:06:55
+Wed_00636,Four Square Onehunga;Four Square Fair Price Henderson;Four Square Eden Terrace;New World Metro Queen St,4,15,22018.63,06:06:58
+Wed_00637,New World Mt Roskill;Four Square Fair Price Henderson;New World Metro Queen St,3,16,22020.3,06:07:00
+Wed_00638,Four Square Eden Terrace;New World Mt Roskill;Four Square Glen Eden,3,16,22020.44,06:07:00
+Wed_00639,Four Square Lancaster;New World Milford;New World Metro Shore City,3,15,22022.01,06:07:02
+Wed_00640,Four Square Glen Eden;Pak 'n Save Lincoln Road;Four Square Ellerslie,3,15,22026.86,06:07:06
+Wed_00641,New World Mt Roskill;Four Square Britomart;New World Metro Shore City,3,16,22027.95,06:07:07
+Wed_00642,New World Mt Roskill;New World Metro Shore City;Four Square Britomart,3,16,22028.57,06:07:08
+Wed_00643,New World Mt Roskill;Four Square Britomart;Four Square Glen Eden,3,16,22029.17,06:07:09
+Wed_00644,New World Papatoetoe;Four Square Cockle Bay;Four Square Onehunga,3,15,22035.94,06:07:15
+Wed_00645,New World Mt Albert;Four Square Pakuranga Heights;Four Square Britomart,3,15,22036.39,06:07:16
+Wed_00646,Four Square Britomart;New World Metro Queen St;New World Victoria Park;Four Square Ellerslie,4,16,22036.5,06:07:16
+Wed_00647,New World Newmarket;Four Square Eden Terrace;Four Square Cockle Bay,3,14,22045.72,06:07:25
+Wed_00648,New World Devonport;New World Victoria Park,2,15,22049.62,06:07:29
+Wed_00649,New World Mt Roskill;Four Square Eden Terrace;Four Square Hobsonville,3,16,22049.64,06:07:29
+Wed_00650,New World Mt Roskill;Four Square Pakuranga Heights;Four Square Botany Junction,3,16,22050.03,06:07:30
+Wed_00651,New World Metro Shore City;Pak 'n Save Mangere,2,15,22058.02,06:07:38
+Wed_00652,New World Mt Roskill;New World Metro Shore City;Four Square Onehunga,3,16,22065.13,06:07:45
+Wed_00653,Four Square Onehunga;Pak 'n Save Botany,2,16,22077.76,06:07:57
+Wed_00654,Pak 'n Save Botany;Four Square Onehunga,2,16,22078.02,06:07:58
+Wed_00655,Four Square Glen Eden;Four Square Remuera;New World Stonefields,3,15,22080.68,06:08:00
+Wed_00656,New World Victoria Park;New World Point Chevalier;Four Square Glen Eden,3,16,22089.17,06:08:09
+Wed_00657,New World Stonefields;Four Square Eden Terrace;Four Square Onehunga,3,16,22095.55,06:08:15
+Wed_00658,Four Square Britomart;Four Square Remuera;New World Stonefields,3,16,22101.56,06:08:21
+Wed_00659,Pak 'n Save Clendon;Four Square Britomart,2,15,22104.29,06:08:24
+Wed_00660,Pak 'n Save Mt Albert;Four Square Botany Junction,2,16,22107.86,06:08:27
+Wed_00661,Pak 'n Save Papakura;Four Square Ellerslie,2,15,22117.53,06:08:37
+Wed_00662,New World Mt Roskill;Four Square Glen Eden;Four Square Britomart,3,16,22125.69,06:08:45
+Wed_00663,Four Square Onehunga;Pak 'n Save Ormiston,2,16,22127.53,06:08:47
+Wed_00664,New World Newmarket;Four Square Botany Junction;Four Square Cockle Bay,3,14,22142.14,06:09:02
+Wed_00665,Pak 'n Save Manukau;Four Square Fair Price Henderson,2,15,22145.59,06:09:05
+Wed_00666,Pak 'n Save Henderson;Four Square Britomart,2,16,22147.88,06:09:07
+Wed_00667,Four Square Eden Terrace;Pak 'n Save Lincoln Road;Four Square Glen Eden,3,16,22149.65,06:09:09
+Wed_00668,New World Mt Roskill;Four Square St Heliers;Four Square Onehunga,3,16,22155.54,06:09:15
+Wed_00669,New World Mt Roskill;Four Square Eden Terrace;New World Metro Shore City,3,16,22155.71,06:09:15
+Wed_00670,New World Birkenhead;New World Victoria Park;Four Square Eden Terrace,3,16,22158.71,06:09:18
+Wed_00671,New World Metro Queen St;Four Square Britomart;New World Botany,3,15,22159.11,06:09:19
+Wed_00672,New World Mt Roskill;New World Metro Shore City;Four Square Glen Eden,3,15,22159.97,06:09:19
+Wed_00673,Pak 'n Save Ormiston;Four Square Onehunga,2,16,22162.6,06:09:22
+Wed_00674,Four Square Ellerslie;New World Mt Roskill;New World Metro Queen St,3,15,22170.14,06:09:30
+Wed_00675,Pak 'n Save Highland Park;Four Square Cockle Bay;Four Square Ellerslie,3,15,22172.78,06:09:32
+Wed_00676,New World Point Chevalier;Four Square Britomart;Four Square Botany Junction,3,15,22179.74,06:09:39
+Wed_00677,Four Square St Heliers;Four Square Onehunga;New World Mt Roskill,3,16,22181.67,06:09:41
+Wed_00678,New World New Lynn;Four Square Fair Price Henderson;Four Square Onehunga,3,16,22188.72,06:09:48
+Wed_00679,Pak 'n Save Mangere;Four Square Fair Price Henderson,2,16,22196.24,06:09:56
+Wed_00680,New World New Lynn;New World Stonefields,2,16,22197.04,06:09:57
+Wed_00681,New World Mt Roskill;Four Square Pakuranga Heights;Four Square Remuera,3,16,22208.69,06:10:08
+Wed_00682,New World Point Chevalier;New World Victoria Park;New World Metro Shore City,3,16,22209.82,06:10:09
+Wed_00683,Four Square Ellerslie;Pak 'n Save Glen Innes,2,16,22210.76,06:10:10
+Wed_00684,Four Square Britomart;New World Metro Queen St;New World Victoria Park;New World Metro Shore City,4,16,22225.48,06:10:25
+Wed_00685,New World Botany;Four Square Remuera;Four Square Ellerslie,3,15,22226.12,06:10:26
+Wed_00686,Four Square Fair Price Henderson;New World Milford;New World Metro Shore City,3,15,22226.48,06:10:26
+Wed_00687,Pak 'n Save Wairau Road;Four Square Cockle Bay,2,13,22236.1,06:10:36
+Wed_00688,Pak 'n Save Botany;Four Square Botany Junction,2,16,22248.74,06:10:48
+Wed_00689,New World Metro Shore City;New World Stonefields;Four Square Remuera,3,15,22258.36,06:10:58
+Wed_00690,Four Square Onehunga;New World Remuera;Four Square Botany Junction,3,16,22259.99,06:10:59
+Wed_00691,Pak 'n Save Mangere;Four Square Remuera,2,16,22261.55,06:11:01
+Wed_00692,Pak 'n Save Mangere;Four Square St Heliers,2,15,22261.89,06:11:01
+Wed_00693,Pak 'n Save Henderson;New World Metro Shore City,2,15,22278.68,06:11:18
+Wed_00694,Four Square Onehunga;Pak 'n Save Lincoln Road;Four Square Hobsonville,3,16,22278.8,06:11:18
+Wed_00695,New World Birkenhead;New World Victoria Park;Four Square Britomart,3,16,22286.68,06:11:26
+Wed_00696,New World Ormiston;New World Howick,2,15,22294.53,06:11:34
+Wed_00697,New World Stonefields;Four Square Pakuranga Heights;Four Square Britomart,3,15,22305.97,06:11:45
+Wed_00698,New World Mt Roskill;Four Square Botany Junction;Four Square Cockle Bay,3,15,22315.11,06:11:55
+Wed_00699,New World Green Bay;New World Stonefields,2,16,22322.48,06:12:02
+Wed_00700,New World Mt Albert;New World Browns Bay,2,15,22327.54,06:12:07
+Wed_00701,New World Browns Bay;New World Newmarket,2,15,22328.87,06:12:08
+Wed_00702,New World Mt Roskill;Four Square Ellerslie;Four Square Botany Junction,3,16,22329.29,06:12:09
+Wed_00703,Four Square Botany Junction;Pak 'n Save Botany,2,16,22339.22,06:12:19
+Wed_00704,New World Browns Bay;New World Milford,2,15,22356.09,06:12:36
+Wed_00705,New World Mt Roskill;Four Square St Heliers;Four Square Remuera,3,16,22357.38,06:12:37
+Wed_00706,New World Papatoetoe;Four Square Onehunga;Four Square Ellerslie,3,16,22364.52,06:12:44
+Wed_00707,New World Mt Roskill;Four Square Pakuranga Heights;Four Square Britomart,3,16,22364.72,06:12:44
+Wed_00708,New World Birkenhead;New World Papatoetoe,2,15,22366.93,06:12:46
+Wed_00709,Pak 'n Save Glen Innes;Four Square Ellerslie,2,16,22369.66,06:12:49
+Wed_00710,Pak 'n Save Sylvia Park;Four Square Botany Junction,2,16,22373.64,06:12:53
+Wed_00711,New World Stonefields;New World Green Bay,2,16,22382.16,06:13:02
+Wed_00712,New World Milford;New World Newmarket,2,16,22383.04,06:13:03
+Wed_00713,New World Mt Roskill;Four Square Eden Terrace;Four Square St Heliers,3,16,22391.27,06:13:11
+Wed_00714,Four Square Hobsonville;Pak 'n Save Lincoln Road;Four Square Ellerslie,3,15,22394.81,06:13:14
+Wed_00715,New World Point Chevalier;New World Howick,2,15,22395.54,06:13:15
+Wed_00716,New World Victoria Park;Four Square Britomart;New World Metro Queen St;New World Metro Shore City,4,16,22397.59,06:13:17
+Wed_00717,New World Metro Queen St;Four Square Britomart;New World Victoria Park;Four Square Glen Eden,4,16,22408.13,06:13:28
+Wed_00718,Pak 'n Save Highland Park;Four Square Cockle Bay;New World Metro Queen St,3,15,22410.3,06:13:30
+Wed_00719,Four Square Remuera;New World Southmall;Four Square Botany Junction,3,15,22411.32,06:13:31
+Wed_00720,Four Square Onehunga;New World Mt Albert;Four Square Cockle Bay,3,14,22429.21,06:13:49
+Wed_00721,New World Hobsonville;Four Square Hobsonville;New World Victoria Park,3,16,22435.77,06:13:55
+Wed_00722,Pak 'n Save Glen Innes;Four Square St Heliers,2,16,22437.14,06:13:57
+Wed_00723,New World Mt Roskill;Four Square Eden Terrace;Four Square Pakuranga Heights,3,16,22444.42,06:14:04
+Wed_00724,Four Square Hobsonville;New World Hobsonville;New World Victoria Park,3,16,22450.03,06:14:10
+Wed_00725,Pak 'n Save Papakura;Four Square Onehunga,2,16,22460.37,06:14:20
+Wed_00726,Pak 'n Save Mt Albert;Four Square Lancaster,2,16,22469.31,06:14:29
+Wed_00727,New World Mt Roskill;Four Square Botany Junction;Four Square Ellerslie,3,16,22475.47,06:14:35
+Wed_00728,New World Mt Roskill;Four Square St Heliers;Four Square Pakuranga Heights,3,15,22481.41,06:14:41
+Wed_00729,Pak 'n Save Sylvia Park;Four Square Hobsonville,2,15,22485.2,06:14:45
+Wed_00730,New World Eastridge;Four Square Remuera;Four Square Fair Price Henderson,3,15,22488.51,06:14:48
+Wed_00731,New World Newmarket;New World Browns Bay,2,15,22488.63,06:14:48
+Wed_00732,Four Square Onehunga;Four Square Remuera;Four Square Ellerslie;Four Square Lancaster,4,15,22507.51,06:15:07
+Wed_00733,Four Square Onehunga;New World Stonefields;Four Square Botany Junction,3,16,22509.4,06:15:09
+Wed_00734,New World Mt Albert;Four Square Lancaster;Four Square Ellerslie,3,15,22511.48,06:15:11
+Wed_00735,New World Mt Roskill;Four Square Remuera;Four Square Glen Eden,3,16,22513.55,06:15:13
+Wed_00736,New World Victoria Park;New World Metro Queen St;Four Square Onehunga;Four Square Ellerslie,4,16,22514.64,06:15:14
+Wed_00737,Four Square Glen Eden;Pak 'n Save Westgate;Four Square Hobsonville,3,16,22515.73,06:15:15
+Wed_00738,New World Milford;New World Metro Shore City;Four Square Lancaster,3,15,22516.96,06:15:16
+Wed_00739,New World Metro Queen St;New World Metro Shore City;New World Devonport,3,15,22520.37,06:15:20
+Wed_00740,Pak 'n Save Highland Park;Four Square Cockle Bay;Four Square Onehunga,3,16,22526.57,06:15:26
+Wed_00741,Pak 'n Save Glen Innes;New World Metro Queen St,2,16,22532.3,06:15:32
+Wed_00742,New World Green Bay;Four Square Hobsonville;Four Square Britomart,3,15,22541.45,06:15:41
+Wed_00743,New World New Lynn;Four Square Lancaster;New World Metro Queen St,3,15,22542.66,06:15:42
+Wed_00744,Pak 'n Save Botany;Four Square St Heliers,2,15,22547.19,06:15:47
+Wed_00745,New World Birkenhead;New World Victoria Park;Four Square Glen Eden,3,15,22550.63,06:15:50
+Wed_00746,New World Mt Roskill;Four Square Hobsonville;Four Square Britomart,3,16,22551.77,06:15:51
+Wed_00747,Four Square Fair Price Henderson;Four Square Britomart;Four Square Remuera;Four Square Ellerslie,4,15,22555.59,06:15:55
+Wed_00748,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson;Four Square Ellerslie,3,16,22559.29,06:15:59
+Wed_00749,New World Mt Roskill;Four Square Pakuranga Heights;New World Metro Shore City,3,15,22562.34,06:16:02
+Wed_00750,New World Milford;New World Browns Bay,2,15,22564.55,06:16:04
+Wed_00751,New World Mt Roskill;Four Square Fair Price Henderson;Four Square Ellerslie,3,16,22567.35,06:16:07
+Wed_00752,New World Howick;Four Square Cockle Bay;Four Square Fair Price Henderson,3,14,22568.25,06:16:08
+Wed_00753,New World Long Bay;New World Point Chevalier,2,15,22568.39,06:16:08
+Wed_00754,New World New Lynn;New World Metro Shore City;Four Square Remuera,3,15,22570.75,06:16:10
+Wed_00755,New World Papatoetoe;New World Eastridge,2,16,22586.79,06:16:26
+Wed_00756,New World Metro Shore City;New World Albany;Four Square Hobsonville,3,15,22586.97,06:16:26
+Wed_00757,New World Mt Roskill;Four Square Eden Terrace;Four Square Cockle Bay,3,15,22587.62,06:16:27
+Wed_00758,Pak 'n Save Highland Park;Four Square Pakuranga Heights;Four Square Cockle Bay,3,15,22587.79,06:16:27
+Wed_00759,New World Metro Shore City;New World Albany;New World Metro Queen St,3,15,22591.45,06:16:31
+Wed_00760,Pak 'n Save Clendon;Four Square Fair Price Henderson,2,15,22604.01,06:16:44
+Wed_00761,Pak 'n Save Botany;Four Square Eden Terrace,2,16,22608.71,06:16:48
+Wed_00762,New World Mt Roskill;Four Square Glen Eden;Four Square Remuera,3,16,22610.08,06:16:50
+Wed_00763,New World Victoria Park;New World Metro Queen St;Four Square Britomart;Four Square St Heliers,4,16,22610.15,06:16:50
+Wed_00764,Pak 'n Save Westgate;Four Square Hobsonville;Four Square Glen Eden,3,16,22610.22,06:16:50
+Wed_00765,New World Mt Roskill;Four Square Ellerslie;Four Square Fair Price Henderson,3,16,22617.09,06:16:57
+Wed_00766,Four Square St Heliers;Pak 'n Save Glen Innes,2,16,22617.6,06:16:57
+Wed_00767,New World Mt Roskill;Four Square St Heliers;Four Square Cockle Bay,3,14,22624.61,06:17:04
+Wed_00768,Pak 'n Save Highland Park;Four Square Lancaster,2,14,22627.83,06:17:07
+Wed_00769,New World Newmarket;New World Botany,2,16,22630.14,06:17:10
+Wed_00770,Four Square Pakuranga Heights;Pak 'n Save Glen Innes,2,16,22631.15,06:17:11
+Wed_00771,Pak 'n Save Henderson;Four Square Remuera,2,16,22632.27,06:17:12
+Wed_00772,New World New Lynn;Four Square Remuera;New World Metro Shore City,3,15,22633.36,06:17:13
+Wed_00773,New World Mt Albert;New World Botany,2,16,22633.45,06:17:13
+Wed_00774,New World Southmall;New World Howick,2,15,22637.16,06:17:17
+Wed_00775,Four Square Remuera;New World Stonefields;Four Square Hobsonville,3,15,22642.75,06:17:22
+Wed_00776,New World New Lynn;Four Square Glen Eden;Four Square Botany Junction,3,15,22651.59,06:17:31
+Wed_00777,New World Green Bay;Four Square Eden Terrace;Four Square Fair Price Henderson,3,16,22658.91,06:17:38
+Wed_00778,New World Long Bay;New World Hobsonville,2,15,22660.38,06:17:40
+Wed_00779,New World Milford;Four Square Britomart;Four Square Eden Terrace,3,16,22668.05,06:17:48
+Wed_00780,New World Mt Roskill;Four Square Botany Junction;Four Square Pakuranga Heights,3,16,22671.48,06:17:51
+Wed_00781,New World Mt Roskill;Four Square Lancaster;New World Metro Queen St,3,16,22678.41,06:17:58
+Wed_00782,Four Square Torbay;Pak 'n Save Wairau Road,2,15,22680.76,06:18:00
+Wed_00783,Four Square Remuera;Pak 'n Save Henderson,2,16,22682.02,06:18:02
+Wed_00784,New World Botany;New World Newmarket,2,16,22683.21,06:18:03
+Wed_00785,New World Remuera;Four Square Remuera;Four Square Fair Price Henderson,3,16,22685.09,06:18:05
+Wed_00786,New World Remuera;Four Square Remuera;Four Square Botany Junction,3,16,22689.31,06:18:09
+Wed_00787,New World Mt Roskill;Four Square Botany Junction;New World Metro Queen St,3,16,22712.99,06:18:32
+Wed_00788,Four Square Britomart;New World Metro Queen St;New World Howick,3,15,22718.77,06:18:38
+Wed_00789,New World Milford;New World Eastridge,2,15,22723.67,06:18:43
+Wed_00790,Pak 'n Save Papakura;Four Square Cockle Bay,2,14,22727.34,06:18:47
+Wed_00791,Pak 'n Save Westgate;Four Square Hobsonville;New World Metro Queen St,3,16,22730.2,06:18:50
+Wed_00792,New World Stonefields;Four Square Eden Terrace;Four Square Remuera,3,16,22736.92,06:18:56
+Wed_00793,Pak 'n Save Wairau Road;Four Square Torbay,2,15,22741.7,06:19:01
+Wed_00794,New World Metro Queen St;Four Square Britomart;New World Howick,3,15,22748.66,06:19:08
+Wed_00795,New World Metro Queen St;New World Mt Albert;Four Square Botany Junction,3,15,22753.69,06:19:13
+Wed_00796,Four Square Britomart;New World Point Chevalier;Four Square Lancaster,3,15,22753.74,06:19:13
+Wed_00797,Four Square Onehunga;Four Square Fair Price Henderson;New World Newmarket,3,16,22758.28,06:19:18
+Wed_00798,Four Square Eden Terrace;Four Square Botany Junction;Four Square Ellerslie;Four Square St Heliers,4,14,22758.53,06:19:18
+Wed_00799,Four Square Eden Terrace;Pak 'n Save Botany,2,16,22760.88,06:19:20
+Wed_00800,New World Green Bay;Four Square Pakuranga Heights;Four Square Remuera,3,15,22767.27,06:19:27
+Wed_00801,New World Mt Roskill;Four Square Remuera;New World Metro Shore City,3,16,22769.11,06:19:29
+Wed_00802,New World Remuera;New World Botany,2,16,22770.51,06:19:30
+Wed_00803,New World Metro Shore City;New World Victoria Park;Four Square Eden Terrace;New World Metro Queen St,4,16,22770.79,06:19:30
+Wed_00804,New World Howick;New World Newmarket,2,16,22779.02,06:19:39
+Wed_00805,New World Browns Bay;New World Long Bay,2,15,22779.6,06:19:39
+Wed_00806,Four Square Onehunga;New World Papatoetoe;Four Square Cockle Bay,3,15,22779.68,06:19:39
+Wed_00807,New World Metro Queen St;Pak 'n Save Westgate;Four Square Hobsonville,3,16,22779.96,06:19:39
+Wed_00808,Pak 'n Save Ormiston;Four Square Glen Eden,2,15,22784.81,06:19:44
+Wed_00809,New World New Lynn;New World Milford,2,16,22792.9,06:19:52
+Wed_00810,Four Square Ellerslie;New World Papatoetoe;Four Square Botany Junction,3,16,22800.18,06:20:00
+Wed_00811,New World Metro Shore City;Four Square Eden Terrace;New World Ormiston,3,14,22800.58,06:20:00
+Wed_00812,Pak 'n Save Highland Park;Four Square Cockle Bay;Four Square Botany Junction,3,16,22800.84,06:20:00
+Wed_00813,New World Papatoetoe;Four Square Botany Junction;Four Square Pakuranga Heights,3,16,22815.66,06:20:15
+Wed_00814,New World Milford;New World Metro Shore City;Four Square Fair Price Henderson,3,15,22819.02,06:20:19
+Wed_00815,Four Square St Heliers;Pak 'n Save Botany,2,15,22819.8,06:20:19
+Wed_00816,Pak 'n Save Royal Oak;Four Square Torbay,2,15,22832.16,06:20:32
+Wed_00817,Four Square Onehunga;New World Mt Roskill;Four Square Pakuranga Heights,3,16,22832.82,06:20:32
+Wed_00818,Four Square Torbay;Pak 'n Save Royal Oak,2,15,22845.74,06:20:45
+Wed_00819,New World Albany;New World Point Chevalier,2,16,22847.84,06:20:47
+Wed_00820,Four Square St Heliers;New World Mt Albert;Four Square Britomart,3,15,22853.99,06:20:53
+Wed_00821,New World Mt Roskill;Four Square Remuera;Four Square Cockle Bay,3,15,22855.32,06:20:55
+Wed_00822,New World Stonefields;Four Square Onehunga;Four Square Pakuranga Heights,3,15,22857.52,06:20:57
+Wed_00823,Four Square Remuera;Four Square Ellerslie;Four Square Eden Terrace;Four Square Botany Junction,4,15,22860.93,06:21:00
+Wed_00824,Pak 'n Save Highland Park;Four Square Pakuranga Heights;New World Metro Queen St,3,16,22861.21,06:21:01
+Wed_00825,New World Botany;New World Stonefields,2,16,22862.23,06:21:02
+Wed_00826,Pak 'n Save Papakura;Four Square Pakuranga Heights,2,15,22865.2,06:21:05
+Wed_00827,New World Point Chevalier;New World Birkenhead;New World Metro Shore City,3,16,22874.04,06:21:14
+Wed_00828,New World Papatoetoe;Four Square Ellerslie;Four Square Hobsonville,3,15,22887.59,06:21:27
+Wed_00829,New World Mt Roskill;Four Square Lancaster;New World Metro Shore City,3,16,22890.27,06:21:30
+Wed_00830,Four Square Britomart;Four Square Onehunga;Four Square St Heliers;Four Square Remuera,4,15,22894.93,06:21:34
+Wed_00831,Pak 'n Save Lincoln Road;Four Square Hobsonville;Four Square Britomart,3,16,22897.61,06:21:37
+Wed_00832,New World Botany;New World Remuera,2,16,22902.01,06:21:42
+Wed_00833,New World Victoria Park;New World Eastridge;Four Square Ellerslie,3,16,22903.75,06:21:43
+Wed_00834,New World Mt Roskill;Four Square Britomart;Four Square Pakuranga Heights,3,16,22906.84,06:21:46
+Wed_00835,Four Square Botany Junction;New World Papatoetoe;Four Square Ellerslie,3,16,22908.33,06:21:48
+Wed_00836,New World Papakura;New World Victoria Park;New World Metro Queen St,3,15,22916.34,06:21:56
+Wed_00837,New World Green Bay;New World Milford,2,16,22918.34,06:21:58
+Wed_00838,New World Mt Roskill;Four Square Glen Eden;Four Square St Heliers,3,15,22919.05,06:21:59
+Wed_00839,New World Green Bay;Four Square Pakuranga Heights;Four Square Britomart,3,15,22923.3,06:22:03
+Wed_00840,New World Stonefields;New World Botany,2,16,22924.96,06:22:04
+Wed_00841,New World Victoria Park;Four Square Britomart;New World Metro Queen St;Four Square Hobsonville,4,16,22931.85,06:22:11
+Wed_00842,Pak 'n Save Lincoln Road;New World Metro Shore City;Four Square Ellerslie,3,15,22932.16,06:22:12
+Wed_00843,New World Long Bay;Four Square Torbay;Four Square Hobsonville,3,15,22948.59,06:22:28
+Wed_00844,New World Howick;New World Stonefields,2,16,22948.98,06:22:28
+Wed_00845,New World Southmall;New World Victoria Park;New World Metro Queen St,3,16,22952.78,06:22:32
+Wed_00846,New World Long Bay;Four Square Torbay;New World Metro Queen St,3,15,22953.07,06:22:33
+Wed_00847,Four Square Remuera;New World Stonefields;Four Square Botany Junction,3,16,22953.63,06:22:33
+Wed_00848,Four Square Onehunga;New World Green Bay;Four Square Remuera,3,16,22956.66,06:22:36
+Wed_00849,New World Green Bay;Four Square Botany Junction;New World Metro Queen St,3,15,22967.14,06:22:47
+Wed_00850,Four Square Onehunga;New World Mt Roskill;Four Square Cockle Bay,3,15,22976.03,06:22:56
+Wed_00851,Pak 'n Save Highland Park;Four Square Cockle Bay;Four Square St Heliers,3,15,22986.69,06:23:06
+Wed_00852,Four Square Botany Junction;Pak 'n Save Papakura,2,16,22991.6,06:23:11
+Wed_00853,Pak 'n Save Henderson;Four Square Pakuranga Heights,2,15,22994.39,06:23:14
+Wed_00854,Four Square Onehunga;Pak 'n Save Highland Park;Four Square Cockle Bay,3,16,22997.83,06:23:17
+Wed_00855,New World Browns Bay;Four Square Eden Terrace;Four Square Onehunga,3,15,23001.62,06:23:21
+Wed_00856,Pak 'n Save Papakura;Four Square Eden Terrace,2,16,23002.01,06:23:22
+Wed_00857,Pak 'n Save Papakura;Four Square Botany Junction,2,16,23002.41,06:23:22
+Wed_00858,Pak 'n Save Ormiston;Four Square St Heliers,2,15,23003.06,06:23:23
+Wed_00859,New World Mt Roskill;Four Square Cockle Bay;Four Square Hobsonville,3,14,23022.34,06:23:42
+Wed_00860,New World Papatoetoe;Four Square Pakuranga Heights;Four Square Remuera,3,16,23028.18,06:23:48
+Wed_00861,Four Square Glen Eden;New World Milford;Four Square Britomart,3,15,23034.53,06:23:54
+Wed_00862,New World Mt Roskill;Four Square Hobsonville;Four Square Remuera,3,16,23036.16,06:23:56
+Wed_00863,New World Mt Roskill;New World Metro Shore City;Four Square Lancaster,3,16,23049.85,06:24:09
+Wed_00864,New World Mt Roskill;New World Browns Bay,2,16,23053.89,06:24:13
+Wed_00865,Pak 'n Save Westgate;Four Square Hobsonville;New World Metro Shore City,3,16,23057.53,06:24:17
+Wed_00866,New World Hobsonville;New World Albany,2,16,23067.19,06:24:27
+Wed_00867,New World Mt Roskill;New World Metro Shore City;Four Square Pakuranga Heights,3,15,23068.62,06:24:28
+Wed_00868,New World Mt Roskill;Four Square Lancaster;Four Square Hobsonville,3,16,23078.89,06:24:38
+Wed_00869,New World New Lynn;Four Square Britomart;Four Square Fair Price Henderson,3,16,23085.36,06:24:45
+Wed_00870,Pak 'n Save Westgate;New World Birkenhead,2,16,23086.8,06:24:46
+Wed_00871,Pak 'n Save Wairau Road;Four Square Botany Junction,2,15,23090.51,06:24:50
+Wed_00872,Pak 'n Save Botany;Four Square Glen Eden,2,15,23094.75,06:24:54
+Wed_00873,New World Botany;New World Howick,2,16,23095.18,06:24:55
+Wed_00874,Four Square Ellerslie;New World Papatoetoe;Four Square St Heliers,3,15,23098.3,06:24:58
+Wed_00875,New World New Lynn;Four Square Glen Eden;Four Square Lancaster,3,15,23099.38,06:24:59
+Wed_00876,Pak 'n Save Highland Park;Four Square Ellerslie;New World Metro Queen St,3,16,23101.43,06:25:01
+Wed_00877,New World Mt Roskill;Four Square Glen Eden;Four Square Cockle Bay,3,14,23115.41,06:25:15
+Wed_00878,Four Square Torbay;New World Long Bay;New World Metro Shore City,3,15,23118.7,06:25:18
+Wed_00879,New World Birkenhead;Four Square Hobsonville;New World Hobsonville,3,16,23120.53,06:25:20
+Wed_00880,Four Square Fair Price Henderson;New World Browns Bay;Four Square Britomart,3,15,23123.45,06:25:23
+Wed_00881,Pak 'n Save Henderson;Four Square Cockle Bay,2,14,23137.59,06:25:37
+Wed_00882,Four Square Britomart;New World Remuera;Four Square Fair Price Henderson,3,16,23140.05,06:25:40
+Wed_00883,New World Birkenhead;New World Point Chevalier;New World Metro Queen St,3,16,23142.6,06:25:42
+Wed_00884,Four Square Onehunga;New World New Lynn;Four Square Pakuranga Heights,3,15,23144.36,06:25:44
+Wed_00885,Pak 'n Save Lincoln Road;New World Metro Queen St;Four Square Pakuranga Heights,3,15,23148.63,06:25:48
+Wed_00886,New World Devonport;New World Metro Shore City;Four Square Ellerslie,3,15,23163.83,06:26:03
+Wed_00887,New World Mt Roskill;Four Square Hobsonville;Four Square Lancaster,3,16,23177.45,06:26:17
+Wed_00888,New World Albany;Four Square Hobsonville;Four Square Glen Eden,3,15,23209.35,06:26:49
+Wed_00889,New World Metro Queen St;Four Square Britomart;New World Albany,3,16,23220.79,06:27:00
+Wed_00890,Four Square Britomart;Pak 'n Save Botany,2,16,23223.3,06:27:03
+Wed_00891,New World Mt Roskill;Four Square Fair Price Henderson;New World Metro Shore City,3,16,23223.42,06:27:03
+Wed_00892,Pak 'n Save Glen Innes;Four Square Pakuranga Heights,2,16,23224.2,06:27:04
+Wed_00893,Four Square Britomart;New World Metro Queen St;New World Albany,3,16,23230.16,06:27:10
+Wed_00894,New World Mt Albert;Four Square Hobsonville;Four Square Torbay,3,15,23234.74,06:27:14
+Wed_00895,New World Hobsonville;Four Square Hobsonville;New World Birkenhead,3,16,23237.48,06:27:17
+Wed_00896,Four Square Lancaster;Four Square Britomart;New World Newmarket,3,16,23242.58,06:27:22
+Wed_00897,New World Point Chevalier;New World Albany,2,16,23249.47,06:27:29
+Wed_00898,New World Southmall;New World Milford,2,15,23257.93,06:27:37
+Wed_00899,New World Point Chevalier;New World Devonport,2,16,23264.8,06:27:44
+Wed_00900,New World Mt Roskill;Four Square St Heliers;New World Metro Shore City,3,15,23273.66,06:27:53
+Wed_00901,Pak 'n Save Westgate;Four Square Hobsonville;Four Square Ellerslie,3,16,23277.25,06:27:57
+Wed_00902,Four Square Onehunga;New World New Lynn;Four Square Cockle Bay,3,14,23287.56,06:28:07
+Wed_00903,New World Albany;New World Browns Bay,2,16,23294.75,06:28:14
+Wed_00904,Pak 'n Save Royal Oak;Four Square Ellerslie;Four Square Cockle Bay,3,16,23304.24,06:28:24
+Wed_00905,New World Browns Bay;New World Albany,2,16,23305.76,06:28:25
+Wed_00906,New World Metro Shore City;Pak 'n Save Ormiston,2,15,23321.03,06:28:41
+Wed_00907,New World New Lynn;New World Botany,2,16,23321.81,06:28:41
+Wed_00908,Four Square Hobsonville;New World Hobsonville;New World Birkenhead,3,16,23323.2,06:28:43
+Wed_00909,New World Metro Shore City;New World Long Bay;Four Square Torbay,3,15,23324.73,06:28:44
+Wed_00910,New World Metro Shore City;Four Square Torbay;New World Long Bay,3,15,23326.35,06:28:46
+Wed_00911,Pak 'n Save Royal Oak;Four Square Pakuranga Heights;Four Square Cockle Bay,3,16,23328.04,06:28:48
+Wed_00912,Four Square Cockle Bay;New World Metro Queen St;Four Square Eden Terrace;New World Victoria Park,4,15,23343.05,06:29:03
+Wed_00913,New World Metro Shore City;Four Square Fair Price Henderson;Pak 'n Save Lincoln Road,3,16,23343.84,06:29:03
+Wed_00914,New World Mt Roskill;Four Square Hobsonville;Four Square St Heliers,3,15,23345.13,06:29:05
+Wed_00915,Pak 'n Save Ormiston;New World Metro Shore City,2,15,23356.36,06:29:16
+Wed_00916,Pak 'n Save Glen Innes;Four Square Cockle Bay,2,15,23367.41,06:29:27
+Wed_00917,New World Remuera;Four Square Fair Price Henderson;Four Square Eden Terrace,3,16,23370.5,06:29:30
+Wed_00918,New World Howick;Four Square Remuera;Four Square St Heliers,3,15,23379.35,06:29:39
+Wed_00919,New World Victoria Park;Four Square Britomart;New World Metro Queen St;Four Square Cockle Bay,4,15,23380.41,06:29:40
+Wed_00920,New World Metro Shore City;Pak 'n Save Botany,2,15,23385.07,06:29:45
+Wed_00921,Pak 'n Save Papakura;Four Square St Heliers,2,15,23390.31,06:29:50
+Wed_00922,New World Mt Roskill;Four Square St Heliers;Four Square Hobsonville,3,15,23394.88,06:29:54
+Wed_00923,New World Milford;Four Square Remuera;Four Square St Heliers,3,15,23401.27,06:30:01
+Wed_00924,New World Mt Roskill;Four Square Lancaster;Four Square Ellerslie,3,16,23408.71,06:30:08
+Wed_00925,Four Square Pakuranga Heights;New World Green Bay;Four Square Eden Terrace,3,15,23410.98,06:30:10
+Wed_00926,Four Square Botany Junction;New World Botany;New World Metro Shore City,3,15,23414.73,06:30:14
+Wed_00927,New World Milford;Four Square Torbay;New World Metro Queen St,3,15,23420.33,06:30:20
+Wed_00928,New World Devonport;Four Square Britomart;New World Metro Queen St,3,16,23425.41,06:30:25
+Wed_00929,New World Green Bay;Four Square Eden Terrace;Four Square Botany Junction,3,16,23431.71,06:30:31
+Wed_00930,New World Green Bay;New World Botany,2,16,23447.25,06:30:47
+Wed_00931,Four Square Lancaster;New World Newmarket;Four Square Britomart,3,16,23462.92,06:31:02
+Wed_00932,New World Victoria Park;New World Metro Queen St;New World Metro Shore City;Four Square Remuera,4,16,23478.43,06:31:18
+Wed_00933,Four Square Fair Price Henderson;New World New Lynn;Four Square Britomart,3,16,23479.39,06:31:19
+Wed_00934,Four Square Britomart;New World Metro Queen St;New World Victoria Park;Four Square Pakuranga Heights,4,16,23487.02,06:31:27
+Wed_00935,Four Square St Heliers;Pak 'n Save Lincoln Road;Four Square Glen Eden,3,15,23494.89,06:31:34
+Wed_00936,New World Browns Bay;Pak 'n Save Lincoln Road,2,16,23500.94,06:31:40
+Wed_00937,New World Milford;Four Square Cockle Bay;Four Square Botany Junction,3,14,23523.19,06:32:03
+Wed_00938,New World Browns Bay;Four Square Torbay;Four Square Fair Price Henderson,3,15,23547.09,06:32:27
+Wed_00939,New World Metro Queen St;Four Square Britomart;New World Victoria Park;Four Square Pakuranga Heights,4,16,23548.07,06:32:28
+Wed_00940,Four Square Cockle Bay;Pak 'n Save Highland Park;Four Square Glen Eden,3,15,23563.92,06:32:43
+Wed_00941,New World Milford;New World Stonefields,2,16,23579.57,06:32:59
+Wed_00942,New World Devonport;New World Metro Shore City;Four Square Eden Terrace,3,16,23584.05,06:33:04
+Wed_00943,Four Square Remuera;Four Square St Heliers;Pak 'n Save Lincoln Road,3,16,23597.07,06:33:17
+Wed_00944,New World Point Chevalier;New World Victoria Park;Four Square Cockle Bay,3,15,23614.56,06:33:34
+Wed_00945,Four Square Onehunga;New World Milford;Four Square Lancaster,3,16,23615.9,06:33:35
+Wed_00946,New World Long Bay;Four Square Ellerslie;Four Square Eden Terrace,3,15,23636.18,06:33:56
+Wed_00947,New World Mt Roskill;Four Square Cockle Bay;Four Square Fair Price Henderson,3,15,23641.93,06:34:01
+Wed_00948,Four Square Remuera;New World Remuera;Four Square Lancaster,3,16,23648.06,06:34:08
+Wed_00949,New World New Lynn;Four Square Torbay;New World Metro Shore City,3,15,23650.18,06:34:10
+Wed_00950,Pak 'n Save Lincoln Road;Four Square Lancaster;New World Metro Queen St,3,16,23651.28,06:34:11
+Wed_00951,New World Mt Roskill;Four Square Glen Eden;Four Square Botany Junction,3,16,23664.01,06:34:24
+Wed_00952,Pak 'n Save Botany;Four Square Hobsonville,2,15,23667.1,06:34:27
+Wed_00953,New World Howick;New World Hobsonville,2,15,23681.77,06:34:41
+Wed_00954,New World Victoria Park;Four Square Remuera;New World Birkenhead,3,16,23681.89,06:34:41
+Wed_00955,New World New Lynn;Four Square Lancaster;Four Square Britomart,3,16,23683.42,06:34:43
+Wed_00956,Four Square Torbay;New World Long Bay;Four Square Ellerslie,3,15,23684.99,06:34:44
+Wed_00957,New World Birkenhead;New World Point Chevalier;Four Square Ellerslie,3,16,23689.64,06:34:49
+Wed_00958,Four Square Remuera;New World Milford;Four Square Britomart,3,16,23691.54,06:34:51
+Wed_00959,New World Papatoetoe;Four Square Glen Eden;Four Square Onehunga,3,16,23697.95,06:34:57
+Wed_00960,New World Hobsonville;Four Square Hobsonville;New World Metro Queen St;Four Square Ellerslie,4,16,23708.24,06:35:08
+Wed_00961,Four Square Fair Price Henderson;New World Southmall;Four Square Botany Junction,3,15,23717.08,06:35:17
+Wed_00962,Four Square Cockle Bay;Four Square Pakuranga Heights;New World Ormiston;Four Square Botany Junction,4,16,23717.1,06:35:17
+Wed_00963,Four Square Cockle Bay;New World Botany;New World Victoria Park,3,16,23720.61,06:35:20
+Wed_00964,New World Victoria Park;Four Square Eden Terrace;Four Square Ellerslie;New World Metro Shore City,4,16,23721.52,06:35:21
+Wed_00965,New World Victoria Park;New World Metro Shore City;New World Eastridge,3,16,23729.54,06:35:29
+Wed_00966,New World Papakura;Four Square Pakuranga Heights;New World Victoria Park,3,15,23740.96,06:35:40
+Wed_00967,New World Victoria Park;New World Browns Bay;New World Metro Shore City,3,16,23743.75,06:35:43
+Wed_00968,New World Mt Roskill;Four Square Botany Junction;Four Square St Heliers,3,16,23748.25,06:35:48
+Wed_00969,Pak 'n Save Lincoln Road;New World Ormiston,2,16,23778.47,06:36:18
+Wed_00970,Pak 'n Save Mangere;Four Square Lancaster,2,16,23788.95,06:36:28
+Wed_00971,New World Papatoetoe;Four Square Onehunga;Four Square St Heliers,3,16,23789.5,06:36:29
+Wed_00972,Four Square Botany Junction;New World Papatoetoe;Four Square Glen Eden,3,16,23789.85,06:36:29
+Wed_00973,New World Ormiston;Four Square Botany Junction;Four Square Cockle Bay;Four Square Pakuranga Heights,4,16,23853.19,06:37:33
+Wed_00974,New World Long Bay;New World Milford,2,16,23860.56,06:37:40
+Wed_00975,New World Papatoetoe;Four Square Onehunga;Four Square Cockle Bay,3,15,23863.26,06:37:43
+Wed_00976,New World Albany;Four Square Hobsonville;Four Square Fair Price Henderson,3,16,23863.32,06:37:43
+Wed_00977,New World Green Bay;Four Square Glen Eden;Four Square Torbay,3,15,23886.54,06:38:06
+Wed_00978,Four Square Lancaster;Four Square Pakuranga Heights;New World Mt Albert,3,15,23899.13,06:38:19
+Wed_00979,Pak 'n Save Highland Park;New World Metro Queen St;Four Square Ellerslie,3,16,23899.15,06:38:19
+Wed_00980,New World Mt Roskill;Four Square Torbay;Four Square Hobsonville,3,16,23905.19,06:38:25
+Wed_00981,New World Mt Roskill;Four Square Torbay;New World Metro Queen St,3,16,23909.67,06:38:29
+Wed_00982,New World Albany;Four Square Hobsonville;Four Square Onehunga,3,16,23921.26,06:38:41
+Wed_00983,Four Square Lancaster;New World Howick;Four Square Cockle Bay,3,14,23928.76,06:38:48
+Wed_00984,Pak 'n Save Highland Park;Four Square Ellerslie;Four Square St Heliers,3,16,23936.03,06:38:56
+Wed_00985,Pak 'n Save Manukau;Four Square Pakuranga Heights;Four Square Cockle Bay,3,16,23947.68,06:39:07
+Wed_00986,Four Square Fair Price Henderson;Pak 'n Save Lincoln Road;Four Square St Heliers,3,16,23956.66,06:39:16
+Wed_00987,Pak 'n Save Sylvia Park;Four Square Lancaster,2,16,23959.01,06:39:19
+Wed_00988,New World Mt Roskill;Four Square Hobsonville;Four Square Torbay,3,16,23961.1,06:39:21
+Wed_00989,Four Square Fair Price Henderson;New World New Lynn;Four Square Remuera,3,16,23963.78,06:39:23
+Wed_00990,New World Birkenhead;New World Metro Queen St;Four Square Britomart;New World Metro Shore City,4,16,23965.44,06:39:25
+Wed_00991,Pak 'n Save Mt Albert;Four Square Torbay,2,16,23970.22,06:39:30
+Wed_00992,New World Papakura;New World Victoria Park;Four Square Eden Terrace,3,16,23971.88,06:39:31
+Wed_00993,Four Square Onehunga;Four Square Remuera;Four Square Ellerslie;Four Square Pakuranga Heights;Four Square Cockle Bay,5,16,23984.75,06:39:44
+Wed_00994,New World Howick;Four Square Fair Price Henderson;Four Square Glen Eden,3,15,23985.91,06:39:45
+Wed_00995,New World Newmarket;New World Long Bay,2,16,23993.1,06:39:53
+Wed_00996,Pak 'n Save Highland Park;Four Square Pakuranga Heights;Four Square Glen Eden,3,16,23994.21,06:39:54
+Wed_00997,Four Square Ellerslie;New World Remuera;Four Square Torbay,3,15,23996.53,06:39:56
+Wed_00998,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson;Four Square Pakuranga Heights,3,16,24009.81,06:40:09
+Wed_00999,Four Square Remuera;New World Papatoetoe;Four Square Pakuranga Heights,3,16,24016.98,06:40:16
+Wed_01000,New World Mt Roskill;Four Square Fair Price Henderson;Four Square Pakuranga Heights,3,16,24017.87,06:40:17
+Wed_01001,New World New Lynn;Four Square Botany Junction;Four Square Britomart,3,16,24032.64,06:40:32
+Wed_01002,New World Mt Roskill;New World Metro Queen St;Four Square Torbay,3,16,24035.21,06:40:35
+Wed_01003,Four Square Glen Eden;New World Hobsonville;Four Square Hobsonville;New World Metro Shore City,4,16,24056.34,06:40:56
+Wed_01004,New World Mt Roskill;New World Metro Shore City;Four Square Botany Junction,3,16,24066.23,06:41:06
+Wed_01005,New World Hobsonville;Four Square Hobsonville;New World Metro Shore City;Four Square Ellerslie,4,16,24066.5,06:41:06
+Wed_01006,New World Milford;New World Long Bay,2,16,24069.02,06:41:09
+Wed_01007,New World Albany;Four Square Remuera;Four Square Ellerslie,3,16,24073.6,06:41:13
+Wed_01008,Four Square Onehunga;New World Milford;Four Square Cockle Bay,3,14,24080.26,06:41:20
+Wed_01009,Four Square Ellerslie;Four Square Pakuranga Heights;New World Botany;Four Square Cockle Bay,4,16,24084.79,06:41:24
+Wed_01010,New World Metro Queen St;New World Point Chevalier;Four Square Hobsonville;Four Square Glen Eden,4,16,24092.47,06:41:32
+Wed_01011,Pak 'n Save Clendon;Four Square Lancaster,2,15,24092.52,06:41:32
+Wed_01012,Four Square Ellerslie;New World Point Chevalier;New World Metro Queen St;Four Square Glen Eden,4,16,24100.56,06:41:40
+Wed_01013,Four Square Torbay;New World Long Bay;Four Square Eden Terrace,3,16,24105.21,06:41:45
+Wed_01014,New World Birkenhead;New World Eastridge;Four Square Ellerslie,3,16,24106.85,06:41:46
+Wed_01015,New World Green Bay;New World Howick,2,16,24109.92,06:41:49
+Wed_01016,Four Square Fair Price Henderson;New World Newmarket;Four Square Botany Junction,3,16,24114.93,06:41:54
+Wed_01017,New World Long Bay;Four Square Britomart;Four Square Eden Terrace,3,16,24118.35,06:41:58
+Wed_01018,New World Long Bay;Four Square Torbay;Four Square Onehunga,3,16,24130.4,06:42:10
+Wed_01019,New World Victoria Park;New World Southmall;Four Square Ellerslie,3,16,24132.04,06:42:12
+Wed_01020,Pak 'n Save Highland Park;Four Square Ellerslie;Four Square Pakuranga Heights,3,16,24140.96,06:42:20
+Wed_01021,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson;Four Square Cockle Bay,3,15,24153.01,06:42:33
+Wed_01022,New World Metro Queen St;New World Eastridge;Four Square St Heliers;Four Square Cockle Bay,4,15,24160.99,06:42:40
+Wed_01023,New World Mt Roskill;Four Square Fair Price Henderson;Four Square Cockle Bay,3,15,24161.07,06:42:41
+Wed_01024,Pak 'n Save Glen Innes;New World Metro Shore City,2,16,24162.1,06:42:42
+Wed_01025,Four Square Cockle Bay;Pak 'n Save Royal Oak;Four Square Ellerslie,3,16,24166.16,06:42:46
+Wed_01026,New World Long Bay;New World Eastridge,2,15,24173.97,06:42:53
+Wed_01027,Four Square Britomart;New World Long Bay;Four Square Torbay,3,16,24190.37,06:43:10
+Wed_01028,New World Devonport;New World Hobsonville,2,16,24200.42,06:43:20
+Wed_01029,Pak 'n Save Westgate;Four Square Glen Eden;Four Square Hobsonville,3,16,24224.24,06:43:44
+Wed_01030,New World Point Chevalier;Four Square Ellerslie;Four Square St Heliers;Four Square Cockle Bay,4,15,24227.43,06:43:47
+Wed_01031,New World Papakura;Four Square Ellerslie;Four Square Remuera;New World Metro Queen St,4,16,24230.05,06:43:50
+Wed_01032,Four Square Cockle Bay;New World Howick;Four Square Pakuranga Heights;Four Square St Heliers,4,16,24241.27,06:44:01
+Wed_01033,New World Howick;Four Square Cockle Bay;Four Square Pakuranga Heights;Four Square St Heliers,4,16,24241.28,06:44:01
+Wed_01034,New World New Lynn;Four Square Fair Price Henderson;Four Square Lancaster,3,16,24249.32,06:44:09
+Wed_01035,Pak 'n Save Highland Park;Four Square Pakuranga Heights;New World Metro Shore City,3,16,24249.77,06:44:09
+Wed_01036,New World Devonport;New World Metro Shore City;Four Square Remuera,3,16,24252.23,06:44:12
+Wed_01037,New World Albany;Four Square Torbay;Four Square Hobsonville,3,16,24252.45,06:44:12
+Wed_01038,Pak 'n Save Lincoln Road;Four Square Torbay;New World Metro Queen St,3,16,24255.51,06:44:15
+Wed_01039,New World Victoria Park;New World Howick;Four Square Cockle Bay,3,16,24265.58,06:44:25
+Wed_01040,New World Victoria Park;Four Square Cockle Bay;New World Howick,3,16,24265.58,06:44:25
+Wed_01041,New World Howick;Four Square Pakuranga Heights;Four Square Lancaster,3,15,24271.9,06:44:31
+Wed_01042,New World Mt Albert;Four Square Fair Price Henderson;Four Square Botany Junction,3,16,24289.12,06:44:49
+Wed_01043,Four Square Ellerslie;New World Howick;Four Square Cockle Bay;New World Metro Queen St,4,16,24291.5,06:44:51
+Wed_01044,Pak 'n Save Westgate;Four Square St Heliers;New World Metro Queen St,3,16,24299.05,06:44:59
+Wed_01045,New World Metro Shore City;Four Square Lancaster;New World Long Bay,3,15,24300.76,06:45:00
+Wed_01046,Pak 'n Save Royal Oak;Four Square Cockle Bay;Four Square St Heliers,3,16,24321.04,06:45:21
+Wed_01047,New World Long Bay;New World Remuera,2,16,24328.86,06:45:28
+Wed_01048,Four Square Britomart;Pak 'n Save Lincoln Road;New World Metro Shore City,3,16,24337.29,06:45:37
+Wed_01049,New World Milford;Four Square Lancaster;Four Square Remuera,3,16,24347.83,06:45:47
+Wed_01050,Four Square St Heliers;New World Metro Queen St;New World Albany,3,15,24347.95,06:45:47
+Wed_01051,New World Metro Shore City;New World Hobsonville;Four Square Hobsonville;New World Metro Queen St,4,16,24355.59,06:45:55
+Wed_01052,New World Albany;Four Square Remuera;New World Metro Queen St,3,16,24357.07,06:45:57
+Wed_01053,Pak 'n Save Royal Oak;New World Metro Queen St;Four Square Cockle Bay,3,16,24368.8,06:46:08
+Wed_01054,New World Green Bay;Four Square Fair Price Henderson;Four Square Lancaster,3,16,24374.78,06:46:14
+Wed_01055,Pak 'n Save Westgate;Four Square Pakuranga Heights;Four Square Ellerslie,3,16,24375.08,06:46:15
+Wed_01056,Four Square Botany Junction;New World Ormiston;Four Square Pakuranga Heights;Four Square Cockle Bay,4,16,24383.12,06:46:23
+Wed_01057,New World Mt Roskill;Four Square Hobsonville;Four Square Botany Junction,3,16,24395.89,06:46:35
+Wed_01058,New World Ormiston;Four Square Botany Junction;Four Square Pakuranga Heights;Four Square Cockle Bay,4,16,24413.9,06:46:53
+Wed_01059,Pak 'n Save Highland Park;Four Square Botany Junction;Four Square Cockle Bay,3,16,24415.35,06:46:55
+Wed_01060,New World Botany;Four Square Ellerslie;Four Square Lancaster,3,15,24416.32,06:46:56
+Wed_01061,Four Square Ellerslie;Pak 'n Save Manukau;Four Square Cockle Bay,3,16,24417.0,06:46:57
+Wed_01062,Pak 'n Save Clendon;Four Square Cockle Bay;Four Square Pakuranga Heights,3,16,24423.29,06:47:03
+Wed_01063,Four Square Botany Junction;New World Mt Roskill;Four Square Ellerslie,3,16,24437.75,06:47:17
+Wed_01064,New World Victoria Park;New World Newmarket;Four Square Cockle Bay,3,16,24438.71,06:47:18
+Wed_01065,New World Albany;Four Square Lancaster;New World Metro Shore City,3,16,24444.74,06:47:24
+Wed_01066,New World Albany;Four Square Pakuranga Heights;Four Square Cockle Bay,3,14,24445.78,06:47:25
+Wed_01067,New World Papakura;New World Southmall;Four Square Pakuranga Heights,3,16,24450.0,06:47:30
+Wed_01068,New World Metro Queen St;Four Square Eden Terrace;New World Birkenhead;Four Square Hobsonville,4,16,24451.13,06:47:31
+Wed_01069,New World Albany;New World Eastridge,2,16,24453.42,06:47:33
+Wed_01070,Four Square Lancaster;Pak 'n Save Lincoln Road;Four Square Hobsonville,3,16,24457.64,06:47:37
+Wed_01071,New World Howick;Four Square Pakuranga Heights;Four Square Cockle Bay;Four Square Ellerslie,4,16,24472.09,06:47:52
+Wed_01072,Pak 'n Save Glen Innes;Four Square Hobsonville,2,16,24478.89,06:47:58
+Wed_01073,Four Square Pakuranga Heights;Four Square Cockle Bay;New World Botany;Four Square St Heliers,4,16,24480.17,06:48:00
+Wed_01074,New World Mt Albert;New World Metro Queen St;Four Square Ellerslie;Four Square Cockle Bay,4,16,24481.1,06:48:01
+Wed_01075,Pak 'n Save Royal Oak;Four Square St Heliers;Four Square Cockle Bay,3,16,24481.58,06:48:01
+Wed_01076,Pak 'n Save Highland Park;New World Metro Queen St;New World Metro Shore City,3,16,24510.05,06:48:30
+Wed_01077,Four Square Remuera;New World Victoria Park;New World Metro Queen St;Four Square Cockle Bay,4,15,24538.7,06:48:58
+Wed_01078,Four Square Hobsonville;New World Hobsonville;Four Square Ellerslie;Four Square St Heliers,4,16,24543.95,06:49:03
+Wed_01079,New World Green Bay;New World Long Bay,2,16,24548.05,06:49:08
+Wed_01080,New World Point Chevalier;Four Square Ellerslie;Four Square Remuera;Four Square Cockle Bay,4,16,24578.54,06:49:38
+Wed_01081,New World Browns Bay;New World Metro Shore City;New World Birkenhead,3,16,24595.7,06:49:55
+Wed_01082,New World Long Bay;Four Square Torbay;Four Square Fair Price Henderson,3,16,24601.08,06:50:01
+Wed_01083,New World Birkenhead;Four Square Lancaster;Four Square Hobsonville;New World Metro Queen St,4,16,24602.49,06:50:02
+Wed_01084,New World Stonefields;Four Square Ellerslie;Four Square Pakuranga Heights;Four Square Cockle Bay,4,16,24604.47,06:50:04
+Wed_01085,Pak 'n Save Henderson;Four Square Torbay,2,16,24610.96,06:50:10
+Wed_01086,New World Devonport;New World Metro Shore City;Four Square Pakuranga Heights,3,15,24614.35,06:50:14
+Wed_01087,Four Square Lancaster;New World Victoria Park;New World Metro Queen St;New World Metro Shore City,4,16,24624.63,06:50:24
+Wed_01088,New World Point Chevalier;Four Square Britomart;New World Metro Queen St;Four Square Cockle Bay,4,16,24630.85,06:50:30
+Wed_01089,Four Square Remuera;Four Square Fair Price Henderson;Four Square Pakuranga Heights;Four Square Onehunga,4,15,24633.92,06:50:33
+Wed_01090,Pak 'n Save Manukau;Four Square Ellerslie;Four Square Cockle Bay,3,16,24656.15,06:50:56
+Wed_01091,New World Point Chevalier;New World Metro Queen St;Four Square Britomart;Four Square Cockle Bay,4,16,24660.76,06:51:00
+Wed_01092,New World Papatoetoe;Four Square Lancaster;New World Metro Shore City,3,16,24671.62,06:51:11
+Wed_01093,New World Green Bay;Four Square Botany Junction;Four Square Hobsonville,3,15,24672.5,06:51:12
+Wed_01094,Four Square Ellerslie;New World Point Chevalier;New World Metro Queen St;Four Square Hobsonville,4,16,24672.91,06:51:12
+Wed_01095,New World Birkenhead;Pak 'n Save Highland Park,2,16,24674.04,06:51:14
+Wed_01096,New World Botany;Four Square Pakuranga Heights;Four Square Cockle Bay;New World Metro Queen St,4,16,24675.58,06:51:15
+Wed_01097,Pak 'n Save Papakura;Four Square Fair Price Henderson,2,16,24680.0,06:51:20
+Wed_01098,New World Papakura;New World Ormiston;New World Metro Queen St,3,16,24681.01,06:51:21
+Wed_01099,New World Botany;Four Square Botany Junction;Four Square Fair Price Henderson,3,16,24698.5,06:51:38
+Wed_01100,New World Botany;Four Square Cockle Bay;Four Square Pakuranga Heights;Four Square St Heliers,4,16,24700.31,06:51:40
+Wed_01101,Pak 'n Save Highland Park;Four Square St Heliers;Four Square Pakuranga Heights,3,16,24707.23,06:51:47
+Wed_01102,New World Point Chevalier;Four Square Eden Terrace;New World Metro Queen St;Four Square Cockle Bay,4,16,24716.12,06:51:56
+Wed_01103,New World Papakura;Four Square Ellerslie;Four Square Onehunga;New World Metro Queen St,4,16,24716.18,06:51:56
+Wed_01104,Four Square Britomart;New World Mt Roskill;Four Square St Heliers,3,16,24718.58,06:51:58
+Wed_01105,Pak 'n Save Highland Park;Four Square Cockle Bay;Four Square Fair Price Henderson,3,16,24735.25,06:52:15
+Wed_01106,Four Square Eden Terrace;New World Victoria Park;Four Square Britomart;Four Square Cockle Bay,4,16,24740.1,06:52:20
+Wed_01107,Four Square Eden Terrace;New World New Lynn;Four Square Lancaster,3,16,24746.73,06:52:26
+Wed_01108,New World Victoria Park;Four Square Botany Junction;New World Papakura,3,16,24748.75,06:52:28
+Wed_01109,New World Howick;Four Square Cockle Bay;Four Square Torbay,3,14,24750.87,06:52:30
+Wed_01110,New World Papatoetoe;New World Browns Bay,2,16,24752.97,06:52:32
+Wed_01111,Four Square Lancaster;New World Long Bay;Four Square Torbay,3,16,24762.64,06:52:42
+Wed_01112,New World Botany;New World Milford,2,16,24764.91,06:52:44
+Wed_01113,New World Southmall;Four Square Botany Junction;Four Square Pakuranga Heights;Four Square Cockle Bay,4,16,24769.05,06:52:49
+Wed_01114,Four Square Pakuranga Heights;Four Square St Heliers;New World Eastridge;Four Square Glen Eden,4,16,24770.73,06:52:50
+Wed_01115,Four Square Onehunga;New World Eastridge;Four Square Ellerslie;Four Square Cockle Bay,4,16,24771.28,06:52:51
+Wed_01116,Four Square Glen Eden;New World Southmall;New World Papakura,3,16,24772.87,06:52:52
+Wed_01117,New World Long Bay;Four Square Britomart;Four Square St Heliers,3,15,24785.86,06:53:05
+Wed_01118,New World Long Bay;Four Square Torbay;Four Square Lancaster,3,16,24786.74,06:53:06
+Wed_01119,Four Square Torbay;New World Long Bay;Four Square Lancaster,3,16,24788.36,06:53:08
+Wed_01120,New World Southmall;New World Long Bay,2,15,24805.37,06:53:25
+Wed_01121,New World Mt Roskill;Four Square Lancaster;Four Square St Heliers,3,16,24806.08,06:53:26
+Wed_01122,New World Botany;New World Browns Bay,2,15,24807.89,06:53:27
+Wed_01123,New World Hobsonville;Four Square Hobsonville;Four Square Cockle Bay;Four Square Pakuranga Heights,4,15,24811.06,06:53:31
+Wed_01124,Four Square Botany Junction;New World New Lynn;Four Square Fair Price Henderson,3,16,24825.35,06:53:45
+Wed_01125,New World Metro Shore City;New World Papatoetoe;Four Square Remuera,3,16,24834.89,06:53:54
+Wed_01126,Four Square Ellerslie;Four Square Hobsonville;New World Victoria Park;Four Square Britomart,4,16,24859.16,06:54:19
+Wed_01127,New World Mt Roskill;Four Square Lancaster;Four Square Pakuranga Heights,3,16,24859.23,06:54:19
+Wed_01128,New World Metro Queen St;Four Square Britomart;New World Birkenhead;Four Square Pakuranga Heights,4,16,24864.4,06:54:24
+Wed_01129,New World New Lynn;Four Square Lancaster;Four Square Cockle Bay,3,14,24866.68,06:54:26
+Wed_01130,New World Newmarket;New World Victoria Park;Four Square Cockle Bay,3,16,24871.11,06:54:31
+Wed_01131,New World Hobsonville;Four Square Hobsonville;Four Square Pakuranga Heights;Four Square Cockle Bay,4,15,24872.2,06:54:32
+Wed_01132,New World Hobsonville;Four Square Hobsonville;Four Square St Heliers;Four Square Ellerslie,4,16,24884.16,06:54:44
+Wed_01133,Four Square Onehunga;New World Victoria Park;Four Square Eden Terrace;Four Square Cockle Bay,4,16,24889.12,06:54:49
+Wed_01134,New World Mt Roskill;Four Square Glen Eden;Four Square Torbay,3,16,24895.45,06:54:55
+Wed_01135,New World Victoria Park;Four Square Eden Terrace;Four Square Remuera;Four Square Cockle Bay,4,16,24896.13,06:54:56
+Wed_01136,New World Papatoetoe;Four Square Hobsonville;Four Square Britomart,3,16,24899.75,06:54:59
+Wed_01137,New World Metro Shore City;New World Hobsonville;Four Square Hobsonville;Four Square Ellerslie,4,16,24902.64,06:55:02
+Wed_01138,New World Metro Shore City;Four Square Hobsonville;New World Hobsonville;Four Square Ellerslie,4,16,24916.9,06:55:16
+Wed_01139,New World Howick;Four Square Cockle Bay;Four Square Ellerslie;Four Square Pakuranga Heights,4,16,24935.6,06:55:35
+Wed_01140,New World Ormiston;New World Papakura;New World Metro Queen St,3,16,24936.59,06:55:36
+Wed_01141,New World Metro Queen St;New World Devonport;Four Square Pakuranga Heights,3,15,24939.52,06:55:39
+Wed_01142,New World Botany;Four Square Cockle Bay;Four Square St Heliers;Four Square Ellerslie,4,16,24960.71,06:56:00
+Wed_01143,Four Square St Heliers;Four Square Cockle Bay;New World Howick;Four Square Pakuranga Heights,4,16,24963.47,06:56:03
+Wed_01144,New World Papakura;New World Southmall;Four Square St Heliers,3,16,24975.1,06:56:15
+Wed_01145,New World Eastridge;New World Devonport,2,16,24982.07,06:56:22
+Wed_01146,Four Square Eden Terrace;Four Square Britomart;New World Victoria Park;Four Square Cockle Bay,4,16,24993.07,06:56:33
+Wed_01147,Four Square Hobsonville;New World Hobsonville;Four Square Glen Eden;Four Square Ellerslie,4,16,25020.73,06:57:00
+Wed_01148,Four Square Lancaster;Four Square Onehunga;Four Square St Heliers;Four Square Eden Terrace,4,15,25022.01,06:57:02
+Wed_01149,Four Square Onehunga;Four Square Eden Terrace;New World Victoria Park;Four Square Cockle Bay,4,16,25022.01,06:57:02
+Wed_01150,New World Point Chevalier;New World Eastridge;Four Square Cockle Bay,3,16,25023.66,06:57:03
+Wed_01151,New World Eastridge;Four Square St Heliers;Four Square Ellerslie;Four Square Hobsonville,4,16,25039.14,06:57:19
+Wed_01152,Pak 'n Save Clendon;Four Square Pakuranga Heights;Four Square Cockle Bay,3,16,25040.38,06:57:20
+Wed_01153,New World Mt Roskill;Four Square St Heliers;Four Square Lancaster,3,16,25064.26,06:57:44
+Wed_01154,Four Square Onehunga;Four Square Ellerslie;New World Metro Queen St;Four Square Britomart;Four Square Cockle Bay,5,16,25065.26,06:57:45
+Wed_01155,New World Victoria Park;New World Mt Albert;Four Square Cockle Bay,3,16,25077.31,06:57:57
+Wed_01156,New World Long Bay;Four Square Torbay;Four Square St Heliers,3,15,25080.74,06:58:00
+Wed_01157,Four Square Torbay;New World Long Bay;Four Square St Heliers,3,15,25082.36,06:58:02
+Wed_01158,New World Victoria Park;Four Square Eden Terrace;Four Square Botany Junction;Four Square Cockle Bay,4,16,25083.49,06:58:03
+Wed_01159,New World Metro Queen St;New World Browns Bay;Four Square Hobsonville;Four Square Glen Eden,4,16,25122.7,06:58:42
+Wed_01160,Four Square Lancaster;New World Birkenhead;New World Metro Queen St;Four Square Hobsonville,4,16,25124.52,06:58:44
+Wed_01161,New World Long Bay;Four Square Torbay;Four Square Pakuranga Heights,3,15,25133.89,06:58:53
+Wed_01162,New World Mt Albert;Four Square St Heliers;Four Square Cockle Bay;Four Square Pakuranga Heights,4,16,25139.92,06:58:59
+Wed_01163,Pak 'n Save Ormiston;Four Square Lancaster,2,16,25146.97,06:59:06
+Wed_01164,New World Birkenhead;Four Square Remuera;Four Square Ellerslie;New World Metro Shore City,4,16,25161.26,06:59:21
+Wed_01165,New World Birkenhead;Four Square Lancaster;Four Square Ellerslie;Four Square Pakuranga Heights,4,16,25176.4,06:59:36
+Wed_01166,Pak 'n Save Mangere;Four Square Torbay,2,16,25199.63,06:59:59
+Wed_01167,New World New Lynn;New World Victoria Park;Four Square Cockle Bay,3,16,25203.51,07:00:03
+Wed_01168,Four Square Botany Junction;New World Botany;Four Square Lancaster,3,16,25205.34,07:00:05
+Wed_01169,Four Square Pakuranga Heights;New World Stonefields;Four Square Ellerslie;Four Square Cockle Bay,4,16,25249.62,07:00:49
+Wed_01170,New World Ormiston;New World Southmall;Four Square Cockle Bay,3,16,25249.65,07:00:49
+Wed_01171,New World Long Bay;New World Metro Queen St;Four Square Botany Junction,3,15,25267.24,07:01:07
+Wed_01172,Four Square Torbay;Pak 'n Save Lincoln Road;Four Square Hobsonville,3,16,25283.94,07:01:23
+Wed_01173,Pak 'n Save Sylvia Park;Four Square Torbay,2,16,25287.42,07:01:27
+Wed_01174,New World Papakura;New World Botany;Four Square Cockle Bay,3,16,25319.45,07:01:59
+Wed_01175,New World Green Bay;New World Victoria Park;Four Square Cockle Bay,3,16,25328.95,07:02:08
+Wed_01176,Four Square Onehunga;New World Howick;Four Square Lancaster,3,16,25337.18,07:02:17
+Wed_01177,New World Point Chevalier;New World Southmall;Four Square Cockle Bay,3,16,25339.24,07:02:19
+Wed_01178,New World Ormiston;Four Square Botany Junction;Four Square Torbay,3,15,25346.1,07:02:26
+Wed_01179,New World Eastridge;New World Victoria Park;Four Square Cockle Bay,3,15,25346.67,07:02:26
+Wed_01180,New World Green Bay;Four Square Onehunga;Four Square Torbay,3,16,25347.73,07:02:27
+Wed_01181,New World Howick;Four Square Cockle Bay;Four Square Pakuranga Heights;Four Square Hobsonville,4,16,25361.2,07:02:41
+Wed_01182,New World Remuera;New World Victoria Park;Four Square Cockle Bay,3,16,25366.63,07:02:46
+Wed_01183,New World Milford;New World Howick,2,16,25367.01,07:02:47
+Wed_01184,New World Papakura;Four Square Remuera;Four Square Ellerslie;Four Square St Heliers,4,16,25407.59,07:03:27
+Wed_01185,New World Botany;Four Square Cockle Bay;New World Birkenhead,3,16,25421.43,07:03:41
+Wed_01186,New World Devonport;Four Square Fair Price Henderson;Four Square Glen Eden,3,16,25424.06,07:03:44
+Wed_01187,New World Southmall;New World Papakura;New World Metro Shore City,3,16,25429.5,07:03:49
+Wed_01188,Pak 'n Save Westgate;Four Square Eden Terrace;Four Square Cockle Bay,3,16,25457.53,07:04:17
+Wed_01189,New World Eastridge;Four Square Ellerslie;Four Square Remuera;Four Square Cockle Bay,4,16,25461.46,07:04:21
+Wed_01190,New World Papakura;New World Howick;Four Square Cockle Bay,3,16,25465.54,07:04:25
+Wed_01191,New World Birkenhead;Four Square Cockle Bay;New World Howick,3,16,25468.68,07:04:28
+Wed_01192,Four Square Cockle Bay;New World Devonport;Four Square Hobsonville,3,14,25473.06,07:04:33
+Wed_01193,Pak 'n Save Clendon;Four Square Cockle Bay;Four Square St Heliers,3,16,25477.43,07:04:37
+Wed_01194,Four Square Pakuranga Heights;New World Papakura;Four Square Cockle Bay;Four Square Onehunga,4,15,25478.25,07:04:38
+Wed_01195,Four Square Eden Terrace;New World Birkenhead;New World Metro Queen St;Four Square Cockle Bay,4,15,25520.14,07:05:20
+Wed_01196,New World Albany;Four Square Fair Price Henderson;Four Square Ellerslie,3,16,25528.87,07:05:28
+Wed_01197,Four Square Botany Junction;Four Square Onehunga;New World Howick,3,16,25539.64,07:05:39
+Wed_01198,Four Square Glen Eden;Pak 'n Save Manukau;Four Square Cockle Bay,3,16,25545.65,07:05:45
+Wed_01199,New World Metro Shore City;New World Howick;Four Square Cockle Bay;Four Square Pakuranga Heights,4,16,25550.68,07:05:50
+Wed_01200,New World Milford;Four Square Eden Terrace;Four Square Lancaster,3,16,25561.18,07:06:01
+Wed_01201,New World New Lynn;Four Square Glen Eden;Four Square Pakuranga Heights;Four Square Cockle Bay,4,16,25576.66,07:06:16
+Wed_01202,New World Papakura;Four Square Britomart;New World Birkenhead,3,16,25584.52,07:06:24
+Wed_01203,Pak 'n Save Westgate;Four Square Onehunga;Four Square Cockle Bay,3,16,25585.29,07:06:25
+Wed_01204,New World Green Bay;Four Square Glen Eden;Four Square Ellerslie;Four Square Cockle Bay,4,16,25585.79,07:06:25
+Wed_01205,New World Albany;Four Square Pakuranga Heights;Four Square Botany Junction,3,16,25595.45,07:06:35
+Wed_01206,New World Long Bay;Four Square Hobsonville;Four Square Torbay,3,15,25610.27,07:06:50
+Wed_01207,New World Birkenhead;New World Newmarket;Four Square Cockle Bay,3,16,25641.81,07:07:21
+Wed_01208,New World Mt Albert;New World Birkenhead;Four Square Cockle Bay,3,16,25645.14,07:07:25
+Wed_01209,Pak 'n Save Manukau;Four Square St Heliers;Four Square Cockle Bay,3,16,25681.28,07:08:01
+Wed_01210,Four Square Onehunga;Four Square Botany Junction;Four Square Cockle Bay;Four Square Ellerslie;Four Square St Heliers,5,16,25681.63,07:08:01
+Wed_01211,New World Metro Queen St;Four Square Onehunga;New World Birkenhead;Four Square Glen Eden,4,16,25683.42,07:08:03
+Wed_01212,New World Birkenhead;New World Botany;Four Square Cockle Bay,3,16,25696.39,07:08:16
+Wed_01213,Four Square Glen Eden;New World Mt Albert;Four Square Ellerslie;Four Square Cockle Bay,4,16,25698.16,07:08:18
+Wed_01214,Four Square Glen Eden;New World Green Bay;Four Square Pakuranga Heights;Four Square Cockle Bay,4,16,25699.49,07:08:19
+Wed_01215,New World Mt Albert;Four Square Cockle Bay;New World Birkenhead,3,16,25707.75,07:08:27
+Wed_01216,Pak 'n Save Wairau Road;Four Square Ellerslie;Four Square Cockle Bay,3,16,25715.4,07:08:35
+Wed_01217,Pak 'n Save Highland Park;Four Square Hobsonville;Four Square Glen Eden,3,16,25719.77,07:08:39
+Wed_01218,Four Square Botany Junction;New World Ormiston;Four Square Ellerslie;Four Square Cockle Bay,4,16,25721.19,07:08:41
+Wed_01219,Pak 'n Save Westgate;Four Square Remuera;Four Square Cockle Bay,3,16,25725.24,07:08:45
+Wed_01220,Four Square Hobsonville;New World Hobsonville;New World Metro Shore City;Four Square Cockle Bay,4,15,25745.94,07:09:05
+Wed_01221,New World Southmall;New World Papakura;Four Square Hobsonville,3,16,25746.3,07:09:06
+Wed_01222,Pak 'n Save Clendon;Four Square Ellerslie;Four Square Cockle Bay,3,16,25748.85,07:09:08
+Wed_01223,Four Square Ellerslie;Four Square Remuera;New World Point Chevalier;Four Square Cockle Bay,4,16,25754.35,07:09:14
+Wed_01224,New World Eastridge;Four Square Britomart;New World Metro Queen St;Four Square Cockle Bay,4,16,25754.76,07:09:14
+Wed_01225,Pak 'n Save Royal Oak;New World Metro Shore City;Four Square Cockle Bay,3,16,25788.29,07:09:48
+Wed_01226,Four Square Remuera;Four Square Eden Terrace;New World Victoria Park;Four Square Cockle Bay,4,16,25816.54,07:10:16
+Wed_01227,New World Remuera;Four Square Pakuranga Heights;Four Square Ellerslie;Four Square Cockle Bay,4,16,25818.01,07:10:18
+Wed_01228,Four Square Cockle Bay;New World Birkenhead;New World Eastridge,3,15,25831.09,07:10:31
+Wed_01229,Pak 'n Save Lincoln Road;Four Square Lancaster;Four Square Pakuranga Heights,3,16,25832.1,07:10:32
+Wed_01230,Four Square Ellerslie;New World Stonefields;New World Metro Queen St;Four Square Cockle Bay,4,16,25833.37,07:10:33
+Wed_01231,Pak 'n Save Highland Park;Four Square Onehunga;Four Square Cockle Bay,3,16,25833.57,07:10:33
+Wed_01232,Pak 'n Save Highland Park;Four Square Remuera;Four Square Cockle Bay,3,16,25848.64,07:10:48
+Wed_01233,Pak 'n Save Manukau;New World Metro Queen St;Four Square Cockle Bay,3,16,25864.86,07:11:04
+Wed_01234,New World Papakura;New World Point Chevalier;New World Metro Shore City,3,16,25869.37,07:11:09
+Wed_01235,Pak 'n Save Westgate;Four Square Glen Eden;Four Square St Heliers,3,16,25870.81,07:11:10
+Wed_01236,New World Hobsonville;Four Square Hobsonville;Four Square St Heliers;Four Square Pakuranga Heights,4,16,25884.35,07:11:24
+Wed_01237,New World Albany;Four Square Hobsonville;Four Square Torbay,3,16,25889.72,07:11:29
+Wed_01238,Four Square Ellerslie;Pak 'n Save Clendon;Four Square Cockle Bay,3,16,25891.74,07:11:31
+Wed_01239,New World Victoria Park;New World Browns Bay;Four Square Cockle Bay,3,15,25903.77,07:11:43
+Wed_01240,Four Square St Heliers;New World Remuera;Four Square Ellerslie;Four Square Cockle Bay,4,16,25911.83,07:11:51
+Wed_01241,Pak 'n Save Westgate;Four Square Britomart;Four Square Cockle Bay,3,16,25919.96,07:11:59
+Wed_01242,Pak 'n Save Wairau Road;New World Metro Shore City;Four Square Cockle Bay,3,16,25922.61,07:12:02
+Wed_01243,Four Square Onehunga;Four Square Glen Eden;Four Square Torbay;Four Square Lancaster,4,15,25929.86,07:12:09
+Wed_01244,New World Metro Queen St;Four Square Hobsonville;New World Hobsonville;Four Square St Heliers,4,16,25951.91,07:12:31
+Wed_01245,Pak 'n Save Wairau Road;New World Metro Queen St;Four Square Cockle Bay,3,16,25956.29,07:12:36
+Wed_01246,New World Metro Shore City;Pak 'n Save Wairau Road;Four Square Cockle Bay,3,16,25969.22,07:12:49
+Wed_01247,New World Birkenhead;Four Square Cockle Bay;New World Remuera,3,16,25988.84,07:13:08
+Wed_01248,New World Hobsonville;Four Square Hobsonville;Four Square Eden Terrace;Four Square Cockle Bay,4,16,25990.56,07:13:10
+Wed_01249,New World Stonefields;Four Square Ellerslie;New World Metro Queen St;Four Square Cockle Bay,4,16,25992.27,07:13:12
+Wed_01250,New World New Lynn;Four Square Glen Eden;New World Metro Queen St;Four Square Cockle Bay,4,16,26006.42,07:13:26
+Wed_01251,Four Square St Heliers;Pak 'n Save Manukau;Four Square Cockle Bay,3,16,26019.24,07:13:39
+Wed_01252,New World Devonport;Four Square Remuera;Four Square Pakuranga Heights,3,16,26019.72,07:13:39
+Wed_01253,New World Southmall;Four Square Botany Junction;Four Square Ellerslie;Four Square Cockle Bay,4,16,26029.18,07:13:49
+Wed_01254,New World Mt Roskill;Four Square Torbay;Four Square St Heliers,3,16,26037.34,07:13:57
+Wed_01255,New World Albany;Four Square Remuera;Four Square Hobsonville,3,16,26062.43,07:14:22
+Wed_01256,New World Southmall;Four Square Ellerslie;Four Square Onehunga;Four Square Cockle Bay,4,16,26071.12,07:14:31
+Wed_01257,Pak 'n Save Westgate;Four Square Fair Price Henderson;Four Square Cockle Bay,3,16,26085.22,07:14:45
+Wed_01258,New World Mt Roskill;Four Square Torbay;Four Square Pakuranga Heights,3,16,26090.49,07:14:50
+Wed_01259,New World Hobsonville;Four Square Hobsonville;Four Square Onehunga;Four Square Cockle Bay,4,16,26118.32,07:15:18
+Wed_01260,New World Long Bay;Four Square Torbay;Four Square Botany Junction,3,16,26131.49,07:15:31
+Wed_01261,Four Square Hobsonville;New World Hobsonville;Four Square Onehunga;Four Square Cockle Bay,4,16,26132.58,07:15:32
+Wed_01262,New World Mt Albert;Four Square Glen Eden;Four Square Cockle Bay;Four Square Pakuranga Heights,4,16,26133.24,07:15:33
+Wed_01263,New World Howick;Four Square Cockle Bay;New World Metro Queen St;Four Square Pakuranga Heights,4,16,26144.31,07:15:44
+Wed_01264,Four Square Onehunga;New World Papakura;Four Square Ellerslie;Four Square Hobsonville,4,16,26149.4,07:15:49
+Wed_01265,Four Square St Heliers;New World Newmarket;Four Square Ellerslie;Four Square Cockle Bay,4,16,26171.37,07:16:11
+Wed_01266,New World Mt Albert;Four Square Glen Eden;Four Square Ellerslie;Four Square Cockle Bay,4,16,26199.99,07:16:39
+Wed_01267,Four Square Cockle Bay;Four Square Fair Price Henderson;New World Long Bay,3,14,26222.79,07:17:02
+Wed_01268,New World Devonport;Four Square Hobsonville;Four Square Remuera,3,16,26225.38,07:17:05
+Wed_01269,New World Papakura;New World Eastridge;Four Square Pakuranga Heights,3,16,26226.55,07:17:06
+Wed_01270,Four Square Hobsonville;New World Hobsonville;Four Square St Heliers;Four Square Glen Eden,4,16,26239.73,07:17:19
+Wed_01271,New World Point Chevalier;New World Hobsonville;Four Square Cockle Bay,3,16,26249.36,07:17:29
+Wed_01272,Four Square Torbay;Four Square Fair Price Henderson;Four Square Glen Eden;Four Square Britomart,4,15,26249.73,07:17:29
+Wed_01273,Four Square Glen Eden;New World Southmall;Four Square Botany Junction;Four Square Cockle Bay,4,16,26251.15,07:17:31
+Wed_01274,New World Newmarket;Four Square Pakuranga Heights;Four Square St Heliers;Four Square Cockle Bay,4,16,26252.95,07:17:32
+Wed_01275,Pak 'n Save Albany;Four Square Cockle Bay,2,16,26275.72,07:17:55
+Wed_01276,New World Devonport;Four Square Onehunga;Four Square Pakuranga Heights,3,16,26281.93,07:18:01
+Wed_01277,New World Milford;New World Victoria Park;Four Square Cockle Bay,3,16,26295.21,07:18:15
+Wed_01278,Four Square Eden Terrace;New World Devonport;Four Square Cockle Bay,3,15,26322.23,07:18:42
+Wed_01279,Four Square Ellerslie;New World Mt Albert;New World Metro Queen St;Four Square Cockle Bay,4,16,26349.78,07:19:09
+Wed_01280,Four Square Glen Eden;New World Metro Queen St;Four Square Britomart;Four Square Eden Terrace;Four Square Cockle Bay,5,16,26356.0,07:19:16
+Wed_01281,Four Square Remuera;New World Metro Queen St;Four Square Onehunga;Four Square Ellerslie;Four Square Cockle Bay,5,16,26359.55,07:19:19
+Wed_01282,Pak 'n Save Royal Oak;Four Square Glen Eden;Four Square Cockle Bay,3,16,26363.55,07:19:23
+Wed_01283,New World Eastridge;Four Square Eden Terrace;New World Metro Queen St;Four Square Cockle Bay,4,16,26374.48,07:19:34
+Wed_01284,Four Square Onehunga;New World Metro Queen St;Four Square Botany Junction;Four Square Cockle Bay;Four Square St Heliers,5,16,26382.55,07:19:42
+Wed_01285,Pak 'n Save Lincoln Road;Four Square Torbay;Four Square St Heliers,3,16,26383.18,07:19:43
+Wed_01286,Four Square St Heliers;New World Eastridge;Four Square Onehunga;Four Square Cockle Bay,4,16,26384.31,07:19:44
+Wed_01287,New World Papakura;New World Stonefields;Four Square Cockle Bay,3,16,26384.77,07:19:44
+Wed_01288,New World Victoria Park;New World New Lynn;Four Square Cockle Bay,3,16,26393.87,07:19:53
+Wed_01289,Four Square St Heliers;Pak 'n Save Royal Oak;Four Square Cockle Bay,3,16,26398.49,07:19:58
+Wed_01290,New World New Lynn;New World Birkenhead;Four Square Cockle Bay,3,16,26406.61,07:20:06
+Wed_01291,New World Howick;New World Long Bay,2,16,26408.16,07:20:08
+Wed_01292,New World New Lynn;Four Square St Heliers;Four Square Ellerslie;Four Square Cockle Bay,4,16,26418.49,07:20:18
+Wed_01293,New World Birkenhead;Four Square St Heliers;Four Square Remuera;New World Metro Shore City,4,16,26421.56,07:20:21
+Wed_01294,Four Square Eden Terrace;New World Southmall;Four Square Ellerslie;Four Square Cockle Bay,4,16,26453.42,07:20:53
+Wed_01295,Four Square Hobsonville;New World Hobsonville;Four Square Botany Junction;Four Square Cockle Bay,4,16,26459.88,07:20:59
+Wed_01296,Four Square Hobsonville;New World Hobsonville;Four Square Britomart;Four Square Cockle Bay,4,16,26467.24,07:21:07
+Wed_01297,Four Square Onehunga;New World Birkenhead;Four Square Britomart;Four Square Cockle Bay,4,16,26479.73,07:21:19
+Wed_01298,Four Square Eden Terrace;New World Point Chevalier;New World Metro Shore City;Four Square Cockle Bay,4,16,26486.39,07:21:26
+Wed_01299,New World New Lynn;New World Papakura;Four Square Cockle Bay,3,16,26509.46,07:21:49
+Wed_01300,Four Square Fair Price Henderson;New World Hobsonville;Four Square Hobsonville;Four Square Cockle Bay,4,16,26517.04,07:21:57
+Wed_01301,New World Birkenhead;New World Milford;Four Square Cockle Bay,3,16,26522.93,07:22:02
+Wed_01302,New World Green Bay;New World Birkenhead;Four Square Cockle Bay,3,16,26532.05,07:22:12
+Wed_01303,New World Remuera;New World Birkenhead;Four Square Cockle Bay,3,16,26554.89,07:22:34
+Wed_01304,Four Square Pakuranga Heights;Four Square Ellerslie;Four Square Onehunga;Four Square Botany Junction;Four Square Cockle Bay,5,16,26566.96,07:22:46
+Wed_01305,New World Green Bay;Four Square Pakuranga Heights;Four Square Ellerslie;Four Square Cockle Bay,4,16,26567.86,07:22:47
+Wed_01306,New World Remuera;New World Papakura;Four Square Cockle Bay,3,16,26569.06,07:22:49
+Wed_01307,Four Square Remuera;Four Square Onehunga;Four Square Glen Eden;Four Square Torbay,4,15,26572.15,07:22:52
+Wed_01308,New World Papakura;New World Point Chevalier;Four Square Pakuranga Heights,3,16,26585.07,07:23:05
+Wed_01309,Four Square Onehunga;New World Hobsonville;Four Square Hobsonville;Four Square Cockle Bay,4,16,26616.49,07:23:36
+Wed_01310,Pak 'n Save Royal Oak;Four Square Hobsonville;Four Square Cockle Bay,3,16,26617.12,07:23:37
+Wed_01311,New World Hobsonville;Four Square Hobsonville;Four Square Fair Price Henderson;Four Square Cockle Bay,4,16,26618.24,07:23:38
+Wed_01312,New World Eastridge;Four Square St Heliers;Four Square Eden Terrace;Four Square Cockle Bay,4,16,26627.96,07:23:47
+Wed_01313,Four Square Hobsonville;New World Hobsonville;Four Square Fair Price Henderson;Four Square Cockle Bay,4,16,26632.5,07:23:52
+Wed_01314,New World Ormiston;Four Square Botany Junction;Four Square St Heliers;Four Square Cockle Bay,4,16,26699.17,07:24:59
+Wed_01315,New World Victoria Park;New World Green Bay;Four Square Cockle Bay,3,16,26701.93,07:25:01
+Wed_01316,Pak 'n Save Clendon;Four Square St Heliers;Four Square Cockle Bay,3,16,26773.99,07:26:13
+Wed_01317,Four Square Ellerslie;Pak 'n Save Wairau Road;Four Square Cockle Bay,3,16,26780.14,07:26:20
+Wed_01318,New World Long Bay;Four Square Botany Junction;Four Square Eden Terrace,3,16,26784.59,07:26:24
+Wed_01319,New World Metro Shore City;New World Ormiston;Four Square Pakuranga Heights;Four Square St Heliers,4,16,26787.3,07:26:27
+Wed_01320,New World Birkenhead;Four Square Eden Terrace;Four Square Botany Junction;Four Square Cockle Bay,4,16,26788.14,07:26:28
+Wed_01321,Four Square Lancaster;New World Victoria Park;Four Square Britomart;Four Square Cockle Bay,4,16,26790.92,07:26:30
+Wed_01322,New World Point Chevalier;Four Square Hobsonville;Four Square Remuera;Four Square Cockle Bay,4,16,26812.87,07:26:52
+Wed_01323,Four Square Torbay;Pak 'n Save Papakura,2,16,26818.22,07:26:58
+Wed_01324,Four Square Glen Eden;New World Metro Shore City;New World Point Chevalier;Four Square Pakuranga Heights,4,16,26843.21,07:27:23
+Wed_01325,Pak 'n Save Papakura;Four Square Torbay,2,16,26862.62,07:27:42
+Wed_01326,New World New Lynn;Four Square Cockle Bay;New World Metro Shore City;New World Metro Queen St,4,16,26889.8,07:28:09
+Wed_01327,New World Metro Queen St;Four Square Britomart;Four Square Botany Junction;Four Square Ellerslie;Four Square Cockle Bay,5,16,26904.48,07:28:24
+Wed_01328,Four Square Pakuranga Heights;Four Square Britomart;New World Eastridge;Four Square Cockle Bay,4,16,26948.32,07:29:08
+Wed_01329,Pak 'n Save Clendon;New World Metro Queen St;Four Square Cockle Bay,3,16,26957.56,07:29:17
+Wed_01330,Pak 'n Save Westgate;Four Square Lancaster;Four Square Cockle Bay,3,16,26958.95,07:29:18
+Wed_01331,Four Square Torbay;Four Square Fair Price Henderson;New World Stonefields,3,16,26959.95,07:29:19
+Wed_01332,New World Birkenhead;Four Square Lancaster;Four Square Onehunga;Four Square Cockle Bay,4,16,26962.25,07:29:22
+Wed_01333,New World Point Chevalier;Four Square Cockle Bay;Four Square Fair Price Henderson;Four Square Hobsonville,4,16,26985.05,07:29:45
+Wed_01334,New World Devonport;Four Square Lancaster;Four Square St Heliers,3,16,27044.84,07:30:44
+Wed_01335,New World Point Chevalier;Four Square Fair Price Henderson;Four Square Hobsonville;Four Square Cockle Bay,4,16,27071.64,07:31:11
+Wed_01336,New World Point Chevalier;Four Square Glen Eden;Four Square Fair Price Henderson;Four Square Cockle Bay,4,16,27073.85,07:31:13
+Wed_01337,New World Mt Albert;Four Square Hobsonville;New World Metro Shore City;Four Square Cockle Bay,4,16,27076.82,07:31:16
+Wed_01338,Pak 'n Save Wairau Road;Four Square Hobsonville;Four Square Cockle Bay,3,16,27099.69,07:31:39
+Wed_01339,New World Botany;Four Square Pakuranga Heights;New World Metro Queen St;Four Square Cockle Bay,4,16,27102.92,07:31:42
+Wed_01340,New World Hobsonville;Four Square Hobsonville;Four Square Lancaster;Four Square Cockle Bay,4,16,27109.64,07:31:49
+Wed_01341,Four Square Glen Eden;Four Square Remuera;New World Metro Queen St;Four Square Britomart;Four Square Cockle Bay,5,16,27183.33,07:33:03
+Wed_01342,Four Square Torbay;New World Devonport;Four Square Glen Eden,3,16,27188.35,07:33:08
+Wed_01343,Four Square Hobsonville;New World Hobsonville;Four Square Lancaster;Four Square Cockle Bay,4,16,27195.35,07:33:15
+Wed_01344,Four Square Britomart;Four Square Hobsonville;New World Hobsonville;Four Square Cockle Bay,4,16,27299.32,07:34:59
+Wed_01345,New World New Lynn;Four Square St Heliers;New World Metro Queen St;Four Square Cockle Bay,4,16,27337.59,07:35:37
+Wed_01346,Four Square Onehunga;New World Eastridge;New World Metro Shore City;Four Square Cockle Bay,4,16,27342.57,07:35:42
+Wed_01347,Four Square Glen Eden;New World Eastridge;Four Square Onehunga;Four Square Cockle Bay,4,16,27345.9,07:35:45
+Wed_01348,New World Browns Bay;Four Square Britomart;New World Metro Queen St;Four Square Cockle Bay,4,16,27354.61,07:35:54
+Wed_01349,New World Mt Albert;Four Square Hobsonville;Four Square St Heliers;Four Square Cockle Bay,4,16,27444.15,07:37:24
+Wed_01350,New World Devonport;Four Square Cockle Bay;Four Square Fair Price Henderson,3,15,27518.43,07:38:38
+Wed_01351,New World Howick;New World Papakura;Four Square Cockle Bay,3,16,27548.58,07:39:08
+Wed_01352,Four Square Pakuranga Heights;New World Southmall;Four Square St Heliers;Four Square Hobsonville,4,16,27560.68,07:39:20
+Wed_01353,Pak 'n Save Westgate;Four Square Torbay;Four Square Cockle Bay,3,16,27563.18,07:39:23
+Wed_01354,Four Square Eden Terrace;Four Square Glen Eden;New World Metro Queen St;Four Square Britomart;Four Square Cockle Bay,5,16,27568.14,07:39:28
+Wed_01355,New World Metro Shore City;Pak 'n Save Clendon;Four Square Cockle Bay,3,16,27628.67,07:40:28
+Wed_01356,Four Square Torbay;New World Browns Bay;Four Square Pakuranga Heights;Four Square Cockle Bay,4,16,27662.65,07:41:02
+Wed_01357,New World Browns Bay;Four Square Torbay;Four Square Pakuranga Heights;Four Square Cockle Bay,4,16,27696.78,07:41:36
+Wed_01358,New World Hobsonville;Four Square Hobsonville;Four Square Torbay;Four Square Cockle Bay,4,16,27713.87,07:41:53
+Wed_01359,Four Square Pakuranga Heights;Four Square Lancaster;New World Victoria Park;Four Square Cockle Bay,4,15,27719.5,07:41:59
+Wed_01360,Four Square Lancaster;New World Hobsonville;Four Square Hobsonville;Four Square Cockle Bay,4,16,27762.43,07:42:42
+Wed_01361,Four Square Hobsonville;New World Hobsonville;Four Square Torbay;Four Square Cockle Bay,4,16,27799.58,07:43:19
+Wed_01362,Four Square Pakuranga Heights;Four Square Britomart;Four Square St Heliers;Four Square Remuera;Four Square Cockle Bay,5,16,27802.95,07:43:22
+Wed_01363,New World Birkenhead;New World New Lynn;Four Square Cockle Bay,3,16,27828.25,07:43:48
+Wed_01364,New World Point Chevalier;Four Square Fair Price Henderson;Four Square Cockle Bay;New World Metro Shore City,4,16,27851.57,07:44:11
+Wed_01365,New World Browns Bay;New World Metro Queen St;New World Metro Shore City;Four Square Pakuranga Heights,4,16,27857.49,07:44:17
+Wed_01366,Four Square St Heliers;Four Square Onehunga;New World Metro Queen St;Four Square Britomart;Four Square Cockle Bay,5,16,27874.88,07:44:34
+Wed_01367,Four Square Lancaster;Four Square Botany Junction;New World Browns Bay,3,15,27909.48,07:45:09
+Wed_01368,New World Browns Bay;New World Eastridge;Four Square Cockle Bay,3,16,27940.96,07:45:40
+Wed_01369,New World Papakura;New World Mt Albert;Four Square Cockle Bay,3,16,27956.59,07:45:56
+Wed_01370,New World Browns Bay;New World Hobsonville;Four Square Cockle Bay,3,16,27982.41,07:46:22
+Wed_01371,Four Square Torbay;New World Victoria Park;Four Square Britomart;Four Square Cockle Bay,4,16,28022.18,07:47:02
+Wed_01372,New World Birkenhead;New World Long Bay;Four Square Cockle Bay,3,16,28072.43,07:47:52
+Wed_01373,New World Browns Bay;New World Metro Shore City;Four Square Botany Junction;Four Square Cockle Bay,4,16,28150.41,07:49:10
+Wed_01374,Four Square Ellerslie;New World Green Bay;Four Square Glen Eden;Four Square Cockle Bay,4,16,28192.18,07:49:52
+Wed_01375,New World Browns Bay;New World Metro Shore City;Four Square Onehunga;Four Square Cockle Bay,4,16,28225.26,07:50:25
+Wed_01376,New World Browns Bay;Four Square Lancaster;Four Square Ellerslie;Four Square Cockle Bay,4,16,28252.29,07:50:52
+Wed_01377,New World Hobsonville;Four Square Glen Eden;Four Square Britomart;Four Square Cockle Bay,4,16,28332.39,07:52:12
+Wed_01378,Pak 'n Save Manukau;Four Square Hobsonville;Four Square Cockle Bay,3,16,28352.5,07:52:32
+Wed_01379,Pak 'n Save Clendon;New World Metro Shore City;Four Square Cockle Bay,3,16,28377.05,07:52:57
+Wed_01380,New World Browns Bay;New World Papakura;Four Square Pakuranga Heights,3,16,28453.64,07:54:13
+Wed_01381,New World Milford;Four Square Hobsonville;New World Metro Shore City;Four Square Cockle Bay,4,16,28468.31,07:54:28
+Wed_01382,New World Howick;New World Birkenhead;Four Square Cockle Bay,3,16,28474.44,07:54:34
+Wed_01383,New World Howick;Four Square Pakuranga Heights;New World Metro Shore City;Four Square Cockle Bay,4,16,28556.44,07:55:56
+Wed_01384,Pak 'n Save Highland Park;Four Square Fair Price Henderson;Four Square Cockle Bay,3,16,28600.11,07:56:40
+Wed_01385,Four Square Glen Eden;New World Browns Bay;Four Square Torbay;Four Square Cockle Bay,4,16,28694.36,07:58:14
+Wed_01386,New World Papakura;New World New Lynn;Four Square Cockle Bay,3,16,28730.67,07:58:50
+Wed_01387,Pak 'n Save Clendon;Four Square Hobsonville;Four Square Cockle Bay,3,16,28810.92,08:00:10
+Wed_01388,Four Square St Heliers;New World Milford;New World Metro Shore City;Four Square Cockle Bay,4,16,28815.91,08:00:15
+Wed_01389,New World Browns Bay;Four Square Torbay;Four Square St Heliers;Four Square Cockle Bay,4,16,28852.13,08:00:52
+Wed_01390,New World Southmall;New World Hobsonville;Four Square Cockle Bay,3,16,28905.48,08:01:45
+Wed_01391,Four Square Pakuranga Heights;Four Square Onehunga;New World Hobsonville;Four Square Cockle Bay,4,16,28948.4,08:02:28
+Wed_01392,Four Square Remuera;Four Square Onehunga;New World Metro Shore City;Four Square St Heliers;Four Square Cockle Bay,5,16,28964.97,08:02:44
+Wed_01393,Four Square Onehunga;New World Southmall;Four Square Glen Eden;Four Square Cockle Bay,4,16,28974.29,08:02:54
+Wed_01394,New World Southmall;Four Square Hobsonville;Four Square St Heliers;Four Square Pakuranga Heights,4,16,29095.08,08:04:55
+Wed_01395,Four Square St Heliers;New World Milford;New World Metro Queen St;Four Square Cockle Bay,4,16,29099.52,08:04:59
+Wed_01396,Four Square Botany Junction;New World Ormiston;Four Square Glen Eden;Four Square Cockle Bay,4,16,29165.13,08:06:05
+Wed_01397,Four Square Fair Price Henderson;New World Metro Queen St;Four Square Britomart;Four Square Hobsonville;Four Square Cockle Bay,5,16,29167.48,08:06:07
+Wed_01398,New World Southmall;New World Browns Bay;Four Square Cockle Bay,3,16,29196.64,08:06:36
+Wed_01399,Four Square Fair Price Henderson;New World Ormiston;Four Square St Heliers;Four Square Cockle Bay,4,16,29240.91,08:07:20
+Wed_01400,New World Remuera;Four Square St Heliers;Four Square Glen Eden;Four Square Cockle Bay,4,16,29258.32,08:07:38
+Wed_01401,New World Papakura;New World Milford;Four Square Cockle Bay,3,16,29296.65,08:08:16
+Wed_01402,New World Ormiston;Four Square Botany Junction;Four Square Hobsonville;Four Square Cockle Bay,4,16,29370.39,08:09:30
+Wed_01403,Four Square Pakuranga Heights;Four Square St Heliers;New World Green Bay;Four Square Cockle Bay,4,16,29428.31,08:10:28
+Wed_01404,Four Square Pakuranga Heights;New World Botany;Four Square Glen Eden;Four Square Cockle Bay,4,16,29526.22,08:12:06
+Wed_01405,New World Ormiston;Four Square Glen Eden;Four Square Hobsonville;Four Square St Heliers,4,16,29553.87,08:12:33
+Wed_01406,Four Square Onehunga;New World Metro Queen St;Four Square Hobsonville;Four Square Torbay;Four Square Cockle Bay,5,16,29562.07,08:12:42
+Wed_01407,New World Ormiston;New World Browns Bay;Four Square Cockle Bay,3,16,29606.46,08:13:26
+Wed_01408,New World Metro Shore City;Four Square Onehunga;New World Hobsonville;Four Square Cockle Bay,4,16,29723.48,08:15:23
+Wed_01409,New World Hobsonville;Four Square Hobsonville;Four Square Cockle Bay;Four Square Torbay,4,16,29796.38,08:16:36
+Wed_01410,Four Square Fair Price Henderson;Four Square Remuera;Four Square Ellerslie;Four Square Hobsonville;Four Square Cockle Bay,5,16,29923.28,08:18:43
+Wed_01411,Four Square Torbay;New World Victoria Park;Four Square Lancaster;Four Square Cockle Bay,4,16,29986.12,08:19:46
+Wed_01412,New World Browns Bay;New World Metro Shore City;Four Square Fair Price Henderson;Four Square Cockle Bay,4,16,30069.9,08:21:09
+Wed_01413,New World Ormiston;Four Square Hobsonville;Four Square Lancaster;Four Square Cockle Bay,4,16,30730.19,08:32:10
+Wed_01414,New World Milford;Four Square Glen Eden;Four Square Hobsonville;Four Square Cockle Bay,4,16,30824.62,08:33:44
+Wed_01415,Four Square Fair Price Henderson;Four Square St Heliers;Four Square Hobsonville;Four Square Glen Eden;New World Metro Shore City,5,16,30968.2,08:36:08

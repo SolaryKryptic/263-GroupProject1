@@ -29,14 +29,14 @@ from pathlib import Path
 
 DURATIONS_CSV = "FoodstuffsDurations2026.csv"
 DEMAND_CSV = "0_5ayush6week-estimated_demand.csv"
-OUTPUT_DIR = "engsci263"
+OUTPUT_DIR = "."
 
 WAREHOUSE = "Warehouse"
 CAPACITY_PALLETS = 16
 UNLOADING_SEC_PER_PALLET = 18 * 60   # 18 minutes per pallet, charged at each stop
 
 # Calibrated defaults (see module docstring)
-ALPHA = 3.0                  # distance-weighting strength: 0=random, higher=greedier
+ALPHA = 3.5                  # distance-weighting strength: 0=random, higher=greedier
 EARLY_STOP_PROB = 0.12       # chance per step of ending a route early, capacity room or not
 FORCED_STARTS_PER_STORE = 10 # guaranteed independent route-builds per store, as stop #1
 TOTAL_BUDGET = 3000          # total route-build attempts (forced + unforced together)

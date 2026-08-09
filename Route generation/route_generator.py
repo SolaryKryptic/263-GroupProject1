@@ -36,7 +36,7 @@ CAPACITY_PALLETS = 16
 UNLOADING_SEC_PER_PALLET = 18 * 60   # 18 minutes per pallet, charged at each stop
 
 # Calibrated defaults (see module docstring)
-ALPHA = 1.5                  # distance-weighting strength: 0=random, higher=greedier
+ALPHA = 3.5                  # distance-weighting strength: 0=random, higher=greedier
 EARLY_STOP_PROB = 0.12       # chance per step of ending a route early, capacity room or not
 FORCED_STARTS_PER_STORE = 10 # guaranteed independent route-builds per store, as stop #1
 TOTAL_BUDGET = 3000          # total route-build attempts (forced + unforced together)
