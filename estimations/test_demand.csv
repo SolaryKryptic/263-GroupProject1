@@ -1,0 +1,771 @@
+Supermarket,Date,Demand,DayOfWeek,IsHoliday,Type
+Four Square Botany Junction,2026-06-15,4.0,Monday,False,Four Square
+Four Square Britomart,2026-06-15,3.0,Monday,False,Four Square
+Four Square Cockle Bay,2026-06-15,3.0,Monday,False,Four Square
+Four Square Eden Terrace,2026-06-15,4.0,Monday,False,Four Square
+Four Square Ellerslie,2026-06-15,3.0,Monday,False,Four Square
+Four Square Fair Price Henderson,2026-06-15,1.0,Monday,False,Four Square
+Four Square Glen Eden,2026-06-15,3.0,Monday,False,Four Square
+Four Square Hobsonville,2026-06-15,4.0,Monday,False,Four Square
+Four Square Lancaster,2026-06-15,2.0,Monday,False,Four Square
+Four Square Onehunga,2026-06-15,2.0,Monday,False,Four Square
+Four Square Pakuranga Heights,2026-06-15,1.0,Monday,False,Four Square
+Four Square Remuera,2026-06-15,4.0,Monday,False,Four Square
+Four Square St Heliers,2026-06-15,2.0,Monday,False,Four Square
+Four Square Torbay,2026-06-15,4.0,Monday,False,Four Square
+New World Albany,2026-06-15,8.0,Monday,False,New World
+New World Birkenhead,2026-06-15,5.0,Monday,False,New World
+New World Botany,2026-06-15,7.0,Monday,False,New World
+New World Browns Bay,2026-06-15,10.0,Monday,False,New World
+New World Devonport,2026-06-15,7.0,Monday,False,New World
+New World Eastridge,2026-06-15,6.0,Monday,False,New World
+New World Green Bay,2026-06-15,7.0,Monday,False,New World
+New World Hobsonville,2026-06-15,10.0,Monday,False,New World
+New World Howick,2026-06-15,7.0,Monday,False,New World
+New World Long Bay,2026-06-15,6.0,Monday,False,New World
+New World Metro Queen St,2026-06-15,1.0,Monday,False,New World Metro
+New World Metro Shore City,2026-06-15,3.0,Monday,False,New World Metro
+New World Milford,2026-06-15,8.0,Monday,False,New World
+New World Mt Albert,2026-06-15,8.0,Monday,False,New World
+New World Mt Roskill,2026-06-15,4.0,Monday,False,New World
+New World New Lynn,2026-06-15,5.0,Monday,False,New World
+New World Newmarket,2026-06-15,6.0,Monday,False,New World
+New World Ormiston,2026-06-15,6.0,Monday,False,New World
+New World Papakura,2026-06-15,6.0,Monday,False,New World
+New World Papatoetoe,2026-06-15,5.0,Monday,False,New World
+New World Point Chevalier,2026-06-15,6.0,Monday,False,New World
+New World Remuera,2026-06-15,7.0,Monday,False,New World
+New World Southmall,2026-06-15,5.0,Monday,False,New World
+New World Stonefields,2026-06-15,5.0,Monday,False,New World
+New World Victoria Park,2026-06-15,10.0,Monday,False,New World
+Pak 'n Save Albany,2026-06-15,10.0,Monday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-15,8.0,Monday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-15,6.0,Monday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-15,14.0,Monday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-15,10.0,Monday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-15,12.0,Monday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-15,6.0,Monday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-15,9.0,Monday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-15,9.0,Monday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-15,12.0,Monday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-15,12.0,Monday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-15,8.0,Monday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-15,9.0,Monday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-15,11.0,Monday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-15,11.0,Monday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-15,10.0,Monday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-16,2.0,Tuesday,False,Four Square
+Four Square Britomart,2026-06-16,4.0,Tuesday,False,Four Square
+Four Square Cockle Bay,2026-06-16,2.0,Tuesday,False,Four Square
+Four Square Eden Terrace,2026-06-16,3.0,Tuesday,False,Four Square
+Four Square Ellerslie,2026-06-16,2.0,Tuesday,False,Four Square
+Four Square Fair Price Henderson,2026-06-16,2.0,Tuesday,False,Four Square
+Four Square Glen Eden,2026-06-16,2.0,Tuesday,False,Four Square
+Four Square Hobsonville,2026-06-16,4.0,Tuesday,False,Four Square
+Four Square Lancaster,2026-06-16,2.0,Tuesday,False,Four Square
+Four Square Onehunga,2026-06-16,4.0,Tuesday,False,Four Square
+Four Square Pakuranga Heights,2026-06-16,3.0,Tuesday,False,Four Square
+Four Square Remuera,2026-06-16,4.0,Tuesday,False,Four Square
+Four Square St Heliers,2026-06-16,3.0,Tuesday,False,Four Square
+Four Square Torbay,2026-06-16,4.0,Tuesday,False,Four Square
+New World Albany,2026-06-16,10.0,Tuesday,False,New World
+New World Birkenhead,2026-06-16,8.0,Tuesday,False,New World
+New World Botany,2026-06-16,7.0,Tuesday,False,New World
+New World Browns Bay,2026-06-16,6.0,Tuesday,False,New World
+New World Devonport,2026-06-16,8.0,Tuesday,False,New World
+New World Eastridge,2026-06-16,7.0,Tuesday,False,New World
+New World Green Bay,2026-06-16,4.0,Tuesday,False,New World
+New World Hobsonville,2026-06-16,8.0,Tuesday,False,New World
+New World Howick,2026-06-16,5.0,Tuesday,False,New World
+New World Long Bay,2026-06-16,8.0,Tuesday,False,New World
+New World Metro Queen St,2026-06-16,2.0,Tuesday,False,New World Metro
+New World Metro Shore City,2026-06-16,1.0,Tuesday,False,New World Metro
+New World Milford,2026-06-16,4.0,Tuesday,False,New World
+New World Mt Albert,2026-06-16,5.0,Tuesday,False,New World
+New World Mt Roskill,2026-06-16,4.0,Tuesday,False,New World
+New World New Lynn,2026-06-16,8.0,Tuesday,False,New World
+New World Newmarket,2026-06-16,4.0,Tuesday,False,New World
+New World Ormiston,2026-06-16,8.0,Tuesday,False,New World
+New World Papakura,2026-06-16,8.0,Tuesday,False,New World
+New World Papatoetoe,2026-06-16,8.0,Tuesday,False,New World
+New World Point Chevalier,2026-06-16,7.0,Tuesday,False,New World
+New World Remuera,2026-06-16,7.0,Tuesday,False,New World
+New World Southmall,2026-06-16,6.0,Tuesday,False,New World
+New World Stonefields,2026-06-16,6.0,Tuesday,False,New World
+New World Victoria Park,2026-06-16,5.0,Tuesday,False,New World
+Pak 'n Save Albany,2026-06-16,9.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-16,7.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-16,9.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-16,5.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-16,9.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-16,6.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-16,9.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-16,6.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-16,13.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-16,6.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-16,7.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-16,7.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-16,11.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-16,11.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-16,8.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-16,8.0,Tuesday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-17,2.0,Wednesday,False,Four Square
+Four Square Britomart,2026-06-17,1.0,Wednesday,False,Four Square
+Four Square Cockle Bay,2026-06-17,3.0,Wednesday,False,Four Square
+Four Square Eden Terrace,2026-06-17,2.0,Wednesday,False,Four Square
+Four Square Ellerslie,2026-06-17,4.0,Wednesday,False,Four Square
+Four Square Fair Price Henderson,2026-06-17,2.0,Wednesday,False,Four Square
+Four Square Glen Eden,2026-06-17,2.0,Wednesday,False,Four Square
+Four Square Hobsonville,2026-06-17,4.0,Wednesday,False,Four Square
+Four Square Lancaster,2026-06-17,4.0,Wednesday,False,Four Square
+Four Square Onehunga,2026-06-17,3.0,Wednesday,False,Four Square
+Four Square Pakuranga Heights,2026-06-17,2.0,Wednesday,False,Four Square
+Four Square Remuera,2026-06-17,4.0,Wednesday,False,Four Square
+Four Square St Heliers,2026-06-17,2.0,Wednesday,False,Four Square
+Four Square Torbay,2026-06-17,1.0,Wednesday,False,Four Square
+New World Albany,2026-06-17,7.0,Wednesday,False,New World
+New World Birkenhead,2026-06-17,5.0,Wednesday,False,New World
+New World Botany,2026-06-17,10.0,Wednesday,False,New World
+New World Browns Bay,2026-06-17,8.0,Wednesday,False,New World
+New World Devonport,2026-06-17,5.0,Wednesday,False,New World
+New World Eastridge,2026-06-17,5.0,Wednesday,False,New World
+New World Green Bay,2026-06-17,7.0,Wednesday,False,New World
+New World Hobsonville,2026-06-17,8.0,Wednesday,False,New World
+New World Howick,2026-06-17,5.0,Wednesday,False,New World
+New World Long Bay,2026-06-17,8.0,Wednesday,False,New World
+New World Metro Queen St,2026-06-17,1.0,Wednesday,False,New World Metro
+New World Metro Shore City,2026-06-17,3.0,Wednesday,False,New World Metro
+New World Milford,2026-06-17,5.0,Wednesday,False,New World
+New World Mt Albert,2026-06-17,7.0,Wednesday,False,New World
+New World Mt Roskill,2026-06-17,8.0,Wednesday,False,New World
+New World New Lynn,2026-06-17,6.0,Wednesday,False,New World
+New World Newmarket,2026-06-17,8.0,Wednesday,False,New World
+New World Ormiston,2026-06-17,4.0,Wednesday,False,New World
+New World Papakura,2026-06-17,8.0,Wednesday,False,New World
+New World Papatoetoe,2026-06-17,5.0,Wednesday,False,New World
+New World Point Chevalier,2026-06-17,6.0,Wednesday,False,New World
+New World Remuera,2026-06-17,7.0,Wednesday,False,New World
+New World Southmall,2026-06-17,10.0,Wednesday,False,New World
+New World Stonefields,2026-06-17,8.0,Wednesday,False,New World
+New World Victoria Park,2026-06-17,7.0,Wednesday,False,New World
+Pak 'n Save Albany,2026-06-17,5.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-17,10.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-17,11.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-17,5.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-17,12.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-17,6.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-17,12.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-17,9.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-17,8.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-17,7.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-17,5.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-17,9.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-17,7.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-17,12.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-17,12.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-17,7.0,Wednesday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-18,4.0,Thursday,False,Four Square
+Four Square Britomart,2026-06-18,4.0,Thursday,False,Four Square
+Four Square Cockle Bay,2026-06-18,1.0,Thursday,False,Four Square
+Four Square Eden Terrace,2026-06-18,2.0,Thursday,False,Four Square
+Four Square Ellerslie,2026-06-18,4.0,Thursday,False,Four Square
+Four Square Fair Price Henderson,2026-06-18,3.0,Thursday,False,Four Square
+Four Square Glen Eden,2026-06-18,4.0,Thursday,False,Four Square
+Four Square Hobsonville,2026-06-18,2.0,Thursday,False,Four Square
+Four Square Lancaster,2026-06-18,3.0,Thursday,False,Four Square
+Four Square Onehunga,2026-06-18,1.0,Thursday,False,Four Square
+Four Square Pakuranga Heights,2026-06-18,2.0,Thursday,False,Four Square
+Four Square Remuera,2026-06-18,1.0,Thursday,False,Four Square
+Four Square St Heliers,2026-06-18,2.0,Thursday,False,Four Square
+Four Square Torbay,2026-06-18,1.0,Thursday,False,Four Square
+New World Albany,2026-06-18,4.0,Thursday,False,New World
+New World Birkenhead,2026-06-18,8.0,Thursday,False,New World
+New World Botany,2026-06-18,7.0,Thursday,False,New World
+New World Browns Bay,2026-06-18,7.0,Thursday,False,New World
+New World Devonport,2026-06-18,5.0,Thursday,False,New World
+New World Eastridge,2026-06-18,9.0,Thursday,False,New World
+New World Green Bay,2026-06-18,7.0,Thursday,False,New World
+New World Hobsonville,2026-06-18,8.0,Thursday,False,New World
+New World Howick,2026-06-18,4.0,Thursday,False,New World
+New World Long Bay,2026-06-18,8.0,Thursday,False,New World
+New World Metro Queen St,2026-06-18,3.0,Thursday,False,New World Metro
+New World Metro Shore City,2026-06-18,4.0,Thursday,False,New World Metro
+New World Milford,2026-06-18,7.0,Thursday,False,New World
+New World Mt Albert,2026-06-18,9.0,Thursday,False,New World
+New World Mt Roskill,2026-06-18,5.0,Thursday,False,New World
+New World New Lynn,2026-06-18,8.0,Thursday,False,New World
+New World Newmarket,2026-06-18,7.0,Thursday,False,New World
+New World Ormiston,2026-06-18,9.0,Thursday,False,New World
+New World Papakura,2026-06-18,7.0,Thursday,False,New World
+New World Papatoetoe,2026-06-18,4.0,Thursday,False,New World
+New World Point Chevalier,2026-06-18,6.0,Thursday,False,New World
+New World Remuera,2026-06-18,4.0,Thursday,False,New World
+New World Southmall,2026-06-18,5.0,Thursday,False,New World
+New World Stonefields,2026-06-18,7.0,Thursday,False,New World
+New World Victoria Park,2026-06-18,4.0,Thursday,False,New World
+Pak 'n Save Albany,2026-06-18,7.0,Thursday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-18,5.0,Thursday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-18,6.0,Thursday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-18,8.0,Thursday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-18,4.0,Thursday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-18,7.0,Thursday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-18,9.0,Thursday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-18,7.0,Thursday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-18,10.0,Thursday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-18,12.0,Thursday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-18,10.0,Thursday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-18,9.0,Thursday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-18,10.0,Thursday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-18,10.0,Thursday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-18,9.0,Thursday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-18,8.0,Thursday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-19,2.0,Friday,False,Four Square
+Four Square Britomart,2026-06-19,1.0,Friday,False,Four Square
+Four Square Cockle Bay,2026-06-19,4.0,Friday,False,Four Square
+Four Square Eden Terrace,2026-06-19,3.0,Friday,False,Four Square
+Four Square Ellerslie,2026-06-19,4.0,Friday,False,Four Square
+Four Square Fair Price Henderson,2026-06-19,1.0,Friday,False,Four Square
+Four Square Glen Eden,2026-06-19,3.0,Friday,False,Four Square
+Four Square Hobsonville,2026-06-19,2.0,Friday,False,Four Square
+Four Square Lancaster,2026-06-19,3.0,Friday,False,Four Square
+Four Square Onehunga,2026-06-19,4.0,Friday,False,Four Square
+Four Square Pakuranga Heights,2026-06-19,2.0,Friday,False,Four Square
+Four Square Remuera,2026-06-19,2.0,Friday,False,Four Square
+Four Square St Heliers,2026-06-19,2.0,Friday,False,Four Square
+Four Square Torbay,2026-06-19,1.0,Friday,False,Four Square
+New World Albany,2026-06-19,9.0,Friday,False,New World
+New World Birkenhead,2026-06-19,4.0,Friday,False,New World
+New World Botany,2026-06-19,6.0,Friday,False,New World
+New World Browns Bay,2026-06-19,6.0,Friday,False,New World
+New World Devonport,2026-06-19,5.0,Friday,False,New World
+New World Eastridge,2026-06-19,8.0,Friday,False,New World
+New World Green Bay,2026-06-19,8.0,Friday,False,New World
+New World Hobsonville,2026-06-19,6.0,Friday,False,New World
+New World Howick,2026-06-19,9.0,Friday,False,New World
+New World Long Bay,2026-06-19,6.0,Friday,False,New World
+New World Metro Queen St,2026-06-19,2.0,Friday,False,New World Metro
+New World Metro Shore City,2026-06-19,1.0,Friday,False,New World Metro
+New World Milford,2026-06-19,4.0,Friday,False,New World
+New World Mt Albert,2026-06-19,6.0,Friday,False,New World
+New World Mt Roskill,2026-06-19,5.0,Friday,False,New World
+New World New Lynn,2026-06-19,5.0,Friday,False,New World
+New World Newmarket,2026-06-19,7.0,Friday,False,New World
+New World Ormiston,2026-06-19,5.0,Friday,False,New World
+New World Papakura,2026-06-19,8.0,Friday,False,New World
+New World Papatoetoe,2026-06-19,10.0,Friday,False,New World
+New World Point Chevalier,2026-06-19,5.0,Friday,False,New World
+New World Remuera,2026-06-19,5.0,Friday,False,New World
+New World Southmall,2026-06-19,7.0,Friday,False,New World
+New World Stonefields,2026-06-19,7.0,Friday,False,New World
+New World Victoria Park,2026-06-19,7.0,Friday,False,New World
+Pak 'n Save Albany,2026-06-19,12.0,Friday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-19,12.0,Friday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-19,12.0,Friday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-19,14.0,Friday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-19,9.0,Friday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-19,8.0,Friday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-19,10.0,Friday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-19,9.0,Friday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-19,6.0,Friday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-19,11.0,Friday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-19,11.0,Friday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-19,15.0,Friday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-19,8.0,Friday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-19,9.0,Friday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-19,9.0,Friday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-19,5.0,Friday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-20,0.0,Saturday,False,Four Square
+Four Square Britomart,2026-06-20,1.0,Saturday,False,Four Square
+Four Square Cockle Bay,2026-06-20,0.0,Saturday,False,Four Square
+Four Square Eden Terrace,2026-06-20,0.0,Saturday,False,Four Square
+Four Square Ellerslie,2026-06-20,0.0,Saturday,False,Four Square
+Four Square Fair Price Henderson,2026-06-20,1.0,Saturday,False,Four Square
+Four Square Glen Eden,2026-06-20,0.0,Saturday,False,Four Square
+Four Square Hobsonville,2026-06-20,1.0,Saturday,False,Four Square
+Four Square Lancaster,2026-06-20,1.0,Saturday,False,Four Square
+Four Square Onehunga,2026-06-20,0.0,Saturday,False,Four Square
+Four Square Pakuranga Heights,2026-06-20,0.0,Saturday,False,Four Square
+Four Square Remuera,2026-06-20,1.0,Saturday,False,Four Square
+Four Square St Heliers,2026-06-20,0.0,Saturday,False,Four Square
+Four Square Torbay,2026-06-20,0.0,Saturday,False,Four Square
+New World Albany,2026-06-20,3.0,Saturday,False,New World
+New World Birkenhead,2026-06-20,2.0,Saturday,False,New World
+New World Botany,2026-06-20,2.0,Saturday,False,New World
+New World Browns Bay,2026-06-20,3.0,Saturday,False,New World
+New World Devonport,2026-06-20,1.0,Saturday,False,New World
+New World Eastridge,2026-06-20,1.0,Saturday,False,New World
+New World Green Bay,2026-06-20,3.0,Saturday,False,New World
+New World Hobsonville,2026-06-20,3.0,Saturday,False,New World
+New World Howick,2026-06-20,1.0,Saturday,False,New World
+New World Long Bay,2026-06-20,3.0,Saturday,False,New World
+New World Metro Queen St,2026-06-20,1.0,Saturday,False,New World Metro
+New World Metro Shore City,2026-06-20,1.0,Saturday,False,New World Metro
+New World Milford,2026-06-20,3.0,Saturday,False,New World
+New World Mt Albert,2026-06-20,3.0,Saturday,False,New World
+New World Mt Roskill,2026-06-20,1.0,Saturday,False,New World
+New World New Lynn,2026-06-20,2.0,Saturday,False,New World
+New World Newmarket,2026-06-20,1.0,Saturday,False,New World
+New World Ormiston,2026-06-20,2.0,Saturday,False,New World
+New World Papakura,2026-06-20,1.0,Saturday,False,New World
+New World Papatoetoe,2026-06-20,3.0,Saturday,False,New World
+New World Point Chevalier,2026-06-20,3.0,Saturday,False,New World
+New World Remuera,2026-06-20,3.0,Saturday,False,New World
+New World Southmall,2026-06-20,2.0,Saturday,False,New World
+New World Stonefields,2026-06-20,2.0,Saturday,False,New World
+New World Victoria Park,2026-06-20,2.0,Saturday,False,New World
+Pak 'n Save Albany,2026-06-20,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-20,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-20,3.0,Saturday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-20,4.0,Saturday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-20,3.0,Saturday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-20,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-20,4.0,Saturday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-20,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-20,5.0,Saturday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-20,7.0,Saturday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-20,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-20,4.0,Saturday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-20,5.0,Saturday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-20,4.0,Saturday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-20,4.0,Saturday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-20,3.0,Saturday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Britomart,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Cockle Bay,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Eden Terrace,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Ellerslie,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Fair Price Henderson,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Glen Eden,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Hobsonville,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Lancaster,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Onehunga,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Pakuranga Heights,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Remuera,2026-06-21,0.0,Sunday,False,Four Square
+Four Square St Heliers,2026-06-21,0.0,Sunday,False,Four Square
+Four Square Torbay,2026-06-21,0.0,Sunday,False,Four Square
+New World Albany,2026-06-21,0.0,Sunday,False,New World
+New World Birkenhead,2026-06-21,0.0,Sunday,False,New World
+New World Botany,2026-06-21,0.0,Sunday,False,New World
+New World Browns Bay,2026-06-21,0.0,Sunday,False,New World
+New World Devonport,2026-06-21,0.0,Sunday,False,New World
+New World Eastridge,2026-06-21,0.0,Sunday,False,New World
+New World Green Bay,2026-06-21,0.0,Sunday,False,New World
+New World Hobsonville,2026-06-21,0.0,Sunday,False,New World
+New World Howick,2026-06-21,0.0,Sunday,False,New World
+New World Long Bay,2026-06-21,0.0,Sunday,False,New World
+New World Metro Queen St,2026-06-21,0.0,Sunday,False,New World Metro
+New World Metro Shore City,2026-06-21,0.0,Sunday,False,New World Metro
+New World Milford,2026-06-21,0.0,Sunday,False,New World
+New World Mt Albert,2026-06-21,0.0,Sunday,False,New World
+New World Mt Roskill,2026-06-21,0.0,Sunday,False,New World
+New World New Lynn,2026-06-21,0.0,Sunday,False,New World
+New World Newmarket,2026-06-21,0.0,Sunday,False,New World
+New World Ormiston,2026-06-21,0.0,Sunday,False,New World
+New World Papakura,2026-06-21,0.0,Sunday,False,New World
+New World Papatoetoe,2026-06-21,0.0,Sunday,False,New World
+New World Point Chevalier,2026-06-21,0.0,Sunday,False,New World
+New World Remuera,2026-06-21,0.0,Sunday,False,New World
+New World Southmall,2026-06-21,0.0,Sunday,False,New World
+New World Stonefields,2026-06-21,0.0,Sunday,False,New World
+New World Victoria Park,2026-06-21,0.0,Sunday,False,New World
+Pak 'n Save Albany,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-21,0.0,Sunday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-22,1.0,Monday,False,Four Square
+Four Square Britomart,2026-06-22,2.0,Monday,False,Four Square
+Four Square Cockle Bay,2026-06-22,3.0,Monday,False,Four Square
+Four Square Eden Terrace,2026-06-22,4.0,Monday,False,Four Square
+Four Square Ellerslie,2026-06-22,1.0,Monday,False,Four Square
+Four Square Fair Price Henderson,2026-06-22,1.0,Monday,False,Four Square
+Four Square Glen Eden,2026-06-22,2.0,Monday,False,Four Square
+Four Square Hobsonville,2026-06-22,4.0,Monday,False,Four Square
+Four Square Lancaster,2026-06-22,3.0,Monday,False,Four Square
+Four Square Onehunga,2026-06-22,1.0,Monday,False,Four Square
+Four Square Pakuranga Heights,2026-06-22,4.0,Monday,False,Four Square
+Four Square Remuera,2026-06-22,4.0,Monday,False,Four Square
+Four Square St Heliers,2026-06-22,3.0,Monday,False,Four Square
+Four Square Torbay,2026-06-22,4.0,Monday,False,Four Square
+New World Albany,2026-06-22,5.0,Monday,False,New World
+New World Birkenhead,2026-06-22,7.0,Monday,False,New World
+New World Botany,2026-06-22,6.0,Monday,False,New World
+New World Browns Bay,2026-06-22,6.0,Monday,False,New World
+New World Devonport,2026-06-22,5.0,Monday,False,New World
+New World Eastridge,2026-06-22,9.0,Monday,False,New World
+New World Green Bay,2026-06-22,4.0,Monday,False,New World
+New World Hobsonville,2026-06-22,6.0,Monday,False,New World
+New World Howick,2026-06-22,4.0,Monday,False,New World
+New World Long Bay,2026-06-22,5.0,Monday,False,New World
+New World Metro Queen St,2026-06-22,2.0,Monday,False,New World Metro
+New World Metro Shore City,2026-06-22,3.0,Monday,False,New World Metro
+New World Milford,2026-06-22,5.0,Monday,False,New World
+New World Mt Albert,2026-06-22,8.0,Monday,False,New World
+New World Mt Roskill,2026-06-22,5.0,Monday,False,New World
+New World New Lynn,2026-06-22,5.0,Monday,False,New World
+New World Newmarket,2026-06-22,5.0,Monday,False,New World
+New World Ormiston,2026-06-22,8.0,Monday,False,New World
+New World Papakura,2026-06-22,9.0,Monday,False,New World
+New World Papatoetoe,2026-06-22,4.0,Monday,False,New World
+New World Point Chevalier,2026-06-22,6.0,Monday,False,New World
+New World Remuera,2026-06-22,10.0,Monday,False,New World
+New World Southmall,2026-06-22,10.0,Monday,False,New World
+New World Stonefields,2026-06-22,7.0,Monday,False,New World
+New World Victoria Park,2026-06-22,8.0,Monday,False,New World
+Pak 'n Save Albany,2026-06-22,5.0,Monday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-22,11.0,Monday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-22,10.0,Monday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-22,6.0,Monday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-22,10.0,Monday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-22,15.0,Monday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-22,12.0,Monday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-22,10.0,Monday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-22,12.0,Monday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-22,8.0,Monday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-22,13.0,Monday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-22,11.0,Monday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-22,9.0,Monday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-22,7.0,Monday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-22,8.0,Monday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-22,11.0,Monday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-23,4.0,Tuesday,False,Four Square
+Four Square Britomart,2026-06-23,2.0,Tuesday,False,Four Square
+Four Square Cockle Bay,2026-06-23,1.0,Tuesday,False,Four Square
+Four Square Eden Terrace,2026-06-23,2.0,Tuesday,False,Four Square
+Four Square Ellerslie,2026-06-23,4.0,Tuesday,False,Four Square
+Four Square Fair Price Henderson,2026-06-23,3.0,Tuesday,False,Four Square
+Four Square Glen Eden,2026-06-23,1.0,Tuesday,False,Four Square
+Four Square Hobsonville,2026-06-23,4.0,Tuesday,False,Four Square
+Four Square Lancaster,2026-06-23,1.0,Tuesday,False,Four Square
+Four Square Onehunga,2026-06-23,3.0,Tuesday,False,Four Square
+Four Square Pakuranga Heights,2026-06-23,3.0,Tuesday,False,Four Square
+Four Square Remuera,2026-06-23,2.0,Tuesday,False,Four Square
+Four Square St Heliers,2026-06-23,3.0,Tuesday,False,Four Square
+Four Square Torbay,2026-06-23,4.0,Tuesday,False,Four Square
+New World Albany,2026-06-23,6.0,Tuesday,False,New World
+New World Birkenhead,2026-06-23,6.0,Tuesday,False,New World
+New World Botany,2026-06-23,4.0,Tuesday,False,New World
+New World Browns Bay,2026-06-23,7.0,Tuesday,False,New World
+New World Devonport,2026-06-23,8.0,Tuesday,False,New World
+New World Eastridge,2026-06-23,8.0,Tuesday,False,New World
+New World Green Bay,2026-06-23,9.0,Tuesday,False,New World
+New World Hobsonville,2026-06-23,8.0,Tuesday,False,New World
+New World Howick,2026-06-23,5.0,Tuesday,False,New World
+New World Long Bay,2026-06-23,8.0,Tuesday,False,New World
+New World Metro Queen St,2026-06-23,2.0,Tuesday,False,New World Metro
+New World Metro Shore City,2026-06-23,3.0,Tuesday,False,New World Metro
+New World Milford,2026-06-23,11.0,Tuesday,False,New World
+New World Mt Albert,2026-06-23,5.0,Tuesday,False,New World
+New World Mt Roskill,2026-06-23,6.0,Tuesday,False,New World
+New World New Lynn,2026-06-23,8.0,Tuesday,False,New World
+New World Newmarket,2026-06-23,4.0,Tuesday,False,New World
+New World Ormiston,2026-06-23,5.0,Tuesday,False,New World
+New World Papakura,2026-06-23,7.0,Tuesday,False,New World
+New World Papatoetoe,2026-06-23,8.0,Tuesday,False,New World
+New World Point Chevalier,2026-06-23,4.0,Tuesday,False,New World
+New World Remuera,2026-06-23,7.0,Tuesday,False,New World
+New World Southmall,2026-06-23,8.0,Tuesday,False,New World
+New World Stonefields,2026-06-23,4.0,Tuesday,False,New World
+New World Victoria Park,2026-06-23,5.0,Tuesday,False,New World
+Pak 'n Save Albany,2026-06-23,9.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-23,8.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-23,9.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-23,5.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-23,8.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-23,11.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-23,12.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-23,8.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-23,10.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-23,7.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-23,12.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-23,10.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-23,7.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-23,9.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-23,7.0,Tuesday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-23,4.0,Tuesday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-24,1.0,Wednesday,False,Four Square
+Four Square Britomart,2026-06-24,3.0,Wednesday,False,Four Square
+Four Square Cockle Bay,2026-06-24,1.0,Wednesday,False,Four Square
+Four Square Eden Terrace,2026-06-24,3.0,Wednesday,False,Four Square
+Four Square Ellerslie,2026-06-24,4.0,Wednesday,False,Four Square
+Four Square Fair Price Henderson,2026-06-24,4.0,Wednesday,False,Four Square
+Four Square Glen Eden,2026-06-24,4.0,Wednesday,False,Four Square
+Four Square Hobsonville,2026-06-24,4.0,Wednesday,False,Four Square
+Four Square Lancaster,2026-06-24,1.0,Wednesday,False,Four Square
+Four Square Onehunga,2026-06-24,2.0,Wednesday,False,Four Square
+Four Square Pakuranga Heights,2026-06-24,3.0,Wednesday,False,Four Square
+Four Square Remuera,2026-06-24,3.0,Wednesday,False,Four Square
+Four Square St Heliers,2026-06-24,1.0,Wednesday,False,Four Square
+Four Square Torbay,2026-06-24,4.0,Wednesday,False,Four Square
+New World Albany,2026-06-24,8.0,Wednesday,False,New World
+New World Birkenhead,2026-06-24,6.0,Wednesday,False,New World
+New World Botany,2026-06-24,7.0,Wednesday,False,New World
+New World Browns Bay,2026-06-24,9.0,Wednesday,False,New World
+New World Devonport,2026-06-24,7.0,Wednesday,False,New World
+New World Eastridge,2026-06-24,6.0,Wednesday,False,New World
+New World Green Bay,2026-06-24,6.0,Wednesday,False,New World
+New World Hobsonville,2026-06-24,7.0,Wednesday,False,New World
+New World Howick,2026-06-24,5.0,Wednesday,False,New World
+New World Long Bay,2026-06-24,5.0,Wednesday,False,New World
+New World Metro Queen St,2026-06-24,3.0,Wednesday,False,New World Metro
+New World Metro Shore City,2026-06-24,1.0,Wednesday,False,New World Metro
+New World Milford,2026-06-24,7.0,Wednesday,False,New World
+New World Mt Albert,2026-06-24,4.0,Wednesday,False,New World
+New World Mt Roskill,2026-06-24,9.0,Wednesday,False,New World
+New World New Lynn,2026-06-24,8.0,Wednesday,False,New World
+New World Newmarket,2026-06-24,10.0,Wednesday,False,New World
+New World Ormiston,2026-06-24,6.0,Wednesday,False,New World
+New World Papakura,2026-06-24,5.0,Wednesday,False,New World
+New World Papatoetoe,2026-06-24,9.0,Wednesday,False,New World
+New World Point Chevalier,2026-06-24,7.0,Wednesday,False,New World
+New World Remuera,2026-06-24,6.0,Wednesday,False,New World
+New World Southmall,2026-06-24,7.0,Wednesday,False,New World
+New World Stonefields,2026-06-24,7.0,Wednesday,False,New World
+New World Victoria Park,2026-06-24,6.0,Wednesday,False,New World
+Pak 'n Save Albany,2026-06-24,9.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-24,13.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-24,10.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-24,6.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-24,8.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-24,7.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-24,8.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-24,6.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-24,6.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-24,8.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-24,5.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-24,12.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-24,6.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-24,12.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-24,8.0,Wednesday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-24,7.0,Wednesday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-25,2.0,Thursday,False,Four Square
+Four Square Britomart,2026-06-25,3.0,Thursday,False,Four Square
+Four Square Cockle Bay,2026-06-25,1.0,Thursday,False,Four Square
+Four Square Eden Terrace,2026-06-25,1.0,Thursday,False,Four Square
+Four Square Ellerslie,2026-06-25,1.0,Thursday,False,Four Square
+Four Square Fair Price Henderson,2026-06-25,4.0,Thursday,False,Four Square
+Four Square Glen Eden,2026-06-25,2.0,Thursday,False,Four Square
+Four Square Hobsonville,2026-06-25,4.0,Thursday,False,Four Square
+Four Square Lancaster,2026-06-25,1.0,Thursday,False,Four Square
+Four Square Onehunga,2026-06-25,2.0,Thursday,False,Four Square
+Four Square Pakuranga Heights,2026-06-25,4.0,Thursday,False,Four Square
+Four Square Remuera,2026-06-25,3.0,Thursday,False,Four Square
+Four Square St Heliers,2026-06-25,3.0,Thursday,False,Four Square
+Four Square Torbay,2026-06-25,1.0,Thursday,False,Four Square
+New World Albany,2026-06-25,9.0,Thursday,False,New World
+New World Birkenhead,2026-06-25,7.0,Thursday,False,New World
+New World Botany,2026-06-25,7.0,Thursday,False,New World
+New World Browns Bay,2026-06-25,8.0,Thursday,False,New World
+New World Devonport,2026-06-25,7.0,Thursday,False,New World
+New World Eastridge,2026-06-25,8.0,Thursday,False,New World
+New World Green Bay,2026-06-25,10.0,Thursday,False,New World
+New World Hobsonville,2026-06-25,7.0,Thursday,False,New World
+New World Howick,2026-06-25,8.0,Thursday,False,New World
+New World Long Bay,2026-06-25,9.0,Thursday,False,New World
+New World Metro Queen St,2026-06-25,2.0,Thursday,False,New World Metro
+New World Metro Shore City,2026-06-25,3.0,Thursday,False,New World Metro
+New World Milford,2026-06-25,7.0,Thursday,False,New World
+New World Mt Albert,2026-06-25,6.0,Thursday,False,New World
+New World Mt Roskill,2026-06-25,5.0,Thursday,False,New World
+New World New Lynn,2026-06-25,6.0,Thursday,False,New World
+New World Newmarket,2026-06-25,4.0,Thursday,False,New World
+New World Ormiston,2026-06-25,5.0,Thursday,False,New World
+New World Papakura,2026-06-25,8.0,Thursday,False,New World
+New World Papatoetoe,2026-06-25,6.0,Thursday,False,New World
+New World Point Chevalier,2026-06-25,4.0,Thursday,False,New World
+New World Remuera,2026-06-25,5.0,Thursday,False,New World
+New World Southmall,2026-06-25,9.0,Thursday,False,New World
+New World Stonefields,2026-06-25,6.0,Thursday,False,New World
+New World Victoria Park,2026-06-25,4.0,Thursday,False,New World
+Pak 'n Save Albany,2026-06-25,5.0,Thursday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-25,8.0,Thursday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-25,6.0,Thursday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-25,13.0,Thursday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-25,7.0,Thursday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-25,9.0,Thursday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-25,6.0,Thursday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-25,6.0,Thursday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-25,11.0,Thursday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-25,8.0,Thursday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-25,9.0,Thursday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-25,10.0,Thursday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-25,7.0,Thursday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-25,10.0,Thursday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-25,11.0,Thursday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-25,7.0,Thursday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-26,3.0,Friday,False,Four Square
+Four Square Britomart,2026-06-26,1.0,Friday,False,Four Square
+Four Square Cockle Bay,2026-06-26,3.0,Friday,False,Four Square
+Four Square Eden Terrace,2026-06-26,1.0,Friday,False,Four Square
+Four Square Ellerslie,2026-06-26,2.0,Friday,False,Four Square
+Four Square Fair Price Henderson,2026-06-26,4.0,Friday,False,Four Square
+Four Square Glen Eden,2026-06-26,2.0,Friday,False,Four Square
+Four Square Hobsonville,2026-06-26,2.0,Friday,False,Four Square
+Four Square Lancaster,2026-06-26,4.0,Friday,False,Four Square
+Four Square Onehunga,2026-06-26,2.0,Friday,False,Four Square
+Four Square Pakuranga Heights,2026-06-26,2.0,Friday,False,Four Square
+Four Square Remuera,2026-06-26,4.0,Friday,False,Four Square
+Four Square St Heliers,2026-06-26,3.0,Friday,False,Four Square
+Four Square Torbay,2026-06-26,1.0,Friday,False,Four Square
+New World Albany,2026-06-26,7.0,Friday,False,New World
+New World Birkenhead,2026-06-26,7.0,Friday,False,New World
+New World Botany,2026-06-26,9.0,Friday,False,New World
+New World Browns Bay,2026-06-26,4.0,Friday,False,New World
+New World Devonport,2026-06-26,5.0,Friday,False,New World
+New World Eastridge,2026-06-26,8.0,Friday,False,New World
+New World Green Bay,2026-06-26,5.0,Friday,False,New World
+New World Hobsonville,2026-06-26,6.0,Friday,False,New World
+New World Howick,2026-06-26,6.0,Friday,False,New World
+New World Long Bay,2026-06-26,7.0,Friday,False,New World
+New World Metro Queen St,2026-06-26,2.0,Friday,False,New World Metro
+New World Metro Shore City,2026-06-26,4.0,Friday,False,New World Metro
+New World Milford,2026-06-26,6.0,Friday,False,New World
+New World Mt Albert,2026-06-26,6.0,Friday,False,New World
+New World Mt Roskill,2026-06-26,8.0,Friday,False,New World
+New World New Lynn,2026-06-26,9.0,Friday,False,New World
+New World Newmarket,2026-06-26,6.0,Friday,False,New World
+New World Ormiston,2026-06-26,7.0,Friday,False,New World
+New World Papakura,2026-06-26,8.0,Friday,False,New World
+New World Papatoetoe,2026-06-26,6.0,Friday,False,New World
+New World Point Chevalier,2026-06-26,5.0,Friday,False,New World
+New World Remuera,2026-06-26,6.0,Friday,False,New World
+New World Southmall,2026-06-26,6.0,Friday,False,New World
+New World Stonefields,2026-06-26,8.0,Friday,False,New World
+New World Victoria Park,2026-06-26,6.0,Friday,False,New World
+Pak 'n Save Albany,2026-06-26,9.0,Friday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-26,7.0,Friday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-26,9.0,Friday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-26,10.0,Friday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-26,10.0,Friday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-26,10.0,Friday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-26,13.0,Friday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-26,11.0,Friday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-26,9.0,Friday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-26,8.0,Friday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-26,11.0,Friday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-26,7.0,Friday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-26,9.0,Friday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-26,9.0,Friday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-26,14.0,Friday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-26,10.0,Friday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-27,1.0,Saturday,False,Four Square
+Four Square Britomart,2026-06-27,1.0,Saturday,False,Four Square
+Four Square Cockle Bay,2026-06-27,0.0,Saturday,False,Four Square
+Four Square Eden Terrace,2026-06-27,0.0,Saturday,False,Four Square
+Four Square Ellerslie,2026-06-27,1.0,Saturday,False,Four Square
+Four Square Fair Price Henderson,2026-06-27,0.0,Saturday,False,Four Square
+Four Square Glen Eden,2026-06-27,1.0,Saturday,False,Four Square
+Four Square Hobsonville,2026-06-27,1.0,Saturday,False,Four Square
+Four Square Lancaster,2026-06-27,1.0,Saturday,False,Four Square
+Four Square Onehunga,2026-06-27,0.0,Saturday,False,Four Square
+Four Square Pakuranga Heights,2026-06-27,1.0,Saturday,False,Four Square
+Four Square Remuera,2026-06-27,0.0,Saturday,False,Four Square
+Four Square St Heliers,2026-06-27,1.0,Saturday,False,Four Square
+Four Square Torbay,2026-06-27,0.0,Saturday,False,Four Square
+New World Albany,2026-06-27,2.0,Saturday,False,New World
+New World Birkenhead,2026-06-27,1.0,Saturday,False,New World
+New World Botany,2026-06-27,3.0,Saturday,False,New World
+New World Browns Bay,2026-06-27,1.0,Saturday,False,New World
+New World Devonport,2026-06-27,2.0,Saturday,False,New World
+New World Eastridge,2026-06-27,3.0,Saturday,False,New World
+New World Green Bay,2026-06-27,2.0,Saturday,False,New World
+New World Hobsonville,2026-06-27,3.0,Saturday,False,New World
+New World Howick,2026-06-27,3.0,Saturday,False,New World
+New World Long Bay,2026-06-27,1.0,Saturday,False,New World
+New World Metro Queen St,2026-06-27,1.0,Saturday,False,New World Metro
+New World Metro Shore City,2026-06-27,1.0,Saturday,False,New World Metro
+New World Milford,2026-06-27,3.0,Saturday,False,New World
+New World Mt Albert,2026-06-27,3.0,Saturday,False,New World
+New World Mt Roskill,2026-06-27,1.0,Saturday,False,New World
+New World New Lynn,2026-06-27,1.0,Saturday,False,New World
+New World Newmarket,2026-06-27,1.0,Saturday,False,New World
+New World Ormiston,2026-06-27,3.0,Saturday,False,New World
+New World Papakura,2026-06-27,2.0,Saturday,False,New World
+New World Papatoetoe,2026-06-27,3.0,Saturday,False,New World
+New World Point Chevalier,2026-06-27,1.0,Saturday,False,New World
+New World Remuera,2026-06-27,3.0,Saturday,False,New World
+New World Southmall,2026-06-27,3.0,Saturday,False,New World
+New World Stonefields,2026-06-27,1.0,Saturday,False,New World
+New World Victoria Park,2026-06-27,3.0,Saturday,False,New World
+Pak 'n Save Albany,2026-06-27,3.0,Saturday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-27,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-27,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-27,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-27,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-27,5.0,Saturday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-27,3.0,Saturday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-27,5.0,Saturday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-27,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-27,6.0,Saturday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-27,7.0,Saturday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-27,7.0,Saturday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-27,7.0,Saturday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-27,5.0,Saturday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-27,3.0,Saturday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-27,3.0,Saturday,False,Pak 'n Save
+Four Square Botany Junction,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Britomart,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Cockle Bay,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Eden Terrace,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Ellerslie,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Fair Price Henderson,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Glen Eden,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Hobsonville,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Lancaster,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Onehunga,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Pakuranga Heights,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Remuera,2026-06-28,0.0,Sunday,False,Four Square
+Four Square St Heliers,2026-06-28,0.0,Sunday,False,Four Square
+Four Square Torbay,2026-06-28,0.0,Sunday,False,Four Square
+New World Albany,2026-06-28,0.0,Sunday,False,New World
+New World Birkenhead,2026-06-28,0.0,Sunday,False,New World
+New World Botany,2026-06-28,0.0,Sunday,False,New World
+New World Browns Bay,2026-06-28,0.0,Sunday,False,New World
+New World Devonport,2026-06-28,0.0,Sunday,False,New World
+New World Eastridge,2026-06-28,0.0,Sunday,False,New World
+New World Green Bay,2026-06-28,0.0,Sunday,False,New World
+New World Hobsonville,2026-06-28,0.0,Sunday,False,New World
+New World Howick,2026-06-28,0.0,Sunday,False,New World
+New World Long Bay,2026-06-28,0.0,Sunday,False,New World
+New World Metro Queen St,2026-06-28,0.0,Sunday,False,New World Metro
+New World Metro Shore City,2026-06-28,0.0,Sunday,False,New World Metro
+New World Milford,2026-06-28,0.0,Sunday,False,New World
+New World Mt Albert,2026-06-28,0.0,Sunday,False,New World
+New World Mt Roskill,2026-06-28,0.0,Sunday,False,New World
+New World New Lynn,2026-06-28,0.0,Sunday,False,New World
+New World Newmarket,2026-06-28,0.0,Sunday,False,New World
+New World Ormiston,2026-06-28,0.0,Sunday,False,New World
+New World Papakura,2026-06-28,0.0,Sunday,False,New World
+New World Papatoetoe,2026-06-28,0.0,Sunday,False,New World
+New World Point Chevalier,2026-06-28,0.0,Sunday,False,New World
+New World Remuera,2026-06-28,0.0,Sunday,False,New World
+New World Southmall,2026-06-28,0.0,Sunday,False,New World
+New World Stonefields,2026-06-28,0.0,Sunday,False,New World
+New World Victoria Park,2026-06-28,0.0,Sunday,False,New World
+Pak 'n Save Albany,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Botany,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Clendon,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Glen Innes,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Henderson,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Highland Park,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Lincoln Road,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Mangere,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Manukau,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Mt Albert,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Ormiston,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Papakura,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Royal Oak,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Sylvia Park,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Wairau Road,2026-06-28,0.0,Sunday,False,Pak 'n Save
+Pak 'n Save Westgate,2026-06-28,0.0,Sunday,False,Pak 'n Save
