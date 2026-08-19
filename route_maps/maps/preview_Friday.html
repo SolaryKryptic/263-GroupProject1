@@ -1,0 +1,2466 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_63aa1a6f4674d53ffe4c6f50d43dc781 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+        <div style="position: fixed; top: 10px; left: 60px; z-index: 9999;
+                    background: white; padding: 8px 16px; border-radius: 6px;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.3); font-family: Arial;">
+            <b style="font-size:16px;">Friday Delivery Routes (PREVIEW - straight lines)</b><br>
+            <span style="font-size:12px; color:#555;">36 routes, 408 pallets total</span>
+        </div>
+    
+    
+            <div class="folium-map" id="map_63aa1a6f4674d53ffe4c6f50d43dc781" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_63aa1a6f4674d53ffe4c6f50d43dc781 = L.map(
+                "map_63aa1a6f4674d53ffe4c6f50d43dc781",
+                {
+                    center: [-36.9079041, 174.7281051],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_feae7a1e3d054b62d807102986cf9db3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_feae7a1e3d054b62d807102986cf9db3.addTo(map_63aa1a6f4674d53ffe4c6f50d43dc781);
+        
+    
+            var marker_17ade104f844e126c6b18e92fc955a88 = L.marker(
+                [-36.9079041, 174.7281051],
+                {
+}
+            ).addTo(map_63aa1a6f4674d53ffe4c6f50d43dc781);
+        
+    
+            var icon_f2e32c2d778cbd8595135d9dbe66e417 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_163f74b8cf388f225be55bb2e0d816e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_197fb6d046c1ad3793bcbcca53564b07 = $(`<div id="html_197fb6d046c1ad3793bcbcca53564b07" style="width: 100.0%; height: 100.0%;">Warehouse (Mt Roskill)</div>`)[0];
+                popup_163f74b8cf388f225be55bb2e0d816e2.setContent(html_197fb6d046c1ad3793bcbcca53564b07);
+            
+        
+
+        marker_17ade104f844e126c6b18e92fc955a88.bindPopup(popup_163f74b8cf388f225be55bb2e0d816e2)
+        ;
+
+        
+    
+    
+                marker_17ade104f844e126c6b18e92fc955a88.setIcon(icon_f2e32c2d778cbd8595135d9dbe66e417);
+            
+    
+            var feature_group_e81643ced7c9d2fdbd48dc40881104c3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_171d65138f31484d228fa7dc14b92d06 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9086111, 174.7344444], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#e6194b", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e6194b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_7403c86f5e5e4ccc4bcdf09e442a0a36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc6a89c1aa38ed2f45d547f5f8fd0f78 = $(`<div id="html_dc6a89c1aa38ed2f45d547f5f8fd0f78" style="width: 100.0%; height: 100.0%;"><b>Fri_00015</b><br>Stops: New World Mt Roskill<br>Pallets: 8<br>Duration: 2.51 hrs<br>Cost: $552.00</div>`)[0];
+                popup_7403c86f5e5e4ccc4bcdf09e442a0a36.setContent(html_dc6a89c1aa38ed2f45d547f5f8fd0f78);
+            
+        
+
+        poly_line_171d65138f31484d228fa7dc14b92d06.bindPopup(popup_7403c86f5e5e4ccc4bcdf09e442a0a36)
+        ;
+
+        
+    
+    
+            var circle_marker_87a7616553bc73eedec9d162177fb9ab = L.circleMarker(
+                [-36.9086111, 174.7344444],
+                {"bubblingMouseEvents": true, "color": "#e6194b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e6194b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_7e1cd859bfb3ee261ecf5300552e0ba9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff4fed70ef42d5e5041aff3bad4f8906 = $(`<div id="html_ff4fed70ef42d5e5041aff3bad4f8906" style="width: 100.0%; height: 100.0%;"><b>New World Mt Roskill</b><br>Route: Fri_00015</div>`)[0];
+                popup_7e1cd859bfb3ee261ecf5300552e0ba9.setContent(html_ff4fed70ef42d5e5041aff3bad4f8906);
+            
+        
+
+        circle_marker_87a7616553bc73eedec9d162177fb9ab.bindPopup(popup_7e1cd859bfb3ee261ecf5300552e0ba9)
+        ;
+
+        
+    
+    
+            var poly_line_2b569c796aab282a73386e2da3147afb = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9802417, 174.8539063], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#3cb44b", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3cb44b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_25deed53bb28a8f09948b4e8440bab83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23ff2eb28b9a305a13ab79bdf3d90d2c = $(`<div id="html_23ff2eb28b9a305a13ab79bdf3d90d2c" style="width: 100.0%; height: 100.0%;"><b>Fri_00022</b><br>Stops: New World Papatoetoe<br>Pallets: 7<br>Duration: 2.95 hrs<br>Cost: $648.14</div>`)[0];
+                popup_25deed53bb28a8f09948b4e8440bab83.setContent(html_23ff2eb28b9a305a13ab79bdf3d90d2c);
+            
+        
+
+        poly_line_2b569c796aab282a73386e2da3147afb.bindPopup(popup_25deed53bb28a8f09948b4e8440bab83)
+        ;
+
+        
+    
+    
+            var circle_marker_f6f88e80faa29ee3c10c92c73b3299db = L.circleMarker(
+                [-36.9802417, 174.8539063],
+                {"bubblingMouseEvents": true, "color": "#3cb44b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3cb44b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_56a385685f7872a61bfa02b1253c9f98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1136fb9a17e9eb4eb26901f62bdac3f = $(`<div id="html_e1136fb9a17e9eb4eb26901f62bdac3f" style="width: 100.0%; height: 100.0%;"><b>New World Papatoetoe</b><br>Route: Fri_00022</div>`)[0];
+                popup_56a385685f7872a61bfa02b1253c9f98.setContent(html_e1136fb9a17e9eb4eb26901f62bdac3f);
+            
+        
+
+        circle_marker_f6f88e80faa29ee3c10c92c73b3299db.bindPopup(popup_56a385685f7872a61bfa02b1253c9f98)
+        ;
+
+        
+    
+    
+            var poly_line_263997953525f8368f0b4dbebd66af80 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9308233, 174.6790458], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#4363d8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4363d8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_bda6f69a62cd6a88b74834a9651a7400 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_320280376a7bed145ba18d6aeeb862f8 = $(`<div id="html_320280376a7bed145ba18d6aeeb862f8" style="width: 100.0%; height: 100.0%;"><b>Fri_00025</b><br>Stops: New World Green Bay<br>Pallets: 9<br>Duration: 3.18 hrs<br>Cost: $699.45</div>`)[0];
+                popup_bda6f69a62cd6a88b74834a9651a7400.setContent(html_320280376a7bed145ba18d6aeeb862f8);
+            
+        
+
+        poly_line_263997953525f8368f0b4dbebd66af80.bindPopup(popup_bda6f69a62cd6a88b74834a9651a7400)
+        ;
+
+        
+    
+    
+            var circle_marker_8cc878e0601834226eb9a00123c809e3 = L.circleMarker(
+                [-36.9308233, 174.6790458],
+                {"bubblingMouseEvents": true, "color": "#4363d8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4363d8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_f3d08d1207975709e183a5a6d50cb448 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cae1b0e8da0db816152dfc5a22e2ea55 = $(`<div id="html_cae1b0e8da0db816152dfc5a22e2ea55" style="width: 100.0%; height: 100.0%;"><b>New World Green Bay</b><br>Route: Fri_00025</div>`)[0];
+                popup_f3d08d1207975709e183a5a6d50cb448.setContent(html_cae1b0e8da0db816152dfc5a22e2ea55);
+            
+        
+
+        circle_marker_8cc878e0601834226eb9a00123c809e3.bindPopup(popup_f3d08d1207975709e183a5a6d50cb448)
+        ;
+
+        
+    
+    
+            var poly_line_5e0783c996d047f6e9228bbf2a21fb5e = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.84452381, 174.7676134], [-36.8464718, 174.7657806], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#f58231", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f58231", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_e155acd99b44615ef167c22fb8743c7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e0cd8c1b92e5489168b909905b3bb15 = $(`<div id="html_7e0cd8c1b92e5489168b909905b3bb15" style="width: 100.0%; height: 100.0%;"><b>Fri_00026</b><br>Stops: Four Square Britomart &rarr; New World Metro Queen St<br>Pallets: 8<br>Duration: 3.23 hrs<br>Cost: $710.72</div>`)[0];
+                popup_e155acd99b44615ef167c22fb8743c7f.setContent(html_7e0cd8c1b92e5489168b909905b3bb15);
+            
+        
+
+        poly_line_5e0783c996d047f6e9228bbf2a21fb5e.bindPopup(popup_e155acd99b44615ef167c22fb8743c7f)
+        ;
+
+        
+    
+    
+            var circle_marker_74c1e7f4a90b54d1bef03d36d985a067 = L.circleMarker(
+                [-36.84452381, 174.7676134],
+                {"bubblingMouseEvents": true, "color": "#f58231", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f58231", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_2aa9d31734648276bc2f98462370ef2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55fb5d31e480a7adc720eca7f6ae6292 = $(`<div id="html_55fb5d31e480a7adc720eca7f6ae6292" style="width: 100.0%; height: 100.0%;"><b>Four Square Britomart</b><br>Route: Fri_00026</div>`)[0];
+                popup_2aa9d31734648276bc2f98462370ef2f.setContent(html_55fb5d31e480a7adc720eca7f6ae6292);
+            
+        
+
+        circle_marker_74c1e7f4a90b54d1bef03d36d985a067.bindPopup(popup_2aa9d31734648276bc2f98462370ef2f)
+        ;
+
+        
+    
+    
+            var circle_marker_8f76fb7dcea16179211e7923e6b7ef6a = L.circleMarker(
+                [-36.8464718, 174.7657806],
+                {"bubblingMouseEvents": true, "color": "#f58231", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f58231", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_5c3107a484d3021d913b8a385d46a659 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_274a403b3d57282d46b0770b7082fade = $(`<div id="html_274a403b3d57282d46b0770b7082fade" style="width: 100.0%; height: 100.0%;"><b>New World Metro Queen St</b><br>Route: Fri_00026</div>`)[0];
+                popup_5c3107a484d3021d913b8a385d46a659.setContent(html_274a403b3d57282d46b0770b7082fade);
+            
+        
+
+        circle_marker_8f76fb7dcea16179211e7923e6b7ef6a.bindPopup(popup_5c3107a484d3021d913b8a385d46a659)
+        ;
+
+        
+    
+    
+            var poly_line_e91c24b6299132441aecf8a0ff8e9dc4 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.87200791, 174.7779037], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#911eb4", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#911eb4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_b09d2949d2d4f8a19627c310f4ff0eda = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65dfeff8b68e5813c2d7c5f652fb9074 = $(`<div id="html_65dfeff8b68e5813c2d7c5f652fb9074" style="width: 100.0%; height: 100.0%;"><b>Fri_00034</b><br>Stops: New World Newmarket<br>Pallets: 9<br>Duration: 3.46 hrs<br>Cost: $761.13</div>`)[0];
+                popup_b09d2949d2d4f8a19627c310f4ff0eda.setContent(html_65dfeff8b68e5813c2d7c5f652fb9074);
+            
+        
+
+        poly_line_e91c24b6299132441aecf8a0ff8e9dc4.bindPopup(popup_b09d2949d2d4f8a19627c310f4ff0eda)
+        ;
+
+        
+    
+    
+            var circle_marker_ba57963b0c93774b9261c78cb3ba3b1b = L.circleMarker(
+                [-36.87200791, 174.7779037],
+                {"bubblingMouseEvents": true, "color": "#911eb4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#911eb4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_9f552d0eb25ce8cc753fa88c99d51c9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0098c6c404ab47619a422eb9165a55ee = $(`<div id="html_0098c6c404ab47619a422eb9165a55ee" style="width: 100.0%; height: 100.0%;"><b>New World Newmarket</b><br>Route: Fri_00034</div>`)[0];
+                popup_9f552d0eb25ce8cc753fa88c99d51c9c.setContent(html_0098c6c404ab47619a422eb9165a55ee);
+            
+        
+
+        circle_marker_ba57963b0c93774b9261c78cb3ba3b1b.bindPopup(popup_9f552d0eb25ce8cc753fa88c99d51c9c)
+        ;
+
+        
+    
+    
+            var poly_line_11512eb6fe7ad4f4ed8431862e1f7fc7 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9684476, 174.7970282], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#46f0f0", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#46f0f0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_c402d271dabcaea819b3acba7ff5dbf7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49db95844ee4598b484853a0dfa09586 = $(`<div id="html_49db95844ee4598b484853a0dfa09586" style="width: 100.0%; height: 100.0%;"><b>Fri_00038</b><br>Stops: Pak 'n Save Mangere<br>Pallets: 10<br>Duration: 3.64 hrs<br>Cost: $801.75</div>`)[0];
+                popup_c402d271dabcaea819b3acba7ff5dbf7.setContent(html_49db95844ee4598b484853a0dfa09586);
+            
+        
+
+        poly_line_11512eb6fe7ad4f4ed8431862e1f7fc7.bindPopup(popup_c402d271dabcaea819b3acba7ff5dbf7)
+        ;
+
+        
+    
+    
+            var circle_marker_bf608adc16e48d8eba06cafab3c3fb10 = L.circleMarker(
+                [-36.9684476, 174.7970282],
+                {"bubblingMouseEvents": true, "color": "#46f0f0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#46f0f0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_903bf3116dcdad702823e60930de2d54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f19f9ce4092c0b94584c38667e7a670 = $(`<div id="html_9f19f9ce4092c0b94584c38667e7a670" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Mangere</b><br>Route: Fri_00038</div>`)[0];
+                popup_903bf3116dcdad702823e60930de2d54.setContent(html_9f19f9ce4092c0b94584c38667e7a670);
+            
+        
+
+        circle_marker_bf608adc16e48d8eba06cafab3c3fb10.bindPopup(popup_903bf3116dcdad702823e60930de2d54)
+        ;
+
+        
+    
+    
+            var poly_line_e6371348fff830dfeea577a18805e7a5 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8772956, 174.6325345], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#f032e6", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f032e6", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_2d89f1edeb72ba606862358fce381732 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0d568ef0ae240dded7efdfae99b3c9c = $(`<div id="html_d0d568ef0ae240dded7efdfae99b3c9c" style="width: 100.0%; height: 100.0%;"><b>Fri_00053</b><br>Stops: Pak 'n Save Henderson<br>Pallets: 10<br>Duration: 3.93 hrs<br>Cost: $864.79</div>`)[0];
+                popup_2d89f1edeb72ba606862358fce381732.setContent(html_d0d568ef0ae240dded7efdfae99b3c9c);
+            
+        
+
+        poly_line_e6371348fff830dfeea577a18805e7a5.bindPopup(popup_2d89f1edeb72ba606862358fce381732)
+        ;
+
+        
+    
+    
+            var circle_marker_ecff0342c8f86f9fbd8cfe29baf7386e = L.circleMarker(
+                [-36.8772956, 174.6325345],
+                {"bubblingMouseEvents": true, "color": "#f032e6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f032e6", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_cba2deb8b3283198886cb6cc3d2314c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_047ce26a4e66bf36ed27d3a6de0b8785 = $(`<div id="html_047ce26a4e66bf36ed27d3a6de0b8785" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Henderson</b><br>Route: Fri_00053</div>`)[0];
+                popup_cba2deb8b3283198886cb6cc3d2314c1.setContent(html_047ce26a4e66bf36ed27d3a6de0b8785);
+            
+        
+
+        circle_marker_ecff0342c8f86f9fbd8cfe29baf7386e.bindPopup(popup_cba2deb8b3283198886cb6cc3d2314c1)
+        ;
+
+        
+    
+    
+            var poly_line_4a6c0d3839199a8e7507cad0787dce25 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.7722983, 174.7648051], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#bcf60c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bcf60c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_9ac61d74a96d09d68cc1a28f3f4ef396 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14e3445b581196cf2c37cfdd6a456e0f = $(`<div id="html_14e3445b581196cf2c37cfdd6a456e0f" style="width: 100.0%; height: 100.0%;"><b>Fri_00054</b><br>Stops: New World Milford<br>Pallets: 9<br>Duration: 3.96 hrs<br>Cost: $870.66</div>`)[0];
+                popup_9ac61d74a96d09d68cc1a28f3f4ef396.setContent(html_14e3445b581196cf2c37cfdd6a456e0f);
+            
+        
+
+        poly_line_4a6c0d3839199a8e7507cad0787dce25.bindPopup(popup_9ac61d74a96d09d68cc1a28f3f4ef396)
+        ;
+
+        
+    
+    
+            var circle_marker_4d81066a356caba934824e7c0828b4ba = L.circleMarker(
+                [-36.7722983, 174.7648051],
+                {"bubblingMouseEvents": true, "color": "#bcf60c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bcf60c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_751c9e4d94486bb2a8ef8757adfce007 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca90271ebe7afc8caaa4129b4ad9702d = $(`<div id="html_ca90271ebe7afc8caaa4129b4ad9702d" style="width: 100.0%; height: 100.0%;"><b>New World Milford</b><br>Route: Fri_00054</div>`)[0];
+                popup_751c9e4d94486bb2a8ef8757adfce007.setContent(html_ca90271ebe7afc8caaa4129b4ad9702d);
+            
+        
+
+        circle_marker_4d81066a356caba934824e7c0828b4ba.bindPopup(popup_751c9e4d94486bb2a8ef8757adfce007)
+        ;
+
+        
+    
+    
+            var poly_line_30fa34ee855c775105b5c8b82f950523 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.89331716, 174.7055616], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#fabebe", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fabebe", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_0a1ce56aa35617779ea205a824963342 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51eca2481ebc21a8d9e810d87c2bce99 = $(`<div id="html_51eca2481ebc21a8d9e810d87c2bce99" style="width: 100.0%; height: 100.0%;"><b>Fri_00055</b><br>Stops: Pak 'n Save Mt Albert<br>Pallets: 12<br>Duration: 3.96 hrs<br>Cost: $871.40</div>`)[0];
+                popup_0a1ce56aa35617779ea205a824963342.setContent(html_51eca2481ebc21a8d9e810d87c2bce99);
+            
+        
+
+        poly_line_30fa34ee855c775105b5c8b82f950523.bindPopup(popup_0a1ce56aa35617779ea205a824963342)
+        ;
+
+        
+    
+    
+            var circle_marker_3e66e0114424ac746451bf523aefd65c = L.circleMarker(
+                [-36.89331716, 174.7055616],
+                {"bubblingMouseEvents": true, "color": "#fabebe", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fabebe", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_f55a55587fe68b178e268297f650fa3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_396886261c7995c1ca9590a8645cbc75 = $(`<div id="html_396886261c7995c1ca9590a8645cbc75" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Mt Albert</b><br>Route: Fri_00055</div>`)[0];
+                popup_f55a55587fe68b178e268297f650fa3a.setContent(html_396886261c7995c1ca9590a8645cbc75);
+            
+        
+
+        circle_marker_3e66e0114424ac746451bf523aefd65c.bindPopup(popup_f55a55587fe68b178e268297f650fa3a)
+        ;
+
+        
+    
+    
+            var poly_line_e6cfbe07cd494be53364b6529889f1f5 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9100403, 174.7746132], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008080", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_99822c6bfabef9be7bfee9554acee8da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ca55e425e16917606e16a91e0c8b56b = $(`<div id="html_4ca55e425e16917606e16a91e0c8b56b" style="width: 100.0%; height: 100.0%;"><b>Fri_00063</b><br>Stops: Pak 'n Save Royal Oak<br>Pallets: 12<br>Duration: 4.05 hrs<br>Cost: $894.94</div>`)[0];
+                popup_99822c6bfabef9be7bfee9554acee8da.setContent(html_4ca55e425e16917606e16a91e0c8b56b);
+            
+        
+
+        poly_line_e6cfbe07cd494be53364b6529889f1f5.bindPopup(popup_99822c6bfabef9be7bfee9554acee8da)
+        ;
+
+        
+    
+    
+            var circle_marker_b7bcbb71a242921d10660e6f870044cc = L.circleMarker(
+                [-36.9100403, 174.7746132],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_c84fec4e23e558093743830d91146b33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7697f0252f16007c631222310e49eae2 = $(`<div id="html_7697f0252f16007c631222310e49eae2" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Royal Oak</b><br>Route: Fri_00063</div>`)[0];
+                popup_c84fec4e23e558093743830d91146b33.setContent(html_7697f0252f16007c631222310e49eae2);
+            
+        
+
+        circle_marker_b7bcbb71a242921d10660e6f870044cc.bindPopup(popup_c84fec4e23e558093743830d91146b33)
+        ;
+
+        
+    
+    
+            var poly_line_d930a9677df8cc22ee23b406cc7d7fca = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.910914, 174.651446], [-36.9108233, 174.6855069], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#e6beff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e6beff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_87770ac93509a27b21033abe76b005d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6b97326aef47fb439e76847bcfaf1ae = $(`<div id="html_c6b97326aef47fb439e76847bcfaf1ae" style="width: 100.0%; height: 100.0%;"><b>Fri_00065</b><br>Stops: Four Square Glen Eden &rarr; New World New Lynn<br>Pallets: 11<br>Duration: 4.06 hrs<br>Cost: $899.31</div>`)[0];
+                popup_87770ac93509a27b21033abe76b005d8.setContent(html_c6b97326aef47fb439e76847bcfaf1ae);
+            
+        
+
+        poly_line_d930a9677df8cc22ee23b406cc7d7fca.bindPopup(popup_87770ac93509a27b21033abe76b005d8)
+        ;
+
+        
+    
+    
+            var circle_marker_b063047515b1afba49ecbccaf2e15c12 = L.circleMarker(
+                [-36.910914, 174.651446],
+                {"bubblingMouseEvents": true, "color": "#e6beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e6beff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_92daaac152074b9fc62223ede2e92ec6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ee21a19a3981be156e3f5bb2f9dcaa9 = $(`<div id="html_4ee21a19a3981be156e3f5bb2f9dcaa9" style="width: 100.0%; height: 100.0%;"><b>Four Square Glen Eden</b><br>Route: Fri_00065</div>`)[0];
+                popup_92daaac152074b9fc62223ede2e92ec6.setContent(html_4ee21a19a3981be156e3f5bb2f9dcaa9);
+            
+        
+
+        circle_marker_b063047515b1afba49ecbccaf2e15c12.bindPopup(popup_92daaac152074b9fc62223ede2e92ec6)
+        ;
+
+        
+    
+    
+            var circle_marker_62700a2f11fb05cdf52b1df401e8fff2 = L.circleMarker(
+                [-36.9108233, 174.6855069],
+                {"bubblingMouseEvents": true, "color": "#e6beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e6beff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_e1c0a4c1ff55569248ea8002e50d1a67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f55300258cca0c875fddbddea6050b5b = $(`<div id="html_f55300258cca0c875fddbddea6050b5b" style="width: 100.0%; height: 100.0%;"><b>New World New Lynn</b><br>Route: Fri_00065</div>`)[0];
+                popup_e1c0a4c1ff55569248ea8002e50d1a67.setContent(html_f55300258cca0c875fddbddea6050b5b);
+            
+        
+
+        circle_marker_62700a2f11fb05cdf52b1df401e8fff2.bindPopup(popup_e1c0a4c1ff55569248ea8002e50d1a67)
+        ;
+
+        
+    
+    
+            var poly_line_3cc4b27bfeeb1a7b2747479dc7734531 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.778998, 174.744093], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#9a6324", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#9a6324", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_7ec37b9aac8fbe2ec4f6ee4acdbd0f15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59f56667ac37450703203ba1fcb154da = $(`<div id="html_59f56667ac37450703203ba1fcb154da" style="width: 100.0%; height: 100.0%;"><b>Fri_00068</b><br>Stops: Pak 'n Save Wairau Road<br>Pallets: 10<br>Duration: 4.19 hrs<br>Cost: $938.64</div>`)[0];
+                popup_7ec37b9aac8fbe2ec4f6ee4acdbd0f15.setContent(html_59f56667ac37450703203ba1fcb154da);
+            
+        
+
+        poly_line_3cc4b27bfeeb1a7b2747479dc7734531.bindPopup(popup_7ec37b9aac8fbe2ec4f6ee4acdbd0f15)
+        ;
+
+        
+    
+    
+            var circle_marker_0b7bdaf5ad2ebad1296b4982b9fddbb3 = L.circleMarker(
+                [-36.778998, 174.744093],
+                {"bubblingMouseEvents": true, "color": "#9a6324", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9a6324", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_30755e5f5bff2f9ec149c81d747d47e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b548da212f37872d3fc39bde3058eeb = $(`<div id="html_0b548da212f37872d3fc39bde3058eeb" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Wairau Road</b><br>Route: Fri_00068</div>`)[0];
+                popup_30755e5f5bff2f9ec149c81d747d47e0.setContent(html_0b548da212f37872d3fc39bde3058eeb);
+            
+        
+
+        circle_marker_0b7bdaf5ad2ebad1296b4982b9fddbb3.bindPopup(popup_30755e5f5bff2f9ec149c81d747d47e0)
+        ;
+
+        
+    
+    
+            var poly_line_91a0bd85d0a6634e53876c16c3ffbdb7 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9878442, 174.880734], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#800000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#800000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_8ec25a3c2e9d3340a595dc72120300a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38947eac04be19d0964cefc3bfe4b45f = $(`<div id="html_38947eac04be19d0964cefc3bfe4b45f" style="width: 100.0%; height: 100.0%;"><b>Fri_00070</b><br>Stops: Pak 'n Save Manukau<br>Pallets: 11<br>Duration: 4.23 hrs<br>Cost: $952.05</div>`)[0];
+                popup_8ec25a3c2e9d3340a595dc72120300a6.setContent(html_38947eac04be19d0964cefc3bfe4b45f);
+            
+        
+
+        poly_line_91a0bd85d0a6634e53876c16c3ffbdb7.bindPopup(popup_8ec25a3c2e9d3340a595dc72120300a6)
+        ;
+
+        
+    
+    
+            var circle_marker_3f63df9defc5b5f699aed1bd4cb5e5de = L.circleMarker(
+                [-36.9878442, 174.880734],
+                {"bubblingMouseEvents": true, "color": "#800000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800000", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_4a89f60edb405198ac49db14aa8abdf2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d045f3a19fde1fdf6d1ac9fd8c740be7 = $(`<div id="html_d045f3a19fde1fdf6d1ac9fd8c740be7" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Manukau</b><br>Route: Fri_00070</div>`)[0];
+                popup_4a89f60edb405198ac49db14aa8abdf2.setContent(html_d045f3a19fde1fdf6d1ac9fd8c740be7);
+            
+        
+
+        circle_marker_3f63df9defc5b5f699aed1bd4cb5e5de.bindPopup(popup_4a89f60edb405198ac49db14aa8abdf2)
+        ;
+
+        
+    
+    
+            var poly_line_90d7a60a735f4e5c2f7853ede375de5f = L.polyline(
+                [[-36.9079041, 174.7281051], [-37.0535182, 174.9311235], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#aaffc3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#aaffc3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_19ed77b5d9164af0eeb054893295a334 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3c46e54607c9b40973e6d8ce0433642 = $(`<div id="html_f3c46e54607c9b40973e6d8ce0433642" style="width: 100.0%; height: 100.0%;"><b>Fri_00076</b><br>Stops: Pak 'n Save Papakura<br>Pallets: 10<br>Duration: 4.30 hrs<br>Cost: $972.28</div>`)[0];
+                popup_19ed77b5d9164af0eeb054893295a334.setContent(html_f3c46e54607c9b40973e6d8ce0433642);
+            
+        
+
+        poly_line_90d7a60a735f4e5c2f7853ede375de5f.bindPopup(popup_19ed77b5d9164af0eeb054893295a334)
+        ;
+
+        
+    
+    
+            var circle_marker_70309102d2049b55ad3f73bdaf04b39a = L.circleMarker(
+                [-37.0535182, 174.9311235],
+                {"bubblingMouseEvents": true, "color": "#aaffc3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aaffc3", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_3700ee78698bcf88a3ba7c45a78b0d09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91db558e0d7586183ac66e1c6ec62acc = $(`<div id="html_91db558e0d7586183ac66e1c6ec62acc" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Papakura</b><br>Route: Fri_00076</div>`)[0];
+                popup_3700ee78698bcf88a3ba7c45a78b0d09.setContent(html_91db558e0d7586183ac66e1c6ec62acc);
+            
+        
+
+        circle_marker_70309102d2049b55ad3f73bdaf04b39a.bindPopup(popup_3700ee78698bcf88a3ba7c45a78b0d09)
+        ;
+
+        
+    
+    
+            var poly_line_61fa6979e1d1365867bdf4f8bc32a3f9 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.79934866, 174.6449706], [-36.7982349, 174.6492036], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#808000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#808000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_e8a0c346598d8123fd46240dc5834c1d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51214798228ef11ab1629718a5ca41d5 = $(`<div id="html_51214798228ef11ab1629718a5ca41d5" style="width: 100.0%; height: 100.0%;"><b>Fri_00078</b><br>Stops: New World Hobsonville &rarr; Four Square Hobsonville<br>Pallets: 11<br>Duration: 4.35 hrs<br>Cost: $987.81</div>`)[0];
+                popup_e8a0c346598d8123fd46240dc5834c1d.setContent(html_51214798228ef11ab1629718a5ca41d5);
+            
+        
+
+        poly_line_61fa6979e1d1365867bdf4f8bc32a3f9.bindPopup(popup_e8a0c346598d8123fd46240dc5834c1d)
+        ;
+
+        
+    
+    
+            var circle_marker_3088c7ce0348b318cb833f3783b61317 = L.circleMarker(
+                [-36.79934866, 174.6449706],
+                {"bubblingMouseEvents": true, "color": "#808000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#808000", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_e9f3e86a7ddf068287272a0f1fd6b23b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca61cd9ae4360d35ce7dc55059b40a58 = $(`<div id="html_ca61cd9ae4360d35ce7dc55059b40a58" style="width: 100.0%; height: 100.0%;"><b>New World Hobsonville</b><br>Route: Fri_00078</div>`)[0];
+                popup_e9f3e86a7ddf068287272a0f1fd6b23b.setContent(html_ca61cd9ae4360d35ce7dc55059b40a58);
+            
+        
+
+        circle_marker_3088c7ce0348b318cb833f3783b61317.bindPopup(popup_e9f3e86a7ddf068287272a0f1fd6b23b)
+        ;
+
+        
+    
+    
+            var circle_marker_990ac7d156871dbd39f13090de0ded42 = L.circleMarker(
+                [-36.7982349, 174.6492036],
+                {"bubblingMouseEvents": true, "color": "#808000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#808000", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_c92ded5a9f59f1e13d09cac8b990679a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2a8d93e003e683fa7f6a901207106ac = $(`<div id="html_f2a8d93e003e683fa7f6a901207106ac" style="width: 100.0%; height: 100.0%;"><b>Four Square Hobsonville</b><br>Route: Fri_00078</div>`)[0];
+                popup_c92ded5a9f59f1e13d09cac8b990679a.setContent(html_f2a8d93e003e683fa7f6a901207106ac);
+            
+        
+
+        circle_marker_990ac7d156871dbd39f13090de0ded42.bindPopup(popup_c92ded5a9f59f1e13d09cac8b990679a)
+        ;
+
+        
+    
+    
+            var poly_line_c22bba4c821343e6ab2db5a6c92d796f = L.polyline(
+                [[-36.9079041, 174.7281051], [-37.0328005, 174.867622], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#ffd8b1", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffd8b1", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_f9b3b16c8126ecfe1f4794ef0316796e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_671f12629f7d5f1db5a9dcee30ee5230 = $(`<div id="html_671f12629f7d5f1db5a9dcee30ee5230" style="width: 100.0%; height: 100.0%;"><b>Fri_00080</b><br>Stops: Pak 'n Save Clendon<br>Pallets: 11<br>Duration: 4.36 hrs<br>Cost: $990.85</div>`)[0];
+                popup_f9b3b16c8126ecfe1f4794ef0316796e.setContent(html_671f12629f7d5f1db5a9dcee30ee5230);
+            
+        
+
+        poly_line_c22bba4c821343e6ab2db5a6c92d796f.bindPopup(popup_f9b3b16c8126ecfe1f4794ef0316796e)
+        ;
+
+        
+    
+    
+            var circle_marker_4ef1a87e7eb537aa90516d1515e87c3f = L.circleMarker(
+                [-37.0328005, 174.867622],
+                {"bubblingMouseEvents": true, "color": "#ffd8b1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd8b1", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_bdebcc8df0eb39b77b4805b5026515bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc2466a75037a3fc4533453ff5934b5d = $(`<div id="html_bc2466a75037a3fc4533453ff5934b5d" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Clendon</b><br>Route: Fri_00080</div>`)[0];
+                popup_bdebcc8df0eb39b77b4805b5026515bc.setContent(html_bc2466a75037a3fc4533453ff5934b5d);
+            
+        
+
+        circle_marker_4ef1a87e7eb537aa90516d1515e87c3f.bindPopup(popup_bdebcc8df0eb39b77b4805b5026515bc)
+        ;
+
+        
+    
+    
+            var poly_line_65b68b06a626f5bf230b6e26caf981df = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9305535, 174.9128891], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#000075", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#000075", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_5b74676527f2291ed4e533591ef23faf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28d817a9ac301d4ac8e25325a03e78f5 = $(`<div id="html_28d817a9ac301d4ac8e25325a03e78f5" style="width: 100.0%; height: 100.0%;"><b>Fri_00082</b><br>Stops: Pak 'n Save Botany<br>Pallets: 10<br>Duration: 4.37 hrs<br>Cost: $995.17</div>`)[0];
+                popup_5b74676527f2291ed4e533591ef23faf.setContent(html_28d817a9ac301d4ac8e25325a03e78f5);
+            
+        
+
+        poly_line_65b68b06a626f5bf230b6e26caf981df.bindPopup(popup_5b74676527f2291ed4e533591ef23faf)
+        ;
+
+        
+    
+    
+            var circle_marker_61e235c96dbffdbddd255587fd528006 = L.circleMarker(
+                [-36.9305535, 174.9128891],
+                {"bubblingMouseEvents": true, "color": "#000075", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000075", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_b79dc2e42f6d688dd63e957bb62350bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af73acf6e8afa69ec5eff83f11167088 = $(`<div id="html_af73acf6e8afa69ec5eff83f11167088" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Botany</b><br>Route: Fri_00082</div>`)[0];
+                popup_b79dc2e42f6d688dd63e957bb62350bc.setContent(html_af73acf6e8afa69ec5eff83f11167088);
+            
+        
+
+        circle_marker_61e235c96dbffdbddd255587fd528006.bindPopup(popup_b79dc2e42f6d688dd63e957bb62350bc)
+        ;
+
+        
+    
+    
+            var poly_line_6fa7876adf843fc4bf62e8dfc3be306a = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9133467, 174.8400897], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#808080", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#808080", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_7b885003d2558bcd14eab0d9c68ca121 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d82bedf5332d5da1dd675e2e4e0e29c = $(`<div id="html_4d82bedf5332d5da1dd675e2e4e0e29c" style="width: 100.0%; height: 100.0%;"><b>Fri_00083</b><br>Stops: Pak 'n Save Sylvia Park<br>Pallets: 11<br>Duration: 4.39 hrs<br>Cost: $1001.38</div>`)[0];
+                popup_7b885003d2558bcd14eab0d9c68ca121.setContent(html_4d82bedf5332d5da1dd675e2e4e0e29c);
+            
+        
+
+        poly_line_6fa7876adf843fc4bf62e8dfc3be306a.bindPopup(popup_7b885003d2558bcd14eab0d9c68ca121)
+        ;
+
+        
+    
+    
+            var circle_marker_851308fb615dfd27984ba8696629af24 = L.circleMarker(
+                [-36.9133467, 174.8400897],
+                {"bubblingMouseEvents": true, "color": "#808080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#808080", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_b2555a657ace93f240bc256de566678b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_730aaab1650da593e2cee301b7139152 = $(`<div id="html_730aaab1650da593e2cee301b7139152" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Sylvia Park</b><br>Route: Fri_00083</div>`)[0];
+                popup_b2555a657ace93f240bc256de566678b.setContent(html_730aaab1650da593e2cee301b7139152);
+            
+        
+
+        circle_marker_851308fb615dfd27984ba8696629af24.bindPopup(popup_b2555a657ace93f240bc256de566678b)
+        ;
+
+        
+    
+    
+            var poly_line_e8d77b74ac546a86d5c700e3881c4def = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.730108, 174.7071498], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#ff4500", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff4500", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_2cfad755433243f0c324a5cd6935cffd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3958326f479a7f2ebacdb13e3c79e979 = $(`<div id="html_3958326f479a7f2ebacdb13e3c79e979" style="width: 100.0%; height: 100.0%;"><b>Fri_00088</b><br>Stops: Pak 'n Save Albany<br>Pallets: 10<br>Duration: 4.46 hrs<br>Cost: $1022.94</div>`)[0];
+                popup_2cfad755433243f0c324a5cd6935cffd.setContent(html_3958326f479a7f2ebacdb13e3c79e979);
+            
+        
+
+        poly_line_e8d77b74ac546a86d5c700e3881c4def.bindPopup(popup_2cfad755433243f0c324a5cd6935cffd)
+        ;
+
+        
+    
+    
+            var circle_marker_f849a5044f6c56691e2b948f29ab6a7f = L.circleMarker(
+                [-36.730108, 174.7071498],
+                {"bubblingMouseEvents": true, "color": "#ff4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4500", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_eab7525569724788bb57c62598575954 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc84348416b00116af44fe5b9cbc6d25 = $(`<div id="html_cc84348416b00116af44fe5b9cbc6d25" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Albany</b><br>Route: Fri_00088</div>`)[0];
+                popup_eab7525569724788bb57c62598575954.setContent(html_cc84348416b00116af44fe5b9cbc6d25);
+            
+        
+
+        circle_marker_f849a5044f6c56691e2b948f29ab6a7f.bindPopup(popup_eab7525569724788bb57c62598575954)
+        ;
+
+        
+    
+    
+            var poly_line_13fe0207f0793e7c4f06495e68f53bc7 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.86554906, 174.7598679], [-36.8486497, 174.7512927], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#2e8b57", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2e8b57", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_02333c03e451941811040939cb940b5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffe48c33767fd0c589814536c9935065 = $(`<div id="html_ffe48c33767fd0c589814536c9935065" style="width: 100.0%; height: 100.0%;"><b>Fri_00090</b><br>Stops: Four Square Eden Terrace &rarr; New World Victoria Park<br>Pallets: 12<br>Duration: 4.47 hrs<br>Cost: $1026.10</div>`)[0];
+                popup_02333c03e451941811040939cb940b5c.setContent(html_ffe48c33767fd0c589814536c9935065);
+            
+        
+
+        poly_line_13fe0207f0793e7c4f06495e68f53bc7.bindPopup(popup_02333c03e451941811040939cb940b5c)
+        ;
+
+        
+    
+    
+            var circle_marker_b0036230b2611b3df05ac52bd3bf0074 = L.circleMarker(
+                [-36.86554906, 174.7598679],
+                {"bubblingMouseEvents": true, "color": "#2e8b57", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2e8b57", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_d620b3d04073a06705242ba4ad768509 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8c461ff81c0e060b730a7fdaf5818b3 = $(`<div id="html_c8c461ff81c0e060b730a7fdaf5818b3" style="width: 100.0%; height: 100.0%;"><b>Four Square Eden Terrace</b><br>Route: Fri_00090</div>`)[0];
+                popup_d620b3d04073a06705242ba4ad768509.setContent(html_c8c461ff81c0e060b730a7fdaf5818b3);
+            
+        
+
+        circle_marker_b0036230b2611b3df05ac52bd3bf0074.bindPopup(popup_d620b3d04073a06705242ba4ad768509)
+        ;
+
+        
+    
+    
+            var circle_marker_e3df86d4184d40f34000fd04abaf9490 = L.circleMarker(
+                [-36.8486497, 174.7512927],
+                {"bubblingMouseEvents": true, "color": "#2e8b57", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2e8b57", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_6ec62e92ed00c044c8f4a5486f8bd88e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09e793324b40e7564f8ac8285455d2e8 = $(`<div id="html_09e793324b40e7564f8ac8285455d2e8" style="width: 100.0%; height: 100.0%;"><b>New World Victoria Park</b><br>Route: Fri_00090</div>`)[0];
+                popup_6ec62e92ed00c044c8f4a5486f8bd88e.setContent(html_09e793324b40e7564f8ac8285455d2e8);
+            
+        
+
+        circle_marker_e3df86d4184d40f34000fd04abaf9490.bindPopup(popup_6ec62e92ed00c044c8f4a5486f8bd88e)
+        ;
+
+        
+    
+    
+            var poly_line_407309eb90084a9e773343c129128917 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8803127, 174.726019], [-36.86976449, 174.7127114], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1e90ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1e90ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_48e72e1ffac22fa2694d941c2c1511f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cdc3f2169cf2a2405d0dacf981f3de15 = $(`<div id="html_cdc3f2169cf2a2405d0dacf981f3de15" style="width: 100.0%; height: 100.0%;"><b>Fri_00092</b><br>Stops: New World Mt Albert &rarr; New World Point Chevalier<br>Pallets: 13<br>Duration: 4.49 hrs<br>Cost: $1030.58</div>`)[0];
+                popup_48e72e1ffac22fa2694d941c2c1511f5.setContent(html_cdc3f2169cf2a2405d0dacf981f3de15);
+            
+        
+
+        poly_line_407309eb90084a9e773343c129128917.bindPopup(popup_48e72e1ffac22fa2694d941c2c1511f5)
+        ;
+
+        
+    
+    
+            var circle_marker_00a41f8e18bf3585ab667f2b62024438 = L.circleMarker(
+                [-36.8803127, 174.726019],
+                {"bubblingMouseEvents": true, "color": "#1e90ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e90ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_9a6ded958ac1c5d46942f3de279ed7a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c68af9f7981175697431c4e84226f3f0 = $(`<div id="html_c68af9f7981175697431c4e84226f3f0" style="width: 100.0%; height: 100.0%;"><b>New World Mt Albert</b><br>Route: Fri_00092</div>`)[0];
+                popup_9a6ded958ac1c5d46942f3de279ed7a4.setContent(html_c68af9f7981175697431c4e84226f3f0);
+            
+        
+
+        circle_marker_00a41f8e18bf3585ab667f2b62024438.bindPopup(popup_9a6ded958ac1c5d46942f3de279ed7a4)
+        ;
+
+        
+    
+    
+            var circle_marker_3345f5bfde63e9d1d9ea22a3397472e4 = L.circleMarker(
+                [-36.86976449, 174.7127114],
+                {"bubblingMouseEvents": true, "color": "#1e90ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e90ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_092d74128efd52010077e4b5200252dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8027f880a457d09e98ead690103e495d = $(`<div id="html_8027f880a457d09e98ead690103e495d" style="width: 100.0%; height: 100.0%;"><b>New World Point Chevalier</b><br>Route: Fri_00092</div>`)[0];
+                popup_092d74128efd52010077e4b5200252dc.setContent(html_8027f880a457d09e98ead690103e495d);
+            
+        
+
+        circle_marker_3345f5bfde63e9d1d9ea22a3397472e4.bindPopup(popup_092d74128efd52010077e4b5200252dc)
+        ;
+
+        
+    
+    
+            var poly_line_36921b5c63afb04ddef58c950c3e3074 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8819007, 174.7976545], [-36.88049823, 174.8117388], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#daa520", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#daa520", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_f77e01d338a97560a9587a6965185f41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5bc33bfaf465ff670db71c456218e1f = $(`<div id="html_a5bc33bfaf465ff670db71c456218e1f" style="width: 100.0%; height: 100.0%;"><b>Fri_00104</b><br>Stops: New World Remuera &rarr; Four Square Remuera<br>Pallets: 12<br>Duration: 4.57 hrs<br>Cost: $1058.24</div>`)[0];
+                popup_f77e01d338a97560a9587a6965185f41.setContent(html_a5bc33bfaf465ff670db71c456218e1f);
+            
+        
+
+        poly_line_36921b5c63afb04ddef58c950c3e3074.bindPopup(popup_f77e01d338a97560a9587a6965185f41)
+        ;
+
+        
+    
+    
+            var circle_marker_7bfc6f4ecd951ef35b73c82ceeee44c8 = L.circleMarker(
+                [-36.8819007, 174.7976545],
+                {"bubblingMouseEvents": true, "color": "#daa520", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#daa520", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_f3b2a782c3bc663619668e7c12110ca0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c78cc2e540143f2c31b9a473a273e8a = $(`<div id="html_3c78cc2e540143f2c31b9a473a273e8a" style="width: 100.0%; height: 100.0%;"><b>New World Remuera</b><br>Route: Fri_00104</div>`)[0];
+                popup_f3b2a782c3bc663619668e7c12110ca0.setContent(html_3c78cc2e540143f2c31b9a473a273e8a);
+            
+        
+
+        circle_marker_7bfc6f4ecd951ef35b73c82ceeee44c8.bindPopup(popup_f3b2a782c3bc663619668e7c12110ca0)
+        ;
+
+        
+    
+    
+            var circle_marker_c6427f63f0e857bd8a7127778bf68ee5 = L.circleMarker(
+                [-36.88049823, 174.8117388],
+                {"bubblingMouseEvents": true, "color": "#daa520", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#daa520", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_853b48c81a0f3a2066d8f760dcfb140b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d11e8bb8e11309c174b256cb6d876e5 = $(`<div id="html_4d11e8bb8e11309c174b256cb6d876e5" style="width: 100.0%; height: 100.0%;"><b>Four Square Remuera</b><br>Route: Fri_00104</div>`)[0];
+                popup_853b48c81a0f3a2066d8f760dcfb140b.setContent(html_4d11e8bb8e11309c174b256cb6d876e5);
+            
+        
+
+        circle_marker_c6427f63f0e857bd8a7127778bf68ee5.bindPopup(popup_853b48c81a0f3a2066d8f760dcfb140b)
+        ;
+
+        
+    
+    
+            var poly_line_faaeb127ccca0547a122d061511bdafe = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.787821, 174.7699787], [-36.8295102, 174.7961934], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#8b008b", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8b008b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_14d00dde93fbc6044ade2a7a55a9725e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49a307764b52e0c785aaaa4b582fb7b9 = $(`<div id="html_49a307764b52e0c785aaaa4b582fb7b9" style="width: 100.0%; height: 100.0%;"><b>Fri_00106</b><br>Stops: New World Metro Shore City &rarr; New World Devonport<br>Pallets: 10<br>Duration: 4.61 hrs<br>Cost: $1067.79</div>`)[0];
+                popup_14d00dde93fbc6044ade2a7a55a9725e.setContent(html_49a307764b52e0c785aaaa4b582fb7b9);
+            
+        
+
+        poly_line_faaeb127ccca0547a122d061511bdafe.bindPopup(popup_14d00dde93fbc6044ade2a7a55a9725e)
+        ;
+
+        
+    
+    
+            var circle_marker_acf145430213b9adc8c6f1ea47975a9a = L.circleMarker(
+                [-36.787821, 174.7699787],
+                {"bubblingMouseEvents": true, "color": "#8b008b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8b008b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_5fea572b0d9f53fdc4ae03e434fdee1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6467e551b97e5713bc8597b08faa6ad3 = $(`<div id="html_6467e551b97e5713bc8597b08faa6ad3" style="width: 100.0%; height: 100.0%;"><b>New World Metro Shore City</b><br>Route: Fri_00106</div>`)[0];
+                popup_5fea572b0d9f53fdc4ae03e434fdee1c.setContent(html_6467e551b97e5713bc8597b08faa6ad3);
+            
+        
+
+        circle_marker_acf145430213b9adc8c6f1ea47975a9a.bindPopup(popup_5fea572b0d9f53fdc4ae03e434fdee1c)
+        ;
+
+        
+    
+    
+            var circle_marker_0ceffd41ffef12ed9c864812fce83303 = L.circleMarker(
+                [-36.8295102, 174.7961934],
+                {"bubblingMouseEvents": true, "color": "#8b008b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8b008b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_95c78658360650799f9ab51eb73d2c97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ade5ac170b0f298190940f136002df7 = $(`<div id="html_3ade5ac170b0f298190940f136002df7" style="width: 100.0%; height: 100.0%;"><b>New World Devonport</b><br>Route: Fri_00106</div>`)[0];
+                popup_95c78658360650799f9ab51eb73d2c97.setContent(html_3ade5ac170b0f298190940f136002df7);
+            
+        
+
+        circle_marker_0ceffd41ffef12ed9c864812fce83303.bindPopup(popup_95c78658360650799f9ab51eb73d2c97)
+        ;
+
+        
+    
+    
+            var poly_line_748224403df0d5211e4c279eb94d9055 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.875811, 174.855104], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#00ced1", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00ced1", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_4d21e2220955536880ecb093c05864bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13e3ebce89c03922d010a680e562c4f7 = $(`<div id="html_13e3ebce89c03922d010a680e562c4f7" style="width: 100.0%; height: 100.0%;"><b>Fri_00109</b><br>Stops: Pak 'n Save Glen Innes<br>Pallets: 11<br>Duration: 4.65 hrs<br>Cost: $1080.06</div>`)[0];
+                popup_4d21e2220955536880ecb093c05864bd.setContent(html_13e3ebce89c03922d010a680e562c4f7);
+            
+        
+
+        poly_line_748224403df0d5211e4c279eb94d9055.bindPopup(popup_4d21e2220955536880ecb093c05864bd)
+        ;
+
+        
+    
+    
+            var circle_marker_5df5d16559dce2ac71d66f2d6fd1a085 = L.circleMarker(
+                [-36.875811, 174.855104],
+                {"bubblingMouseEvents": true, "color": "#00ced1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ced1", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_614a7fc73cf60c581b03f8f354f9a268 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfaee51a26de5701b2d980e65447d3cb = $(`<div id="html_bfaee51a26de5701b2d980e65447d3cb" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Glen Innes</b><br>Route: Fri_00109</div>`)[0];
+                popup_614a7fc73cf60c581b03f8f354f9a268.setContent(html_bfaee51a26de5701b2d980e65447d3cb);
+            
+        
+
+        circle_marker_5df5d16559dce2ac71d66f2d6fd1a085.bindPopup(popup_614a7fc73cf60c581b03f8f354f9a268)
+        ;
+
+        
+    
+    
+            var poly_line_273f2f1492f82093077fcbfaa6d80181 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8508932, 174.8577912], [-36.86099, 174.829238], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#dc143c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#dc143c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_7acf3cfee0f65dc54bb49fab0917d099 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_152d78d4cf2b814b62f9997c7139961f = $(`<div id="html_152d78d4cf2b814b62f9997c7139961f" style="width: 100.0%; height: 100.0%;"><b>Fri_00113</b><br>Stops: Four Square St Heliers &rarr; New World Eastridge<br>Pallets: 11<br>Duration: 4.69 hrs<br>Cost: $1092.47</div>`)[0];
+                popup_7acf3cfee0f65dc54bb49fab0917d099.setContent(html_152d78d4cf2b814b62f9997c7139961f);
+            
+        
+
+        poly_line_273f2f1492f82093077fcbfaa6d80181.bindPopup(popup_7acf3cfee0f65dc54bb49fab0917d099)
+        ;
+
+        
+    
+    
+            var circle_marker_55cddb788566c95e768d327706056609 = L.circleMarker(
+                [-36.8508932, 174.8577912],
+                {"bubblingMouseEvents": true, "color": "#dc143c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc143c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_f56140b6242b8028b7d5b46ffd851ebc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4558d82c71348e3c0c56318080405315 = $(`<div id="html_4558d82c71348e3c0c56318080405315" style="width: 100.0%; height: 100.0%;"><b>Four Square St Heliers</b><br>Route: Fri_00113</div>`)[0];
+                popup_f56140b6242b8028b7d5b46ffd851ebc.setContent(html_4558d82c71348e3c0c56318080405315);
+            
+        
+
+        circle_marker_55cddb788566c95e768d327706056609.bindPopup(popup_f56140b6242b8028b7d5b46ffd851ebc)
+        ;
+
+        
+    
+    
+            var circle_marker_de9f640c878c9aeadddc3f4796044166 = L.circleMarker(
+                [-36.86099, 174.829238],
+                {"bubblingMouseEvents": true, "color": "#dc143c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc143c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_0483408934fa707a89bf4b8fd3dabd26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6d9ba37bb78871b9dc189b72680c950 = $(`<div id="html_a6d9ba37bb78871b9dc189b72680c950" style="width: 100.0%; height: 100.0%;"><b>New World Eastridge</b><br>Route: Fri_00113</div>`)[0];
+                popup_0483408934fa707a89bf4b8fd3dabd26.setContent(html_a6d9ba37bb78871b9dc189b72680c950);
+            
+        
+
+        circle_marker_de9f640c878c9aeadddc3f4796044166.bindPopup(popup_0483408934fa707a89bf4b8fd3dabd26)
+        ;
+
+        
+    
+    
+            var poly_line_38bbdea053fa2edc109ee29479780d09 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8204832, 174.6085373], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#556b2f", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#556b2f", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_6f4ee351acb759fb0d0a9462c78ed2e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab77417299fc6beef5edc147ac17dfba = $(`<div id="html_ab77417299fc6beef5edc147ac17dfba" style="width: 100.0%; height: 100.0%;"><b>Fri_00120</b><br>Stops: Pak 'n Save Westgate<br>Pallets: 13<br>Duration: 4.80 hrs<br>Cost: $1127.91</div>`)[0];
+                popup_6f4ee351acb759fb0d0a9462c78ed2e4.setContent(html_ab77417299fc6beef5edc147ac17dfba);
+            
+        
+
+        poly_line_38bbdea053fa2edc109ee29479780d09.bindPopup(popup_6f4ee351acb759fb0d0a9462c78ed2e4)
+        ;
+
+        
+    
+    
+            var circle_marker_2e071498cde3e8fd89780bbc94cde9e5 = L.circleMarker(
+                [-36.8204832, 174.6085373],
+                {"bubblingMouseEvents": true, "color": "#556b2f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#556b2f", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_054dfcd5b9e1fcabbf12c495d1e6daf2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26e4319c6b145b472f5180e05377b3e7 = $(`<div id="html_26e4319c6b145b472f5180e05377b3e7" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Westgate</b><br>Route: Fri_00120</div>`)[0];
+                popup_054dfcd5b9e1fcabbf12c495d1e6daf2.setContent(html_26e4319c6b145b472f5180e05377b3e7);
+            
+        
+
+        circle_marker_2e071498cde3e8fd89780bbc94cde9e5.bindPopup(popup_054dfcd5b9e1fcabbf12c495d1e6daf2)
+        ;
+
+        
+    
+    
+            var poly_line_3e5451b44f98cbfb57f598a460991ab8 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.6852502, 174.7396625], [-36.6949969, 174.750635], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#ff1493", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff1493", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_08b18b04e0411c534e9e30d3c73cf8f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3c4c5561432eb6ccb2f1b66adc6bb20 = $(`<div id="html_b3c4c5561432eb6ccb2f1b66adc6bb20" style="width: 100.0%; height: 100.0%;"><b>Fri_00155</b><br>Stops: New World Long Bay &rarr; Four Square Torbay<br>Pallets: 11<br>Duration: 5.08 hrs<br>Cost: $1215.95</div>`)[0];
+                popup_08b18b04e0411c534e9e30d3c73cf8f6.setContent(html_b3c4c5561432eb6ccb2f1b66adc6bb20);
+            
+        
+
+        poly_line_3e5451b44f98cbfb57f598a460991ab8.bindPopup(popup_08b18b04e0411c534e9e30d3c73cf8f6)
+        ;
+
+        
+    
+    
+            var circle_marker_b6c8ab6e8b5425506106d28a0d443d83 = L.circleMarker(
+                [-36.6852502, 174.7396625],
+                {"bubblingMouseEvents": true, "color": "#ff1493", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff1493", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_3c7ce3e1f8a6cb113358b948f482a10f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72bda263d0fea824b2e0fdc6877000f6 = $(`<div id="html_72bda263d0fea824b2e0fdc6877000f6" style="width: 100.0%; height: 100.0%;"><b>New World Long Bay</b><br>Route: Fri_00155</div>`)[0];
+                popup_3c7ce3e1f8a6cb113358b948f482a10f.setContent(html_72bda263d0fea824b2e0fdc6877000f6);
+            
+        
+
+        circle_marker_b6c8ab6e8b5425506106d28a0d443d83.bindPopup(popup_3c7ce3e1f8a6cb113358b948f482a10f)
+        ;
+
+        
+    
+    
+            var circle_marker_9be55f7b1e01b6d44d90c08dc0924759 = L.circleMarker(
+                [-36.6949969, 174.750635],
+                {"bubblingMouseEvents": true, "color": "#ff1493", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff1493", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_11d3b5adef1076f12a4581f57c2fbcba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_897aa4db6cd19013e25e516bb6d7afde = $(`<div id="html_897aa4db6cd19013e25e516bb6d7afde" style="width: 100.0%; height: 100.0%;"><b>Four Square Torbay</b><br>Route: Fri_00155</div>`)[0];
+                popup_11d3b5adef1076f12a4581f57c2fbcba.setContent(html_897aa4db6cd19013e25e516bb6d7afde);
+            
+        
+
+        circle_marker_9be55f7b1e01b6d44d90c08dc0924759.bindPopup(popup_11d3b5adef1076f12a4581f57c2fbcba)
+        ;
+
+        
+    
+    
+            var poly_line_c52b01634f20798229de028a79edb7fd = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8574574, 174.6281678], [-36.863634, 174.614478], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#4682b4", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4682b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_98c429dd6b75f95a4e7158f9ab5e459d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_679301aa5e87559a06844d1957cbf009 = $(`<div id="html_679301aa5e87559a06844d1957cbf009" style="width: 100.0%; height: 100.0%;"><b>Fri_00157</b><br>Stops: Pak 'n Save Lincoln Road &rarr; Four Square Fair Price Henderson<br>Pallets: 14<br>Duration: 5.11 hrs<br>Cost: $1225.01</div>`)[0];
+                popup_98c429dd6b75f95a4e7158f9ab5e459d.setContent(html_679301aa5e87559a06844d1957cbf009);
+            
+        
+
+        poly_line_c52b01634f20798229de028a79edb7fd.bindPopup(popup_98c429dd6b75f95a4e7158f9ab5e459d)
+        ;
+
+        
+    
+    
+            var circle_marker_3c06e6fc400bc4e47d8d4b8c971d83cf = L.circleMarker(
+                [-36.8574574, 174.6281678],
+                {"bubblingMouseEvents": true, "color": "#4682b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4682b4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_72dc725e3d81e9302426d368bd6ccd76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f63ee2e6a70fe57f459a2c19b18e5697 = $(`<div id="html_f63ee2e6a70fe57f459a2c19b18e5697" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Lincoln Road</b><br>Route: Fri_00157</div>`)[0];
+                popup_72dc725e3d81e9302426d368bd6ccd76.setContent(html_f63ee2e6a70fe57f459a2c19b18e5697);
+            
+        
+
+        circle_marker_3c06e6fc400bc4e47d8d4b8c971d83cf.bindPopup(popup_72dc725e3d81e9302426d368bd6ccd76)
+        ;
+
+        
+    
+    
+            var circle_marker_3b4b455e0bb5d587becb74293b713b29 = L.circleMarker(
+                [-36.863634, 174.614478],
+                {"bubblingMouseEvents": true, "color": "#4682b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4682b4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_fa9b16f871ae6ff68cde77caf0203a30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fbbd04dd7cc5dcc6c4b0e3f50c40a38 = $(`<div id="html_1fbbd04dd7cc5dcc6c4b0e3f50c40a38" style="width: 100.0%; height: 100.0%;"><b>Four Square Fair Price Henderson</b><br>Route: Fri_00157</div>`)[0];
+                popup_fa9b16f871ae6ff68cde77caf0203a30.setContent(html_1fbbd04dd7cc5dcc6c4b0e3f50c40a38);
+            
+        
+
+        circle_marker_3b4b455e0bb5d587becb74293b713b29.bindPopup(popup_fa9b16f871ae6ff68cde77caf0203a30)
+        ;
+
+        
+    
+    
+            var poly_line_07587896a77ed30d6298ad81cb83c795 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9650866, 174.9148097], [-36.9651717, 174.90233], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#b8860b", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#b8860b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_a27c428a8e9db49ce0ecca2ef6669748 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfc7d70f70ff4cb2b288967ebef2fe4c = $(`<div id="html_bfc7d70f70ff4cb2b288967ebef2fe4c" style="width: 100.0%; height: 100.0%;"><b>Fri_00158</b><br>Stops: Pak 'n Save Ormiston &rarr; Four Square Botany Junction<br>Pallets: 13<br>Duration: 5.14 hrs<br>Cost: $1232.07</div>`)[0];
+                popup_a27c428a8e9db49ce0ecca2ef6669748.setContent(html_bfc7d70f70ff4cb2b288967ebef2fe4c);
+            
+        
+
+        poly_line_07587896a77ed30d6298ad81cb83c795.bindPopup(popup_a27c428a8e9db49ce0ecca2ef6669748)
+        ;
+
+        
+    
+    
+            var circle_marker_2d1aac592eef6165a60f2fecffa8142a = L.circleMarker(
+                [-36.9650866, 174.9148097],
+                {"bubblingMouseEvents": true, "color": "#b8860b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b8860b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_a7ddca4717765f51fbc7b1678f126c6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_869d18c144835e9439b335a8345be1d3 = $(`<div id="html_869d18c144835e9439b335a8345be1d3" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Ormiston</b><br>Route: Fri_00158</div>`)[0];
+                popup_a7ddca4717765f51fbc7b1678f126c6b.setContent(html_869d18c144835e9439b335a8345be1d3);
+            
+        
+
+        circle_marker_2d1aac592eef6165a60f2fecffa8142a.bindPopup(popup_a7ddca4717765f51fbc7b1678f126c6b)
+        ;
+
+        
+    
+    
+            var circle_marker_d78cade8f58aaebbe5f2af9ee5a1157c = L.circleMarker(
+                [-36.9651717, 174.90233],
+                {"bubblingMouseEvents": true, "color": "#b8860b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b8860b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_e43e0840a3895552d23ffbc11d8be90b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e435cc00e5148507dfa3c8fbc58ac36a = $(`<div id="html_e435cc00e5148507dfa3c8fbc58ac36a" style="width: 100.0%; height: 100.0%;"><b>Four Square Botany Junction</b><br>Route: Fri_00158</div>`)[0];
+                popup_e43e0840a3895552d23ffbc11d8be90b.setContent(html_e435cc00e5148507dfa3c8fbc58ac36a);
+            
+        
+
+        circle_marker_d78cade8f58aaebbe5f2af9ee5a1157c.bindPopup(popup_e43e0840a3895552d23ffbc11d8be90b)
+        ;
+
+        
+    
+    
+            var poly_line_5ee155630b85977cd66e6a0e7c0f7458 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9042058, 174.9392803], [-36.904065, 174.9248668], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#6a5acd", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#6a5acd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_bab9a771edef7be162ab701d1caa72ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa80ffca939989531892fb8f666e0c93 = $(`<div id="html_fa80ffca939989531892fb8f666e0c93" style="width: 100.0%; height: 100.0%;"><b>Fri_00160</b><br>Stops: Four Square Cockle Bay &rarr; New World Howick<br>Pallets: 12<br>Duration: 5.14 hrs<br>Cost: $1234.17</div>`)[0];
+                popup_bab9a771edef7be162ab701d1caa72ad.setContent(html_fa80ffca939989531892fb8f666e0c93);
+            
+        
+
+        poly_line_5ee155630b85977cd66e6a0e7c0f7458.bindPopup(popup_bab9a771edef7be162ab701d1caa72ad)
+        ;
+
+        
+    
+    
+            var circle_marker_17aaa615cc3df898795cdff6646cf913 = L.circleMarker(
+                [-36.9042058, 174.9392803],
+                {"bubblingMouseEvents": true, "color": "#6a5acd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6a5acd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_e13a49efad2b05b97a9c0dd587602994 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_609e00a45f5d9494925e619261694668 = $(`<div id="html_609e00a45f5d9494925e619261694668" style="width: 100.0%; height: 100.0%;"><b>Four Square Cockle Bay</b><br>Route: Fri_00160</div>`)[0];
+                popup_e13a49efad2b05b97a9c0dd587602994.setContent(html_609e00a45f5d9494925e619261694668);
+            
+        
+
+        circle_marker_17aaa615cc3df898795cdff6646cf913.bindPopup(popup_e13a49efad2b05b97a9c0dd587602994)
+        ;
+
+        
+    
+    
+            var circle_marker_9b885c07e773d3a82c7958de88b5c295 = L.circleMarker(
+                [-36.904065, 174.9248668],
+                {"bubblingMouseEvents": true, "color": "#6a5acd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6a5acd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_befd465ceccdb190d24a973bbcfd5e88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c1fc35fe9795bbda2310f2489405a6d = $(`<div id="html_5c1fc35fe9795bbda2310f2489405a6d" style="width: 100.0%; height: 100.0%;"><b>New World Howick</b><br>Route: Fri_00160</div>`)[0];
+                popup_befd465ceccdb190d24a973bbcfd5e88.setContent(html_5c1fc35fe9795bbda2310f2489405a6d);
+            
+        
+
+        circle_marker_9b885c07e773d3a82c7958de88b5c295.bindPopup(popup_befd465ceccdb190d24a973bbcfd5e88)
+        ;
+
+        
+    
+    
+            var poly_line_de5324fbe877882ffc81a53a38b30169 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9187942, 174.7851014], [-36.8979098, 174.8096805], [-36.8902739, 174.831971], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#e6194b", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e6194b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_56ba8d3edb554f1a24ab423c2cec14bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a15a2b956acda9283f9d2d92b132a78 = $(`<div id="html_7a15a2b956acda9283f9d2d92b132a78" style="width: 100.0%; height: 100.0%;"><b>Fri_00173</b><br>Stops: Four Square Onehunga &rarr; Four Square Ellerslie &rarr; New World Stonefields<br>Pallets: 14<br>Duration: 5.23 hrs<br>Cost: $1260.85</div>`)[0];
+                popup_56ba8d3edb554f1a24ab423c2cec14bf.setContent(html_7a15a2b956acda9283f9d2d92b132a78);
+            
+        
+
+        poly_line_de5324fbe877882ffc81a53a38b30169.bindPopup(popup_56ba8d3edb554f1a24ab423c2cec14bf)
+        ;
+
+        
+    
+    
+            var circle_marker_0fd964a4ac2155b5350d0ea7ff3f8ddd = L.circleMarker(
+                [-36.9187942, 174.7851014],
+                {"bubblingMouseEvents": true, "color": "#e6194b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e6194b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_8f8c6c3a91775b979c0ccf4570f5525d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fd695c8239652e36ca7d67cfd88e5ad = $(`<div id="html_9fd695c8239652e36ca7d67cfd88e5ad" style="width: 100.0%; height: 100.0%;"><b>Four Square Onehunga</b><br>Route: Fri_00173</div>`)[0];
+                popup_8f8c6c3a91775b979c0ccf4570f5525d.setContent(html_9fd695c8239652e36ca7d67cfd88e5ad);
+            
+        
+
+        circle_marker_0fd964a4ac2155b5350d0ea7ff3f8ddd.bindPopup(popup_8f8c6c3a91775b979c0ccf4570f5525d)
+        ;
+
+        
+    
+    
+            var circle_marker_828d7e249054dbebbb99c38c4d1a6018 = L.circleMarker(
+                [-36.8979098, 174.8096805],
+                {"bubblingMouseEvents": true, "color": "#e6194b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e6194b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_dc197857d4858dcdfaa3d7eb685f3fec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_010d7b989d96ca86f30b5b756ef2eafb = $(`<div id="html_010d7b989d96ca86f30b5b756ef2eafb" style="width: 100.0%; height: 100.0%;"><b>Four Square Ellerslie</b><br>Route: Fri_00173</div>`)[0];
+                popup_dc197857d4858dcdfaa3d7eb685f3fec.setContent(html_010d7b989d96ca86f30b5b756ef2eafb);
+            
+        
+
+        circle_marker_828d7e249054dbebbb99c38c4d1a6018.bindPopup(popup_dc197857d4858dcdfaa3d7eb685f3fec)
+        ;
+
+        
+    
+    
+            var circle_marker_83d08e98b718d65a911913f7651f6624 = L.circleMarker(
+                [-36.8902739, 174.831971],
+                {"bubblingMouseEvents": true, "color": "#e6194b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e6194b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_b9448786dabeed395296a986b5795de2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24413c27a4629f925c2a253061cfee6e = $(`<div id="html_24413c27a4629f925c2a253061cfee6e" style="width: 100.0%; height: 100.0%;"><b>New World Stonefields</b><br>Route: Fri_00173</div>`)[0];
+                popup_b9448786dabeed395296a986b5795de2.setContent(html_24413c27a4629f925c2a253061cfee6e);
+            
+        
+
+        circle_marker_83d08e98b718d65a911913f7651f6624.bindPopup(popup_b9448786dabeed395296a986b5795de2)
+        ;
+
+        
+    
+    
+            var poly_line_5c3d63a648a3b3d10ececd5b3085cf1c = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8990418, 174.9068675], [-36.9151401, 174.8895497], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#3cb44b", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3cb44b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_722858269a4f6526cec4a314602d98d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b83db4ee981221675715e1cb605671df = $(`<div id="html_b83db4ee981221675715e1cb605671df" style="width: 100.0%; height: 100.0%;"><b>Fri_00182</b><br>Stops: Pak 'n Save Highland Park &rarr; Four Square Pakuranga Heights<br>Pallets: 13<br>Duration: 5.27 hrs<br>Cost: $1273.61</div>`)[0];
+                popup_722858269a4f6526cec4a314602d98d1.setContent(html_b83db4ee981221675715e1cb605671df);
+            
+        
+
+        poly_line_5c3d63a648a3b3d10ececd5b3085cf1c.bindPopup(popup_722858269a4f6526cec4a314602d98d1)
+        ;
+
+        
+    
+    
+            var circle_marker_f1a1c6cd9fc62f6f49e333ec74d51895 = L.circleMarker(
+                [-36.8990418, 174.9068675],
+                {"bubblingMouseEvents": true, "color": "#3cb44b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3cb44b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_fdc1221499b41102e6f5553729ff7bc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a444f54a71109b61095f4513b30dff1d = $(`<div id="html_a444f54a71109b61095f4513b30dff1d" style="width: 100.0%; height: 100.0%;"><b>Pak 'n Save Highland Park</b><br>Route: Fri_00182</div>`)[0];
+                popup_fdc1221499b41102e6f5553729ff7bc9.setContent(html_a444f54a71109b61095f4513b30dff1d);
+            
+        
+
+        circle_marker_f1a1c6cd9fc62f6f49e333ec74d51895.bindPopup(popup_fdc1221499b41102e6f5553729ff7bc9)
+        ;
+
+        
+    
+    
+            var circle_marker_02355ee0760b5277e76815b676ca507e = L.circleMarker(
+                [-36.9151401, 174.8895497],
+                {"bubblingMouseEvents": true, "color": "#3cb44b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3cb44b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_beb2e0c08df6b666e050240465f50144 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76b8c42e572e087dc6b3c56c020c775d = $(`<div id="html_76b8c42e572e087dc6b3c56c020c775d" style="width: 100.0%; height: 100.0%;"><b>Four Square Pakuranga Heights</b><br>Route: Fri_00182</div>`)[0];
+                popup_beb2e0c08df6b666e050240465f50144.setContent(html_76b8c42e572e087dc6b3c56c020c775d);
+            
+        
+
+        circle_marker_02355ee0760b5277e76815b676ca507e.bindPopup(popup_beb2e0c08df6b666e050240465f50144)
+        ;
+
+        
+    
+    
+            var poly_line_a59c94651e77440ea70f42c9d05db9d7 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8114278, 174.7114858], [-36.789503, 174.694978], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#4363d8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4363d8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_ba4605da039114b69524e520b4c10fa9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e469fe0564450461b200524e86038f0a = $(`<div id="html_e469fe0564450461b200524e86038f0a" style="width: 100.0%; height: 100.0%;"><b>Fri_00185</b><br>Stops: New World Birkenhead &rarr; Four Square Lancaster<br>Pallets: 13<br>Duration: 5.28 hrs<br>Cost: $1276.55</div>`)[0];
+                popup_ba4605da039114b69524e520b4c10fa9.setContent(html_e469fe0564450461b200524e86038f0a);
+            
+        
+
+        poly_line_a59c94651e77440ea70f42c9d05db9d7.bindPopup(popup_ba4605da039114b69524e520b4c10fa9)
+        ;
+
+        
+    
+    
+            var circle_marker_b26ef21799f86558e313f89e929cd7aa = L.circleMarker(
+                [-36.8114278, 174.7114858],
+                {"bubblingMouseEvents": true, "color": "#4363d8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4363d8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_68e67a14d6060d2939d0e78bcace04bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a55c880d05fe759127b5ee92c8138a61 = $(`<div id="html_a55c880d05fe759127b5ee92c8138a61" style="width: 100.0%; height: 100.0%;"><b>New World Birkenhead</b><br>Route: Fri_00185</div>`)[0];
+                popup_68e67a14d6060d2939d0e78bcace04bc.setContent(html_a55c880d05fe759127b5ee92c8138a61);
+            
+        
+
+        circle_marker_b26ef21799f86558e313f89e929cd7aa.bindPopup(popup_68e67a14d6060d2939d0e78bcace04bc)
+        ;
+
+        
+    
+    
+            var circle_marker_60d86e8e6021497e261ba419d0203301 = L.circleMarker(
+                [-36.789503, 174.694978],
+                {"bubblingMouseEvents": true, "color": "#4363d8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4363d8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_a37f8861ca4924a4f06c27a1d65b2626 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d9f678d397b535116b25cd862b1248b = $(`<div id="html_2d9f678d397b535116b25cd862b1248b" style="width: 100.0%; height: 100.0%;"><b>Four Square Lancaster</b><br>Route: Fri_00185</div>`)[0];
+                popup_a37f8861ca4924a4f06c27a1d65b2626.setContent(html_2d9f678d397b535116b25cd862b1248b);
+            
+        
+
+        circle_marker_60d86e8e6021497e261ba419d0203301.bindPopup(popup_a37f8861ca4924a4f06c27a1d65b2626)
+        ;
+
+        
+    
+    
+            var poly_line_5b5d5a5d1f22638c451381ff6d0ba215 = L.polyline(
+                [[-36.9079041, 174.7281051], [-37.064268, 174.9411007], [-37.0225053, 174.8967004], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#f58231", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f58231", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_c9f58b7cb8429e2ee76a5d701c9787be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cba8606047dbd0027008c642ec7756cb = $(`<div id="html_cba8606047dbd0027008c642ec7756cb" style="width: 100.0%; height: 100.0%;"><b>Fri_00506</b><br>Stops: New World Papakura &rarr; New World Southmall<br>Pallets: 15<br>Duration: 5.94 hrs<br>Cost: $1480.75</div>`)[0];
+                popup_c9f58b7cb8429e2ee76a5d701c9787be.setContent(html_cba8606047dbd0027008c642ec7756cb);
+            
+        
+
+        poly_line_5b5d5a5d1f22638c451381ff6d0ba215.bindPopup(popup_c9f58b7cb8429e2ee76a5d701c9787be)
+        ;
+
+        
+    
+    
+            var circle_marker_109b94ac962f54286fe4bc0e044b28aa = L.circleMarker(
+                [-37.064268, 174.9411007],
+                {"bubblingMouseEvents": true, "color": "#f58231", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f58231", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_0e028c712d4032e8d1111f2052bd1831 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0160b18720c673b204e536f2f41515f = $(`<div id="html_f0160b18720c673b204e536f2f41515f" style="width: 100.0%; height: 100.0%;"><b>New World Papakura</b><br>Route: Fri_00506</div>`)[0];
+                popup_0e028c712d4032e8d1111f2052bd1831.setContent(html_f0160b18720c673b204e536f2f41515f);
+            
+        
+
+        circle_marker_109b94ac962f54286fe4bc0e044b28aa.bindPopup(popup_0e028c712d4032e8d1111f2052bd1831)
+        ;
+
+        
+    
+    
+            var circle_marker_13259c165e63f231092a4d887cb68995 = L.circleMarker(
+                [-37.0225053, 174.8967004],
+                {"bubblingMouseEvents": true, "color": "#f58231", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f58231", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_8944c236befdafa190c3f59f41757f03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c49b6b84df6f5f50396f4ce149599469 = $(`<div id="html_c49b6b84df6f5f50396f4ce149599469" style="width: 100.0%; height: 100.0%;"><b>New World Southmall</b><br>Route: Fri_00506</div>`)[0];
+                popup_8944c236befdafa190c3f59f41757f03.setContent(html_c49b6b84df6f5f50396f4ce149599469);
+            
+        
+
+        circle_marker_13259c165e63f231092a4d887cb68995.bindPopup(popup_8944c236befdafa190c3f59f41757f03)
+        ;
+
+        
+    
+    
+            var poly_line_8e6eb4d13f30a5cd4b940f577d8468ea = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9338828, 174.9114914], [-36.9645274, 174.911826], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#911eb4", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#911eb4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_64f1e5e217be1ec33be44833a68cb531 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0fedc96ff0f678d6f9431653a23ecb63 = $(`<div id="html_0fedc96ff0f678d6f9431653a23ecb63" style="width: 100.0%; height: 100.0%;"><b>Fri_00724</b><br>Stops: New World Botany &rarr; New World Ormiston<br>Pallets: 16<br>Duration: 6.22 hrs<br>Cost: $1567.04</div>`)[0];
+                popup_64f1e5e217be1ec33be44833a68cb531.setContent(html_0fedc96ff0f678d6f9431653a23ecb63);
+            
+        
+
+        poly_line_8e6eb4d13f30a5cd4b940f577d8468ea.bindPopup(popup_64f1e5e217be1ec33be44833a68cb531)
+        ;
+
+        
+    
+    
+            var circle_marker_014f26566ce69116175bcc08da34208b = L.circleMarker(
+                [-36.9338828, 174.9114914],
+                {"bubblingMouseEvents": true, "color": "#911eb4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#911eb4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_e3ef53d72e46f8798ad808c700f9ace2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_103037d268c0a71927787db99293acb6 = $(`<div id="html_103037d268c0a71927787db99293acb6" style="width: 100.0%; height: 100.0%;"><b>New World Botany</b><br>Route: Fri_00724</div>`)[0];
+                popup_e3ef53d72e46f8798ad808c700f9ace2.setContent(html_103037d268c0a71927787db99293acb6);
+            
+        
+
+        circle_marker_014f26566ce69116175bcc08da34208b.bindPopup(popup_e3ef53d72e46f8798ad808c700f9ace2)
+        ;
+
+        
+    
+    
+            var circle_marker_7618dc9a12f6387b9b19110bb2670b17 = L.circleMarker(
+                [-36.9645274, 174.911826],
+                {"bubblingMouseEvents": true, "color": "#911eb4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#911eb4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_e39f276b42835d5d3139175db2a48728 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fb9a436f8e10c62f5299e09b886e2d4 = $(`<div id="html_0fb9a436f8e10c62f5299e09b886e2d4" style="width: 100.0%; height: 100.0%;"><b>New World Ormiston</b><br>Route: Fri_00724</div>`)[0];
+                popup_e39f276b42835d5d3139175db2a48728.setContent(html_0fb9a436f8e10c62f5299e09b886e2d4);
+            
+        
+
+        circle_marker_7618dc9a12f6387b9b19110bb2670b17.bindPopup(popup_e39f276b42835d5d3139175db2a48728)
+        ;
+
+        
+    
+    
+            var poly_line_f2fa6023ac0ebb8d198412834add8797 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.7281436, 174.710513], [-36.7159615, 174.7472869], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#46f0f0", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#46f0f0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_29ce4ceb2c05e714bfd962b1d3cd9b59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f66af00283268ef45b455ee4b3fe24b = $(`<div id="html_4f66af00283268ef45b455ee4b3fe24b" style="width: 100.0%; height: 100.0%;"><b>Fri_00964</b><br>Stops: New World Albany &rarr; New World Browns Bay<br>Pallets: 16<br>Duration: 6.47 hrs<br>Cost: $1645.94</div>`)[0];
+                popup_29ce4ceb2c05e714bfd962b1d3cd9b59.setContent(html_4f66af00283268ef45b455ee4b3fe24b);
+            
+        
+
+        poly_line_f2fa6023ac0ebb8d198412834add8797.bindPopup(popup_29ce4ceb2c05e714bfd962b1d3cd9b59)
+        ;
+
+        
+    
+    
+            var circle_marker_0c3fd19d8a35befbff87dd5b15519c23 = L.circleMarker(
+                [-36.7281436, 174.710513],
+                {"bubblingMouseEvents": true, "color": "#46f0f0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#46f0f0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_b086440918f6b1e7bb02416634465c55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_354851b6a365b6d368b210ad16ba3bf8 = $(`<div id="html_354851b6a365b6d368b210ad16ba3bf8" style="width: 100.0%; height: 100.0%;"><b>New World Albany</b><br>Route: Fri_00964</div>`)[0];
+                popup_b086440918f6b1e7bb02416634465c55.setContent(html_354851b6a365b6d368b210ad16ba3bf8);
+            
+        
+
+        circle_marker_0c3fd19d8a35befbff87dd5b15519c23.bindPopup(popup_b086440918f6b1e7bb02416634465c55)
+        ;
+
+        
+    
+    
+            var circle_marker_6d88d0adccb7999b5e6ab4d76235ec46 = L.circleMarker(
+                [-36.7159615, 174.7472869],
+                {"bubblingMouseEvents": true, "color": "#46f0f0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#46f0f0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e81643ced7c9d2fdbd48dc40881104c3);
+        
+    
+        var popup_f959c71f3c3fd982489d993b80f5288f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e774b7d1d4c90a0f5f541be22a43a56c = $(`<div id="html_e774b7d1d4c90a0f5f541be22a43a56c" style="width: 100.0%; height: 100.0%;"><b>New World Browns Bay</b><br>Route: Fri_00964</div>`)[0];
+                popup_f959c71f3c3fd982489d993b80f5288f.setContent(html_e774b7d1d4c90a0f5f541be22a43a56c);
+            
+        
+
+        circle_marker_6d88d0adccb7999b5e6ab4d76235ec46.bindPopup(popup_f959c71f3c3fd982489d993b80f5288f)
+        ;
+
+        
+    
+    
+            feature_group_e81643ced7c9d2fdbd48dc40881104c3.addTo(map_63aa1a6f4674d53ffe4c6f50d43dc781);
+        
+    
+            var feature_group_f8ab6a89ae798886a3d652b812377515 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_84b2047a8ab5ea42d4845a76e558cd6e = L.marker(
+                [-36.7281436, 174.710513],
+                {
+}
+            ).addTo(feature_group_f8ab6a89ae798886a3d652b812377515);
+        
+    
+            var icon_bfcf49bd3e6c9f500cedc39d0b3c499f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ban",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7efb6620d89ee84249dcf216257a201a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dddfd4eeb788bb85a454bdfa72a83de0 = $(`<div id="html_dddfd4eeb788bb85a454bdfa72a83de0" style="width: 100.0%; height: 100.0%;"><b>SHED:</b> New World Albany<br>(skipped under fuel-reduction plan)</div>`)[0];
+                popup_7efb6620d89ee84249dcf216257a201a.setContent(html_dddfd4eeb788bb85a454bdfa72a83de0);
+            
+        
+
+        marker_84b2047a8ab5ea42d4845a76e558cd6e.bindPopup(popup_7efb6620d89ee84249dcf216257a201a)
+        ;
+
+        
+    
+    
+                marker_84b2047a8ab5ea42d4845a76e558cd6e.setIcon(icon_bfcf49bd3e6c9f500cedc39d0b3c499f);
+            
+    
+            var marker_8870a9d53ed735026fef775623464998 = L.marker(
+                [-36.8114278, 174.7114858],
+                {
+}
+            ).addTo(feature_group_f8ab6a89ae798886a3d652b812377515);
+        
+    
+            var icon_8de00e3f03aa3f0d2dae5cc49b80935e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ban",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b521a68fb14d59667e820129fcaf6442 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cff1131684371a75a02cbf3cd7b3a7d = $(`<div id="html_0cff1131684371a75a02cbf3cd7b3a7d" style="width: 100.0%; height: 100.0%;"><b>SHED:</b> New World Birkenhead<br>(skipped under fuel-reduction plan)</div>`)[0];
+                popup_b521a68fb14d59667e820129fcaf6442.setContent(html_0cff1131684371a75a02cbf3cd7b3a7d);
+            
+        
+
+        marker_8870a9d53ed735026fef775623464998.bindPopup(popup_b521a68fb14d59667e820129fcaf6442)
+        ;
+
+        
+    
+    
+                marker_8870a9d53ed735026fef775623464998.setIcon(icon_8de00e3f03aa3f0d2dae5cc49b80935e);
+            
+    
+            var marker_1a4a097413f8a8acaea760958be2722b = L.marker(
+                [-36.7159615, 174.7472869],
+                {
+}
+            ).addTo(feature_group_f8ab6a89ae798886a3d652b812377515);
+        
+    
+            var icon_f9b921083929a65f99131925b82d71cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ban",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0af483f9230f1ee48d6797cb5867f3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f1fda714ae2026a0541c9a3e8322a00 = $(`<div id="html_8f1fda714ae2026a0541c9a3e8322a00" style="width: 100.0%; height: 100.0%;"><b>SHED:</b> New World Browns Bay<br>(skipped under fuel-reduction plan)</div>`)[0];
+                popup_a0af483f9230f1ee48d6797cb5867f3e.setContent(html_8f1fda714ae2026a0541c9a3e8322a00);
+            
+        
+
+        marker_1a4a097413f8a8acaea760958be2722b.bindPopup(popup_a0af483f9230f1ee48d6797cb5867f3e)
+        ;
+
+        
+    
+    
+                marker_1a4a097413f8a8acaea760958be2722b.setIcon(icon_f9b921083929a65f99131925b82d71cf);
+            
+    
+            var marker_b19ebced239d4c9aa842a2b21f04198a = L.marker(
+                [-36.904065, 174.9248668],
+                {
+}
+            ).addTo(feature_group_f8ab6a89ae798886a3d652b812377515);
+        
+    
+            var icon_967efc1e3f6ca1d959c229162d6a3138 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ban",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f28ef0e8135b55089c92e9c7deb94454 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77856c42dbcf60d530ab57377b9a9038 = $(`<div id="html_77856c42dbcf60d530ab57377b9a9038" style="width: 100.0%; height: 100.0%;"><b>SHED:</b> New World Howick<br>(skipped under fuel-reduction plan)</div>`)[0];
+                popup_f28ef0e8135b55089c92e9c7deb94454.setContent(html_77856c42dbcf60d530ab57377b9a9038);
+            
+        
+
+        marker_b19ebced239d4c9aa842a2b21f04198a.bindPopup(popup_f28ef0e8135b55089c92e9c7deb94454)
+        ;
+
+        
+    
+    
+                marker_b19ebced239d4c9aa842a2b21f04198a.setIcon(icon_967efc1e3f6ca1d959c229162d6a3138);
+            
+    
+            var marker_68e9a71d69d22869132b564c519db9c3 = L.marker(
+                [-36.7722983, 174.7648051],
+                {
+}
+            ).addTo(feature_group_f8ab6a89ae798886a3d652b812377515);
+        
+    
+            var icon_16c5fbfc27b9b4c8c9914412da18495a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ban",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15ada5ab7637337b0c118eb72213724c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0f2312036d67e10cac0d66dacf6c7c4 = $(`<div id="html_d0f2312036d67e10cac0d66dacf6c7c4" style="width: 100.0%; height: 100.0%;"><b>SHED:</b> New World Milford<br>(skipped under fuel-reduction plan)</div>`)[0];
+                popup_15ada5ab7637337b0c118eb72213724c.setContent(html_d0f2312036d67e10cac0d66dacf6c7c4);
+            
+        
+
+        marker_68e9a71d69d22869132b564c519db9c3.bindPopup(popup_15ada5ab7637337b0c118eb72213724c)
+        ;
+
+        
+    
+    
+                marker_68e9a71d69d22869132b564c519db9c3.setIcon(icon_16c5fbfc27b9b4c8c9914412da18495a);
+            
+    
+            var layer_control_6fec7bd015b942240579ba0ac75d8997_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_feae7a1e3d054b62d807102986cf9db3,
+                },
+                overlays :  {
+                    "Delivery Routes (36)" : feature_group_e81643ced7c9d2fdbd48dc40881104c3,
+                    "Shed Stores - Fuel Reduction (5)" : feature_group_f8ab6a89ae798886a3d652b812377515,
+                },
+            };
+            let layer_control_6fec7bd015b942240579ba0ac75d8997 = L.control.layers(
+                layer_control_6fec7bd015b942240579ba0ac75d8997_layers.base_layers,
+                layer_control_6fec7bd015b942240579ba0ac75d8997_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_63aa1a6f4674d53ffe4c6f50d43dc781);
+
+        
+</script>
+</html>

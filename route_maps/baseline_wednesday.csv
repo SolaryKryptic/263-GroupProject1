@@ -1,0 +1,37 @@
+route_id,mode,stops,num_stops,total_pallets,total_duration_sec,cost
+Wed_00018,owned,New World Mt Albert,1,8,10093.78,616.8421111
+Wed_00019,owned,New World Mt Roskill,1,9,10112.66,617.9958889
+Wed_00020,owned,New World New Lynn,1,8,10301.69,629.5477222
+Wed_00043,owned,New World Papatoetoe,1,9,12765.88,780.1371111
+Wed_00051,owned,Pak 'n Save Royal Oak,1,11,13493.54,824.6052222
+Wed_00053,owned,New World Victoria Park;Four Square Britomart,2,10,14030.73,857.4335
+Wed_00054,owned,Pak 'n Save Westgate,1,10,14039,857.9388889
+Wed_00057,owned,Pak 'n Save Mt Albert,1,12,14259.27,871.3998333
+Wed_00059,owned,New World Hobsonville;Four Square Hobsonville,2,10,14572.02,894.8128333
+Wed_00061,owned,Four Square Glen Eden;New World Green Bay,2,11,14606.09,897.7466389
+Wed_00063,owned,Four Square Eden Terrace;New World Point Chevalier,2,11,14643.44,900.9628889
+Wed_00070,owned,Four Square Onehunga;Four Square Ellerslie;Four Square Remuera,3,11,15180.65,947.2226389
+Wed_00072,owned,New World Devonport,1,9,15228.05,951.3043056
+Wed_00073,owned,Pak 'n Save Manukau,1,11,15236.7,952.0491667
+Wed_00075,owned,Pak 'n Save Mangere,1,12,15279.57,955.74075
+Wed_00084,owned,Pak 'n Save Highland Park,1,10,15558.37,979.7485278
+Wed_00089,owned,Pak 'n Save Clendon,1,11,15687.34,990.8542778
+Wed_00091,owned,New World Birkenhead;Four Square Lancaster,2,10,15765.15,997.5545833
+Wed_00102,owned,Pak 'n Save Wairau Road,1,11,16160.95,1031.637361
+Wed_00105,owned,Pak 'n Save Henderson,1,12,16311.09,1044.566083
+Wed_00119,owned,New World Milford;New World Metro Shore City,2,11,16603.79,1069.770806
+Wed_00125,owned,Pak 'n Save Sylvia Park,1,12,16889.55,1094.377917
+Wed_00135,owned,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson,2,13,17326.51,1132.005028
+Wed_00137,owned,Pak 'n Save Ormiston,1,12,17377.23,1136.372583
+Wed_00143,owned,Pak 'n Save Papakura,1,12,17631.63,1158.27925
+Wed_00187,owned,New World Papakura;New World Southmall,2,13,19216.43,1294.748139
+Wed_00295,owned,Pak 'n Save Albany,1,14,20379.99,1394.943583
+Wed_00333,owned,New World Howick;Four Square Cockle Bay;Four Square Botany Junction,3,14,20633.84,1416.802889
+Wed_00335,owned,New World Remuera;New World Newmarket,2,16,20648.33,1418.050639
+Wed_00380,owned,New World Stonefields;New World Eastridge,2,15,20933.24,1442.584556
+Wed_00411,owned,Four Square Pakuranga Heights;Pak 'n Save Botany,2,15,21055.81,1453.139194
+Wed_00467,owned,New World Botany;New World Ormiston,2,15,21298.55,1474.041806
+Wed_00722,owned,Pak 'n Save Glen Innes;Four Square St Heliers,2,16,22437.14,1572.087056
+Wed_00846,owned,New World Long Bay;Four Square Torbay;New World Metro Queen St,3,15,22953.07,1616.514361
+Wed_00903,owned,New World Albany;New World Browns Bay,2,16,23294.75,1645.936806
+TOTAL,,,,,,37919.75494
