@@ -24,7 +24,7 @@ import openrouteservice
 from build_maps_common import DAYS, load_locations, load_day_data, build_map
 
 # --- put your OpenRouteService API key here ---
-ORS_API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6IjlmNDA2Nzg0YmNiNTQwZjY5ZTdmMDgwODZiNDA3YjcxIiwiaCI6Im11cm11cjY0In0="
+ORS_API_KEY = "Paste API key here"
 
 client = openrouteservice.Client(key=ORS_API_KEY)
 
