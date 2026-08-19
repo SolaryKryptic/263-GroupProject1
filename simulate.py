@@ -54,7 +54,7 @@ CAPACITY_PALLETS = 16
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 SOL_DIR_SHED = "Route generation/Solutions/Shedding Allowed"
 SOL_DIR_NOSHED = "Route generation/Solutions/Shedding not allowed"
-DEMAND_CSV = "0_5ayush6week-estimated_demand.csv"
+DEMAND_CSV = "estimations/0_5ayush6week-estimated_demand.csv"
 
 # ── BETA DISTRIBUTIONS (right-skewed) ──
 BETA_PARAMS = {
@@ -146,6 +146,9 @@ def simulate_day(day, routes, skipped, demand, types, rng):
     n_overflow = 0
     route_durations = []
 
+    total_est_pallets = 0
+    total_delivered_pallets = 0
+
     # Traffic multipliers (one per route)
     am_key = "Saturday AM" if day == "Saturday" else "Weekday AM"
     pm_key = "Saturday PM" if day == "Saturday" else "Weekday PM"
@@ -159,21 +162,28 @@ def simulate_day(day, routes, skipped, demand, types, rng):
 
         # Sample actual demand for each stop
         actual_pallets = 0
+        route_est = 0
         for store in r["stops"]:
             est = demand[store][day]
+            route_est += est
             # Normal demand: mean=estimate, std=sqrt(estimate)
             std = max(np.sqrt(est), 0.5)
             actual = max(0, int(round(rng.normal(est, std))))
             actual_pallets += actual
 
+        total_est_pallets += route_est
+
         # Check capacity overflow
+        delivered = actual_pallets
         if actual_pallets > CAPACITY_PALLETS:
             overflow = actual_pallets - CAPACITY_PALLETS
             n_overflow += 1
-            actual_pallets = CAPACITY_PALLETS  # truck carries max
+            delivered = CAPACITY_PALLETS  # truck carries max
             # Overflow handled by wet-lease (minimum 2-hr block)
             overflow_duration = overflow * UNLOAD_MIN_PER_PALLET * 60
             total_leased += leased_cost(overflow_duration)
+
+        total_delivered_pallets += delivered
 
         # Recompute duration:
         # base travel = total_duration - (estimated_pallets * unloading_time)
@@ -184,7 +194,7 @@ def simulate_day(day, routes, skipped, demand, types, rng):
             base_travel = 0  # safety
 
         new_travel = base_travel * traffic_mult
-        new_unload = actual_pallets * UNLOAD_MIN_PER_PALLET * 60
+        new_unload = delivered * UNLOAD_MIN_PER_PALLET * 60
         new_duration = new_travel + new_unload
 
         route_durations.append(new_duration / 3600.0)
@@ -202,6 +212,8 @@ def simulate_day(day, routes, skipped, demand, types, rng):
     for s in skipped:
         total_shed += skip_cost(s)
 
+    demand_met_pct = (total_delivered_pallets / total_est_pallets * 100) if total_est_pallets > 0 else 100.0
+
     return {
         "owned": total_owned,
         "leased": total_leased,
@@ -209,6 +221,7 @@ def simulate_day(day, routes, skipped, demand, types, rng):
         "total": total_owned + total_leased + total_shed,
         "overtime_min": total_overtime_min,
         "overflow_routes": n_overflow,
+        "demand_met_pct": demand_met_pct,
         "durations": route_durations,
     }
 
@@ -315,6 +328,91 @@ def plot_comparison(shed_results, noshed_results):
     print("Saved simulate_shed_vs_noshed.png")
 
 
+def plot_noshed_bars(all_results):
+    """3 bar graphs for no-shedding scenario:
+    1. Total cost (simulations on y, cost on x)
+    2. Demand met % (simulations on y, % on x)
+    3. Routes with shortfall (simulations on y, count on x)
+    """
+    colors = ["#1B4F72", "#2176AE", "#5DADE2", "#E76F51", "#F4A261", "#2A9D8F"]
+
+    # Collect all data across days
+    all_totals = []
+    all_demands = []
+    all_shortfalls = []
+    for day in DAYS:
+        res = all_results[day]
+        all_totals.extend([r["total"] for r in res])
+        all_demands.extend([r["demand_met_pct"] for r in res])
+        all_shortfalls.extend([r["overflow_routes"] for r in res])
+
+    # Shared bin edges across all days
+    cost_bins = np.linspace(min(all_totals) - 500, max(all_totals) + 500, 40)
+    dem_bins = np.linspace(min(all_demands) - 0.5, 100.5, 30)
+    max_sf = max(all_shortfalls) if max(all_shortfalls) > 0 else 1
+    sf_bins = np.arange(-0.5, max_sf + 1.5, 1)
+
+    fig, axes = plt.subplots(1, 3, figsize=(18, 6))
+
+    # ── Plot 1: Total Cost Histogram ──
+    ax = axes[0]
+    for idx, day in enumerate(DAYS):
+        res = all_results[day]
+        totals = [r["total"] for r in res]
+        counts, _ = np.histogram(totals, bins=cost_bins)
+        bin_centers = (cost_bins[:-1] + cost_bins[1:]) / 2
+        ax.bar(bin_centers, counts, width=(cost_bins[1] - cost_bins[0]) * 0.85,
+               alpha=0.5, color=colors[idx], label=day[:3], edgecolor="none")
+
+    ax.set_xlabel("Total Cost ($)", fontsize=12)
+    ax.set_ylabel("Number of Simulations", fontsize=12)
+    ax.set_title("Total Cost Distribution\n(No Shedding)", fontsize=13, fontweight="bold")
+    ax.xaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"${x:,.0f}"))
+    ax.legend(fontsize=8)
+    ax.grid(True, alpha=0.2, axis="y")
+
+    # ── Plot 2: Demand Met % Histogram ──
+    ax = axes[1]
+    for idx, day in enumerate(DAYS):
+        res = all_results[day]
+        demands = [r["demand_met_pct"] for r in res]
+        counts, _ = np.histogram(demands, bins=dem_bins)
+        bin_centers = (dem_bins[:-1] + dem_bins[1:]) / 2
+        ax.bar(bin_centers, counts, width=(dem_bins[1] - dem_bins[0]) * 0.85,
+               alpha=0.5, color=colors[idx], label=day[:3], edgecolor="none")
+
+    ax.set_xlabel("Demand Met (%)", fontsize=12)
+    ax.set_ylabel("Number of Simulations", fontsize=12)
+    ax.set_title("Demand Fulfillment Distribution\n(No Shedding)", fontsize=13, fontweight="bold")
+    ax.legend(fontsize=8)
+    ax.grid(True, alpha=0.2, axis="y")
+
+    # ── Plot 3: Routes with Shortfall Histogram ──
+    ax = axes[2]
+    bar_width = 0.12
+    day_offsets = np.arange(len(DAYS)) - (len(DAYS) - 1) / 2 * bar_width
+
+    for idx, day in enumerate(DAYS):
+        res = all_results[day]
+        shortfalls = [r["overflow_routes"] for r in res]
+        counts, _ = np.histogram(shortfalls, bins=sf_bins)
+        bin_centers = (sf_bins[:-1] + sf_bins[1:]) / 2
+        ax.bar(bin_centers + idx * bar_width, counts, width=bar_width * 0.9,
+               alpha=0.7, color=colors[idx], label=day[:3], edgecolor="none")
+
+    ax.set_xlabel("Routes with Shortfall (actual demand > 16 pallets)", fontsize=12)
+    ax.set_ylabel("Number of Simulations", fontsize=12)
+    ax.set_title("Route Shortfall Distribution\n(No Shedding)", fontsize=13, fontweight="bold")
+    ax.set_xticks(np.arange(0, max_sf + 1))
+    ax.legend(fontsize=8)
+    ax.grid(True, alpha=0.2, axis="y")
+
+    fig.suptitle(f"Monte Carlo Simulation Results — No Shedding ({N_ITER} iterations)", fontsize=14, y=1.02)
+    fig.tight_layout()
+    fig.savefig("simulate_noshed_3metrics.png", dpi=150, bbox_inches="tight")
+    print("Saved simulate_noshed_3metrics.png")
+
+
 def print_summary(all_results, label):
     """Print summary stats for one scenario."""
     print(f"\n{'='*70}")
@@ -367,6 +465,7 @@ def main():
     plot_results(shed_results, "With Shedding")
     plot_results(noshed_results, "No Shedding")
     plot_comparison(shed_results, noshed_results)
+    plot_noshed_bars(noshed_results)
 
     # Final comparison
     shed_weekly = sum(np.mean([r["total"] for r in shed_results[d]]) for d in DAYS)
