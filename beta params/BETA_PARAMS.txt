@@ -1,0 +1,8 @@
+GENERATED BETA_PARAMS (traffic duration multiplier, right-skewed)
+=================================================================
+BETA_PARAMS = {
+    "Weekday AM": {"a": 2.000, "b": 7.614, "low": 1.393, "high": 6.667},
+    "Weekday PM": {"a": 2.000, "b": 9.221, "low": 1.664, "high": 7.715},
+    "Saturday AM": {"a": 2.000, "b": 6.311, "low": 0.770, "high": 6.735},
+    "Saturday PM": {"a": 2.000, "b": 7.658, "low": 0.836, "high": 8.629},
+}
