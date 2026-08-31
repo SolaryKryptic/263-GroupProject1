@@ -186,29 +186,27 @@ def visualize(params: dict[str, dict[str, float]]) -> None:
     }
     ls_map = {"AM": "-", "PM": "--"}
 
-    for day, entries in palettes.items():
-        fig, ax = plt.subplots(figsize=(10, 6))
-        x = np.linspace(0.6, 9.0, 600)
+    fig, ax = plt.subplots(figsize=(10, 6))
+    x = np.linspace(0.6, 9.0, 600)
 
-        for col, key in entries:
-            pdf = scaled_beta_pdf(x, params[key])
-            ls = ls_map[key.split(" ")[1]]
-            ax.plot(x, pdf, color=col, lw=2.5, ls=ls, label=key,
-                    alpha=0.95)
-            ax.fill_between(x, pdf, alpha=0.25, color=col)
+    for col, key in palettes["Weekday"] + palettes["Saturday"]:
+        pdf = scaled_beta_pdf(x, params[key])
+        ls = ls_map[key.split(" ")[1]]
+        ax.plot(x, pdf, color=col, lw=2.5, ls=ls, label=key, alpha=0.95)
+        ax.fill_between(x, pdf, alpha=0.25, color=col)
 
-        ax.axvline(1.0, color="black", ls=":", lw=1.2, alpha=0.6, label="Base (1.0x)")
-        ax.set_xlabel("Duration Multiplier")
-        ax.set_ylabel("Density")
-        ax.set_title(f"{day} Traffic Duration Multiplier (right-skewed Beta)")
-        ax.set_xlim(0.6, 9.0)
-        ax.legend()
-        ax.grid(True, alpha=0.2)
-        fig.tight_layout()
-        out = SCRIPT_DIR / f"traffic_beta_{day.lower()}.png"
-        fig.savefig(out, dpi=150, bbox_inches="tight")
-        plt.close(fig)
-        print(f"Saved {out.name}")
+    ax.axvline(1.0, color="black", ls=":", lw=1.2, alpha=0.6, label="Base (1.0x)")
+    ax.set_xlabel("Duration Multiplier")
+    ax.set_ylabel("Density")
+    ax.set_title("Traffic Duration Multiplier (right-skewed Beta)")
+    ax.set_xlim(0.6, 9.0)
+    ax.legend()
+    ax.grid(True, alpha=0.2)
+    fig.tight_layout()
+    out = SCRIPT_DIR / "traffic_beta_combined.png"
+    fig.savefig(out, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    print(f"Saved {out.name}")
 
 
 if __name__ == "__main__":
