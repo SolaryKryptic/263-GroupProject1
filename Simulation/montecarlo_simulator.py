@@ -92,10 +92,14 @@ OUTPUT_DIR = "."
 
 N_SIMULATIONS = 1000
 
-BETA_ALPHA = 3.25                # weekday default (AM/PM averaged)
-BETA_BETA = 6.75                 # weekday default (AM/PM averaged)
-HIGH_MULTIPLIER = 3.165          # weekday default (AM/PM averaged). For Saturday, override
-                                  # with --beta-alpha 5.5 --beta-beta 5.75 --high-multiplier 2.1
+BETA_ALPHA = 2.0                 # weekday default (AM/PM averaged from latest parameter set)
+BETA_BETA = 8.4175                # weekday default (AM/PM averaged)
+LOW_MULTIPLIER = 1.5285           # weekday default (AM/PM averaged). Note: this floor is
+                                   # ABOVE 1.0 -- under these parameters, weekday traffic is
+                                   # NEVER faster than baseline, even in the best case.
+HIGH_MULTIPLIER = 7.1910          # weekday default (AM/PM averaged). For Saturday, override
+                                   # with --beta-beta 6.9845 --low-multiplier 0.8030
+                                   # --high-multiplier 7.6820
 
 FIX_SKIPPED_STORES_WITH_WETLEASE = False  # see module docstring, assumption (2)
 
@@ -222,9 +226,13 @@ def sample_demand(store, distributions, rng):
     return max(rng.gauss(mean, stdev), 0.0)
 
 
-def traffic_multiplier_from_sample(raw_sample, high):
-    """No-traffic baseline: multiplier is always >= 1.0. See module docstring."""
-    return 1.0 + high * raw_sample
+def traffic_multiplier_from_sample(raw_sample, low, high):
+    """Linear stretch of the raw Beta(0,1) draw onto [low, high] directly.
+    Per the latest parameter set, low is NOT always 0 -- for weekday it's
+    above 1.0, meaning traffic is never faster than baseline even in the
+    best case; for Saturday it's below 1.0, allowing faster-than-baseline
+    days. See module docstring / chat history for the source values."""
+    return low + (high - low) * raw_sample
 
 
 def wet_lease_topup_cost(store, shortfall_pallets, durations, traffic_multiplier):
@@ -236,7 +244,7 @@ def wet_lease_topup_cost(store, shortfall_pallets, durations, traffic_multiplier
 
 
 def run_simulation(routes, skipped, distributions, durations, rng,
-                    beta_alpha, beta_beta, high_multiplier,
+                    beta_alpha, beta_beta, low_multiplier, high_multiplier,
                     fix_skipped=FIX_SKIPPED_STORES_WITH_WETLEASE):
     """
     One simulated day. Planned routes' pallet loads are fixed at baseline;
@@ -246,7 +254,7 @@ def run_simulation(routes, skipped, distributions, durations, rng,
     skipped stores are not topped up (unless fix_skipped=True).
     """
     raw_sample = rng.betavariate(beta_alpha, beta_beta)
-    traffic_multiplier = traffic_multiplier_from_sample(raw_sample, high_multiplier)
+    traffic_multiplier = traffic_multiplier_from_sample(raw_sample, low_multiplier, high_multiplier)
 
     total_cost = 0.0
     total_requested = 0.0
@@ -375,6 +383,7 @@ def main():
     parser.add_argument("--n-sim", type=int, default=N_SIMULATIONS)
     parser.add_argument("--beta-alpha", type=float, default=BETA_ALPHA)
     parser.add_argument("--beta-beta", type=float, default=BETA_BETA)
+    parser.add_argument("--low-multiplier", type=float, default=LOW_MULTIPLIER)
     parser.add_argument("--high-multiplier", type=float, default=HIGH_MULTIPLIER)
     parser.add_argument("--fix-skipped", action="store_true", default=FIX_SKIPPED_STORES_WITH_WETLEASE,
                          help="also wet-lease-cover permanently-skipped stores (defeats shedding savings)")
@@ -396,14 +405,14 @@ def main():
     print(f"Loaded plan: {len(routes)} routes, {len(skipped)} permanently-skipped stores")
     print(f"Fitted demand distributions for {len(distributions)} stores from {args.day}s")
     print(f"Running {args.n_sim} simulations "
-          f"(traffic ~ 1 + {args.high_multiplier}*Beta({args.beta_alpha},{args.beta_beta}), "
-          f"no-traffic floor 1.0x; wet-lease top-up "
+          f"(traffic ~ [{args.low_multiplier}, {args.high_multiplier}] via "
+          f"Beta({args.beta_alpha},{args.beta_beta}); wet-lease top-up "
           f"{'ALSO covers' if args.fix_skipped else 'does NOT cover'} skipped stores)...")
 
     results_list = []
     for _ in range(args.n_sim):
         r = run_simulation(routes, skipped, distributions, durations, rng,
-                            args.beta_alpha, args.beta_beta, args.high_multiplier,
+                            args.beta_alpha, args.beta_beta, args.low_multiplier, args.high_multiplier,
                             fix_skipped=args.fix_skipped)
         results_list.append(r)
 
