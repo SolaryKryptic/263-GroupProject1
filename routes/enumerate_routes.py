@@ -93,9 +93,14 @@ def build_day_routes(day):
 
     for subset in enumerate_feasible_subsets(demand_dict):
         idx_stops = tuple(NAME_TO_IDX[s] for s in subset)
-        seq_idx, total_time = best_order(idx_stops)
+        seq_idx, drive_time = best_order(idx_stops)
         seq = [STORE_NAMES[i] for i in seq_idx]
         pallets = sum(demand_dict[s] for s in subset)
+        # Route duration = driving time + unloading time (18 min/pallet,
+        # applied once per pallet delivered on this route -- was previously
+        # missing entirely, which silently under-priced every route).
+        unload_time = pallets * UNLOAD_SEC_PER_PALLET
+        total_time = drive_time + unload_time
         cost = route_cost(total_time)
 
         if len(subset) == 1:

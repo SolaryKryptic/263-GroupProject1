@@ -1,0 +1,20 @@
+route_id,mode,stops,num_stops,total_pallets,total_duration_sec,cost
+Sat_00242,owned,New World Ormiston;Pak 'n Save Ormiston;Four Square Botany Junction,3,10,15308.78,958.2560555555557
+Sat_01247,owned,New World Victoria Park;New World Metro Queen St;New World Newmarket;Four Square Eden Terrace,4,9,13609.37,831.6837222222223
+Sat_01800,owned,Four Square Onehunga;Four Square Ellerslie;New World Stonefields;Pak 'n Save Sylvia Park,4,11,16128.88,1028.8757777777776
+Sat_02283,owned,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson;Pak 'n Save Henderson,3,15,19920.51,1355.3772499999998
+Sat_02287,owned,New World New Lynn;Four Square Glen Eden;New World Green Bay,3,7,10481.35,640.5269444444444
+Sat_02305,owned,Pak 'n Save Westgate;New World Hobsonville;Four Square Hobsonville,3,9,13782.95,842.2913888888888
+Sat_02312,owned,New World Birkenhead;Four Square Lancaster;Pak 'n Save Wairau Road,3,9,15059.21,936.7653055555554
+Sat_02750,owned,New World Remuera;Four Square Remuera;Pak 'n Save Glen Innes;Four Square St Heliers;New World Eastridge,5,13,19523.1,1321.155833333333
+Sat_02973,owned,New World Long Bay;Four Square Torbay;New World Browns Bay;New World Albany,4,9,16591.39,1068.7030277777778
+Sat_02995,owned,Pak 'n Save Albany;New World Milford;New World Metro Shore City,3,10,16680.2,1076.3505555555555
+Sat_03023,owned,Four Square Pakuranga Heights;Pak 'n Save Botany;New World Botany,3,11,16769.4,1084.0316666666668
+Sat_03257,owned,New World Mt Roskill;Pak 'n Save Royal Oak,2,8,10294.99,629.1382777777778
+Sat_03345,owned,New World Devonport,1,3,8748.05,534.6030555555554
+Sat_03379,owned,Pak 'n Save Highland Park;New World Howick,2,8,13844.67,846.0631666666667
+Sat_03418,owned,Pak 'n Save Mt Albert;New World Point Chevalier;New World Mt Albert,3,11,14066.62,859.6267777777779
+Sat_03471,owned,New World Papakura;Pak 'n Save Papakura;New World Southmall,3,12,18224.09,1209.296638888889
+Sat_03480,owned,Pak 'n Save Manukau;New World Papatoetoe,2,9,13308.03,813.2685000000001
+Sat_03506,owned,Pak 'n Save Clendon,1,6,10287.34,628.6707777777779
+Sat_03508,owned,Pak 'n Save Mangere,1,6,8799.57,537.7515

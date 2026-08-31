@@ -1,249 +1,165 @@
 route_id,stops,num_stops,total_pallets,total_duration_sec,cost,over_policy_35h,overtime_4h,total_duration_hms
-Wed_00001,Four Square Cockle Bay,1,2,5505.24,336.43,False,False,01:31:45.240000
-Wed_00002,Four Square Cockle Bay;Four Square Pakuranga Heights,2,5,5677.78,346.98,False,False,01:34:37.780000
-Wed_00003,Four Square Pakuranga Heights;Four Square Cockle Bay;Four Square Botany Junction,3,9,5699.75,348.32,False,False,01:34:59.750000
-Wed_00004,Four Square Pakuranga Heights;Four Square Cockle Bay;New World Ormiston;Four Square Botany Junction,4,16,6006.64,367.07,False,False,01:40:06.640000
-Wed_00005,Four Square Pakuranga Heights;Four Square Cockle Bay;Four Square Botany Junction;New World Southmall,4,16,6492.71,396.78,False,False,01:48:12.710000
-Wed_00006,Four Square Pakuranga Heights;Four Square Cockle Bay;New World Botany,3,13,5702.02,348.46,False,False,01:35:02.020000
-Wed_00007,Four Square Cockle Bay;New World Howick;Four Square Pakuranga Heights,3,13,5725.54,349.89,False,False,01:35:25.540000
-Wed_00008,Pak 'n Save Highland Park;Four Square Cockle Bay;Four Square Pakuranga Heights,3,15,5732.55,350.32,False,False,01:35:32.550000
-Wed_00009,Four Square Cockle Bay;New World Botany,2,10,5468.34,334.18,False,False,01:31:08.340000
-Wed_00010,Four Square Cockle Bay;New World Howick,2,10,5553.0,339.35,False,False,01:32:33
-Wed_00011,Pak 'n Save Highland Park;Four Square Cockle Bay,2,12,5560.01,339.78,False,False,01:32:40.010000
-Wed_00012,Four Square Cockle Bay;Pak 'n Save Botany,2,14,5476.61,334.68,False,False,01:31:16.610000
-Wed_00013,Four Square Ellerslie,1,3,3400.42,207.8,False,False,00:56:40.420000
-Wed_00014,Four Square Ellerslie;New World Metro Queen St,2,6,4050.71,247.54,False,False,01:07:30.710000
-Wed_00015,Four Square Britomart;New World Metro Queen St;Four Square Ellerslie,3,10,4200.39,256.69,False,False,01:10:00.390000
-Wed_00016,Four Square Britomart;New World Metro Queen St;Four Square Ellerslie;Four Square Eden Terrace,4,14,4417.64,269.97,False,False,01:13:37.640000
-Wed_00017,Four Square Britomart;New World Metro Queen St;Four Square Ellerslie;Four Square Onehunga,4,14,3842.99,234.85,False,False,01:04:02.990000
-Wed_00018,Four Square Britomart;New World Metro Queen St;Four Square Ellerslie;Four Square Remuera,4,14,4416.71,269.91,False,False,01:13:36.710000
-Wed_00019,New World Victoria Park;New World Metro Queen St;Four Square Britomart;Four Square Ellerslie,4,16,4504.13,275.25,False,False,01:15:04.130000
-Wed_00020,Four Square Ellerslie;New World Metro Queen St;Four Square Eden Terrace,3,10,4274.19,261.2,False,False,01:11:14.190000
-Wed_00021,Four Square Eden Terrace;New World Metro Queen St;Four Square Ellerslie;Four Square Onehunga,4,14,3928.26,240.06,False,False,01:05:28.260000
-Wed_00022,Four Square Ellerslie;Four Square Remuera;New World Metro Queen St;Four Square Eden Terrace,4,14,4490.51,274.42,False,False,01:14:50.510000
-Wed_00023,New World Victoria Park;New World Metro Queen St;Four Square Ellerslie;Four Square Eden Terrace,4,16,4554.96,278.36,False,False,01:15:54.960000
-Wed_00024,New World Metro Queen St;Four Square Ellerslie;Four Square Onehunga,3,10,3706.46,226.51,False,False,01:01:46.460000
-Wed_00025,Four Square Onehunga;Four Square Ellerslie;Four Square Remuera;New World Metro Queen St,4,14,3950.94,241.45,False,False,01:05:50.940000
-Wed_00026,New World Victoria Park;New World Metro Queen St;Four Square Ellerslie;Four Square Onehunga,4,16,3980.31,243.24,False,False,01:06:20.310000
-Wed_00027,Four Square Ellerslie;Four Square Remuera;New World Metro Queen St,3,10,4267.03,260.76,False,False,01:11:07.030000
-Wed_00028,New World Victoria Park;New World Metro Queen St;Four Square Ellerslie;Four Square Remuera,4,16,4554.03,278.3,False,False,01:15:54.030000
-Wed_00029,New World Victoria Park;New World Metro Queen St;Four Square Ellerslie,3,12,4337.71,265.08,False,False,01:12:17.710000
-Wed_00030,Four Square Ellerslie;New World Eastridge;New World Metro Queen St,3,13,4923.29,300.87,False,False,01:22:03.290000
-Wed_00031,Four Square Ellerslie;New World Metro Queen St;New World Point Chevalier,3,13,4441.6,271.43,False,False,01:14:01.600000
-Wed_00032,Four Square Ellerslie;New World Metro Queen St;New World Mt Albert,3,14,4212.05,257.4,False,False,01:10:12.050000
-Wed_00033,New World Newmarket;Four Square Ellerslie;New World Metro Queen St,3,14,4271.61,261.04,False,False,01:11:11.610000
-Wed_00034,Four Square Ellerslie;New World Remuera;New World Metro Queen St,3,14,4368.96,266.99,False,False,01:12:48.960000
-Wed_00035,Four Square Ellerslie;New World Stonefields;New World Metro Queen St,3,14,4669.16,285.34,False,False,01:17:49.160000
-Wed_00036,Four Square Ellerslie;Four Square Eden Terrace,2,7,3617.67,221.08,False,False,01:00:17.670000
-Wed_00037,Four Square Onehunga;Four Square Ellerslie;Four Square Eden Terrace,3,11,3301.58,201.76,False,False,00:55:01.580000
-Wed_00038,Four Square Onehunga;Four Square Ellerslie;Four Square Remuera;Four Square Eden Terrace,4,15,3517.9,214.98,False,False,00:58:37.900000
-Wed_00039,Four Square Ellerslie;Four Square Remuera;Four Square Eden Terrace,3,11,3833.99,234.3,False,False,01:03:53.990000
-Wed_00040,Four Square Ellerslie;Four Square Eden Terrace;New World Victoria Park,3,13,4381.71,267.77,False,False,01:13:01.710000
-Wed_00041,Four Square Eden Terrace;Four Square Ellerslie;New World Eastridge,3,14,4805.43,293.67,False,False,01:20:05.430000
-Wed_00042,Four Square Ellerslie;Four Square Eden Terrace;New World Point Chevalier,3,14,4008.56,244.97,False,False,01:06:48.560000
-Wed_00043,New World Mt Albert;Four Square Eden Terrace;Four Square Ellerslie,3,15,3735.64,228.29,False,False,01:02:15.640000
-Wed_00044,New World Newmarket;Four Square Ellerslie;Four Square Eden Terrace,3,15,3838.57,234.58,False,False,01:03:58.570000
-Wed_00045,Four Square Ellerslie;New World Remuera;Four Square Eden Terrace,3,15,3935.92,240.53,False,False,01:05:35.920000
-Wed_00046,Four Square Ellerslie;New World Stonefields;Four Square Eden Terrace,3,15,4236.13,258.87,False,False,01:10:36.130000
-Wed_00047,Four Square Ellerslie;Four Square Onehunga,2,7,3043.02,185.96,False,False,00:50:43.020000
-Wed_00048,Four Square Onehunga;Four Square Ellerslie;Four Square Remuera,3,11,3300.65,201.71,False,False,00:55:00.650000
-Wed_00049,Four Square Onehunga;Four Square Ellerslie;New World Eastridge,3,14,4217.3,257.72,False,False,01:10:17.300000
-Wed_00050,New World Newmarket;Four Square Ellerslie;Four Square Onehunga,3,15,3263.92,199.46,False,False,00:54:23.920000
-Wed_00051,Four Square Onehunga;Four Square Ellerslie;New World Remuera,3,15,3402.57,207.93,False,False,00:56:42.570000
-Wed_00052,Four Square Onehunga;Four Square Ellerslie;New World Stonefields,3,15,3702.78,226.28,False,False,01:01:42.780000
-Wed_00053,New World Mt Roskill;Four Square Ellerslie;Four Square Onehunga,3,16,3084.46,188.49,False,False,00:51:24.460000
-Wed_00054,Four Square Ellerslie;Four Square Remuera,2,7,3616.74,221.02,False,False,01:00:16.740000
-Wed_00055,Four Square Ellerslie;Four Square Remuera;New World Eastridge,3,14,4533.39,277.04,False,False,01:15:33.390000
-Wed_00056,New World Newmarket;Four Square Ellerslie;Four Square Remuera,3,15,3837.64,234.52,False,False,01:03:57.640000
-Wed_00057,Four Square Ellerslie;Four Square Remuera;New World Remuera,3,15,3826.52,233.84,False,False,01:03:46.520000
-Wed_00058,Four Square Ellerslie;New World Stonefields;Four Square Remuera,3,15,4169.65,254.81,False,False,01:09:29.650000
-Wed_00059,Four Square Ellerslie;New World Eastridge,2,10,4533.39,277.04,False,False,01:15:33.390000
-Wed_00060,New World Newmarket;Four Square Ellerslie,2,11,3621.32,221.3,False,False,01:00:21.320000
-Wed_00061,Four Square Ellerslie;New World Remuera,2,11,3718.66,227.25,False,False,01:01:58.660000
-Wed_00062,Four Square Ellerslie;New World Stonefields,2,11,4018.87,245.6,False,False,01:06:58.870000
-Wed_00063,Pak 'n Save Royal Oak;Four Square Ellerslie,2,14,3111.22,190.13,False,False,00:51:51.220000
-Wed_00064,Four Square Ellerslie;Pak 'n Save Sylvia Park,2,15,4168.85,254.76,False,False,01:09:28.850000
-Wed_00065,Four Square Ellerslie;Pak 'n Save Glen Innes,2,16,4930.76,301.32,False,False,01:22:10.760000
-Wed_00066,Four Square Glen Eden,1,3,2565.3,156.77,False,False,00:42:45.300000
-Wed_00067,Four Square Glen Eden;New World Green Bay,2,11,2726.09,166.59,False,False,00:45:26.090000
-Wed_00068,Four Square Glen Eden;New World New Lynn,2,11,2744.23,167.7,False,False,00:45:44.230000
-Wed_00069,Four Square Glen Eden;Pak 'n Save Henderson,2,15,3708.98,226.66,False,False,01:01:48.980000
-Wed_00070,Four Square Hobsonville,1,3,3713.54,226.94,False,False,01:01:53.540000
-Wed_00071,New World Hobsonville;Four Square Hobsonville,2,10,3772.02,230.51,False,False,01:02:52.020000
-Wed_00072,Pak 'n Save Lincoln Road;Four Square Hobsonville,2,12,4100.82,250.61,False,False,01:08:20.820000
-Wed_00073,Pak 'n Save Westgate;Four Square Hobsonville,2,13,4004.47,244.72,False,False,01:06:44.470000
-Wed_00074,Four Square Pakuranga Heights,1,3,4282.04,261.68,False,False,01:11:22.040000
-Wed_00075,Four Square Pakuranga Heights;Four Square Botany Junction,2,7,4728.59,288.97,False,False,01:18:48.590000
-Wed_00076,Four Square Pakuranga Heights;New World Ormiston;Four Square Botany Junction,3,14,5041.36,308.08,False,False,01:24:01.360000
-Wed_00077,Four Square Pakuranga Heights;Four Square Botany Junction;New World Southmall,3,14,5521.55,337.43,False,False,01:32:01.550000
-Wed_00078,Four Square Pakuranga Heights;New World Botany;Four Square Botany Junction,3,15,4807.53,293.79,False,False,01:20:07.530000
-Wed_00079,Four Square Pakuranga Heights;New World Howick;Four Square Botany Junction,3,15,5555.29,339.49,False,False,01:32:35.290000
-Wed_00080,Four Square Pakuranga Heights;Four Square Botany Junction;New World Papatoetoe,3,16,5029.88,307.38,False,False,01:23:49.880000
-Wed_00081,Four Square Pakuranga Heights;New World Botany,2,11,4776.21,291.88,False,False,01:19:36.210000
-Wed_00082,New World Howick;Four Square Pakuranga Heights,2,11,5322.44,325.26,False,False,01:28:42.440000
-Wed_00083,Pak 'n Save Highland Park;Four Square Pakuranga Heights,2,13,4930.91,301.33,False,False,01:22:10.910000
-Wed_00084,Four Square Pakuranga Heights;Pak 'n Save Botany,2,15,4855.81,296.74,False,False,01:20:55.810000
-Wed_00085,Four Square Pakuranga Heights;Pak 'n Save Sylvia Park,2,15,4652.66,284.33,False,False,01:17:32.660000
-Wed_00086,Four Square St Heliers,1,3,4797.79,293.2,False,False,01:19:57.790000
-Wed_00087,Four Square Remuera;Four Square St Heliers,2,7,4833.06,295.35,False,False,01:20:33.060000
-Wed_00088,Four Square Remuera;Four Square St Heliers;New World Eastridge,3,14,5022.72,306.94,False,False,01:23:42.720000
-Wed_00089,New World Newmarket;Four Square Remuera;Four Square St Heliers,3,15,5053.96,308.85,False,False,01:24:13.960000
-Wed_00090,New World Remuera;Four Square Remuera;Four Square St Heliers,3,15,4934.09,301.53,False,False,01:22:14.090000
-Wed_00091,Four Square Remuera;New World Stonefields;Four Square St Heliers,3,15,5160.71,315.38,False,False,01:26:00.710000
-Wed_00092,New World Eastridge;Four Square St Heliers,2,10,4961.5,303.2,False,False,01:22:41.500000
-Wed_00093,New World Stonefields;Four Square St Heliers,2,11,5004.96,305.86,False,False,01:23:24.960000
-Wed_00094,Pak 'n Save Glen Innes;Four Square St Heliers,2,16,5157.14,315.16,False,False,01:25:57.140000
-Wed_00095,New World Metro Queen St,1,3,2853.37,174.37,False,False,00:47:33.370000
-Wed_00096,Four Square Britomart;New World Metro Queen St,2,7,2989.9,182.72,False,False,00:49:49.900000
-Wed_00097,Four Square Britomart;New World Metro Queen St;Four Square Eden Terrace,3,11,3213.38,196.37,False,False,00:53:33.380000
-Wed_00098,Four Square Britomart;New World Metro Queen St;Four Square Remuera;Four Square Eden Terrace,4,15,4426.04,270.48,False,False,01:13:46.040000
-Wed_00099,Four Square Britomart;New World Metro Queen St;New World Victoria Park,3,13,3283.79,200.68,False,False,00:54:43.790000
-Wed_00100,Four Square Britomart;New World Metro Queen St;New World Point Chevalier,3,14,3380.79,206.6,False,False,00:56:20.790000
-Wed_00101,Four Square Britomart;New World Metro Queen St;New World Mt Albert,3,15,3151.24,192.58,False,False,00:52:31.240000
-Wed_00102,Four Square Britomart;New World Metro Queen St;New World Newmarket,3,15,3534.79,216.01,False,False,00:58:54.790000
-Wed_00103,Four Square Britomart;New World Metro Queen St;New World Remuera,3,15,4030.32,246.3,False,False,01:07:10.320000
-Wed_00104,Four Square Eden Terrace;New World Metro Queen St,2,7,3075.17,187.93,False,False,00:51:15.170000
-Wed_00105,Four Square Remuera;New World Metro Queen St;Four Square Eden Terrace,3,11,4282.59,261.71,False,False,01:11:22.590000
-Wed_00106,New World Victoria Park;New World Metro Queen St;Four Square Eden Terrace,3,13,3350.7,204.76,False,False,00:55:50.700000
-Wed_00107,Four Square Eden Terrace;New World Metro Queen St;New World Point Chevalier,3,14,3466.06,211.81,False,False,00:57:46.060000
-Wed_00108,New World Mt Albert;Four Square Eden Terrace;New World Metro Queen St,3,15,3138.35,191.79,False,False,00:52:18.350000
-Wed_00109,New World Newmarket;New World Metro Queen St;Four Square Eden Terrace,3,15,3608.61,220.53,False,False,01:00:08.610000
-Wed_00110,New World Remuera;New World Metro Queen St;Four Square Eden Terrace,3,15,4104.13,250.81,False,False,01:08:24.130000
-Wed_00111,New World Victoria Park;New World Metro Queen St,2,9,3127.22,191.11,False,False,00:52:07.220000
-Wed_00112,New World Victoria Park;New World Metro Queen St;New World Point Chevalier,3,16,3518.11,215.0,False,False,00:58:38.110000
-Wed_00113,New World Metro Queen St;New World Point Chevalier,2,10,3244.26,198.26,False,False,00:54:04.260000
-Wed_00114,New World Metro Queen St;New World Mt Albert,2,11,3014.71,184.23,False,False,00:50:14.710000
-Wed_00115,New World Newmarket;New World Metro Queen St,2,11,3385.13,206.87,False,False,00:56:25.130000
-Wed_00116,New World Remuera;New World Metro Queen St,2,11,3880.65,237.15,False,False,01:04:40.650000
-Wed_00117,New World Metro Shore City,1,3,4135.23,252.71,False,False,01:08:55.230000
-Wed_00118,New World Metro Shore City;New World Milford,2,11,4708.98,287.77,False,False,01:18:28.980000
-Wed_00119,Pak 'n Save Wairau Road;New World Metro Shore City,2,14,4727.47,288.9,False,False,01:18:47.470000
-Wed_00120,Four Square Botany Junction,1,4,4040.98,246.95,False,False,01:07:20.980000
-Wed_00121,New World Ormiston;Four Square Botany Junction,2,11,4367.96,266.93,False,False,01:12:47.960000
-Wed_00122,New World Southmall;Four Square Botany Junction,2,11,4723.11,288.63,False,False,01:18:43.110000
-Wed_00123,New World Botany;Four Square Botany Junction,2,12,4822.98,294.74,False,False,01:20:22.980000
-Wed_00124,New World Papatoetoe;Four Square Botany Junction,2,13,4226.6,258.29,False,False,01:10:26.600000
-Wed_00125,Pak 'n Save Manukau;Four Square Botany Junction,2,15,4139.39,252.96,False,False,01:08:59.390000
-Wed_00126,Pak 'n Save Botany;Four Square Botany Junction,2,16,4968.74,303.65,False,False,01:22:48.740000
-Wed_00127,Pak 'n Save Ormiston;Four Square Botany Junction,2,16,4448.55,271.86,False,False,01:14:08.550000
-Wed_00128,Four Square Britomart,1,4,2924.43,178.72,False,False,00:48:44.430000
-Wed_00129,Four Square Britomart;Four Square Eden Terrace,2,8,3213.38,196.37,False,False,00:53:33.380000
-Wed_00130,Four Square Britomart;Four Square Remuera;Four Square Eden Terrace,3,12,4360.53,266.48,False,False,01:12:40.530000
-Wed_00131,New World Victoria Park;Four Square Britomart;Four Square Eden Terrace,3,14,3519.68,215.09,False,False,00:58:39.680000
-Wed_00132,Four Square Britomart;Four Square Eden Terrace;New World Point Chevalier,3,15,3604.27,220.26,False,False,01:00:04.270000
-Wed_00133,New World Mt Albert;Four Square Eden Terrace;Four Square Britomart,3,16,3304.82,201.96,False,False,00:55:04.820000
-Wed_00134,Four Square Britomart;New World Newmarket;Four Square Eden Terrace,3,16,3686.54,225.29,False,False,01:01:26.540000
-Wed_00135,Four Square Britomart;New World Remuera;Four Square Eden Terrace,3,16,4182.07,255.57,False,False,01:09:42.070000
-Wed_00136,New World Victoria Park;Four Square Britomart,2,10,3230.73,197.43,False,False,00:53:50.730000
-Wed_00137,Four Square Britomart;New World Point Chevalier,2,11,3315.32,202.6,False,False,00:55:15.320000
-Wed_00138,Four Square Britomart;New World Mt Albert,2,12,3085.77,188.57,False,False,00:51:25.770000
-Wed_00139,Four Square Britomart;New World Newmarket,2,12,3469.28,212.01,False,False,00:57:49.280000
-Wed_00140,Four Square Britomart;New World Remuera,2,12,3964.81,242.29,False,False,01:06:04.810000
-Wed_00141,Four Square Eden Terrace,1,4,2372.55,144.99,False,False,00:39:32.550000
-Wed_00142,Four Square Remuera;Four Square Eden Terrace,2,8,3626.07,221.59,False,False,01:00:26.070000
-Wed_00143,Four Square Remuera;Four Square Eden Terrace;New World Victoria Park,3,14,4390.11,268.28,False,False,01:13:10.110000
-Wed_00144,Four Square Eden Terrace;Four Square Remuera;New World Eastridge,3,15,4597.51,280.96,False,False,01:16:37.510000
-Wed_00145,Four Square Remuera;Four Square Eden Terrace;New World Point Chevalier,3,15,4016.96,245.48,False,False,01:06:56.960000
-Wed_00146,New World Mt Albert;Four Square Eden Terrace;Four Square Remuera,3,16,3744.04,228.8,False,False,01:02:24.040000
-Wed_00147,New World Newmarket;Four Square Remuera;Four Square Eden Terrace,3,16,3846.97,235.09,False,False,01:04:06.970000
-Wed_00148,New World Remuera;Four Square Remuera;Four Square Eden Terrace,3,16,3727.1,227.77,False,False,01:02:07.100000
-Wed_00149,New World Stonefields;Four Square Remuera;Four Square Eden Terrace,3,16,4299.38,262.74,False,False,01:11:39.380000
-Wed_00150,New World Victoria Park;Four Square Eden Terrace,2,10,3102.76,189.61,False,False,00:51:42.760000
-Wed_00151,Four Square Eden Terrace;New World Point Chevalier,2,11,2763.44,168.88,False,False,00:46:03.440000
-Wed_00152,New World Mt Albert;Four Square Eden Terrace,2,12,2435.73,148.85,False,False,00:40:35.730000
-Wed_00153,New World Newmarket;Four Square Eden Terrace,2,12,2952.09,180.41,False,False,00:49:12.090000
-Wed_00154,New World Remuera;Four Square Eden Terrace,2,12,3447.61,210.69,False,False,00:57:27.610000
-Wed_00155,Pak 'n Save Royal Oak;Four Square Eden Terrace,2,15,2771.55,169.37,False,False,00:46:11.550000
-Wed_00156,Pak 'n Save Mt Albert;Four Square Eden Terrace,2,16,2647.85,161.81,False,False,00:44:07.850000
-Wed_00157,Four Square Fair Price Henderson,1,4,3253.13,198.8,False,False,00:54:13.130000
-Wed_00158,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson,2,13,3286.51,200.84,False,False,00:54:46.510000
-Wed_00159,Four Square Fair Price Henderson;Pak 'n Save Westgate,2,14,4037.52,246.74,False,False,01:07:17.520000
-Wed_00160,Four Square Fair Price Henderson;Pak 'n Save Henderson,2,16,3687.13,225.32,False,False,01:01:27.130000
-Wed_00161,Four Square Lancaster,1,4,4845.84,296.13,False,False,01:20:45.840000
-Wed_00162,New World Birkenhead;Four Square Lancaster,2,10,4965.15,303.43,False,False,01:22:45.150000
-Wed_00163,Four Square Lancaster;Pak 'n Save Wairau Road,2,15,5219.9,318.99,False,False,01:26:59.900000
-Wed_00164,Four Square Onehunga,1,4,1554.43,94.99,False,False,00:25:54.430000
-Wed_00165,Four Square Onehunga;Four Square Remuera,2,8,3191.23,195.02,False,False,00:53:11.230000
-Wed_00166,Four Square Onehunga;Four Square Remuera;New World Eastridge,3,15,4107.88,251.04,False,False,01:08:27.880000
-Wed_00167,Four Square Onehunga;Four Square Remuera;New World Newmarket,3,16,3458.75,211.37,False,False,00:57:38.750000
-Wed_00168,Four Square Onehunga;New World Remuera;Four Square Remuera,3,16,3360.02,205.33,False,False,00:56:00.020000
-Wed_00169,Four Square Onehunga;New World Stonefields;Four Square Remuera,3,16,3793.65,231.83,False,False,01:03:13.650000
-Wed_00170,Four Square Onehunga;New World Newmarket,2,12,2918.76,178.37,False,False,00:48:38.760000
-Wed_00171,Four Square Onehunga;New World Remuera,2,12,3080.52,188.25,False,False,00:51:20.520000
-Wed_00172,New World Mt Roskill;Four Square Onehunga,2,13,1595.87,97.53,False,False,00:26:35.870000
-Wed_00173,Pak 'n Save Royal Oak;Four Square Onehunga,2,15,1775.49,108.5,False,False,00:29:35.490000
-Wed_00174,Four Square Onehunga;Pak 'n Save Mangere,2,16,2749.87,168.05,False,False,00:45:49.870000
-Wed_00175,Four Square Remuera,1,4,3408.82,208.32,False,False,00:56:48.820000
-Wed_00176,Four Square Remuera;New World Eastridge,2,11,4325.47,264.33,False,False,01:12:05.470000
-Wed_00177,New World Newmarket;Four Square Remuera,2,12,3629.72,221.82,False,False,01:00:29.720000
-Wed_00178,New World Remuera;Four Square Remuera,2,12,3509.85,214.49,False,False,00:58:29.850000
-Wed_00179,New World Stonefields;Four Square Remuera,2,12,4082.13,249.46,False,False,01:08:02.130000
-Wed_00180,Pak 'n Save Royal Oak;Four Square Remuera,2,15,3218.12,196.66,False,False,00:53:38.120000
-Wed_00181,Four Square Remuera;Pak 'n Save Sylvia Park,2,16,4469.29,273.12,False,False,01:14:29.290000
-Wed_00182,Four Square Torbay,1,4,6256.52,382.34,False,False,01:44:16.520000
-Wed_00183,Four Square Torbay;New World Browns Bay,2,11,6413.24,391.92,False,False,01:46:53.240000
-Wed_00184,New World Long Bay;Four Square Torbay,2,12,6421.36,392.42,False,False,01:47:01.360000
-Wed_00185,Four Square Torbay;New World Albany,2,13,6633.56,405.38,False,False,01:50:33.560000
-Wed_00186,New World Birkenhead,1,6,4225.77,258.24,False,False,01:10:25.770000
-Wed_00187,New World Papakura,1,6,4837.54,295.63,False,False,01:20:37.540000
-Wed_00188,New World Papakura;New World Southmall,2,13,5176.43,316.34,False,False,01:26:16.430000
-Wed_00189,New World Victoria Park,1,6,2791.39,170.58,False,False,00:46:31.390000
-Wed_00190,New World Victoria Park;New World Point Chevalier,2,13,3182.28,194.47,False,False,00:53:02.280000
-Wed_00191,New World Mt Albert;New World Victoria Park,2,14,2868.64,175.31,False,False,00:47:48.640000
-Wed_00192,New World Newmarket;New World Victoria Park,2,14,3444.68,210.51,False,False,00:57:24.680000
-Wed_00193,New World Browns Bay,1,7,5732.45,350.32,False,False,01:35:32.450000
-Wed_00194,New World Long Bay;New World Browns Bay,2,15,6543.86,399.9,False,False,01:49:03.860000
-Wed_00195,New World Albany;New World Browns Bay,2,16,6014.75,367.57,False,False,01:40:14.750000
-Wed_00196,New World Eastridge,1,7,4155.46,253.94,False,False,01:09:15.460000
-Wed_00197,New World Newmarket;New World Eastridge,2,15,4214.12,257.53,False,False,01:10:14.120000
-Wed_00198,New World Remuera;New World Eastridge,2,15,4275.15,261.26,False,False,01:11:15.150000
-Wed_00199,New World Stonefields;New World Eastridge,2,15,4733.24,289.25,False,False,01:18:53.240000
-Wed_00200,New World Hobsonville,1,7,3689.76,225.49,False,False,01:01:29.760000
-Wed_00201,Pak 'n Save Lincoln Road;New World Hobsonville,2,16,4077.04,249.15,False,False,01:07:57.040000
-Wed_00202,New World Ormiston,1,7,4336.64,265.02,False,False,01:12:16.640000
-Wed_00203,New World Botany;New World Ormiston,2,15,5098.55,311.58,False,False,01:24:58.550000
-Wed_00204,New World Papatoetoe;New World Ormiston,2,16,4522.26,276.36,False,False,01:15:22.260000
-Wed_00205,New World Point Chevalier,1,7,2084.17,127.37,False,False,00:34:44.170000
-Wed_00206,New World Mt Albert;New World Point Chevalier,2,15,2108.72,128.87,False,False,00:35:08.720000
-Wed_00207,New World New Lynn;New World Point Chevalier,2,15,2718.85,166.15,False,False,00:45:18.850000
-Wed_00208,New World Newmarket;New World Point Chevalier,2,15,3125.72,191.02,False,False,00:52:05.720000
-Wed_00209,New World Mt Roskill;New World Point Chevalier,2,16,2125.61,129.9,False,False,00:35:25.610000
-Wed_00210,New World Southmall,1,7,3793.98,231.85,False,False,01:03:13.980000
-Wed_00211,New World Papatoetoe;New World Southmall,2,16,4177.05,255.26,False,False,01:09:37.050000
-Wed_00212,New World Botany,1,8,4791.66,292.82,False,False,01:19:51.660000
-Wed_00213,New World Howick;New World Botany,2,16,5323.88,325.35,False,False,01:28:43.880000
-Wed_00214,New World Green Bay,1,8,1725.54,105.45,False,False,00:28:45.540000
-Wed_00215,New World New Lynn;New World Green Bay,2,16,2157.12,131.82,False,False,00:35:57.120000
-Wed_00216,New World Howick,1,8,5149.9,314.72,False,False,01:25:49.900000
-Wed_00217,New World Long Bay,1,8,6156.92,376.26,False,False,01:42:36.920000
-Wed_00218,New World Milford,1,8,4527.21,276.66,False,False,01:15:27.210000
-Wed_00219,New World Mt Albert,1,8,1453.78,88.84,False,False,00:24:13.780000
-Wed_00220,New World New Lynn;New World Mt Albert,2,16,2402.3,146.81,False,False,00:40:02.300000
-Wed_00221,New World Newmarket;New World Mt Albert,2,16,2896.17,176.99,False,False,00:48:16.170000
-Wed_00222,New World New Lynn,1,8,1661.69,101.55,False,False,00:27:41.690000
-Wed_00223,New World Newmarket,1,8,2734.83,167.13,False,False,00:45:34.830000
-Wed_00224,New World Remuera;New World Newmarket,2,16,3368.33,205.84,False,False,00:56:08.330000
-Wed_00225,New World Newmarket;New World Stonefields,2,16,4152.25,253.75,False,False,01:09:12.250000
-Wed_00226,New World Remuera,1,8,3230.35,197.41,False,False,00:53:50.350000
-Wed_00227,New World Remuera;New World Stonefields,2,16,4111.67,251.27,False,False,01:08:31.670000
-Wed_00228,New World Stonefields,1,8,3931.35,240.25,False,False,01:05:31.350000
-Wed_00229,New World Albany,1,9,5356.37,327.33,False,False,01:29:16.370000
-Wed_00230,New World Devonport,1,9,5508.05,336.6,False,False,01:31:48.050000
-Wed_00231,New World Mt Roskill,1,9,392.66,24.0,False,False,00:06:32.660000
-Wed_00232,New World Papatoetoe,1,9,3045.88,186.14,False,False,00:50:45.880000
-Wed_00233,Pak 'n Save Lincoln Road,1,9,2841.89,173.67,False,False,00:47:21.890000
-Wed_00234,Pak 'n Save Highland Park,1,10,4758.37,290.79,False,False,01:19:18.370000
-Wed_00235,Pak 'n Save Westgate,1,10,3239.0,197.94,False,False,00:53:59
-Wed_00236,Pak 'n Save Clendon,1,11,3807.34,232.67,False,False,01:03:27.340000
-Wed_00237,Pak 'n Save Manukau,1,11,3356.7,205.13,False,False,00:55:56.700000
-Wed_00238,Pak 'n Save Royal Oak,1,11,1613.54,98.61,False,False,00:26:53.540000
-Wed_00239,Pak 'n Save Wairau Road,1,11,4280.95,261.61,False,False,01:11:20.950000
-Wed_00240,Pak 'n Save Botany,1,12,4937.42,301.73,False,False,01:22:17.420000
-Wed_00241,Pak 'n Save Henderson,1,12,3351.09,204.79,False,False,00:55:51.090000
-Wed_00242,Pak 'n Save Mangere,1,12,2319.57,141.75,False,False,00:38:39.570000
-Wed_00243,Pak 'n Save Mt Albert,1,12,1299.27,79.4,False,False,00:21:39.270000
-Wed_00244,Pak 'n Save Ormiston,1,12,4417.23,269.94,False,False,01:13:37.230000
-Wed_00245,Pak 'n Save Papakura,1,12,4671.63,285.49,False,False,01:17:51.630000
-Wed_00246,Pak 'n Save Sylvia Park,1,12,3929.55,240.14,False,False,01:05:29.550000
-Wed_00247,Pak 'n Save Glen Innes,1,13,4843.24,295.98,False,False,01:20:43.240000
-Wed_00248,Pak 'n Save Albany,1,14,5259.99,321.44,False,False,01:27:39.990000
+Wed_00001,Four Square Cockle Bay,1,2,7665.24,468.43,False,False,02:07:45.240000
+Wed_00002,Four Square Cockle Bay;Four Square Pakuranga Heights,2,5,11077.78,676.98,False,False,03:04:37.780000
+Wed_00003,Four Square Pakuranga Heights;Four Square Cockle Bay;Four Square Botany Junction,3,9,15419.75,1190.0,True,True,04:16:59.750000
+Wed_00004,Four Square Pakuranga Heights;Four Square Cockle Bay;New World Ormiston;Four Square Botany Junction,4,16,23286.64,1810.0,True,True,06:28:06.640000
+Wed_00005,Four Square Pakuranga Heights;Four Square Cockle Bay;Four Square Botany Junction;New World Southmall,4,16,23772.71,1810.0,True,True,06:36:12.710000
+Wed_00006,Four Square Pakuranga Heights;Four Square Cockle Bay;New World Botany,3,13,19742.02,1500.0,True,True,05:29:02.020000
+Wed_00007,Four Square Cockle Bay;New World Howick;Four Square Pakuranga Heights,3,13,19765.54,1500.0,True,True,05:29:25.540000
+Wed_00008,Pak 'n Save Highland Park;Four Square Cockle Bay;Four Square Pakuranga Heights,3,15,21932.55,1810.0,True,True,06:05:32.550000
+Wed_00009,Four Square Cockle Bay;New World Botany,2,10,16268.34,1190.0,True,True,04:31:08.340000
+Wed_00010,Four Square Cockle Bay;New World Howick,2,10,16353.0,1190.0,True,True,04:32:33
+Wed_00011,Pak 'n Save Highland Park;Four Square Cockle Bay,2,12,18520.01,1500.0,True,True,05:08:40.010000
+Wed_00012,Four Square Cockle Bay;Pak 'n Save Botany,2,14,20596.61,1500.0,True,True,05:43:16.610000
+Wed_00013,Four Square Ellerslie,1,3,6640.42,405.8,False,False,01:50:40.420000
+Wed_00014,Four Square Ellerslie;New World Metro Queen St,2,6,10530.71,643.54,False,False,02:55:30.710000
+Wed_00015,Four Square Britomart;New World Metro Queen St;Four Square Ellerslie,3,10,15000.39,1190.0,True,True,04:10:00.390000
+Wed_00016,Four Square Britomart;New World Metro Queen St;Four Square Ellerslie;Four Square Eden Terrace,4,14,19537.64,1500.0,True,True,05:25:37.640000
+Wed_00017,Four Square Britomart;New World Metro Queen St;Four Square Ellerslie;Four Square Onehunga,4,14,18962.99,1500.0,True,True,05:16:02.990000
+Wed_00018,Four Square Britomart;New World Metro Queen St;Four Square Ellerslie;Four Square Remuera,4,14,19536.71,1500.0,True,True,05:25:36.710000
+Wed_00019,Four Square Eden Terrace;New World Metro Queen St;Four Square Ellerslie;Four Square Onehunga,4,14,19048.26,1500.0,True,True,05:17:28.260000
+Wed_00020,Four Square Ellerslie;Four Square Remuera;New World Metro Queen St;Four Square Eden Terrace,4,14,19610.51,1500.0,True,True,05:26:50.510000
+Wed_00021,Four Square Onehunga;Four Square Ellerslie;Four Square Remuera;New World Metro Queen St,4,14,19070.94,1500.0,True,True,05:17:50.940000
+Wed_00022,New World Victoria Park;New World Metro Queen St;Four Square Ellerslie;Four Square Onehunga,4,16,21260.31,1500.0,True,True,05:54:20.310000
+Wed_00023,Four Square Ellerslie;Four Square Remuera;New World Metro Queen St,3,10,15067.03,1190.0,True,True,04:11:07.030000
+Wed_00024,New World Victoria Park;New World Metro Queen St;Four Square Ellerslie;Four Square Remuera,4,16,21834.03,1810.0,True,True,06:03:54.030000
+Wed_00025,New World Victoria Park;New World Metro Queen St;Four Square Ellerslie,3,12,17297.71,1190.0,True,True,04:48:17.710000
+Wed_00026,Four Square Ellerslie;New World Remuera;New World Metro Queen St,3,14,19488.96,1500.0,True,True,05:24:48.960000
+Wed_00027,Four Square Ellerslie;New World Stonefields;New World Metro Queen St,3,14,19789.16,1500.0,True,True,05:29:49.160000
+Wed_00028,Four Square Ellerslie;Four Square Eden Terrace,2,7,11177.67,683.08,False,False,03:06:17.670000
+Wed_00029,Four Square Onehunga;Four Square Ellerslie;Four Square Remuera;Four Square Eden Terrace,4,15,19717.9,1500.0,True,True,05:28:37.900000
+Wed_00030,Four Square Ellerslie;Four Square Remuera;Four Square Eden Terrace,3,11,15713.99,1190.0,True,True,04:21:53.990000
+Wed_00031,Four Square Eden Terrace;Four Square Ellerslie;New World Eastridge,3,14,19925.43,1500.0,True,True,05:32:05.430000
+Wed_00032,New World Newmarket;Four Square Ellerslie;Four Square Eden Terrace,3,15,20038.57,1500.0,True,True,05:33:58.570000
+Wed_00033,Four Square Ellerslie;New World Remuera;Four Square Eden Terrace,3,15,20135.92,1500.0,True,True,05:35:35.920000
+Wed_00034,Four Square Ellerslie;New World Stonefields;Four Square Eden Terrace,3,15,20436.13,1500.0,True,True,05:40:36.130000
+Wed_00035,Four Square Ellerslie;Four Square Onehunga,2,7,10603.02,647.96,False,False,02:56:43.020000
+Wed_00036,Four Square Onehunga;Four Square Ellerslie;Four Square Remuera,3,11,15180.65,1190.0,True,True,04:13:00.650000
+Wed_00037,Four Square Onehunga;Four Square Ellerslie;New World Stonefields,3,15,19902.78,1500.0,True,True,05:31:42.780000
+Wed_00038,Four Square Ellerslie;Four Square Remuera,2,7,11176.74,683.02,False,False,03:06:16.740000
+Wed_00039,Four Square Ellerslie;Four Square Remuera;New World Eastridge,3,14,19653.39,1500.0,True,True,05:27:33.390000
+Wed_00040,New World Newmarket;Four Square Ellerslie;Four Square Remuera,3,15,20037.64,1500.0,True,True,05:33:57.640000
+Wed_00041,Four Square Ellerslie;Four Square Remuera;New World Remuera,3,15,20026.52,1500.0,True,True,05:33:46.520000
+Wed_00042,Four Square Ellerslie;New World Stonefields;Four Square Remuera,3,15,20369.65,1500.0,True,True,05:39:29.650000
+Wed_00043,Four Square Ellerslie;Pak 'n Save Sylvia Park,2,15,20368.85,1500.0,True,True,05:39:28.850000
+Wed_00044,Four Square Ellerslie;Pak 'n Save Glen Innes,2,16,22210.76,1810.0,True,True,06:10:10.760000
+Wed_00045,Four Square Glen Eden,1,3,5805.3,354.77,False,False,01:36:45.300000
+Wed_00046,Four Square Glen Eden;Pak 'n Save Henderson,2,15,19908.98,1500.0,True,True,05:31:48.980000
+Wed_00047,Four Square Hobsonville,1,3,6953.54,424.94,False,False,01:55:53.540000
+Wed_00048,Pak 'n Save Lincoln Road;Four Square Hobsonville,2,12,17060.82,1190.0,True,True,04:44:20.820000
+Wed_00049,Four Square Pakuranga Heights,1,3,7522.04,459.68,False,False,02:05:22.040000
+Wed_00050,Four Square Pakuranga Heights;Four Square Botany Junction,2,7,12288.59,750.97,False,False,03:24:48.590000
+Wed_00051,Four Square Pakuranga Heights;New World Ormiston;Four Square Botany Junction,3,14,20161.36,1500.0,True,True,05:36:01.360000
+Wed_00052,Four Square Pakuranga Heights;Four Square Botany Junction;New World Southmall,3,14,20641.55,1500.0,True,True,05:44:01.550000
+Wed_00053,Four Square Pakuranga Heights;New World Botany;Four Square Botany Junction,3,15,21007.53,1500.0,True,True,05:50:07.530000
+Wed_00054,Four Square Pakuranga Heights;New World Howick;Four Square Botany Junction,3,15,21755.29,1810.0,True,True,06:02:35.290000
+Wed_00055,Four Square Pakuranga Heights;New World Botany,2,11,16656.21,1190.0,True,True,04:37:36.210000
+Wed_00056,New World Howick;Four Square Pakuranga Heights,2,11,17202.44,1190.0,True,True,04:46:42.440000
+Wed_00057,Pak 'n Save Highland Park;Four Square Pakuranga Heights,2,13,18970.91,1500.0,True,True,05:16:10.910000
+Wed_00058,Four Square Pakuranga Heights;Pak 'n Save Botany,2,15,21055.81,1500.0,True,True,05:50:55.810000
+Wed_00059,Four Square Pakuranga Heights;Pak 'n Save Sylvia Park,2,15,20852.66,1500.0,True,True,05:47:32.660000
+Wed_00060,Four Square St Heliers,1,3,8037.79,491.2,False,False,02:13:57.790000
+Wed_00061,Four Square Remuera;Four Square St Heliers,2,7,12393.06,757.35,False,False,03:26:33.060000
+Wed_00062,Four Square Remuera;Four Square St Heliers;New World Eastridge,3,14,20142.72,1500.0,True,True,05:35:42.720000
+Wed_00063,New World Newmarket;Four Square Remuera;Four Square St Heliers,3,15,21253.96,1500.0,True,True,05:54:13.960000
+Wed_00064,New World Remuera;Four Square Remuera;Four Square St Heliers,3,15,21134.09,1500.0,True,True,05:52:14.090000
+Wed_00065,Four Square Remuera;New World Stonefields;Four Square St Heliers,3,15,21360.71,1500.0,True,True,05:56:00.710000
+Wed_00066,New World Eastridge;Four Square St Heliers,2,10,15761.5,1190.0,True,True,04:22:41.500000
+Wed_00067,New World Stonefields;Four Square St Heliers,2,11,16884.96,1190.0,True,True,04:41:24.960000
+Wed_00068,Pak 'n Save Glen Innes;Four Square St Heliers,2,16,22437.14,1810.0,True,True,06:13:57.140000
+Wed_00069,New World Metro Queen St,1,3,6093.37,372.37,False,False,01:41:33.370000
+Wed_00070,Four Square Britomart;New World Metro Queen St,2,7,10549.9,644.72,False,False,02:55:49.900000
+Wed_00071,Four Square Britomart;New World Metro Queen St;Four Square Eden Terrace,3,11,15093.38,1190.0,True,True,04:11:33.380000
+Wed_00072,Four Square Britomart;New World Metro Queen St;Four Square Remuera;Four Square Eden Terrace,4,15,20626.04,1500.0,True,True,05:43:46.040000
+Wed_00073,Four Square Britomart;New World Metro Queen St;New World Victoria Park,3,13,17323.79,1190.0,True,True,04:48:43.790000
+Wed_00074,Four Square Britomart;New World Metro Queen St;New World Newmarket,3,15,19734.79,1500.0,True,True,05:28:54.790000
+Wed_00075,Four Square Britomart;New World Metro Queen St;New World Remuera,3,15,20230.32,1500.0,True,True,05:37:10.320000
+Wed_00076,Four Square Eden Terrace;New World Metro Queen St,2,7,10635.17,649.93,False,False,02:57:15.170000
+Wed_00077,Four Square Remuera;New World Metro Queen St;Four Square Eden Terrace,3,11,16162.59,1190.0,True,True,04:29:22.590000
+Wed_00078,New World Victoria Park;New World Metro Queen St;Four Square Eden Terrace,3,13,17390.7,1190.0,True,True,04:49:50.700000
+Wed_00079,New World Remuera;New World Metro Queen St;Four Square Eden Terrace,3,15,20304.13,1500.0,True,True,05:38:24.130000
+Wed_00080,New World Victoria Park;New World Metro Queen St,2,9,12847.22,785.11,True,False,03:34:07.220000
+Wed_00081,New World Victoria Park;New World Metro Queen St;New World Point Chevalier,3,16,20798.11,1500.0,True,True,05:46:38.110000
+Wed_00082,New World Metro Queen St;New World Point Chevalier,2,10,14044.26,858.26,True,False,03:54:04.260000
+Wed_00083,New World Metro Shore City,1,3,7375.23,450.71,False,False,02:02:55.230000
+Wed_00084,New World Metro Shore City;New World Milford,2,11,16588.98,1190.0,True,True,04:36:28.980000
+Wed_00085,Pak 'n Save Wairau Road;New World Metro Shore City,2,14,19847.47,1500.0,True,True,05:30:47.470000
+Wed_00086,Four Square Botany Junction,1,4,8360.98,510.95,False,False,02:19:20.980000
+Wed_00087,New World Ormiston;Four Square Botany Junction,2,11,16247.96,1190.0,True,True,04:30:47.960000
+Wed_00088,New World Southmall;Four Square Botany Junction,2,11,16603.11,1190.0,True,True,04:36:43.110000
+Wed_00089,New World Botany;Four Square Botany Junction,2,12,17782.98,1190.0,True,True,04:56:22.980000
+Wed_00090,Pak 'n Save Manukau;Four Square Botany Junction,2,15,20339.39,1500.0,True,True,05:38:59.390000
+Wed_00091,Four Square Britomart,1,4,7244.43,442.72,False,False,02:00:44.430000
+Wed_00092,Four Square Britomart;Four Square Eden Terrace,2,8,11853.38,724.37,False,False,03:17:33.380000
+Wed_00093,Four Square Britomart;Four Square Remuera;Four Square Eden Terrace,3,12,17320.53,1190.0,True,True,04:48:40.530000
+Wed_00094,Four Square Britomart;New World Newmarket;Four Square Eden Terrace,3,16,20966.54,1500.0,True,True,05:49:26.540000
+Wed_00095,Four Square Britomart;New World Remuera;Four Square Eden Terrace,3,16,21462.07,1500.0,True,True,05:57:42.070000
+Wed_00096,New World Victoria Park;Four Square Britomart,2,10,14030.73,857.43,True,False,03:53:50.730000
+Wed_00097,Four Square Eden Terrace,1,4,6692.55,408.99,False,False,01:51:32.550000
+Wed_00098,Four Square Remuera;Four Square Eden Terrace,2,8,12266.07,749.59,False,False,03:24:26.070000
+Wed_00099,Four Square Eden Terrace;Four Square Remuera;New World Eastridge,3,15,20797.51,1500.0,True,True,05:46:37.510000
+Wed_00100,New World Newmarket;Four Square Remuera;Four Square Eden Terrace,3,16,21126.97,1500.0,True,True,05:52:06.970000
+Wed_00101,New World Remuera;Four Square Remuera;Four Square Eden Terrace,3,16,21007.1,1500.0,True,True,05:50:07.100000
+Wed_00102,New World Stonefields;Four Square Remuera;Four Square Eden Terrace,3,16,21579.38,1500.0,True,True,05:59:39.380000
+Wed_00103,New World Victoria Park;Four Square Eden Terrace,2,10,13902.76,849.61,True,False,03:51:42.760000
+Wed_00104,Four Square Fair Price Henderson,1,4,7573.13,462.8,False,False,02:06:13.130000
+Wed_00105,Pak 'n Save Lincoln Road;Four Square Fair Price Henderson,2,13,17326.51,1190.0,True,True,04:48:46.510000
+Wed_00106,Four Square Fair Price Henderson;Pak 'n Save Henderson,2,16,20967.13,1500.0,True,True,05:49:27.130000
+Wed_00107,Four Square Lancaster,1,4,9165.84,560.13,False,False,02:32:45.840000
+Wed_00108,New World Birkenhead;Four Square Lancaster,2,10,15765.15,1190.0,True,True,04:22:45.150000
+Wed_00109,Four Square Lancaster;Pak 'n Save Wairau Road,2,15,21419.9,1500.0,True,True,05:56:59.900000
+Wed_00110,Four Square Onehunga,1,4,5874.43,358.99,False,False,01:37:54.430000
+Wed_00111,Four Square Onehunga;Four Square Remuera,2,8,11831.23,723.02,False,False,03:17:11.230000
+Wed_00112,Four Square Onehunga;Four Square Remuera;New World Eastridge,3,15,20307.88,1500.0,True,True,05:38:27.880000
+Wed_00113,Four Square Onehunga;Four Square Remuera;New World Newmarket,3,16,20738.75,1500.0,True,True,05:45:38.750000
+Wed_00114,Four Square Onehunga;New World Remuera;Four Square Remuera,3,16,20640.02,1500.0,True,True,05:44:00.020000
+Wed_00115,Four Square Onehunga;New World Stonefields;Four Square Remuera,3,16,21073.65,1500.0,True,True,05:51:13.650000
+Wed_00116,Four Square Onehunga;Pak 'n Save Mangere,2,16,20029.87,1500.0,True,True,05:33:49.870000
+Wed_00117,Four Square Remuera,1,4,7728.82,472.32,False,False,02:08:48.820000
+Wed_00118,New World Remuera;Four Square Remuera,2,12,16469.85,1190.0,True,True,04:34:29.850000
+Wed_00119,New World Stonefields;Four Square Remuera,2,12,17042.13,1190.0,True,True,04:44:02.130000
+Wed_00120,Four Square Torbay,1,4,10576.52,646.34,False,False,02:56:16.520000
+Wed_00121,New World Long Bay;Four Square Torbay,2,12,19381.36,1500.0,True,True,05:23:01.360000
+Wed_00122,Four Square Torbay;New World Albany,2,13,20673.56,1500.0,True,True,05:44:33.560000
+Wed_00123,New World Birkenhead,1,6,10705.77,654.24,False,False,02:58:25.770000
+Wed_00124,New World Papakura,1,6,11317.54,691.63,False,False,03:08:37.540000
+Wed_00125,New World Victoria Park,1,6,9271.39,566.58,False,False,02:34:31.390000
+Wed_00126,New World Browns Bay,1,7,13292.45,812.32,True,False,03:41:32.450000
+Wed_00127,New World Long Bay;New World Browns Bay,2,15,22743.86,1810.0,True,True,06:19:03.860000
+Wed_00128,New World Albany;New World Browns Bay,2,16,23294.75,1810.0,True,True,06:28:14.750000
+Wed_00129,New World Eastridge,1,7,11715.46,715.94,False,False,03:15:15.460000
+Wed_00130,New World Hobsonville,1,7,11249.76,687.49,False,False,03:07:29.760000
+Wed_00131,New World Ormiston,1,7,11896.64,727.02,False,False,03:18:16.640000
+Wed_00132,New World Botany;New World Ormiston,2,15,21298.55,1500.0,True,True,05:54:58.550000
+Wed_00133,New World Point Chevalier,1,7,9644.17,589.37,False,False,02:40:44.170000
+Wed_00134,New World Southmall,1,7,11353.98,693.85,False,False,03:09:13.980000
+Wed_00135,New World Botany,1,8,13431.66,820.82,True,False,03:43:51.660000
+Wed_00136,New World Green Bay,1,8,10365.54,633.45,False,False,02:52:45.540000
+Wed_00137,New World Howick,1,8,13789.9,842.72,True,False,03:49:49.900000
+Wed_00138,New World Long Bay,1,8,14796.92,1190.0,True,True,04:06:36.920000
+Wed_00139,New World Milford,1,8,13167.21,804.66,True,False,03:39:27.210000
+Wed_00140,New World Mt Albert,1,8,10093.78,616.84,False,False,02:48:13.780000
+Wed_00141,New World New Lynn,1,8,10301.69,629.55,False,False,02:51:41.690000
+Wed_00142,New World Newmarket,1,8,11374.83,695.13,False,False,03:09:34.830000
+Wed_00143,New World Remuera,1,8,11870.35,725.41,False,False,03:17:50.350000
+Wed_00144,New World Stonefields,1,8,12571.35,768.25,False,False,03:29:31.350000
+Wed_00145,New World Albany,1,9,15076.37,1190.0,True,True,04:11:16.370000
+Wed_00146,New World Devonport,1,9,15228.05,1190.0,True,True,04:13:48.050000
+Wed_00147,New World Mt Roskill,1,9,10112.66,618.0,False,False,02:48:32.660000
+Wed_00148,New World Papatoetoe,1,9,12765.88,780.14,True,False,03:32:45.880000
+Wed_00149,Pak 'n Save Lincoln Road,1,9,12561.89,767.67,False,False,03:29:21.890000
+Wed_00150,Pak 'n Save Highland Park,1,10,15558.37,1190.0,True,True,04:19:18.370000
+Wed_00151,Pak 'n Save Westgate,1,10,14039.0,857.94,True,False,03:53:59
+Wed_00152,Pak 'n Save Clendon,1,11,15687.34,1190.0,True,True,04:21:27.340000
+Wed_00153,Pak 'n Save Manukau,1,11,15236.7,1190.0,True,True,04:13:56.700000
+Wed_00154,Pak 'n Save Royal Oak,1,11,13493.54,824.61,True,False,03:44:53.540000
+Wed_00155,Pak 'n Save Wairau Road,1,11,16160.95,1190.0,True,True,04:29:20.950000
+Wed_00156,Pak 'n Save Botany,1,12,17897.42,1190.0,True,True,04:58:17.420000
+Wed_00157,Pak 'n Save Henderson,1,12,16311.09,1190.0,True,True,04:31:51.090000
+Wed_00158,Pak 'n Save Mangere,1,12,15279.57,1190.0,True,True,04:14:39.570000
+Wed_00159,Pak 'n Save Mt Albert,1,12,14259.27,871.4,True,False,03:57:39.270000
+Wed_00160,Pak 'n Save Ormiston,1,12,17377.23,1190.0,True,True,04:49:37.230000
+Wed_00161,Pak 'n Save Papakura,1,12,17631.63,1190.0,True,True,04:53:51.630000
+Wed_00162,Pak 'n Save Sylvia Park,1,12,16889.55,1190.0,True,True,04:41:29.550000
+Wed_00163,Pak 'n Save Glen Innes,1,13,18883.24,1500.0,True,True,05:14:43.240000
+Wed_00164,Pak 'n Save Albany,1,14,20379.99,1500.0,True,True,05:39:39.990000
