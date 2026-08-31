@@ -1,104 +1,77 @@
 """
 Monte Carlo simulator for a solved route plan.
 
-Answers two questions about an already-solved plan (from solve_lp.py's
-output CSV): given that both traffic conditions and store demand are
-uncertain in reality, how confident can we actually be in (a) the plan's
-total cost, and (b) how much of real demand it ends up serving?
+MAJOR REVISION NOTES (this version)
+---------------------------------------
+Two structural assumptions changed from earlier versions, per explicit
+instruction:
 
-Loading model: pallet quantities are locked in at the plan's baseline
-before the actual day's demand is known, and never adjusted -- there is
-no live/updating demand-sensing system, so the truck cannot load "what's
-needed today" because that isn't known at load-time. The only information
-available when loading happens is the plan's baseline figure. Demand only
-enters afterward, as a hindsight comparison of whether that fixed load
-covered what was actually needed:
-    planned_load = route's baseline total_pallets  (always <=16, since
-                    the route was built respecting truck capacity)
-    delivered    = min(planned_load, sim_demand)
-    unload_sec   = planned_load * UNLOADING_SEC_PER_PALLET  (FIXED -- the
-                    truck always carries and unloads this much, regardless
-                    of what the day's demand turns out to be)
-    sim_travel   = baseline_travel_sec * traffic_multiplier
-Only TRAFFIC affects cost -- unload time never varies, since the load
-itself never varies. Demand only affects the SEPARATE demand-met metric.
+1. TRAFFIC BASELINE = NO TRAFFIC. The data provider stated the duration
+   matrix was generated via OpenStreetMap-based routing, which does not
+   model traffic at all. Taken at face value, this means the given
+   durations are the fastest physically achievable trip -- nothing can be
+   faster. The traffic multiplier is therefore ONE-SIDED again:
+       multiplier = 1 + HIGH * beta_sample,   beta_sample ~ Beta(alpha, beta)
+   with a hard floor of exactly 1.0x (beta_sample=0). This reverses an
+   earlier two-sided model that was built on real Google Maps measurements
+   showing light-traffic trips often BEATING the baseline -- that finding
+   is now in direct tension with this assumption and is not resolved; see
+   the flagged issue in the accompanying report. This version proceeds
+   with the no-traffic assumption because it is simpler to state and
+   defend, per instruction, not because the tension has been settled.
 
-A "shortfall" (in the routes_with_shortfall count) means the day's actual
-demand exceeded the PLANNED LOAD -- NOT a truck capacity breach (the plan
-always respects the 16-pallet cap by construction). It means the fixed
-plan simply didn't allocate that route enough of the truck's available
-room for that particular day's demand.
+2. DEMAND = MARKET PROJECTION, NOT REALIZED CUSTOMER ACTIVITY. Previously
+   this simulator treated "unmet demand" as a real outcome to report and
+   accept. We've been told the demand figures represent what stores
+   ORDER in advance (a projection used to plan pallets), not unknowable
+   real-time customer activity -- and that ALL of this ordered demand
+   must be delivered. Consequently:
+   - Every store that is part of the solved route plan (i.e. NOT
+     permanently skipped by the shedding decision) must have its full
+     sampled demand met. If the store's planned truck load falls short
+     (because sampled demand exceeds the route's fixed planned pallets),
+     a SEPARATE wet-leased truck is dispatched -- one per affected store
+     -- to deliver exactly the shortfall (not the store's full demand;
+     only the leftover the planned route couldn't cover).
+   - Permanently SKIPPED stores (the shedding policy's deliberate,
+     cost-driven exclusions) do NOT get a wet-lease top-up. This is an
+     explicit, flagged assumption: shedding is a deliberate policy lever,
+     and quietly overriding it with an expensive backup truck every time
+     would defeat its purpose. If this is wrong, it's a one-line change
+     (see FIX_SKIPPED_STORES_WITH_WETLEASE below).
 
-Two sources of randomness per simulation:
-    1. TRAFFIC -- one Beta-distributed multiplier per simulation, applied
-       to every route's TRAVEL time that day (traffic is treated as a
-       network-wide condition, not independent per route). A raw Beta
-       draw (in [0,1]) is mapped LINEARLY onto [LOW_MULTIPLIER,
-       HIGH_MULTIPLIER]:
-           multiplier = LOW_MULTIPLIER + (HIGH_MULTIPLIER - LOW_MULTIPLIER) * beta_sample
-       Deliberately simple -- an earlier version tried to force the Beta
-       shape's peak onto exactly 1.0x via a piecewise rescaling, but that
-       centering was an assumption imposed on the data, not something the
-       Beta shape itself justified. Here the peak lands wherever the raw
-       mode naturally falls within [LOW_MULTIPLIER, HIGH_MULTIPLIER] --
-       nothing forces it to any particular value.
-    2. DEMAND -- each store's pallet demand that day is drawn from a
-       Normal distribution fitted directly from the 8 weeks of actual
-       daily data in FoodstuffsDemand2026.csv (mean and stdev computed
-       per store, per weekday -- fully data-driven, no manual tuning).
+Wet-lease top-up trips are modelled as a dedicated, direct round trip
+(Warehouse -> store -> Warehouse) using the RAW duration matrix (not the
+route's internal travel decomposition, since this is a different, solo
+trip), scaled by the same day's traffic multiplier, plus 18 min/pallet
+unloading for the shortfall quantity only. Cost uses the same $1400/2-hour
+block formula as any other wet-leased trip. Capacity (16 pallets) is not
+re-checked for these top-up trips since no single store's demand is
+expected to approach that on its own.
 
-Known limitation worth flagging: trucks run two shifts/day (8am and 2pm),
-and empirically these have DIFFERENT typical traffic (a real Google Maps
-check found 2pm running noticeably lighter than the 8am-inclusive blended
-weekday estimate this model currently uses). The solution CSVs don't
-currently record which shift a given route runs in, so this model applies
-one blended traffic distribution across all routes on a day rather than
-distinguishing AM-dispatched from PM-dispatched routes. Revisit if
-per-route shift assignment becomes available.
-
-What stays FIXED across every simulation: which routes exist, which
-stores they visit, each route's mode (owned / wet-leased), and the skip
-decisions. This simulator asks "how did our ALREADY-CHOSEN plan perform
-under uncertainty", not "would a different plan have been better".
-
-How duration is recomputed per simulation
---------------------------------------------
-Each route's ORIGINAL total_duration_sec (from the solution CSV) is split
-into a travel component and an unload component using that route's own
-GIVEN total_pallets (self-consistent -- doesn't require the demand CSV's
-values to exactly match whatever was originally used to build the route):
-    baseline_unload_sec = total_pallets * UNLOADING_SEC_PER_PALLET
-    baseline_travel_sec = total_duration_sec - baseline_unload_sec
+What stays the same as before
+----------------------------------
+- Loading model: each planned route's pallet load is fixed at its
+  baseline (from the solution CSV), decided before the day's demand is
+  known.
+- Demand distributions: Normal(mean, stdev) fitted per store per weekday
+  from the 8 weeks of historical data in FoodstuffsDemand2026.csv.
+- Per-store, in-order allocation within a route (the truck unloads up to
+  each store's demand in sequence, limited by remaining capacity) -- this
+  is what determines each store's shortfall, which then either gets
+  topped up by wet-lease (if the store is on a planned route) or remains
+  unmet (if the store was permanently skipped).
 
 Configuration
 ----------------
-BETA_ALPHA / BETA_BETA: shape of the traffic distribution.
-LOW_MULTIPLIER: empirically grounded via 7 real Google Maps checks (2pm,
-    light traffic) against this dataset's own durations for the same
-    pairs -- mean ratio 0.869, median 0.866, range 0.72-1.09.
-HIGH_MULTIPLIER: less rigorously grounded than LOW_MULTIPLIER -- currently
-    set from the originally-given Beta parameter set's "high" value.
-    Tune freely; the resulting peak/mean shift with it (see chat history
-    for a table of HIGH -> peak/mean under these Beta shapes).
-N_SIMULATIONS: number of Monte Carlo draws. Set to 1000 for now.
-
-BETA_ALPHA / BETA_BETA calibration note: fixed at a=1.5 (right-skewed shape
--- see chat history for why volume-fitted, near-symmetric shapes were
-rejected: nonlinear volume-to-delay transforms amplify skewness relative
-to a raw traffic-volume distribution's own shape). b is then SOLVED, not
-guessed, so that the resulting multiplier distribution's MEDIAN lands
-exactly on 1.0x -- i.e. a genuine 50/50 split between faster- and slower-
-than-baseline days. This was chosen as a defensible "neutral" assumption
-given no strong evidence either way -- though note a real caveat: if the
-given baseline durations represent a MEAN (not median) of historical
-travel times, right-skewed real-world traffic would imply P(faster) should
-be ABOVE 50%, not exactly at it, since the mean of a right-skewed
-distribution sits above its median. We don't have enough information to
-resolve this precisely, so 50/50 is a stated, flagged assumption, not a
-proven value.
-
-Demand distribution parameters (mean, stdev per store) are NOT manual
-inputs -- they're fitted directly from FoodstuffsDemand2026.csv each run.
+BETA_ALPHA/BETA_BETA/HIGH_MULTIPLIER: averaged directly from the given
+    AM/PM Beta parameter set (see report for the source values). Weekday:
+    a=3.25, b=6.75, high=3.165. Saturday: a=5.5, b=5.75, high=2.1 (pass
+    via CLI overrides for Saturday runs).
+FIX_SKIPPED_STORES_WITH_WETLEASE: False by default -- see assumption (2)
+    above. Set True to also wet-lease-cover permanently-skipped stores'
+    full demand (defeats the shedding policy's savings; provided only in
+    case the "no wet-lease for skipped stores" reading above is wrong).
 """
 
 import argparse
@@ -112,37 +85,21 @@ from pathlib import Path
 # ----------------------------- CONFIG ---------------------------------- #
 
 DEMAND_CSV = "FoodstuffsDemand2026.csv"
+DURATIONS_CSV = "FoodstuffsDurations2026.csv"
 SOLUTION_CSV = "monday_solution.csv"
-DAY = "Monday"                  # which weekday's columns to fit demand from
+DAY = "Monday"
 OUTPUT_DIR = "."
 
-N_SIMULATIONS = 1000            # <-- adjust freely
+N_SIMULATIONS = 1000
 
-# --- Traffic model (Beta distribution) -- PLACEHOLDERS, tune later -----
-BETA_ALPHA = 1.5                # weekday default. a=1.5 gives a right-skewed shape (mode
-                                 # pulled toward the good-traffic side); Saturday uses the
-                                 # same alpha via --beta-alpha 1.5 (no change needed, it's
-                                 # already the default) but a DIFFERENT beta -- see below.
-BETA_BETA = 8.874                # weekday default. Solved (see calibration note below) so
-                                 # the resulting multiplier's MEDIAN lands exactly on 1.0x --
-                                 # i.e. a genuine 50/50 split between faster- and slower-
-                                 # than-baseline days. For SATURDAY runs, override with
-                                 # --beta-beta 4.671 (same 50/50-median logic, solved
-                                 # separately since Saturday's [LOW,HIGH] range differs).
-LOW_MULTIPLIER = 0.7            # NOTE: the empirically-grounded value from 7 real Google
-                                 # Maps checks (2pm, light traffic) was actually 0.85 (mean
-                                 # ratio 0.869, median 0.866, range 0.72-1.09 vs this
-                                 # dataset's own durations for the same pairs). Lowered to
-                                 # 0.7 deliberately for proportional symmetry with
-                                 # HIGH_MULTIPLIER, which is a much larger, ungrounded swing
-                                 # above 1.0 -- this is a stylistic/consistency choice, not
-                                 # something the evidence itself supports. Revert to 0.85 to
-                                 # go with the strongest available grounding.
-HIGH_MULTIPLIER = 3.165         # <-- tune freely. Currently the originally-given Beta
-                                 # parameter set's "high" value; not independently
-                                 # validated the way the empirical LOW_MULTIPLIER estimate is.
+BETA_ALPHA = 3.25                # weekday default (AM/PM averaged)
+BETA_BETA = 6.75                 # weekday default (AM/PM averaged)
+HIGH_MULTIPLIER = 3.165          # weekday default (AM/PM averaged). For Saturday, override
+                                  # with --beta-alpha 5.5 --beta-beta 5.75 --high-multiplier 2.1
 
-# --- Fixed problem constants (must match the MILP that produced the plan) --
+FIX_SKIPPED_STORES_WITH_WETLEASE = False  # see module docstring, assumption (2)
+
+WAREHOUSE = "Warehouse"
 CAPACITY_PALLETS = 16
 UNLOADING_SEC_PER_PALLET = 18 * 60
 
@@ -154,7 +111,7 @@ LEASED_BLOCK_HOURS = 2.0
 SKIP_COST_PAK_N_SAVE = 1500.0
 SKIP_COST_OTHER = 800.0
 
-CI_LEVEL = 0.95                 # confidence interval width (percentile method)
+CI_LEVEL = 0.95
 
 # ------------------------------------------------------------------------ #
 
@@ -175,25 +132,29 @@ def skip_cost(store_name):
     return SKIP_COST_PAK_N_SAVE if "Pak 'n Save" in store_name else SKIP_COST_OTHER
 
 
-# --------------------------- Demand fitting ------------------------------ #
+# --------------------------- Data loading --------------------------------- #
 
-def fit_demand_distributions(path, day, outlier_ratio=8.0):
-    """
-    Returns {store: (mean, stdev)} fitted from every column in `path`
-    whose date falls on `day` of the week. stdev uses the sample formula
-    (ddof=1, i.e. divides by n-1) since these 8 values are a sample of
-    possible daily outcomes, not the full population.
+def load_durations(path):
+    """durations[a][b] = travel time in seconds, for every location pair --
+    needed for the DIRECT Warehouse<->store wet-lease top-up trips."""
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        reader = csv.reader(f)
+        header = next(reader)
+        locations = header[1:]
+        durations = {loc: {} for loc in locations}
+        for row in reader:
+            origin = row[0]
+            for loc, val in zip(locations, row[1:]):
+                durations[origin][loc] = float(val)
+    return durations
 
-    Outlier handling: with only ~8 historical points per store, a single
-    corrupted value (e.g. a data-entry error with an extra trailing zero)
-    can badly distort both the mean and stdev. Before fitting, any value
-    that is both (a) at least `outlier_ratio`x the median of that store's
-    OTHER same-weekday values, AND (b) whose value/10 lands close to that
-    median (0.5x-2x) -- the specific signature of an accidental extra
-    zero -- is excluded from the fit. Verified against the full dataset:
-    this flags exactly 2 points (both on Wednesday, both matching the
-    extra-zero pattern precisely) and nothing else.
-    """
+
+def fit_demand_distributions(path, day):
+    """Returns {store: (mean, stdev)} fitted from every column in `path`
+    whose date falls on `day` of the week, with automatic detection and
+    exclusion of likely data-entry errors (an "extra trailing zero"
+    signature: a value >=8x the median of that store's other same-weekday
+    values, whose value/10 lands close to that median)."""
     with open(path, newline="", encoding="utf-8-sig") as f:
         reader = csv.reader(f)
         header = next(reader)
@@ -206,15 +167,14 @@ def fit_demand_distributions(path, day, outlier_ratio=8.0):
             store = row[0]
             values = [float(v) for v, keep in zip(row[1:], weekday_mask) if keep]
 
-            # outlier detection -- see docstring
             cleaned = []
             for i, v in enumerate(values):
                 others = values[:i] + values[i + 1:]
                 med_others = statistics.median(others) if others else 0
-                if med_others > 0 and v >= outlier_ratio * med_others:
+                if med_others > 0 and v >= 8.0 * med_others:
                     ratio_to_tenth = (v / 10) / med_others
                     if 0.5 <= ratio_to_tenth <= 2.0:
-                        continue  # exclude: looks like an extra trailing zero
+                        continue
                 cleaned.append(v)
 
             mean = statistics.mean(cleaned)
@@ -223,16 +183,10 @@ def fit_demand_distributions(path, day, outlier_ratio=8.0):
     return distributions
 
 
-# --------------------------- Plan parsing --------------------------------- #
-
 def load_plan(path):
-    """
-    Parses a solve_lp.py-style solution CSV. Robust to whatever trailing
-    summary format follows the route rows (a single TOTAL row, a full
-    SUMMARY block, or nothing) -- only rows whose `mode` is exactly
-    'owned', 'leased', or 'skipped' are treated as plan data; anything
-    else (blank lines, TOTAL rows, summary key/value rows) is ignored.
-    """
+    """Parses a solve_lp.py-style solution CSV. Robust to whatever trailing
+    summary format follows the route rows -- only rows whose `mode` is
+    exactly 'owned', 'leased', or 'skipped' are treated as plan data."""
     routes = []
     skipped = []
     with open(path, newline="") as f:
@@ -247,14 +201,13 @@ def load_plan(path):
                     "total_duration_sec": float(row["total_duration_sec"]),
                 })
             elif mode == "skipped":
-                skipped.append(row["stops"])  # single store name for skip rows
+                skipped.append(row["stops"])
     return routes, skipped
 
 
 def decompose_baseline(route):
     """Splits a route's given duration into travel vs unload components
-    using its OWN given total_pallets (self-consistent, no dependency on
-    matching an external demand source's exact values)."""
+    using its own given total_pallets."""
     baseline_unload = route["total_pallets"] * UNLOADING_SEC_PER_PALLET
     baseline_travel = route["total_duration_sec"] - baseline_unload
     return max(baseline_travel, 0.0), baseline_unload
@@ -266,70 +219,102 @@ def sample_demand(store, distributions, rng):
     mean, stdev = distributions[store]
     if stdev == 0:
         return max(mean, 0.0)
-    return max(rng.gauss(mean, stdev), 0.0)  # demand can't be negative
+    return max(rng.gauss(mean, stdev), 0.0)
 
 
-def traffic_multiplier_from_sample(raw_sample, low, high):
+def traffic_multiplier_from_sample(raw_sample, high):
+    """No-traffic baseline: multiplier is always >= 1.0. See module docstring."""
+    return 1.0 + high * raw_sample
+
+
+def wet_lease_topup_cost(store, shortfall_pallets, durations, traffic_multiplier):
+    """Cost of a dedicated Warehouse<->store round trip delivering ONLY the
+    shortfall quantity, at the same day's traffic multiplier."""
+    travel_sec = (durations[WAREHOUSE][store] + durations[store][WAREHOUSE]) * traffic_multiplier
+    unload_sec = shortfall_pallets * UNLOADING_SEC_PER_PALLET
+    return leased_cost(travel_sec + unload_sec)
+
+
+def run_simulation(routes, skipped, distributions, durations, rng,
+                    beta_alpha, beta_beta, high_multiplier,
+                    fix_skipped=FIX_SKIPPED_STORES_WITH_WETLEASE):
     """
-    Maps a raw Beta(alpha, beta) draw (in [0,1]) linearly onto [low, high]
-    directly -- no artificial centering imposed on where the Beta shape's
-    peak lands. The peak (mode) ends up wherever mode_raw naturally falls
-    within [low, high]; nothing forces it to 1.0x. This is deliberately
-    simpler than an earlier version that rescaled the two sides of the
-    mode separately to force the peak onto 1.0x -- that centering was an
-    assumption imposed on the data, not something the Beta shape itself
-    justified.
-    """
-    return low + (high - low) * raw_sample
-
-
-def run_simulation(routes, skipped, distributions, rng,
-                    beta_alpha, beta_beta, low_multiplier, high_multiplier):
-    """
-    One simulated day under the fixed-loading model: pallet loads are
-    locked at each route's planned baseline; only traffic affects cost.
-    Demand is sampled and compared against the fixed load afterward, for
-    the demand-met metric.
+    One simulated day. Planned routes' pallet loads are fixed at baseline;
+    only traffic affects their cost. Demand is sampled per store and
+    allocated in-order within each route; any shortfall on a PLANNED route
+    triggers a dedicated wet-lease top-up trip for that store. Permanently
+    skipped stores are not topped up (unless fix_skipped=True).
     """
     raw_sample = rng.betavariate(beta_alpha, beta_beta)
-    traffic_multiplier = traffic_multiplier_from_sample(raw_sample, low_multiplier, high_multiplier)
+    traffic_multiplier = traffic_multiplier_from_sample(raw_sample, high_multiplier)
 
     total_cost = 0.0
     total_requested = 0.0
     total_served = 0.0
-    routes_with_shortfall = 0  # demand exceeded the PLANNED LOAD that day --
-                                # NOT a capacity breach, see module docstring
+    routes_with_shortfall = 0
+    stores_topped_up = 0          # planned-route stores needing a wet-lease top-up
+    wetlease_topup_cost = 0.0
+    wetlease_topup_trips = 0
+    stores_unmet_no_topup = 0     # permanently-skipped stores (or, if fix_skipped=False,
+                                    # these remain genuinely unmet)
 
     for route in routes:
         baseline_travel, _ = decompose_baseline(route)
-        sim_demand = sum(sample_demand(s, distributions, rng) for s in route["stops"])
+        per_store_demand = [(s, sample_demand(s, distributions, rng)) for s in route["stops"]]
+        sim_demand = sum(d for _, d in per_store_demand)
         sim_travel = baseline_travel * traffic_multiplier
 
         planned_load = route["total_pallets"]
-        delivered = min(planned_load, sim_demand)
-        unload_sec = planned_load * UNLOADING_SEC_PER_PALLET  # fixed, not demand-driven
+        unload_sec = planned_load * UNLOADING_SEC_PER_PALLET
         if sim_demand > planned_load:
             routes_with_shortfall += 1
+
+        remaining = planned_load
+        for store, demand in per_store_demand:
+            served_here = min(demand, remaining)
+            remaining -= served_here
+            shortfall = demand - served_here
+            if shortfall > 1e-9:
+                stores_topped_up += 1
+                topup = wet_lease_topup_cost(store, shortfall, durations, traffic_multiplier)
+                wetlease_topup_cost += topup
+                wetlease_topup_trips += 1
+            total_served += demand  # fully served either by the route or the top-up
 
         sim_duration = sim_travel + unload_sec
         cost = owned_cost(sim_duration) if route["mode"] == "owned" else leased_cost(sim_duration)
 
         total_cost += cost
         total_requested += sim_demand
-        total_served += delivered
+
+    total_cost += wetlease_topup_cost
 
     for store in skipped:
         sim_demand = sample_demand(store, distributions, rng)
-        total_cost += skip_cost(store)
         total_requested += sim_demand
-        # served += 0 -- skipped stores are never served, by definition
+        if fix_skipped:
+            topup = wet_lease_topup_cost(store, sim_demand, durations, traffic_multiplier)
+            total_cost += topup
+            total_served += sim_demand
+            wetlease_topup_trips += 1
+        else:
+            total_cost += skip_cost(store)
+            stores_unmet_no_topup += 1
+            # served += 0
 
     demand_met_pct = (total_served / total_requested * 100) if total_requested > 0 else 100.0
-    return total_cost, demand_met_pct, routes_with_shortfall
+    return {
+        "total_cost": total_cost,
+        "demand_met_pct": demand_met_pct,
+        "routes_with_shortfall": routes_with_shortfall,
+        "stores_topped_up": stores_topped_up,
+        "wetlease_topup_cost": wetlease_topup_cost,
+        "wetlease_topup_trips": wetlease_topup_trips,
+        "stores_unmet_no_topup": stores_unmet_no_topup,
+    }
 
 
 def percentile(sorted_vals, p):
-    """Linear-interpolation percentile, no numpy dependency."""
     k = (len(sorted_vals) - 1) * p
     f, c = math.floor(k), math.ceil(k)
     if f == c:
@@ -343,10 +328,7 @@ def confidence_interval(values, level=CI_LEVEL):
     return percentile(s, tail), percentile(s, 1 - tail)
 
 
-def plot_results(costs, demand_met_pcts, shortfalls, summary, n_routes, output_dir, title=None):
-    """Histograms of the simulated distributions with mean + CI marked --
-    no comparison, just a visual read on each metric's spread. Skipped
-    gracefully (with a note) if matplotlib isn't available."""
+def plot_results(results_list, summary, n_routes, output_dir, title=None):
     try:
         import matplotlib.pyplot as plt
     except ImportError:
@@ -354,25 +336,26 @@ def plot_results(costs, demand_met_pcts, shortfalls, summary, n_routes, output_d
         return None
 
     panels = [
-        (costs, "cost", "Total Cost ($)", lambda v: f"${v:,.0f}"),
-        (demand_met_pcts, "demand_met_pct", "Demand Met (%)", lambda v: f"{v:.1f}%"),
-        (shortfalls, "routes_with_shortfall", f"Routes w/ Shortfall (of {n_routes})", lambda v: f"{v:.1f}"),
+        ("total_cost", "Total Cost incl. Wet-Lease Top-Ups ($)", lambda v: f"${v:,.0f}"),
+        ("wetlease_topup_cost", "Wet-Lease Top-Up Cost ($)", lambda v: f"${v:,.0f}"),
+        ("stores_topped_up", "Stores Needing Top-Up", lambda v: f"{v:.1f}"),
     ]
 
-    fig, axes = plt.subplots(1, 3, figsize=(12.5, 4.3))
-    for ax, (values, key, subtitle, fmt) in zip(axes, panels):
+    fig, axes = plt.subplots(1, 3, figsize=(13, 4.3))
+    for ax, (key, subtitle, fmt) in zip(axes, panels):
+        values = [r[key] for r in results_list]
         mean, (lo, hi) = summary[key]
         ax.hist(values, bins=30, color="#2c5282", alpha=0.75, edgecolor="white", linewidth=0.4)
         ax.axvline(mean, color="#c0392b", linestyle="--", linewidth=1.6, label=f"mean = {fmt(mean)}")
         ax.axvline(lo, color="#555", linestyle=":", linewidth=1.3)
         ax.axvline(hi, color="#555", linestyle=":", linewidth=1.3,
                     label=f"{int(CI_LEVEL*100)}% CI = [{fmt(lo)}, {fmt(hi)}]")
-        ax.set_title(subtitle, fontsize=11.5, fontweight="bold")
+        ax.set_title(subtitle, fontsize=11, fontweight="bold")
         ax.set_ylabel("Simulations")
-        ax.legend(fontsize=8.3, loc="upper right")
+        ax.legend(fontsize=8.2, loc="upper right")
         ax.spines[["top", "right"]].set_visible(False)
 
-    suptitle = title or f"Monte Carlo Results -- Fixed Loading (n={len(costs)} simulations)"
+    suptitle = title or f"Monte Carlo Results (n={len(results_list)} simulations)"
     fig.suptitle(suptitle, fontsize=13, fontweight="bold", y=1.03)
     plt.tight_layout()
     path = Path(output_dir) / "montecarlo_ci_plot.png"
@@ -387,14 +370,14 @@ def main():
     parser = argparse.ArgumentParser(description="Monte Carlo simulate a solved route plan.")
     parser.add_argument("--solution-csv", default=SOLUTION_CSV)
     parser.add_argument("--demand-csv", default=DEMAND_CSV)
+    parser.add_argument("--durations-csv", default=DURATIONS_CSV)
     parser.add_argument("--day", default=DAY)
     parser.add_argument("--n-sim", type=int, default=N_SIMULATIONS)
     parser.add_argument("--beta-alpha", type=float, default=BETA_ALPHA)
     parser.add_argument("--beta-beta", type=float, default=BETA_BETA)
-    parser.add_argument("--low-multiplier", type=float, default=LOW_MULTIPLIER,
-                         help="traffic multiplier at beta_sample=0 (best case)")
-    parser.add_argument("--high-multiplier", type=float, default=HIGH_MULTIPLIER,
-                         help="traffic multiplier at beta_sample=1 (worst case)")
+    parser.add_argument("--high-multiplier", type=float, default=HIGH_MULTIPLIER)
+    parser.add_argument("--fix-skipped", action="store_true", default=FIX_SKIPPED_STORES_WITH_WETLEASE,
+                         help="also wet-lease-cover permanently-skipped stores (defeats shedding savings)")
     parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--output-dir", default=OUTPUT_DIR)
     args = parser.parse_args()
@@ -402,6 +385,7 @@ def main():
     rng = random.Random(args.seed) if args.seed is not None else random.Random()
 
     distributions = fit_demand_distributions(args.demand_csv, args.day)
+    durations = load_durations(args.durations_csv)
     routes, skipped = load_plan(args.solution_csv)
 
     missing = [s for r in routes for s in r["stops"] if s not in distributions]
@@ -409,51 +393,64 @@ def main():
     if missing:
         raise ValueError(f"Stores in the plan but not in the demand CSV: {set(missing)}")
 
-    print(f"Loaded plan: {len(routes)} routes, {len(skipped)} skipped stores")
-    print(f"Fitted demand distributions for {len(distributions)} stores from {args.day}s "
-          f"({args.demand_csv})")
+    print(f"Loaded plan: {len(routes)} routes, {len(skipped)} permanently-skipped stores")
+    print(f"Fitted demand distributions for {len(distributions)} stores from {args.day}s")
     print(f"Running {args.n_sim} simulations "
-          f"(traffic ~ Beta({args.beta_alpha}, {args.beta_beta}) "
-          f"mapped onto [{args.low_multiplier}, {args.high_multiplier}])...")
+          f"(traffic ~ 1 + {args.high_multiplier}*Beta({args.beta_alpha},{args.beta_beta}), "
+          f"no-traffic floor 1.0x; wet-lease top-up "
+          f"{'ALSO covers' if args.fix_skipped else 'does NOT cover'} skipped stores)...")
 
-    costs, demand_met_pcts, shortfalls = [], [], []
+    results_list = []
     for _ in range(args.n_sim):
-        c, d, s = run_simulation(routes, skipped, distributions, rng,
-                                  args.beta_alpha, args.beta_beta,
-                                  args.low_multiplier, args.high_multiplier)
-        costs.append(c)
-        demand_met_pcts.append(d)
-        shortfalls.append(s)
+        r = run_simulation(routes, skipped, distributions, durations, rng,
+                            args.beta_alpha, args.beta_beta, args.high_multiplier,
+                            fix_skipped=args.fix_skipped)
+        results_list.append(r)
 
-    cost_mean, cost_ci = statistics.mean(costs), confidence_interval(costs)
-    demand_mean, demand_ci = statistics.mean(demand_met_pcts), confidence_interval(demand_met_pcts)
-    shortfall_mean, shortfall_ci = statistics.mean(shortfalls), confidence_interval(shortfalls)
+    metrics = ["total_cost", "demand_met_pct", "routes_with_shortfall", "stores_topped_up",
+               "wetlease_topup_cost", "wetlease_topup_trips", "stores_unmet_no_topup"]
+    summary = {}
+    for m in metrics:
+        vals = [r[m] for r in results_list]
+        summary[m] = (statistics.mean(vals), confidence_interval(vals))
+
+    total_stores = len({s for r in routes for s in r["stops"]}) + len(skipped)
 
     print(f"\n--- Results over {args.n_sim} simulations ---")
-    print(f"Total cost:            mean=${cost_mean:,.2f}  "
-          f"{int(CI_LEVEL*100)}% CI=[${cost_ci[0]:,.2f}, ${cost_ci[1]:,.2f}]")
-    print(f"Demand met:            mean={demand_mean:.2f}%  "
-          f"{int(CI_LEVEL*100)}% CI=[{demand_ci[0]:.2f}%, {demand_ci[1]:.2f}%]")
-    print(f"Routes w/ shortfall:   mean={shortfall_mean:.2f}/{len(routes)}  "
-          f"{int(CI_LEVEL*100)}% CI=[{shortfall_ci[0]:.0f}, {shortfall_ci[1]:.0f}]")
+    c_mean, c_ci = summary["total_cost"]
+    print(f"Total cost (incl. top-ups):  mean=${c_mean:,.2f}  "
+          f"{int(CI_LEVEL*100)}% CI=[${c_ci[0]:,.2f}, ${c_ci[1]:,.2f}]")
+    d_mean, d_ci = summary["demand_met_pct"]
+    print(f"Demand met:                  mean={d_mean:.2f}%  "
+          f"{int(CI_LEVEL*100)}% CI=[{d_ci[0]:.2f}%, {d_ci[1]:.2f}%]")
+    rs_mean, rs_ci = summary["routes_with_shortfall"]
+    print(f"Routes w/ shortfall:         mean={rs_mean:.2f}/{len(routes)}  "
+          f"{int(CI_LEVEL*100)}% CI=[{rs_ci[0]:.0f}, {rs_ci[1]:.0f}]")
+    st_mean, st_ci = summary["stores_topped_up"]
+    print(f"Stores topped up (wet-lease): mean={st_mean:.2f}/{total_stores}  "
+          f"{int(CI_LEVEL*100)}% CI=[{st_ci[0]:.0f}, {st_ci[1]:.0f}]")
+    wc_mean, wc_ci = summary["wetlease_topup_cost"]
+    print(f"Wet-lease top-up cost:       mean=${wc_mean:,.2f}  "
+          f"{int(CI_LEVEL*100)}% CI=[${wc_ci[0]:,.2f}, ${wc_ci[1]:,.2f}]")
+    wt_mean, wt_ci = summary["wetlease_topup_trips"]
+    print(f"Wet-lease top-up trips:      mean={wt_mean:.2f}  "
+          f"{int(CI_LEVEL*100)}% CI=[{wt_ci[0]:.0f}, {wt_ci[1]:.0f}]")
+    su_mean, su_ci = summary["stores_unmet_no_topup"]
+    print(f"Stores genuinely unmet:      mean={su_mean:.2f}  "
+          f"{int(CI_LEVEL*100)}% CI=[{su_ci[0]:.0f}, {su_ci[1]:.0f}]  "
+          f"({'0 by construction -- fix_skipped is on' if args.fix_skipped else 'permanently-skipped stores'})")
 
     out_path = Path(args.output_dir) / "montecarlo_results.csv"
     with open(out_path, "w", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(["simulation", "total_cost", "demand_met_pct", "routes_with_shortfall"])
-        for i, (c, d, s) in enumerate(zip(costs, demand_met_pcts, shortfalls), start=1):
-            writer.writerow([i, round(c, 2), round(d, 4), s])
+        writer.writerow(["simulation"] + metrics)
+        for i, r in enumerate(results_list, start=1):
+            writer.writerow([i] + [round(r[m], 4) if isinstance(r[m], float) else r[m] for m in metrics])
     print(f"\nPer-simulation results written to {out_path}")
 
-    summary = {
-        "cost": (cost_mean, cost_ci),
-        "demand_met_pct": (demand_mean, demand_ci),
-        "routes_with_shortfall": (shortfall_mean, shortfall_ci),
-    }
     shed_label = "No Shedding" if "no_shed" in Path(args.solution_csv).stem else "Shedding Allowed"
     plot_title = f"{args.day} -- {shed_label} (n={args.n_sim})"
-    plot_path = plot_results(costs, demand_met_pcts, shortfalls, summary, len(routes),
-                              args.output_dir, title=plot_title)
+    plot_path = plot_results(results_list, summary, len(routes), args.output_dir, title=plot_title)
     if plot_path:
         print(f"CI plot written to {plot_path}")
 
