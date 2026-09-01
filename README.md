@@ -1,28 +1,37 @@
-# 263-GroupProject1
+# 263-GroupProject1: Foodstuffs NZ Truck Delivery Optimisation
 
-# Problem: 
+## Problem Overview
 
-We need a single "typical demand" number per store **for each weekday** (Monday–Saturday) to build fixed routes that work week after week without rescheduling. Estimates are computed independently per day, so a store gets its own mean + 0.5σ for Monday, a different one for Tuesday, and so on. But actual demand jumps around, some Mondays a store needs 3 pallets, others 7.
-# What the data showed:
-- 6 weeks of data per store for each weekday (e.g., for Monday → mean ≈ 4.2, std ≈ 1.8 pallets)
-- Pure mean (4.2) → under-delivers on ~50% of Mondays (those above average)
-- Mean + 1σ (6.0) → over-delivers on ~84% of Mondays, expensive fleet
-- Mean + 0.5σ (5.1) → covers ~69% of actual Mondays, reasonable buffer
-- The same logic applies to every weekday, each using its own mean and std
+55 stores require daily pallet deliveries, Monday–Saturday. Foodstuffs operates
+20 owned trucks (16-pallet capacity, two 3.5 h shifts each → 40 owned trips/day),
+with wet-leased trucks (Linfox) available at $1,400 per 2 h block and overtime on
+owned trucks at $310/h (vs $220/h standard). A fuel-reduction proposal is evaluated:
+shedding up to 20% of stores at $1,500 per Pak 'n Save / $800 per other store.
 
-# Why not just use the maximum?
+Two variants are delivered:
+- **No shedding (baseline)**
+- **Shedding allowed (fuel-reduction)**
 
-Using the peak Monday (e.g., 8 pallets) would mean running half-empty trucks most weeks, wasting ~$200/trip. The 0.5σ buffer adds ~1 pallet/store on average, which translates to ~2 extra trips/week fleet-wide. That's ~$1,400 per week extra fleet cost vs. saving ~$7,000/week in wet-lease/recourse when demand spikes.
+## Pipeline
 
-# Why not use a percentile (e.g., 80th)?
+1. **Demand estimation**: mean + 0.5σ per store × weekday from 6 weeks of training
+   data (weeks 7–8 as unseen test period).
+2. **Route-pool generation**: randomised-greedy construction: next stop chosen with
+   probability ∝ 1/travel_time^3.5, 12% per-step early-stopping probability, 10
+   forced starts per store, 3,000 build attempts/day, 16-pallet capacity cap.
+3. **MILP optimisation**: binary route /
+   wet-lease / shed variables; owned $220/h (first 4 h) then $310/h, leased
+   $1,400/2-h block, shed $1,500/$800; fleet ≤ 40 owned trips, shed ≤ 20% of stores.
+4. **Route visualisation**: Folium maps following the real road network, colour-coded
+   by chain, shed stores greyed with strikethrough.
+5. **Monte Carlo simulation**: traffic multipliers from the fitted right-skewed Beta
+   distributions (multiplier = low + (high−low)·β, one shared draw per iteration),
+   demand sampled N(mean, √mean), trucks loaded at the planned estimate; shortfalls
+   trigger wet-lease top-ups. 1,000 iterations/day (seed 42).
 
-Percentiles are noisier with only 6 data points per store-weekday. The normal-approximation (mean + kσ) is more stable and the 0.5σ point naturally balances the two error costs:
-- Under-delivery → wet-lease at $233/pallet or shed at $800
-- Over-delivery → extra truck time at $66/pallet
-The 0.5σ point roughly equalizes the expected marginal cost of one more pallet in either direction.
+## Data Sources
 
-# Practical outcome
-- Fleet: 201 owned trips/week (under 40/day cap)
-- Wet-leasing: $0 (buffer absorbs normal variation)
-- Shedding: 32 stores/week (cheaper than serving them on marginal days)
-- Test-week recourse: ~$25k/week vs ~$45k for pure-mean plan
+- `FoodstuffsDemand2026.csv`: historical daily demand, 55 stores × 56 days
+- `FoodstuffsDurations2026.csv`: OSM road-network travel-time matrix
+- `FoodstuffsLocations.csv`: store locations & chain types
+- Auckland Transport traffic counts (July 2012 – June 2026) — Beta multiplier fit
